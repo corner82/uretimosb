@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="199">
+        <file>
+            <url>public/jsinline/signup.js</url>
+            <bookmark id="22">
+                <name/>
+                <line>419</line>
+                <key/>
+            </bookmark>
+            <bookmark id="28">
+                <name/>
+                <line>550</line>
+                <key/>
+            </bookmark>
+            <bookmark id="29">
+                <name/>
+                <line>593</line>
+                <key/>
+            </bookmark>
+            <bookmark id="30">
+                <name/>
+                <line>623</line>
+                <key/>
+            </bookmark>
+            <bookmark id="31">
+                <name/>
+                <line>1360</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/plugins/zeynel/exPlugs.js</url>
+            <bookmark id="71">
+                <name/>
+                <line>1045</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_unt.js</url>
+            <bookmark id="55">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="56">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="57">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="68">
+                <name/>
+                <line>110</line>
+                <key/>
+            </bookmark>
+            <bookmark id="118">
+                <name/>
+                <line>721</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/plugins/bootstrap-select-ddslick/js/ddslick.js</url>
+            <bookmark id="83">
+                <name/>
+                <line>18</line>
+                <key/>
+            </bookmark>
+            <bookmark id="163">
+                <name/>
+                <line>79</line>
+                <key/>
+            </bookmark>
+            <bookmark id="170">
+                <name/>
+                <line>81</line>
+                <key/>
+            </bookmark>
+            <bookmark id="167">
+                <name/>
+                <line>273</line>
+                <key/>
+            </bookmark>
+            <bookmark id="160">
+                <name/>
+                <line>521</line>
+                <key/>
+            </bookmark>
+            <bookmark id="128">
+                <name/>
+                <line>529</line>
+                <key/>
+            </bookmark>
+            <bookmark id="186">
+                <name/>
+                <line>559</line>
+                <key/>
+            </bookmark>
+            <bookmark id="162">
+                <name/>
+                <line>603</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_machprop.js</url>
+            <bookmark id="79">
+                <name/>
+                <line>84</line>
+                <key/>
+            </bookmark>
+            <bookmark id="96">
+                <name/>
+                <line>101</line>
+                <key/>
+            </bookmark>
+            <bookmark id="80">
+                <name/>
+                <line>175</line>
+                <key/>
+            </bookmark>
+            <bookmark id="97">
+                <name/>
+                <line>403</line>
+                <key/>
+            </bookmark>
+            <bookmark id="67">
+                <name/>
+                <line>455</line>
+                <key/>
+            </bookmark>
+            <bookmark id="77">
+                <name/>
+                <line>479</line>
+                <key/>
+            </bookmark>
+            <bookmark id="74">
+                <name/>
+                <line>603</line>
+                <key/>
+            </bookmark>
+            <bookmark id="101">
+                <name/>
+                <line>657</line>
+                <key/>
+            </bookmark>
+            <bookmark id="98">
+                <name/>
+                <line>659</line>
+                <key/>
+            </bookmark>
+            <bookmark id="65">
+                <name/>
+                <line>743</line>
+                <key/>
+            </bookmark>
+            <bookmark id="73">
+                <name/>
+                <line>793</line>
+                <key/>
+            </bookmark>
+            <bookmark id="78">
+                <name/>
+                <line>803</line>
+                <key/>
+            </bookmark>
+            <bookmark id="64">
+                <name/>
+                <line>868</line>
+                <key/>
+            </bookmark>
+            <bookmark id="75">
+                <name/>
+                <line>961</line>
+                <key/>
+            </bookmark>
+            <bookmark id="99">
+                <name/>
+                <line>1012</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/plugins/zeynel/tag-cabin/tag-cabin.js</url>
+            <bookmark id="100">
+                <name/>
+                <line>66</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/plugins/bootstrap-form-builder-kevinchappell/form-builder.js</url>
+            <bookmark id="37">
+                <name/>
+                <line>408</line>
+                <key/>
+            </bookmark>
+            <bookmark id="39">
+                <name/>
+                <line>409</line>
+                <key/>
+            </bookmark>
+            <bookmark id="43">
+                <name/>
+                <line>904</line>
+                <key/>
+            </bookmark>
+            <bookmark id="40">
+                <name/>
+                <line>1172</line>
+                <key/>
+            </bookmark>
+            <bookmark id="32">
+                <name/>
+                <line>1225</line>
+                <key/>
+            </bookmark>
+            <bookmark id="36">
+                <name/>
+                <line>1375</line>
+                <key/>
+            </bookmark>
+            <bookmark id="38">
+                <name/>
+                <line>1413</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/SFDM/view/sfdm/sfdm/machinetest.phtml</url>
+            <bookmark id="23">
+                <name/>
+                <line>485</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_aclresources.js</url>
+            <bookmark id="116">
+                <name/>
+                <line>443</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/acldefinition.js</url>
+            <bookmark id="15">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="10">
+                <name/>
+                <line>18</line>
+                <key/>
+            </bookmark>
+            <bookmark id="16">
+                <name/>
+                <line>136</line>
+                <key/>
+            </bookmark>
+            <bookmark id="8">
+                <name/>
+                <line>156</line>
+                <key/>
+            </bookmark>
+            <bookmark id="7">
+                <name/>
+                <line>157</line>
+                <key/>
+            </bookmark>
+            <bookmark id="17">
+                <name/>
+                <line>317</line>
+                <key/>
+            </bookmark>
+            <bookmark id="19">
+                <name/>
+                <line>573</line>
+                <key/>
+            </bookmark>
+            <bookmark id="9">
+                <name/>
+                <line>722</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/SFDM/Module.php</url>
+            <bookmark id="21">
+                <name/>
+                <line>52</line>
+                <key/>
+            </bookmark>
+            <bookmark id="20">
+                <name/>
+                <line>227</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_actionmenus.js</url>
+            <bookmark id="140">
+                <name/>
+                <line>238</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_prodtypes.js</url>
+            <bookmark id="66">
+                <name/>
+                <line>537</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>vendor/zendframework/zend-mvc/src/View/Http/RouteNotFoundStrategy.php</url>
+            <bookmark id="2">
+                <name/>
+                <line>272</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_actions.js</url>
+            <bookmark id="139">
+                <name/>
+                <line>55</line>
+                <key/>
+            </bookmark>
+            <bookmark id="184">
+                <name/>
+                <line>150</line>
+                <key/>
+            </bookmark>
+            <bookmark id="187">
+                <name/>
+                <line>354</line>
+                <key/>
+            </bookmark>
+            <bookmark id="185">
+                <name/>
+                <line>422</line>
+                <key/>
+            </bookmark>
+            <bookmark id="138">
+                <name/>
+                <line>529</line>
+                <key/>
+            </bookmark>
+            <bookmark id="183">
+                <name/>
+                <line>554</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>config/autoload/global.php</url>
+            <bookmark id="42">
+                <name/>
+                <line>152</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_machctg.js</url>
+            <bookmark id="143">
+                <name/>
+                <line>95</line>
+                <key/>
+            </bookmark>
+            <bookmark id="47">
+                <name/>
+                <line>856</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/SFDM/view/sfdm/sfdm/acldefinition.phtml</url>
+            <bookmark id="18">
+                <name/>
+                <line>792</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_mach.js</url>
+            <bookmark id="81">
+                <name/>
+                <line>217</line>
+                <key/>
+            </bookmark>
+            <bookmark id="82">
+                <name/>
+                <line>297</line>
+                <key/>
+            </bookmark>
+            <bookmark id="87">
+                <name/>
+                <line>342</line>
+                <key/>
+            </bookmark>
+            <bookmark id="88">
+                <name/>
+                <line>441</line>
+                <key/>
+            </bookmark>
+            <bookmark id="86">
+                <name/>
+                <line>791</line>
+                <key/>
+            </bookmark>
+            <bookmark id="89">
+                <name/>
+                <line>877</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/SFDM/view/layout/machinetest.phtml</url>
+            <bookmark id="24">
+                <name/>
+                <line>67</line>
+                <key/>
+            </bookmark>
+            <bookmark id="25">
+                <name/>
+                <line>67</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_assigndef.js</url>
+            <bookmark id="155">
+                <name/>
+                <line>31</line>
+                <key/>
+            </bookmark>
+            <bookmark id="154">
+                <name/>
+                <line>427</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_osb.js</url>
+            <bookmark id="198">
+                <name/>
+                <line>140</line>
+                <key/>
+            </bookmark>
+            <bookmark id="197">
+                <name/>
+                <line>910</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/Admin/Module.php</url>
+            <bookmark id="41">
+                <name/>
+                <line>20</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_operationdef.js</url>
+            <bookmark id="178">
+                <name/>
+                <line>64</line>
+                <key/>
+            </bookmark>
+            <bookmark id="176">
+                <name/>
+                <line>458</line>
+                <key/>
+            </bookmark>
+            <bookmark id="173">
+                <name/>
+                <line>559</line>
+                <key/>
+            </bookmark>
+            <bookmark id="156">
+                <name/>
+                <line>629</line>
+                <key/>
+            </bookmark>
+            <bookmark id="157">
+                <name/>
+                <line>787</line>
+                <key/>
+            </bookmark>
+            <bookmark id="177">
+                <name/>
+                <line>899</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_actionprivilegeservice.js</url>
+            <bookmark id="190">
+                <name/>
+                <line>339</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_aclprivileges.js</url>
+            <bookmark id="119">
+                <name/>
+                <line>609</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_consultants.js</url>
+            <bookmark id="180">
+                <name/>
+                <line>525</line>
+                <key/>
+            </bookmark>
+            <bookmark id="181">
+                <name/>
+                <line>632</line>
+                <key/>
+            </bookmark>
+            <bookmark id="182">
+                <name/>
+                <line>840</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_aclroles.js</url>
+            <bookmark id="169">
+                <name/>
+                <line>50</line>
+                <key/>
+            </bookmark>
+            <bookmark id="142">
+                <name/>
+                <line>285</line>
+                <key/>
+            </bookmark>
+            <bookmark id="168">
+                <name/>
+                <line>336</line>
+                <key/>
+            </bookmark>
+            <bookmark id="166">
+                <name/>
+                <line>450</line>
+                <key/>
+            </bookmark>
+            <bookmark id="141">
+                <name/>
+                <line>640</line>
+                <key/>
+            </bookmark>
+            <bookmark id="117">
+                <name/>
+                <line>653</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_aclprivilegeservices.js</url>
+            <bookmark id="146">
+                <name/>
+                <line>140</line>
+                <key/>
+            </bookmark>
+            <bookmark id="174">
+                <name/>
+                <line>220</line>
+                <key/>
+            </bookmark>
+            <bookmark id="148">
+                <name/>
+                <line>279</line>
+                <key/>
+            </bookmark>
+            <bookmark id="152">
+                <name/>
+                <line>298</line>
+                <key/>
+            </bookmark>
+            <bookmark id="153">
+                <name/>
+                <line>418</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/Sanalfabrika/view/sanalfabrika/sanalfabrika/index.phtml</url>
+            <bookmark id="1">
+                <name/>
+                <line>6</line>
+                <key/>
+            </bookmark>
+            <bookmark id="6">
+                <name/>
+                <line>292</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_uniquemachprop.js</url>
+            <bookmark id="91">
+                <name/>
+                <line>29</line>
+                <key/>
+            </bookmark>
+            <bookmark id="110">
+                <name/>
+                <line>40</line>
+                <key/>
+            </bookmark>
+            <bookmark id="111">
+                <name/>
+                <line>97</line>
+                <key/>
+            </bookmark>
+            <bookmark id="90">
+                <name/>
+                <line>176</line>
+                <key/>
+            </bookmark>
+            <bookmark id="115">
+                <name/>
+                <line>219</line>
+                <key/>
+            </bookmark>
+            <bookmark id="94">
+                <name/>
+                <line>586</line>
+                <key/>
+            </bookmark>
+            <bookmark id="95">
+                <name/>
+                <line>672</line>
+                <key/>
+            </bookmark>
+            <bookmark id="93">
+                <name/>
+                <line>780</line>
+                <key/>
+            </bookmark>
+            <bookmark id="109">
+                <name/>
+                <line>825</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/onyuz/One-Page/assets/css/theme-colors/aqua.css</url>
+            <bookmark id="3">
+                <name/>
+                <line>36</line>
+                <key/>
+            </bookmark>
+            <bookmark id="5">
+                <name/>
+                <line>74</line>
+                <key/>
+            </bookmark>
+            <bookmark id="4">
+                <name/>
+                <line>200</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_machpropdef.js</url>
+            <bookmark id="106">
+                <name/>
+                <line>25</line>
+                <key/>
+            </bookmark>
+            <bookmark id="107">
+                <name/>
+                <line>58</line>
+                <key/>
+            </bookmark>
+            <bookmark id="102">
+                <name/>
+                <line>249</line>
+                <key/>
+            </bookmark>
+            <bookmark id="103">
+                <name/>
+                <line>251</line>
+                <key/>
+            </bookmark>
+            <bookmark id="104">
+                <name/>
+                <line>340</line>
+                <key/>
+            </bookmark>
+            <bookmark id="108">
+                <name/>
+                <line>401</line>
+                <key/>
+            </bookmark>
+            <bookmark id="105">
+                <name/>
+                <line>565</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_menu.js</url>
+            <bookmark id="129">
+                <name/>
+                <line>206</line>
+                <key/>
+            </bookmark>
+            <bookmark id="124">
+                <name/>
+                <line>226</line>
+                <key/>
+            </bookmark>
+            <bookmark id="45">
+                <name/>
+                <line>226</line>
+                <key/>
+            </bookmark>
+            <bookmark id="49">
+                <name/>
+                <line>226</line>
+                <key/>
+            </bookmark>
+            <bookmark id="44">
+                <name/>
+                <line>267</line>
+                <key/>
+            </bookmark>
+            <bookmark id="130">
+                <name/>
+                <line>408</line>
+                <key/>
+            </bookmark>
+            <bookmark id="122">
+                <name/>
+                <line>428</line>
+                <key/>
+            </bookmark>
+            <bookmark id="123">
+                <name/>
+                <line>429</line>
+                <key/>
+            </bookmark>
+            <bookmark id="132">
+                <name/>
+                <line>453</line>
+                <key/>
+            </bookmark>
+            <bookmark id="48">
+                <name/>
+                <line>485</line>
+                <key/>
+            </bookmark>
+            <bookmark id="133">
+                <name/>
+                <line>576</line>
+                <key/>
+            </bookmark>
+            <bookmark id="46">
+                <name/>
+                <line>688</line>
+                <key/>
+            </bookmark>
+            <bookmark id="134">
+                <name/>
+                <line>859</line>
+                <key/>
+            </bookmark>
+            <bookmark id="121">
+                <name/>
+                <line>906</line>
+                <key/>
+            </bookmark>
+            <bookmark id="125">
+                <name/>
+                <line>1031</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/Sanalfabrika/src/Sanalfabrika/Controller/SanalfabrikaController.php</url>
+            <bookmark id="63">
+                <name/>
+                <line>52</line>
+                <key/>
+            </bookmark>
+            <bookmark id="62">
+                <name/>
+                <line>395</line>
+                <key/>
+            </bookmark>
+            <bookmark id="191">
+                <name/>
+                <line>810</line>
+                <key/>
+            </bookmark>
+            <bookmark id="188">
+                <name/>
+                <line>818</line>
+                <key/>
+            </bookmark>
+            <bookmark id="189">
+                <name/>
+                <line>819</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/sfdm_machinsert.js</url>
+            <bookmark id="196">
+                <name/>
+                <line>26</line>
+                <key/>
+            </bookmark>
+            <bookmark id="192">
+                <name/>
+                <line>185</line>
+                <key/>
+            </bookmark>
+            <bookmark id="195">
+                <name/>
+                <line>307</line>
+                <key/>
+            </bookmark>
+            <bookmark id="193">
+                <name/>
+                <line>380</line>
+                <key/>
+            </bookmark>
+            <bookmark id="194">
+                <name/>
+                <line>751</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/sfdm_mach.js</url>
+            <bookmark id="199">
+                <name/>
+                <line>389</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_menutypes.js</url>
+            <bookmark id="137">
+                <name/>
+                <line>46</line>
+                <key/>
+            </bookmark>
+            <bookmark id="136">
+                <name/>
+                <line>241</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>public/jsinline/admin_aclroleprivilege.js</url>
+            <bookmark id="171">
+                <name/>
+                <line>307</line>
+                <key/>
+            </bookmark>
+            <bookmark id="150">
+                <name/>
+                <line>339</line>
+                <key/>
+            </bookmark>
+            <bookmark id="172">
+                <name/>
+                <line>391</line>
+                <key/>
+            </bookmark>
+            <bookmark id="151">
+                <name/>
+                <line>431</line>
+                <key/>
+            </bookmark>
+            <bookmark id="120">
+                <name/>
+                <line>488</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>module/Admin/view/admin/admin/aclprivilegeservices.phtml</url>
+            <bookmark id="145">
+                <name/>
+                <line>258</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/module/Admin/view/admin/admin/consultants.phtml</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/module/Admin/view/admin/admin/clusteremp.phtml</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/module/Sanalfabrika/view/sanalfabrika/sanalfabrika/signupconfirmation.phtml</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/plugins/zeynel/exPlugs.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/vendor/services/src/authentication/FactoryServiceAuthKeyControler.php</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/plugins/zeynel/tag-cabin/tag-cabin.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/jsinline/admin_clusteremp.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/jsinline/admin_consultants.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/jsinline/signupconfirmation.js</file>
+        </group>
+    </open-files>
+</project-private>

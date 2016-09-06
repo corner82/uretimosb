@@ -1,0 +1,172 @@
+<?php echo $this->doctype(); ?>
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <?php echo $this->headTitle('OSTIM ' . $this->translate('Virtual Enterprise- Registration'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="<?php echo $this->basePath('onyuz/standard/assets/favicon.ico') ?>">
+
+        <!-- Web Fonts -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('fonts.googleapis.com/css0bd2.css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin') ?>">
+
+        <!-- CSS Global Compulsory -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/bootstrap/css/bootstrap.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/style.css') ?>">
+
+        <!-- Bootstrap 3.3.4 -->
+        <link href="<?php echo $this->basePath('css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" /> 
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/one.style.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('plugins/bootstrap-table/bootstrap-table.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css') ?>">
+
+        <!-- CSS Header and Footer -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/headers/header-default.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/footers/footer-v1.css') ?>">
+
+        <!-- CSS Implementing Plugins -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/animate.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/line-icons/line-icons.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/font-awesome/css/font-awesome.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css') ?>">
+        <!--[if lt IE 9]><link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css') ?>"><![endif]-->
+
+        <!-- CSS Page Style -->
+        <!--<link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/pages/profile.css') ?>">-->
+        <link rel="stylesheet" href="<?php echo $this->basePath('cssinline/registrationPage.css') ?>">
+
+        <!-- CSS Theme -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/theme-colors/default.css') ?>" id="style_color">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/theme-skins/dark.css') ?>">
+
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/custom.css') ?>">
+
+        <!-- blockUI CSS -->
+        <link href="<?php echo $this->basePath('plugins/jquery-BlockUI/jquery.blockUI.css') ?>" rel="stylesheet" type="text/css" />
+
+        <!-- validation engine css -->
+        <link href="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/validationEngine.jquery.css') ?>" rel="stylesheet" type="text/css" />
+
+        <!-- bootstrap-table css -->
+        <link href="<?php echo $this->basePath('plugins/bootstrap-table/bootstrap-table.min.css') ?>" rel="stylesheet" type="text/css" />
+
+        <!-- bootstrap-modal-nakupanda css -->
+        <link href="<?php echo $this->basePath('plugins/bootstrap-modal-nakupanda/bootstrap-dialog.min.css') ?>" rel="stylesheet" type="text/css" />
+
+        <?php echo $this->content; ?>
+
+
+        <?php /* echo $this->inlineScript() */ ?>
+
+        <!-- jQuery 2.1.4 -->
+        <script src="<?php echo $this->basePath('plugins/jQuery/jQuery-2.1.4.min.js') ?>"></script>
+
+
+        <!-- jQuery UI 1.11.2 -->
+        <!--<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>-->
+        <script src="<?php echo $this->basePath('plugins/jQueryUI/jquery-ui-1.11.2.min.js') ?>" type="text/javascript"></script>
+        <!--<script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/jquery/jquery.min.js') ?>"></script>-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/jquery/jquery-migrate.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/bootstrap/js/bootstrap.min.js') ?>"></script>
+
+
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+
+        <!-- JS Implementing Plugins -->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/back-to-top.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/smoothScroll.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js') ?>"></script>
+
+
+        <!-- JS Page Level-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/js/app.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/js/plugins/masking.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/js/plugins/datepicker.js') ?>"></script>
+        <!--<script src="<?php echo $this->basePath('onyuz/standard/assets/js/plugins/validation.js') ?>"></script>-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/js/plugins/style-switcher.js') ?>"></script>
+
+        <!-- BlockUI -->
+        <script src="<?php echo $this->basePath('plugins/jquery-blockUI/jquery.blockUI.js') ?>"></script>
+
+        <!-- Form validation js -->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/jquery.validationEngine-' . $this->layout()->test . '.js'); ?>" type="text/javascript"></script>
+        <!--<script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/jquery.validationEngine-en.js'); ?>" type="text/javascript"></script>-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/jquery.validationEngine.js') ?>" type="text/javascript"></script>
+
+        <!-- multulanguage js -->
+        <script src="<?php echo $this->basePath('plugins/jquery-lang-js-master/js.cookie.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo $this->basePath('plugins/jquery-lang-js-master/jquery-lang.js') ?>" type="text/javascript"></script>
+        <!--<script src="js/langpack/nonDynamic.js" charset="utf-8" type="text/javascript"></script>-->
+
+        <!-- bootstrap-table js implementation -->
+        <script src="<?php echo $this->basePath('plugins/bootstrap-table/bootstrap-table.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo $this->basePath('plugins/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo $this->basePath('plugins/bootstrap-table/extensions/export/bootstrap-table-export.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/bootstrap-table/extensions/editable/bootstrap-table-editable.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/bootstrap-table/locale/bootstrap-table-' . $this->layout()->test . '-' . strtoupper($this->layout()->test) . '.js') ?>"></script>
+        <!--<script src="<?php echo $this->basePath('plugins/bootstrap-table/locale/bootstrap-table-' . $this->layout()->test . '-' . strtoupper($this->layout()->test) . '.min.js') ?>"></script>-->       
+
+
+        <!--profile page js-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/counter/waypoints.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/counter/jquery.counterup.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/counter/waypoints.min.js') ?>"></script>
+
+        <!--bootstrap-modal-nakupanda js-->
+        <script src="<?php echo $this->basePath('plugins/bootstrap-modal-nakupanda/bootstrap-dialog.min.js') ?>"></script>
+        
+        <!--ddslick dropdown js-->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/bootstrap-select-ddslick/js/ddslick.min.js') ?>"></script>
+        
+        <!--loadImager js-->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/zeynel/exPlugs.js') ?>"></script>
+        
+        
+        <!-- inline js -->        
+        <script src="<?php echo $this->basePath('jsinline/signup.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/moment/moment.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/moment/moment-with-locales.min.js') ?>"></script>
+        
+        <script>
+            jQuery(document).ready(function () {
+                App.init();
+                App.initCounter();
+                App.initScrollBar();
+                Masking.initMasking();
+//                Datepicker.initDatepicker();
+//                Validation.initValidation();
+                StyleSwitcher.initStyleSwitcher();
+            });
+        </script>
+
+        <!--[if lt IE 9]>
+            <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/respond.js') ?>"></script>
+            <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/html5shiv.js') ?>"></script>
+            <script src="<?php echo $this->basePath('onyuz/standard/assets/js/plugins/placeholder-IE-fixes.js') ?>"></script>
+            <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js') ?>"></script>
+        <![endif]-->
+
+        <!--[if lt IE 10]>
+            <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js') ?>"></script>
+        <![endif]-->
+
+    </body>
+</html>

@@ -1,0 +1,719 @@
+<input id="requestUriRegulated" type="hidden"  value="<?php echo $this->requestUriRegulated; ?>"></input>
+<input id="langCode" type="hidden"  value="<?php echo $this->langCode; ?>"></input>
+<input id="pk" type="hidden"  value="<?php echo $this->publicKey; ?>"></input>
+
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="index.phtml" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>OSTİM</b></span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>OSTİM</b> Sanal Fabrika </span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">0</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">0 yeni mesajınız var</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <!--<li><!-- start message -->
+                                    <!--<a href="#">
+                                      <div class="pull-left">
+                                        
+                                          <img src="dist/img/manager-xxl.png" class="img-circle" alt="User Image"/>
+                                      </div>
+                                      <h4>
+                                        Support Team
+                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                      </h4>
+                                      <p>Why not buy a new awesome theme?</p>
+                                    </a>
+                                  </li><!-- end message -->
+                                    <!--<li>
+                                      <a href="#">
+                                        <div class="pull-left">
+                                          <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                                        </div>
+                                        <h4>
+                                          AdminLTE Design Team
+                                          <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                        </h4>
+                                        <p>Why not buy a new awesome theme?</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <div class="pull-left">
+                                          <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                                        </div>
+                                        <h4>
+                                          Developers
+                                          <small><i class="fa fa-clock-o"></i> Today</small>
+                                        </h4>
+                                        <p>Why not buy a new awesome theme?</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <div class="pull-left">
+                                          <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                                        </div>
+                                        <h4>
+                                          Sales Department
+                                          <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                        </h4>
+                                        <p>Why not buy a new awesome theme?</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <div class="pull-left">
+                                          <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                                        </div>
+                                        <h4>
+                                          Reviewers
+                                          <small><i class="fa fa-clock-o"></i> 2 days</small>
+                                        </h4>
+                                        <p>Why not buy a new awesome theme?</p>
+                                      </a>
+                                    </li>-->
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">Tüm Mesajları Gör</a></li>
+                        </ul>
+                    </li>
+                    <!-- Notifications: style can be found in dropdown.less -->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">0</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">0 hatırlatmanız var</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <!--<li>
+                                      <a href="#">
+                                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i class="fa fa-users text-red"></i> 5 new members joined
+                                      </a>
+                                    </li>
+              
+                                    <li>
+                                      <a href="#">
+                                        <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i class="fa fa-user text-red"></i> You changed your username
+                                      </a>
+                                    </li>-->
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">Tüm hatırlatmaları gör</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tasks: style can be found in dropdown.less -->
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label label-danger">0</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">0 görevlendirmeniz var</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <!--<li><!-- Task item -->
+                                    <!--<a href="#">
+                                      <h3>
+                                        Design some buttons
+                                        <small class="pull-right">20%</small>
+                                      </h3>
+                                      <div class="progress xs">
+                                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                          <span class="sr-only">20% Complete</span>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li><!-- end task item -->
+                                    <!-- Task item -->
+                                    <!--<li>
+                                      <a href="#">
+                                        <h3>
+                                          Create a nice theme
+                                          <small class="pull-right">40%</small>
+                                        </h3>
+                                        <div class="progress xs">
+                                          <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="sr-only">40% Complete</span>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </li><!-- end task item -->
+                                    <!-- Task item -->
+                                    <!--<li>
+                                      <a href="#">
+                                        <h3>
+                                          Some task I need to do
+                                          <small class="pull-right">60%</small>
+                                        </h3>
+                                        <div class="progress xs">
+                                          <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="sr-only">60% Complete</span>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </li><!-- end task item -->
+                                    <!-- Task item -->
+                                    <!--<li>
+                                      <a href="#">
+                                        <h3>
+                                          Make beautiful transitions
+                                          <small class="pull-right">80%</small>
+                                        </h3>
+                                        <div class="progress xs">
+                                          <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="sr-only">80% Complete</span>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </li><!-- end task item -->
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="#">Tüm görevleri gör</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                          <!--<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>-->
+                            <img src="<?php echo $this->basePath('dist/img/manager-xxl.png') ?>" class="user-image" alt="User Image"/> 
+                            <span class="hidden-xs"><?php /* echo $_SESSION['userName'] */ ?></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                              <!--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />-->
+                                <img src="<?php echo $this->basePath('dist/img/manager-xxl.png') ?>" class="user-image" alt="User Image"/> 
+                                <p>
+                                    <?php /* echo $_SESSION['userName'] */ ?> - <?php /* echo $_SESSION['department'] */ ?>
+                                    <small><!--Member since Nov. 2012--></small>
+                                </p>
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="user-body">
+                                <div class="col-xs-4 text-center">
+                                    <a href="#">Çalıştığım Firmalar</a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="#">Son Ürünler</a>
+                                </div>
+                                <div class="col-xs-4 text-center">
+                                    <a href="#">Son Mak./Teç.</a>
+                                </div>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">   
+                                    <a href="#" class="btn btn-default btn-flat">Profil</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="<?php echo $this->url('login', array('action' => 'logout')); ?> " class="btn btn-default btn-flat">Çıkış Yap</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Control Sidebar Toggle Button -->
+                    <li>
+                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                  <!--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />-->
+                    <img src="<?php echo $this->basePath('dist/img/manager-xxl.png') ?>" class="user-image" alt="User Image"/> 
+                </div>
+                <div class="pull-left info">
+                    <p><?php /* echo $_SESSION['userName']; */ ?></p>
+
+                    <a href="#"><i class="fa fa-circle text-success"></i> Aktif</a>
+                </div>
+            </div>
+            <!-- search form -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Ara..."/>
+                    <span class="input-group-btn">
+                        <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+
+            <ul class="sidebar-menu" id="leftside-menu">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="active treeview"></li>                        
+            </ul>
+
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Sanal Fabrika Kullanıcı İşlemleri
+                <small></small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Ana Sayfa </a></li>
+                <!--<li class="active">Firma İşlemleri</li>-->
+            </ol>
+        </section>
+
+        <div class="pad margin no-print">
+            <div class="callout callout-info" style="margin-bottom: 0!important;">												
+                <h4><i class="fa fa-info"></i> Note:</h4>
+                This Section is created to enter urgent comments regarding this page.
+            </div>
+        </div><!--/. comments section div-->
+
+        <!-- Main Content. Contains page content -->
+        <section class="invoice">
+            <!--main panel row-->
+            <div class="row">
+                <!--main content width, single column-->
+                <div class="col-md-12">
+                    <!--main panel box, with background color of #f4f4f4-->
+                    <div class="box" style="background-color: #f4f4f4">
+                        <!--Page main panel-->
+                        <div class="box-header with-border" >
+                            <h3 class="box-title"> Sanal Fabrika Kullanıcı İşlemleri </h3>
+                            <div class="box-tools pull-right" >
+                                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div><!--/. page main header-->                                
+                        <!--main content body start-->
+                        <div class="box-body">
+                            <!--first collapsible panel row -->
+                            <div class="row">
+                                <!--first collapsible panel width, single column-->
+                                <div class="col-md-12">
+                                    <!--arrange first panel color to blue by assigning primary class-->
+                                    <div class="box box-primary">
+                                        <!--First panel Header-->
+                                        <div class="box-header with-border">                                                    
+                                            <h3 class="box-title"> Kullanıcı Listesi </h3>                                                    
+                                            <!--Panel 1 collapse button-->
+                                            <div class="box-tools pull-right">
+                                                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                                            </div><!--/. button div-->
+                                        </div><!--/. panel 1 header div-->
+                                        <!--Panel 1 contents-->
+                                        <div class="box-body">
+                                            <!--Easyui grid table div start-->
+                                            <div id="tt_grid_dynamic_Main">
+                                                <table  id="tt_grid_dynamic" title="Firma genel bilgileri " ></table>
+                                            </div><!--/. Easyui grid table-->
+                                        </div><!-- /.box-body -->
+                                    </div><!--/. primary box div-->
+                                </div><!--/. first panel single column div -->
+                            </div><!-- / first panel row-->                                    
+                            <!--Third panel row-->
+                            <div class="row">
+                                <!--third panel single column-->
+                                <div class="col-md-12">
+                                    <!--arrange third panel color to green by assigning success class-->
+                                    <div class="box box-success collapsed-box" id="addNewPanel">
+                                        <!--third panel Header-->
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title"> Yeni Kullanıcı Ekle </h3>
+                                            <!--third panel collapse button-->
+                                            <div class="box-tools pull-right">
+                                                <button class="btn btn-box-tool" onclick='$.AdminLTE.boxWidgetCRUDPanelCloser.collapse($("#updatePanel"))'  data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-plus"></i></button>
+                                            </div><!--/. panel collapse button div-->
+                                        </div><!--/. third panel header-->
+                                        <div class="box-body">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <form method="get" class="form-horizontal">
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Ad </label>
+                                                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                                        </div>
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Soyad </label>
+                                                            <div class="col-sm-10"><input type="text" class="form-control">
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Kullanıcı Adı </label>
+                                                            <div class="col-sm-10"><input required type="text" class="form-control">
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Email </label>
+                                                            <div class="col-sm-10"><input type="email" class="form-control" required placeholder="Lütfen Geçerli Bir Email Adresi Giriniz...">
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Şifre </label>
+                                                            <div class="col-sm-10"><input required type="password" class="form-control" name="password"></div>
+                                                        </div>
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Şifre (Tekrar)</label>
+                                                            <div class="col-sm-10"><input required type="password" class="form-control" name="password"></div>
+                                                        </div>
+
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Rol-Map Ana Grupları </label>
+
+                                                            <div class="col-sm-10">
+                                                                <select id='rolmapmain' class="form-control select2"  style="width: 100%;">                                                                   
+                                                                    <option value=-1>Lütfen Ana Rol-Map Grubunu seçiniz...</option>                                                                                            
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Rol-Map Alt Grupları </label>
+
+                                                            <div class="col-sm-10">
+                                                                <select id='rolmapdetail' class="form-control select2"  style="width: 100%;">                                                                   
+                                                                    <option value=-1>Lütfen Rol-Map seçiniz...</option>     
+                                                                </select>
+                                                            </div>
+                                                        </div>                                                        
+
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-sm-10 col-sm-offset-2">
+                                                                <button class="btn btn-white" type="submit"> İptal </button>
+                                                                <button class="btn btn-primary" type="submit"> Kaydet </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div><!--/. box-->
+                                    </div><!--/. success box div-->
+                                </div><!--/. third panel single column div -->
+                            </div><!-- / third panel row-->
+                            <!--Second collapsible panel row -->
+                            <div class="row">
+                                <!--second collapsible panel width, single column-->
+                                <div class="col-md-12">
+                                    <!--arrange second panel color to red by assigning danger class-->
+                                    <div class="box box-danger collapsed-box" id="updatePanel">
+                                        <!--second panel Header-->                                                
+                                        <div class="box-header with-border">
+                                            <h3 class="box-title"> Güncelle </h3>
+                                            <!--second panel collapse button-->
+                                            <!--<div class="box-tools pull-right">-->
+                                            <!--<button class="btn btn-box-tool" onclick='$.AdminLTE.boxWidgetCRUDPanelCloser.collapse($("#addNewPanel"))' data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-plus"></i></button>-->
+                                            <!--</div><!--/. second panel collapse button div-->
+                                        </div><!--/. header div-->
+                                        <!--second panel box-->
+                                        <div class="box-body">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <form method="get" class="form-horizontal">
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Ad </label>
+                                                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                                        </div>
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Soyad </label>
+                                                            <div class="col-sm-10"><input type="text" class="form-control">
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Kullanıcı Adı </label>
+                                                            <div class="col-sm-10"><input required type="text" class="form-control">
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Email </label>
+                                                            <div class="col-sm-10"><input type="email" class="form-control" required placeholder="Lütfen Geçerli Bir Email Adresi Giriniz...">
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Şifre </label>
+                                                            <div class="col-sm-10"><input required type="password" class="form-control" name="password"></div>
+                                                        </div>
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Şifre (Tekrar)</label>
+                                                            <div class="col-sm-10"><input required type="password" class="form-control" name="password"></div>
+                                                        </div>
+
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Rol-Map Ana Grupları </label>
+
+                                                            <div class="col-sm-10">
+                                                                <select id='rolmapmain-update' class="form-control select2"  style="width: 100%;">                                                                   
+                                                                    <option value=-1>Lütfen Ana Rol-Map Grubunu seçiniz...</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label"> Rol-Map Alt Grupları </label>
+
+                                                            <div class="col-sm-10">
+                                                                <select id='rolmapdetail-update' class="form-control select2"  style="width: 100%;">                                                                   
+                                                                    <option value=-1>Lütfen Rol-Map seçiniz...</option> 
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="hr-line-dashed"></div>
+
+                                                        <div class="form-group">
+                                                            <div class="col-sm-10 col-sm-offset-2">
+                                                                <button class="btn btn-white" type="submit"> İptal </button>
+                                                                <button class="btn btn-primary" type="submit"> Kaydet </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div><!--/. box-->
+                                    </div><!--/. danger box div-->
+                                </div><!--/. second panel single column div -->
+                            </div><!-- / second panel row-->
+                        </div><!--/. main body-->
+                    </div><!--/.box --> 
+                </div><!--/. main panel single colum-->
+            </div><!--/. main panel row-->
+        </section><!--/.invoice -->
+    </div><!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 1.0
+        </div>
+        <strong>Copyright &copy; 2016 <a href="" onclick="event.preventDefault();">OSTİM Teknoloji</a>.</strong> Tüm Hakları Saklıdır.
+    </footer>
+
+    <!-- Control Sidebar -->      
+    <aside class="control-sidebar control-sidebar-dark">                
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Son Aktiviteler</h3>
+                <ul class='control-sidebar-menu'>
+                    <li>
+                        <a href='javascript::;'>
+                            <i class="menu-icon-zeyn fa fa-file-code-o bg-green"></i>
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Sisteme giriş yaptınız</h4>
+                                <p><!--Will be 23 on April 24th--></p>
+                            </div>
+                        </a>
+                    </li>
+                    <!--<li>
+                      <a href='javascript::;'>
+                        <i class="menu-icon-zeyn fa fa-user bg-yellow"></i>
+                        <div class="menu-info">
+                          <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+                          <p>New phone +1(800)555-1234</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='javascript::;'>
+                        <i class="menu-icon-zeyn fa fa-envelope-o bg-light-blue"></i>
+                        <div class="menu-info">
+                          <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+                          <p>nora@example.com</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='javascript::;'>
+                        <i class="menu-icon-zeyn fa fa-envelope-o bg-light-blue"></i>
+                        <div class="menu-info">
+                          <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+                          <p>Execution time 5 seconds</p>
+                        </div>
+                      </a>
+                    </li>-->
+                </ul><!-- /.control-sidebar-menu -->
+
+                <h3 class="control-sidebar-heading">Takip Edilen İşler</h3> 
+                <ul class='control-sidebar-menu'>
+                    <li>
+                        <a href='javascript::;'>               
+                            <h4 class="control-sidebar-subheading">
+                                Ziyaret Edilen Firmalar
+                                <span class="label label-danger pull-right">3%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 3%"></div>
+                            </div>                                    
+                        </a>
+                    </li> 
+                    <li>
+                        <a href='javascript::;'>               
+                            <h4 class="control-sidebar-subheading">
+                                Tamamlanan Temiz Üretim Raporları
+                                <span class="label label-success pull-right">0%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-success" style="width: 0%"></div>
+                            </div>                                    
+                        </a>
+                    </li> 
+                    <li>
+                        <a href='javascript::;'>               
+                            <h4 class="control-sidebar-subheading">
+                                Tamamlanan Enerji Verimliliği Raporları
+                                <span class="label label-waring pull-right">0%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-warning" style="width: 0%"></div>
+                            </div>                                    
+                        </a>
+                    </li> 
+                    <!--<li>
+                      <a href='javascript::;'>               
+                        <h4 class="control-sidebar-subheading">
+                          Back End Framework
+                          <span class="label label-primary pull-right">68%</span>
+                        </h4>
+                        <div class="progress progress-xxs">
+                          <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                        </div>                                    
+                      </a>
+                    </li>-->             
+                </ul><!-- /.control-sidebar-menu -->         
+
+            </div><!-- /.tab-pane -->
+            <!-- Stats tab content -->
+            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div><!-- /.tab-pane -->
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">            
+                <form method="post">
+                    <h3 class="control-sidebar-heading">Temel Ayarlar</h3>
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Rapor Paneli Kullanımı
+                            <input type="checkbox" class="pull-right" checked />
+                        </label>
+                        <p>
+                            Rapor Paneli kullanımı için yetkilendirme kıstası olacaktır
+                        </p>
+                    </div><!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Firma Güncelleme Yetkisi
+                            <input type="checkbox" class="pull-right" checked />
+                        </label>
+                        <p>
+                            Firma bilgilerinin güncellenmesi için yetki kıstasları olacaktır
+                        </p>
+                    </div><!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Enerji Verimliliği Kriterlerine Ulaşma
+                            <input type="checkbox" class="pull-right" checked />
+                        </label>
+                        <p>
+                            Enerji Verimliliği Kriterlerinin güncellenmesi için yetki kıstasları olacaktır
+                        </p>
+                    </div><!-- /.form-group -->
+
+                    <h3 class="control-sidebar-heading">Anlık Mesajlajma Özellikleri</h3>
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Sistemde göster
+                            <input type="checkbox" class="pull-right" checked />
+                        </label>                
+                    </div><!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Bilgilendirmeleri kapat
+                            <input type="checkbox" class="pull-right" />
+                        </label>                
+                    </div><!-- /.form-group -->
+
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Anlık mesajlajma geçmişini sil
+                            <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                        </label>                
+                    </div><!-- /.form-group -->
+                </form>
+            </div><!-- /.tab-pane -->
+        </div>
+    </aside><!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class='control-sidebar-bg'></div>
+</div><!-- ./wrapper -->
+

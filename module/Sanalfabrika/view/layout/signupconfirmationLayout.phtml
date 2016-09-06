@@ -1,0 +1,127 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle(' Virtual Enterprise ' . $this->translate('Login'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>    
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="<?php echo $this->basePath('onyuz/standard/assets/favicon.ico') ?>">
+
+        <!-- Web Fonts -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('fonts.googleapis.com/css0bd2.css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin') ?>">
+
+        <!-- CSS Global Compulsory -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/bootstrap/css/bootstrap.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/style.css') ?>">
+
+        <!-- CSS Implementing Plugins -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/animate.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/line-icons/line-icons.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/plugins/font-awesome/css/font-awesome.min.css') ?>">
+
+        <!-- CSS Page Style -->    
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/pages/page_log_reg_v2.css') ?>">    
+
+        <!-- CSS Theme -->    
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/theme-colors/default.css') ?>" id="style_color">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/theme-skins/dark.css') ?>">
+
+        <!-- validation engine css -->
+        <link href="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/validationEngine.jquery.css') ?>" rel="stylesheet" type="text/css" />
+
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/standard/assets/css/custom.css') ?>">
+        
+        <!-- bootstrap-modal-nakupanda css -->
+        <link href="<?php echo $this->basePath('plugins/bootstrap-modal-nakupanda/bootstrap-dialog.min.css') ?>" rel="stylesheet" type="text/css" />
+
+
+    </head>
+    <body>
+        <?php echo $this->content; ?>
+
+
+        <?php /* echo $this->inlineScript() */ ?>
+
+        <!-- jQuery 2.1.4 -->
+        <script src="<?php echo $this->basePath('plugins/jQuery/jQuery-2.1.4.min.js') ?>"></script>
+
+        <!-- jQuery UI 1.11.2 -->
+        <!--<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>-->
+        <script src="<?php echo $this->basePath('plugins/jQueryUI/jquery-ui-1.11.2.min.js') ?>" type="text/javascript"></script>
+        <!--<script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/jquery/jquery.min.js') ?>"></script>-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/jquery/jquery-migrate.min.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/bootstrap/js/bootstrap.min.js') ?>"></script>
+        
+        <!-- multulanguage js -->
+        <script src="<?php echo $this->basePath('plugins/jquery-lang-js-master/js.cookie.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo $this->basePath('plugins/jquery-lang-js-master/jquery-lang.js') ?>" type="text/javascript"></script>
+        
+        <!-- JS Implementing Plugins -->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/back-to-top.js') ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('onyuz/standard/assets/plugins/backstretch/jquery.backstretch.min.js') ?>"></script>
+
+        <!-- Zeynel plugins -->
+        <script src='<?php echo $this->basePath('plugins/zeynel/exPlugs.js') ?>'></script>
+        
+        <!-- bootstrap-modal-nakupanda ekleniyor-->
+        <script src="<?php echo $this->basePath('plugins/bootstrap-modal-nakupanda/bootstrap-dialog.min.js') ?>" type="text/javascript"></script>
+        
+        <!-- JS Customization -->
+        <script type="text/javascript" src="<?php echo $this->basePath('onyuz/standard/assets/js/custom.js') ?>"></script>
+
+        <!-- JS Page Level-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/js/app.js') ?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/js/plugins/style-switcher.js') ?>"></script>
+
+        <!-- Form validation js -->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/jquery.validationEngine-' . $this->layout()->test . '.js'); ?>" type="text/javascript"></script>
+        <!--<script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/jquery.validationEngine-en.js'); ?>" type="text/javascript"></script>-->
+        <script src="<?php echo $this->basePath('onyuz/standard/assets/plugins/validationEngine/jquery.validationEngine.js') ?>" type="text/javascript"></script>
+
+
+        <!-- inline js -->        
+        <script src="<?php echo $this->basePath('jsinline/signupconfirmation.js') ?>"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                App.init();
+                StyleSwitcher.initStyleSwitcher();
+            });
+        </script>
+
+
+        <script type="text/javascript">
+            $.backstretch([
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_0090_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_0113_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_0168_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_0279_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_0470_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_0552_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_5883_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_5888_smaller.jpg') ?>",
+                "<?php echo $this->basePath('onyuz/assets/img/ostim/DSC_5954_smaller.jpg') ?>"
+            ], {
+                fade: 1000,
+                duration: 7000
+            });
+        </script>
+
+        <!--[if lt IE 9]>
+            <script src="assets/plugins/respond.js"></script>
+            <script src="assets/plugins/html5shiv.js"></script>
+            <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+        <![endif]-->
+
+
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+.tagarea { display: none; }
+
+.tag-box {
+  list-style: none;
+  padding: 3px;
+  margin: 0;
+  display: inline-block;
+  font-family: arial;
+  width: 100%;
+  /*border: 1px solid #F44336;*/
+  border : 1px solid #ccc;
+  /*border-radius: 4px;*/
+  min-height: 28px;
+}
+
+.tag-box * {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.tag-box li {
+  padding: 4px 6px;
+  float: left;
+  display: inline-block;
+}
+
+.tag-box li.tags {
+  background: #2196F3;
+  color: #fff;
+  border-radius: 4px;
+  margin: 4px 3px;
+  position: relative;
+}
+
+.tag-box li.tagsNoClose {
+  background: #2196F3;
+  color: #fff;
+  border-radius: 4px;
+  margin: 4px 3px;
+  position: relative;
+}
+
+.tag-box li.tags .close {
+  display: inline-block;
+  position: absolute;
+  /*color: #BBDEFB;*/
+  overflow: hidden;
+  width: 0;
+  right: 0;
+  height: 18px;
+  cursor: pointer;
+  top: 4px;
+}
+
+.tag-box li.tags .copy {
+  display: inline-block;
+  position: absolute;
+  color: #BBDEFB;
+  overflow: hidden;
+  width: 0;
+  right: 20;
+  height: 18px;
+  cursor: pointer;
+  top: 4px;
+}
+
+.tag-box li.tags .copy-icon {
+  margin-left : 8px;
+  right: 0;
+  cursor: pointer;
+}
+
+.tag-box li.tags .delete-all-icon {
+  margin-left : 4px;
+  margin-right: -25px;
+  right: 0;
+  cursor: pointer;
+}
+
+.tag-box li.tags .delete-icon {
+  margin-left : 24px;
+  margin-right: -7px;
+  right: 0;
+  cursor: pointer;
+}
+
+.tag-box li.tags .close:after { content: 'x'; }
+.tag-box li.tags .copy:after { content: 'x'; }
+
+.tag-box li.tags.edit {
+  background: none;
+  border: 1px solid #2196F3;
+  color: #2196F3;
+}
+
+.tag-box li.tags.edit .input-tag { height: auto; }
+
+.tag-box li.tags.edit:hover { padding: 4px 6px; }
+
+.tag-box li.tags.danger {
+  background: #F00;
+  opacity: 0.8;
+}
+
+.tag-box li.tags:hover { padding-right: 28px; }
+
+/*.tag-box li.tags.hover_effect { padding-right: 28px; }
+
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
+}
+*/
+.tag-box li.tags:hover .close { width: 14px; }
+.tag-box li.tags:hover .copy { width: 14px; }
+
+.tag-box li .input-tag {
+  color: #fff;
+  height: 24px;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.tag-box li .input-tag:hover,
+.tag-box li .input-tag:focus {
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,318 @@
+
+<input id="requestUriRegulated" type="hidden"  value="<?php echo $this->requestUriRegulated; ?>"></input>
+<input id="langCode" type="hidden"  value="<?php echo $this->langCode; ?>"></input>
+
+<!--=== Style Switcher ===-->    
+<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+<div class="style-switcher animated fadeInRight">
+    <div class="style-swticher-header">
+        <div class="style-switcher-heading">Style Switcher</div>            
+        <div class="theme-close"><i class="icon-close"></i></div>
+    </div>
+
+    <div class="style-swticher-body">
+        <!-- Theme Colors -->
+        <div class="style-switcher-heading">Theme Colors</div>
+        <ul class="list-unstyled">
+            <li class="theme-default theme-active" data-style="default" data-header="light"></li>
+            <li class="theme-blue" data-style="blue" data-header="light"></li>
+            <li class="theme-orange" data-style="orange" data-header="light"></li>
+            <li class="theme-red" data-style="red" data-header="light"></li>
+            <li class="theme-light" data-style="light" data-header="light"></li>
+            <li class="theme-purple last" data-style="purple" data-header="light"></li>
+            <li class="theme-aqua" data-style="aqua" data-header="light"></li>
+            <li class="theme-brown" data-style="brown" data-header="light"></li>
+            <li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
+            <li class="theme-light-green" data-style="light-green" data-header="light"></li>
+            <li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+            <li class="theme-teal last" data-style="teal" data-header="light"></li>
+        </ul>
+
+        <!-- Theme Skins -->
+        <div class="style-switcher-heading">Theme Skins</div>
+        <div class="row no-col-space margin-bottom-20 skins-section">
+            <div class="col-xs-6">
+                <button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light</button>
+            </div>
+            <div class="col-xs-6">
+                <button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block skins-btn">Dark</button>
+            </div>
+        </div>            
+
+        <hr>
+
+        <!-- Layout Styles -->
+        <div class="style-switcher-heading">Layout Styles</div>
+        <div class="row no-col-space margin-bottom-20">
+            <div class="col-xs-6">
+                <a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>                
+            </div>
+            <div class="col-xs-6">
+                <a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block boxed-layout-btn">Boxed</a>                
+            </div>
+        </div>            
+
+        <hr>
+
+        <!-- Theme Type -->
+        <div class="style-switcher-heading">Theme Types and Versions</div>
+        <div class="row no-col-space margin-bottom-10">
+            <div class="col-xs-6">
+                <a href="Shop-UI/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI <small class="dp-block">Template</small></a>
+            </div>
+            <div class="col-xs-6">
+                <a href="One-Page/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">One Page <small class="dp-block">Template</small></a>
+            </div>
+        </div>           
+
+        <div class="row no-col-space">
+            <div class="col-xs-6">
+                <a href="Blog/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Blog <small class="dp-block">Template</small></a>
+            </div>
+            <div class="col-xs-6">
+                <a href="RTL/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">RTL <small class="dp-block">Version</small></a>
+            </div>
+        </div>           
+    </div>
+</div><!--/style-switcher-->
+<!--=== End Style Switcher ===-->    
+
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="../index.html">
+                <img src="<?php echo $this->basePath('onyuz/standard/assets/img/logo1-default.png') ?>" alt="Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul style="background: #ddd;
+                    padding: 10px;" class="loginbar pull-right">
+                    <li class="hoverSelector">
+                        <i class="fa fa-globe"></i>
+                        <a><?php echo $this->translate('Languages') ?> </a>
+                        <ul id='topLanguageBar' class="languages hoverSelectorBlock">                                    
+                        </ul>
+                    </li>
+                    <li class="topbar-devider"></li>   
+                    <li><a href="page_faq.html"><?php echo $this->translate('Help') ?></a></li>  
+                    <li class="topbar-devider"></li>   
+                    <li><a href="../login"><?php echo $this->translate('Login') ?></a></li>   
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse menu-xs navbar-responsive-collapse" >
+            <div class="container">
+                <ul class="nav navbar-nav " style="font-size: 10px;">
+                    <li class="page-scroll home">
+                        <a href="#body"><?php echo $this->translate('Home') ?></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about"><?php echo $this->translate('About Us') ?></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php echo $this->translate('Services') ?>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#body">
+                                    <?php echo $this->translate('OSTIM Services') ?></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#news"><?php echo $this->translate('News') ?></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact"><?php echo $this->translate('Contacts') ?></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php echo $this->translate('Submenus') ?>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll">
+                                <a href="#body"><?php echo $this->translate('Home') ?></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="../index-2.html"><?php echo $this->translate('Main') ?></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+    <!--=== End Header ===-->
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">401 Unauthorized</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index-2.html">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">401 Unauthorized</li>
+            </ul>
+        </div> 
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">		
+        <!--Error Block-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="error-v1">
+                    <span class="error-v1-title">401</span>
+                    <span>Unauthorized Page Access!</span>
+                    <p>You are not authorized to use that page!</p>
+                    <a class="btn-u btn-bordered" href="../index">Back Home</a>
+                </div>
+            </div>
+        </div>
+        <!--End Error Block-->
+    </div>	
+    <!--=== End Content Part ===-->
+
+    <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="../index"><img id="logo-footer" class="footer-logo" 
+                                                    src="<?php echo $this->basePath('onyuz/standard/assets/img/logo2-default.png') ?>" 
+                                                    alt=""></a>
+                        <p><?php
+                            echo $this->translate('A virtual enterprise (VE) is a temporary alliance of '
+                                    . 'businesses that come together to share skills or core competencies and resources '
+                                    . 'in order to better respond to business opportunities, and whose cooperation is '
+                                    . 'supported by computer networks.')
+                            ?></p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2><?php echo $this->translate('Latest Posts') ?></h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="#"><?php echo $this->translate('Latest News about OSTIM VE') ?></a>
+                                    <small><?php echo $this->translate('February') ?> 8, 2016</small>
+                                </li>
+                                <li>
+                                    <a href="#"><?php echo $this->translate('OSTIM Clusters News') ?></a>
+                                    <small><?php echo $this->translate('January') ?> 23, 2016</small>
+                                </li>
+                                <li>
+                                    <a href="#"><?php echo $this->translate('New Project Calls') ?></a>
+                                    <small><?php echo $this->translate('December') ?> 15, 2016</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/col-md-3-->  
+                    <!-- End Latest --> 
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2><?php echo $this->translate('Useful Links') ?></h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="http://www.ostim.org.tr/"><?php echo $this->translate('Ostim Organized Industrial Zone') ?></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="http://www.sanayi.gov.tr/"><?php echo $this->translate('Turkish Ministry of SIT') ?></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="https://www.tubitak.gov.tr/"><?php echo $this->translate('TUBITAK') ?></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="http://www.kosgeb.gov.tr/"><?php echo $this->translate('KOSGEB') ?></a><i class="fa fa-angle-right"></i></li>
+                            <!--<li><a href="#"><?php echo $this->translate('') ?></a><i class="fa fa-angle-right"></i></li>-->
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->                    
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2><?php echo $this->translate('Contact Us') ?></h2></div>                         
+                        <address class="md-margin-bottom-40">
+                            100. Yıl Bulvarı No: 101/A <br />
+                            OSTIM, Ankara <br />
+                            Turkey <br />
+                            <?php echo $this->translate('Phone') ?> :  +90 312 385 50 90 <br />
+                            <?php echo $this->translate('Fax') ?>:    +90 312 354 58 98 <br />
+                            <?php echo $this->translate('Email') ?>: <a href="mailto:info@ostim.com.tr" class="">info@ostim.com.tr</a>
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div> 
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">                     
+                        <p>
+                            2016 &copy; <?php echo $this->translate('All Rights Reserved.') ?>
+                            <a href="#"><?php echo $this->translate('Privacy Policy') ?></a> | <a href="#"><?php echo $this->translate('Terms of Service') ?></a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/OstimOSB/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/+OST%C4%B0MOSB1967" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ostim-osb-2b94b847" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ostimosb/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/ostimosb" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div> 
+        </div><!--/copyright-->
+    </div>        
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->

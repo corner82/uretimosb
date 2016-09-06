@@ -1,0 +1,529 @@
+/*
+text rotation css
+*/
+
+.rotate {
+
+
+    transform: rotate(-90deg);
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+/*
+colors
+*/
+
+.profile .profile-post.color-VE {
+    border-left: 2px solid #72c02c;
+}
+.profile .profile-post.color-medical {
+    border-left: 2px solid #3498db;
+}
+.profile .profile-post.color-transportation {
+    border-left: 2px solid #e74c3c;
+}
+.profile .profile-post.color-defense {
+    border-left: 2px solid #9b6bcc;
+}
+.profile .profile-post.color-renewable {
+    border-left: 2px solid #555;
+}
+.profile .profile-post.color-construction {
+    border-left: 2px solid #f1c40f;
+}
+.profile .profile-post.color-seven {
+    border-left: 2px solid #27d7e7;
+}
+
+
+/********************************************************
+Event CSS's
+********************************************************/
+
+.profile .profile-post span.profile-post-numb-bahram {
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 12px;
+}
+
+.profile .profile-post:hover span.profile-post-numb-bahram {
+    color: #1f1f1e;
+}
+
+/*
+VE events
+*/
+
+.profile .profile-post span.profile-post-numb-bahram-VE {
+    float: left;
+    color: #999;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 12px;
+}
+
+.profile .profile-post:hover span.profile-post-numb-bahram-VE {
+    color: #72c02c;
+}
+
+/*
+Ossa cluster events
+*/
+
+.profile .profile-post span.profile-post-numb-bahram-defense {
+    float: left;
+    color: #999;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 12px;
+}
+
+.profile .profile-post:hover span.profile-post-numb-bahram-defense {
+    color: #9b6bcc;
+}
+
+/*
+Medical cluster events
+*/
+
+.profile .profile-post span.profile-post-numb-bahram-medical {
+    float: left;
+    color: #999;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 12px;
+}
+
+.profile .profile-post:hover span.profile-post-numb-bahram-medical {
+    color: #3498db;
+}
+
+/*
+Rail cluster events
+*/
+
+.profile .profile-post span.profile-post-numb-bahram-transportation {
+    float: left;
+    color: #999;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 12px;
+}
+
+.profile .profile-post:hover span.profile-post-numb-bahram-transportation {
+    color: #e74c3c;
+}
+
+/********************************************************
+Calendar CSS's
+********************************************************/
+
+/*
+Virtual Enterprise events
+*/
+
+.profile .date-formats-VE {
+    color: #fff;
+    float: left;
+    text-align: center;
+    background: #72c02c;
+    margin: 7px 13px 0 0;
+    padding: 7px 10px 4px;
+}
+
+.profile .date-formats-VE span {
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+
+/*
+defense calendar
+*/
+
+.profile .date-formats-defense {
+    color: #fff;
+    float: left;
+    text-align: center;
+    background: #9b6bcc;
+    margin: 7px 13px 0 0;
+    padding: 7px 10px 4px;
+}
+
+.profile .date-formats-defense span {
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+/*
+Medical calendar
+*/
+
+.profile .date-formats-medical {
+    color: #fff;
+    float: left;
+    text-align: center;
+    background: #3498db;
+    margin: 7px 13px 0 0;
+    padding: 7px 10px 4px;
+}
+
+.profile .date-formats-medical span {
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+/*
+Medical calendar
+*/
+
+.profile .date-formats-transportation {
+    color: #fff;
+    float: left;
+    text-align: center;
+    background: #e74c3c;
+    margin: 7px 13px 0 0;
+    padding: 7px 10px 4px;
+}
+
+.profile .date-formats-transportation span {
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+
+/*
+Service blocks colors 
+inherited from app.css document
+*/
+
+
+.service-block-VE {
+    background: #72c02c;
+}
+.service-block-medical {
+    background: #3498db;
+}
+.service-block-transportation {
+    background: #e74c3c;
+}
+.service-block-sea {
+    background: #1abc9c;
+}
+.service-block-grey {
+    background: #95a5a6;
+}
+.service-block-yellow {
+    background: #f1c40f;
+}
+.service-block-orange {
+    background: #e67e22;
+}
+.service-block-renewable {
+    background: #2ecc71;
+}
+.service-block-aviation {
+    background: #9b6bcc;
+}
+.service-block-aqua {
+    background: #27d7e7;
+}
+.service-block-brown {
+    background: #9c8061;
+}
+.service-block-dark-blue {
+    background: #4765a0;
+}
+.service-block-light-green {
+    background: #79d5b3;
+}
+.service-block-dark {
+    background: #555;
+}
+.service-block-light {
+    background: #ecf0f1;
+}
+
+
+/*Service Block v3 (used in profile pages)
+------------------------------------*/
+.service-block-v3 {
+    padding: 20px;
+}
+
+.service-block-v3 i {
+    color: #fff;
+    float: left;
+    font-size: 50px;
+    margin: 0 20px 20px 0;
+}
+
+.service-block-v3 .service-heading,
+.service-block-v3 .service-in small {
+    color: #fff;
+    opacity: 0.8;
+    line-height: 1;
+}
+
+.service-block-v3 .service-in h4,
+.service-block-v3 .counter {
+    color: #fff;
+}
+
+.service-block-v3 .service-heading {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.service-block-v3 .counter {
+    display: block;
+    line-height: 1;
+    font-size: 30px;
+}
+
+.service-block-v3 .progress {
+    margin-bottom: 7px;
+}
+
+/*Service Innner*/
+.service-block-v3 .service-in small {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.service-block-v3 .service-in h4 {
+    font-size: 16px;
+    line-height: 0.8;
+    margin-bottom: 0;
+}
+
+/*Statistics*/
+.service-block-v3 .statistics .heading-xs {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.service-block-v3 .statistics small {
+    color: #fff;
+}
+
+.service-block-v3 .statistics .progress {
+    background: #bbb;
+}
+
+.service-block-v3 .statistics .progress-bar-light {
+    background: #fff;
+}
+
+
+.cube-portfolio .cbp-l-filters-text .cbp-filter-item.cbp-filter-item-active,
+.cube-portfolio .cbp-l-filters-text .cbp-filter-item:hover {
+    color: #72c02c !important;
+    background: #fff !important;
+
+}
+
+
+/*
+scrolling table with fixed first column
+*/
+#scroller {
+    width: 300px;
+    overflow-x: scroll;
+}
+#scroller table {
+    /* just a quick hack to make the table overflow the containing div
+       your method may differ */
+    width: 600px;
+}
+
+#scroller .table.fixedCol {
+    width: auto;
+    position: absolute;
+    /* below styles are specific for borderd Bootstrap tables
+       to remove rounded corners on cloned table */
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.prod_sample{
+    max-width: 100% !important; 
+    max-height: 100% !important;
+}
+
+
+.mach_sample{
+    max-width: 100% !important; 
+    max-height: 100% !important;
+}
+
+.sec_logo{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/*
+References logos section in company profile page Css override
+*/
+
+.block-description .left-inner img {
+    float: none !important;
+    width: auto !important; 
+    height: auto;
+    padding: 0 !important;
+    margin: 0 0 0 0 !important;
+    border: 1px solid #eee;
+}
+
+/*
+* DataTable Css override
+*/
+
+.row{
+    margin-right:0px;
+    margin-left:0px;
+    margin-top:20px
+}
+
+/*
+Parallax backgound override
+*/
+
+/*Parallax Counter v3
+------------------------------------*/
+.parallax-counter-v3 {
+    background: url(../../onyuz/assets/img/ostim/DSC_5954_smaller.jpg) 50% 0 fixed !important;
+}
+
+.parallax-counter {
+    padding: 30px 0;
+    background: url(../../onyuz/standard/assets/img/bg/background-pattern-5-filtered.jpg) repeat fixed;
+}
+
+/*
+image edit button css
+*/
+
+
+a.hovertext {
+    position: relative;
+    width: 100%;
+    text-decoration: none !important;
+    text-align: center;
+}
+a.hovertext:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    alignment-adjust: central;
+    padding: 0.5em 20px;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    text-decoration: none !important;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+a.hovertext:hover:after, a.hovertext:focus:after {
+    opacity: 0.5;
+}
+
+
+
+#logo_ph > input
+{
+    display: none;
+}
+
+#file_input{
+    display: none;
+}
+
+
+
+
+.panel-title{
+    width: 100% !important;
+    height: auto;
+}
+
+.panel-header{
+    width: 100% !important;
+    height: auto;
+}
+
+.panel-tool{
+    width: 100% !important;
+    height: auto;
+}
+
+.datagrid-wrap{
+    width: 100% !important;
+    height: auto;
+}
+
+.datagrid-row{
+    width: 100% !important;
+    height: auto;
+}
+
+.datagrid-view{
+    width: 100% !important;
+    height: auto;
+}
+
+
+datagrid-pager{
+    width: 100% !important;
+    height: auto;
+}
+
+.service-block-v3{
+    min-height: 300px;
+}
+
+/*
+Bootstrap table Css
+*/
+
+.fixed-table-body {
+    height:auto
+}
+
+.glyphicon {
+        line-height: inherit;
+}

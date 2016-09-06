@@ -1,0 +1,661 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SanalFabrika\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-23 22:17-0700\n"
+"PO-Revision-Date: 2015-12-23 13:08+0200\n"
+"Last-Translator: Bahram Lotfi Sadigh <bahram.lotfi@ostim.com.tr>\n"
+"Language-Team: OSTIM Teknoloji A.Ş. <info@ostim.com.tr>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/layout/sfdm.phtml:1
+msgid "Virtual Enterprise Project"
+msgstr "Virtual Enterprise Project"
+
+#: ../view/layout/sfdm.phtml:2
+msgid "Virtual Enterprise Control Panel"
+msgstr "Virtual Enterprise Control Panel"
+
+#: ../view/layout/sfdm.phtml:3
+msgid "OSTIM"
+msgstr "OSTIM"
+
+#: ../view/layout/sfdm.phtml:3
+msgid "OSTIM Technology A.Ş."
+msgstr "OSTIM Technology A.Ş."
+
+#: ../view/layout/sfdm.phtml:4
+#: ../view/layout/sfdm.phtml:11
+msgid "Virtual Enterprise"
+msgstr "Virtual Enterprise"
+
+#: ../view/layout/sfdm.phtml:5
+msgid "Active"
+msgstr "Aktiv"
+
+#: ../view/layout/sfdm.phtml:6
+msgid "Main Navigation"
+msgstr "Main Navigation"
+
+#: ../view/layout/sfdm.phtml:7
+#: ../view/layout/sfdm.phtml:17
+msgid "Home"
+msgstr "Home"
+
+#: ../view/layout/layout.phtml:36
+msgid "Supervisor Dashboard"
+msgstr "Supervisor-Dashboard"
+
+#: ../view/layout/sfdm.phtml:8
+msgid "Enterprises"
+msgstr "Unternehmen"
+
+#: ../view/layout/sfdm.phtml:9
+msgid "Users"
+msgstr "Benutzer"
+
+#: ../view/layout/sfdm.phtml:10
+msgid "Organizations"
+msgstr "Organisationen"
+
+#: ../view/layout/sfdm.phtml:12
+msgid "ECO-OSTIM"
+msgstr "ECO-OSTIM"
+
+#: ../view/layout/sfdm.phtml:13
+msgid "Definitions"
+msgstr "Definitionen"
+
+#: ../view/layout/sfdm.phtml:14
+msgid "Calendar"
+msgstr "Kalender"
+
+#: ../view/layout/sfdm.phtml:15
+msgid "Mail Box"
+msgstr "Mail Box"
+
+#: ../view/layout/sfdm.phtml:16
+msgid "My Documents"
+msgstr "Meine Dokumente"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Show all notifications"
+msgstr "Zeige alle Benachrichtigungen"
+
+#: ../view/layout/sfdm.phtml:19
+msgid "New Messages"
+msgstr "Neue Nachrichten"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Show all messages"
+msgstr "Alle Mitteilungen anzeigen"
+
+#: ../view/layout/sfdm.phtml:20
+msgid "Works To Do"
+msgstr "Werke zu tun"
+
+#: ../view/layout/sfdm.phtml:20
+msgid "Show all tasks"
+msgstr "Alle Tasks anzeigen"
+
+#: ../view/layout/sfdm.phtml:21
+msgid "Collaborating Companies"
+msgstr "Partnerunternehmen"
+
+#: ../view/layout/sfdm.phtml:22
+msgid "Friends"
+msgstr "Freunde"
+
+#: ../view/layout/sfdm.phtml:23
+msgid "Followers"
+msgstr "Anhänger"
+
+#: ../view/layout/sfdm.phtml:24
+msgid "Profile"
+msgstr "Profil"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Log in"
+msgstr "Log in"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Log out"
+msgstr "Abmelden"
+
+#: ../view/layout/sfdm.phtml:26
+msgid "Layout Options"
+msgstr "Layout Optionen"
+
+#: ../view/layout/sfdm.phtml:27
+msgid "Fixed layout"
+msgstr "Festes Layout"
+
+#: ../view/layout/sfdm.phtml:28
+msgid "Activate the fixed layout. You can't use fixed and boxed layouts together"
+msgstr "Aktivieren des Festes Layout. Sie können nicht mit feststehenden und boxed Layouts zusammen"
+
+#: ../view/layout/sfdm.phtml:29
+msgid "Boxed Layout"
+msgstr "Boxed Layout"
+
+#: ../view/layout/sfdm.phtml:30
+msgid "Activate the boxed layout"
+msgstr "Aktivieren Sie den Boxed Layout"
+
+#: ../view/layout/sfdm.phtml:31
+msgid "Toggle Sidebar"
+msgstr "Umschalten der Seitenleiste"
+
+#: ../view/layout/sfdm.phtml:32
+msgid "Toggle the left sidebar's state (open or collapse)"
+msgstr "Umschalten der linken Seitenleiste Zustand (offen oder ausblenden)"
+
+#: ../view/layout/sfdm.phtml:33
+msgid "Sidebar Expand on Hover"
+msgstr "Seitenleiste erweitern auf Hover"
+
+#: ../view/layout/sfdm.phtml:34
+msgid "Let the sidebar mini expand on hover"
+msgstr "Lassen Sie die Sidebar mini erweitern auf hover"
+
+#: ../view/layout/sfdm.phtml:35
+msgid "Toggle Right Sidebar Slide"
+msgstr "Umschalten der Seitenleiste rechts schieben"
+
+#: ../view/layout/sfdm.phtml:36
+msgid "Toggle between slide over content and push content effects"
+msgstr "Umschalten zwischen Folie über Inhalte und Inhalte folgen"
+
+#: ../view/layout/sfdm.phtml:37
+msgid "Toggle Right Sidebar Skin"
+msgstr "Umschalten der rechten Seitenleiste Haut"
+
+#: ../view/layout/sfdm.phtml:38
+msgid "Toggle between dark and light skins for the right sidebar"
+msgstr "Umschalten zwischen dunklen und hellen Skins für die Seitenleiste rechts"
+
+#: ../view/layout/sfdm.phtml:39
+msgid "Skins"
+msgstr "Skins"
+
+#: ../view/layout/sfdm.phtml:40
+msgid "Blue"
+msgstr "Blau"
+
+#: ../view/layout/sfdm.phtml:41
+msgid "Black"
+msgstr "Schwarz"
+
+#: ../view/layout/sfdm.phtml:42
+msgid "Purple"
+msgstr "Lila"
+
+#: ../view/layout/sfdm.phtml:43
+msgid "Green"
+msgstr "Grün"
+
+#: ../view/layout/sfdm.phtml:44
+msgid "Red"
+msgstr "Rot"
+
+#: ../view/layout/sfdm.phtml:45
+msgid "Yellow"
+msgstr "Gelb"
+
+#: ../view/layout/sfdm.phtml:46
+msgid "Blue Light"
+msgstr "Blaues Licht"
+
+#: ../view/layout/sfdm.phtml:47
+msgid "Black Light"
+msgstr "Schwarzes Licht"
+
+#: ../view/layout/sfdm.phtml:48
+msgid "Purple Light"
+msgstr "Violettes Licht"
+
+#: ../view/layout/sfdm.phtml:49
+msgid "Green Light"
+msgstr "Grünes Licht"
+
+#: ../view/layout/sfdm.phtml:50
+msgid "Red Light"
+msgstr "Rotes Licht"
+
+#: ../view/layout/sfdm.phtml:51
+msgid "Yellow Light"
+msgstr "Gelbes Licht"
+
+#: ../view/layout/sfdm.phtml:52
+msgid "Recent Activities"
+msgstr "Jüngste Aktivitäten"
+
+#: ../view/layout/sfdm.phtml:54
+msgid "Tasks Progress"
+msgstr "Aufgaben Fortschritte"
+
+#: ../view/layout/sfdm.phtml:55
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: ../view/layout/sfdm.phtml:56
+msgid "Report panel usage"
+msgstr "Bericht Zentrale"
+
+#: ../view/layout/sfdm.phtml:57
+msgid "Some information about this general settings option"
+msgstr "Einige Informationen über diese allgemeinen Einstellungen Option"
+
+#: ../view/layout/sfdm.phtml:58
+msgid "Allow mail redirect"
+msgstr "Dass Mails umleiten"
+
+#: ../view/layout/sfdm.phtml:59
+msgid "Other sets of options are available"
+msgstr "Weitere Sätze von Optionen sind verfügbar"
+
+#: ../view/layout/sfdm.phtml:60
+msgid "Expose author name in posts"
+msgstr "Setzen Autor name in Beiträgen"
+
+#: ../view/layout/sfdm.phtml:61
+msgid "Allow the user to show his name in blog posts"
+msgstr "Erlaubt dem Benutzer, um seinen Namen in Blog Posts"
+
+#: ../view/layout/sfdm.phtml:62
+msgid "Chat Settings"
+msgstr "Chat Einstellungen"
+
+#: ../view/layout/sfdm.phtml:63
+msgid "Show me as online"
+msgstr "Zeigen Sie mir als online"
+
+#: ../view/layout/sfdm.phtml:64
+msgid "Turn off notifications"
+msgstr "Benachrichtigungen deaktivieren"
+
+#: ../view/layout/sfdm.phtml:65
+msgid "Delete chat history"
+msgstr ""
+
+#: ../view/layout/layout.phtml:66
+msgid "All rights reserved."
+msgstr "Chat-verlauf löschen"
+
+#: ../view/layout/layout.phtml:66
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../view/layout/layout.phtml:67
+msgid "Version"
+msgstr "Version"
+
+#: ../view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to OSTIM Virtual Enterprise System"
+msgstr "Willkommen bei OSTIM Virtual Enterprise System"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Ist ein Fehler aufgetreten"
+
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "Nachricht"
+
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+#: ../view/error/404.phtml:55
+msgid "Stack trace"
+msgstr "Stapelüberwachung"
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Vorherige Ausnahmen"
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Keine Ausnahme verfügbar"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "Fehler 404 ist aufgetreten"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Die angeforderte Controller wurde nicht zum Versand der Anfrage"
+
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr "Die angeforderte Controller konnte nicht zugeordnet werden an einen vorhandenen Controller Klasse"
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "Die angeforderte Controller wurde nicht dispatchable"
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "Die angeforderte URL konnte nicht verglichen werden durch Routing"
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Wir können nicht bestimmen, zu diesem Zeitpunkt warum einen 404 generiert wurde."
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "Controller"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to"
+msgstr "Beschließt"
+
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr "Ausnahme"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Frequently Asked Questions"
+msgstr "Häufig gestellte Fragen"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Languages"
+msgstr "Sprachen"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Learn more"
+msgstr "Erfahren Sie mehr"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Job"
+msgstr "Unser Job"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "VE Team"
+msgstr "VE Team"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Overall Manufacturing Area"
+msgstr "Gesamte verarbeitende Bereich"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Machine Park Size"
+msgstr "Maschine Park Größe"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Overall Enterprise Number"
+msgstr "Insgesamt Enterprise Number"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Employees"
+msgstr "Mitarbeiter"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Marketing and Consulting"
+msgstr "Marketing und Beratung"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Organization"
+msgstr "Unsere Organisation"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Imports"
+msgstr "Einfuhren"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Exports"
+msgstr "Ausfuhren"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Employees"
+msgstr "Unsere Mitarbeiter"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Services"
+msgstr "Unsere Dienstleistungen"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Portfolio"
+msgstr "Unser Portfolio"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Load More"
+msgstr "Weitere laden"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Clients"
+msgstr "Unsere Kunden"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Order"
+msgstr "Bestellen"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Request for Quote"
+msgstr "Angebot anfordern"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Contact us"
+msgstr "Kontaktieren Sie uns"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Name"
+msgstr "Name"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Email"
+msgstr "E-Mail"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Send Message"
+msgstr "Nachricht senden"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Negotiation"
+msgstr "Verhandlung"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Auction"
+msgstr "Auktion"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Auctioning"
+msgstr "Versteigerung"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Latest News"
+msgstr "Aktuelle Nachrichten"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Integrating the Capabilities and Capacities of more than 5,000 Companies with 60,000 Employees"
+msgstr "Die Integration der Fähigkeiten und Kapazitäten von mehr als 5.000 Unternehmen mit 60.000 Mitarbeitern"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Opening OSTIM manufacturing capabilities to the customers from all over the world"
+msgstr "Öffnen OSTIM Fertigungskapazitäten für die Kunden aus aller Welt"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Company Registration"
+msgstr "Die Registrierung von Unternehmen"
+
+
+msgid "Company"
+msgstr "Unternehmen"
+
+msgid "Virtual Enterprise Company Registration"
+msgstr "Virtuelle Unternehmen Unternehmen Registrierung"
+
+msgid "General Information"
+msgstr "Allgemeine Informationen"
+
+msgid "Communication"
+msgstr "Kommunikation"
+
+msgid "Financial"
+msgstr "Finanzielle"
+
+msgid "Personel"
+msgstr "Personal"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Tax Number"
+msgstr "Steuernummer"
+
+msgid "Tax Office"
+msgstr "Steuerbehörde"
+
+msgid "Social Security Number"
+msgstr "Sozialversicherungsnummer"
+
+msgid "Foundation Date"
+msgstr "Gründungsdatum"
+
+msgid "Web Address"
+msgstr "Web adresse"
+
+msgid "Submit"
+msgstr "Senden"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Building Type"
+msgstr "Bauart"
+
+msgid "Building Name"
+msgstr "Gebäude Name"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "State"
+msgstr "Zustand"
+
+msgid "Province"
+msgstr "Provinz"
+
+msgid "City"
+msgstr "Stadt"
+
+msgid "District"
+msgstr "Bezirk"
+
+msgid "Village"
+msgstr "Dorf"
+
+msgid "Street"
+msgstr "Straße"
+
+msgid "Alley"
+msgstr "Gasse"
+
+msgid "Number"
+msgstr "Anzahl"
+
+msgid "Postal Code"
+msgstr "Postleitzahl"
+
+msgid "Telephone"
+msgstr "Telefon"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Add New AddressAdd New Address"
+msgstr "Neue Adresse hinzufügen"
+
+msgid "Update Company Information"
+msgstr "Firmeninformationen aktualisieren"
+
+msgid "List of Companies"
+msgstr "Liste der Unternehmen"
+
+msgid "List of Machine Tools"
+msgstr "Liste der Werkzeugmaschinen"
+
+msgid "New Submission"
+msgstr "Neue Vorlage"
+
+msgid "Manufacturing Machine Tools"
+msgstr "Die Herstellung von Werkzeugmaschinen"
+
+msgid "Quality Control Equipment"
+msgstr "Qualitätskontrolle Ausrüstung"
+
+msgid "Others"
+msgstr "Andere"
+
+msgid "Manufacturing Operation Type"
+msgstr "Manufacturing Operation Typ"
+
+msgid "Machine Tool Type"
+msgstr "Maschine Werkzeug Typ"
+
+msgid "Add New Machine Tool"
+msgstr "Add New Machine Tool"
+
+msgid "Measurement Process Type"
+msgstr "Messung Prozess Typ"
+
+msgid "Quality Control Tool Type"
+msgstr "Qualitätskontrolle Werkzeugtyp"
+
+msgid "Add New Q.C. Device"
+msgstr "Eine neue Qualität Kontrolle gerät"
+
+msgid "Update Machine Tool Information"
+msgstr "Update Machine Tool Informationen"
+
+msgid "Add New Device"
+msgstr "Neues Gerät hinzufügen"
+
+msgid "Software Information"
+msgstr "Informationen zur Software"
+
+msgid "List of Software"
+msgstr "Liste der Software"
+
+msgid "Update Information"
+msgstr "Informationen aktualisieren"
+
+msgid "Update software information"
+msgstr "Aktualisieren der Software Informationen"
+
+msgid "Add New Software"
+msgstr "Hinzufügen neuer Software"
+
+
+msgid "Select a country ... "
+msgstr "Wählen Sie ein Land"
+
+msgid "Select a province ... "
+msgstr "Wählen Sie ein Bundesland"
+
+msgid "Select a district ... "
+msgstr "Wählen Sie eine Stadt aus"
+
+msgid "Select a village ... "
+msgstr "Wählen Sie einen Stadtteil oder Dorf"
+
+msgid "Search..."
+msgstr "Suche..."
+

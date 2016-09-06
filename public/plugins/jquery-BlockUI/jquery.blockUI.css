@@ -1,0 +1,14 @@
+div.growlUI { 
+    background: url(check48.png) no-repeat 10px 10px; 
+    /*
+    *This line is added to push text to the right hand side 
+    *not to cover growl icon..
+    * @author: Bahram Lotfi Sadigh
+    * @since: 2016.2.1
+    */
+    padding-left: 75px;
+}
+div.growlUI h1, div.growlUI h2 {
+    color: white; padding: 5px 5px 5px 75px; text-align: left;
+}    
+

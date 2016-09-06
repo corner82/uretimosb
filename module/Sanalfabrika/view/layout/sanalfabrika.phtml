@@ -1,0 +1,131 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('OSTİM '. $this->translate('Sanal Fabrika'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="<?php echo $this->basePath('onyuz/standard/assets/favicon.ico') ?>">
+
+        <!-- Web Fonts -->
+        <link rel='stylesheet' type='text/css' href='<?php echo $this->basePath('fonts.googleapis.com/css0bd2.css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin') ?>'>
+
+        <!-- CSS Global Compulsory -->
+        <!--<link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/bootstrap/css/bootstrap.min.css') ?>">-->
+        <!-- Bootstrap 3.3.4 -->
+        <!--<link href="<?php echo $this->basePath('bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" /> -->
+        <link href="<?php echo $this->basePath('css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" /> 
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/css/one.style.css') ?>">
+
+        <!-- CSS Footer -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/css/footers/footer-v7.css') ?>">
+
+        <!-- CSS Implementing Plugins -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/animate.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/line-icons/line-icons.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/font-awesome/css/font-awesome.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/pace/pace-flash.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/owl-carousel/owl.carousel.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/revolution-slider/rs-plugin/css/settings.css') ?>" type="text/css" media="screen">
+        <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+
+        <!-- Style Switcher -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/css/plugins/style-switcher.css') ?>">
+
+        <!-- CSS Theme -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/css/theme-colors/default.css') ?>" id="style_color">
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/css/theme-skins/one.dark.css') ?>">
+            
+            
+        <!-- flaticon insurtry icons -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('css/industry/flaticon/flaticon.css') ?>">
+        
+        <!-- CSS Customization -->
+        <link rel="stylesheet" href="<?php echo $this->basePath('onyuz/One-Page/assets/css/custom.css') ?>">
+        <link rel="stylesheet" href="<?php echo $this->basePath('plugins/bahram/bahram-index.css') ?>">
+
+    </head>
+    <!--The #page-top ID is part of the scrolling feature.
+    The data-spy and data-target are part of the built-in Bootstrap scrollspy function.-->
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+       
+        
+            <?php echo $this->content; ?>
+            
+        
+        <?php /*echo $this->inlineScript()*/ ?>
+        
+
+    <!-- jQuery 2.1.4 -->
+    <script src="<?php echo $this->basePath('plugins/jQuery/jQuery-2.1.4.min.js')   ?>"></script>
+    <!-- jQuery UI 1.11.2 -->
+    <!--<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>-->
+    <script src="<?php echo $this->basePath('plugins/jQueryUI/jquery-ui-1.11.2.min.js')?>" type="text/javascript"></script>
+    <!--<script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/jquery/jquery.min.js')?>"></script>-->
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/jquery/jquery-migrate.min.js')   ?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/bootstrap/js/bootstrap.min.js')   ?>"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <!--<script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>-->
+    <!-- JS Implementing Plugins -->
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/smoothScroll.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/jquery.easing.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/pace/pace.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/jquery.parallax.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/counter/waypoints.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/counter/jquery.counterup.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/owl-carousel/owl.carousel.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js')?>"></script>
+    <!-- JS Page Level-->
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/one.app.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/forms/login.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/forms/contact.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/plugins/pace-loader.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/plugins/owl-carousel.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/plugins/style-switcher.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/plugins/revolution-slider.js')?>"></script>
+    <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/plugins/cube-portfolio/cube-portfolio-lightbox.js')?>"></script>
+    
+    <!-- sayfa içine yazılan js'ler ekleniyor-->
+    <script src="<?php echo $this->basePath('jsinline/sanalfabrika.js')?>"></script>
+    <script>
+        jQuery(document).ready(function() {
+            App.init();
+            App.initCounter();
+            App.initParallaxBg();
+            LoginForm.initLoginForm();
+            ContactForm.initContactForm();
+            OwlCarousel.initOwlCarousel();
+            StyleSwitcher.initStyleSwitcher();
+            RevolutionSlider.initRSfullScreen();
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/respond.js')?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/html5shiv.js')?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/One-Page/assets/js/plugins/placeholder-IE-fixes.js')?>"></script>
+        <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js')?>"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+        <script src="<?php echo $this->basePath('onyuz/One-Page/assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js')?>"></script>
+    <![endif]-->
+    
+
+        
+   
+        
+    </body>
+</html>

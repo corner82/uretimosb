@@ -1,0 +1,514 @@
+<input id="requestUriRegulated" type="hidden"  value="<?php echo $this->requestUriRegulated; ?>"></input>
+<input id="langCode" type="hidden"  value="<?php echo $this->langCode; ?>"></input>
+<input id="pk" type="hidden"  value="<?php echo $this->publicKey; ?>"></input>
+<input id="ln" type="hidden"  value="tr"></input>
+<input id="controller" type="hidden"  value="<?php echo $this->layout()->controller; ?>"></input>
+<input id="module" type="hidden"  value="<?php echo $this->layout()->module; ?>"></input>
+
+<body class="skin-blue sidebar-mini">
+    <div class="wrapper">
+
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="index.phtml" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b> <?php echo $this->translate('OSTIM') ?> </b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b> <?php echo $this->translate('OSTIM') ?> </b> <?php echo $this->translate('Virtual Enterprise') ?> </span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success">0</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">0 <?php echo $this->translate('New Messages') ?></li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#"><?php echo $this->translate('Show all messages') ?></a></li>
+                            </ul>
+                        </li>
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">0</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">0 <?php echo $this->translate('Notifications') ?></li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#"><?php echo $this->translate('Show all notifications') ?></a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger">0</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">0 <?php echo $this->translate('Works To Do') ?></li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#"><?php echo $this->translate('Show all tasks') ?></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <!--<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>-->                    
+                                <img src="<?php echo $this->basePath('dist/img/manager-xxl.png') ?>" class="user-image" alt="User Image"/> 
+                                <span class="hidden-xs"><?php /* echo $_SESSION['userName'] */ ?></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                  <!--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />-->
+                                    <img src="<?php echo $this->basePath('dist/img/manager-xxl.png') ?>" class="user-image" alt="User Image"/> 
+                                    <p>
+                                        <?php /* echo $_SESSION['userName'] */ ?> - <?php /* echo $_SESSION['department'] */ ?>
+                                        <small><!--Member since Nov. 2012--></small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#"><?php echo $this->translate('Collaborating Companies') ?></a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#"><?php echo $this->translate('Friends') ?></a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#"><?php echo $this->translate('Followers') ?></a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">   
+                                        <a href="#" class="btn btn-default btn-flat"><?php echo $this->translate('Profile') ?></a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="<?php echo $this->url('login', array('action' => 'logout')); ?> " class="btn btn-default btn-flat"><?php echo $this->translate('Log out') ?></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                      <!--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />-->
+                        <img src="<?php echo $this->basePath('dist/img/manager-xxl.png') ?>" class="user-image" alt="User Image"/> 
+
+                    </div>
+                    <div class="pull-left info">
+                        <p><?php /* echo $_SESSION['userName']; */ ?></p>
+
+                        <a href="#"><i class="fa fa-circle text-success"></i> <?php echo $this->translate('Active') ?></a>
+                    </div>
+                </div>
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Ara..."/>
+                        <span class="input-group-btn">
+                            <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+
+                <ul class="sidebar-menu" id="leftside-menu">
+                    <li class="header"><?php echo $this->translate('Main Navigation') ?></li>
+                    <li class="active treeview"></li>                        
+                </ul>
+
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    <?php echo $this->translate('Virtual Enterprise Control Panel') ?>
+                    Makina Üreticileri Tanımlama İşl.
+                    <small></small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="<?php echo $this->serverUrl('/ostim/sanalfabrika') ?>"><i class="fa fa-dashboard"></i> <?php echo $this->translate('Home') ?> </a></li>
+                    <li><a href="#"><i class="fa fa-certificate"></i> Makina İşlemleri</a></li>
+                    <li class="active">Makina Üreticisi İşl.</li>
+                </ol>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                <!-- Small boxes (Stat box) -->
+                <!--first collapsible panel row -->
+                <div class="row">
+                    
+                    <!--Makina giriş bölümü -->
+                    <div class="col-lg-12">
+                        <!--arrange first panel color to blue by assigning primary class-->
+                        <div id="loading-image-crud" class="box box-primary"> 
+                            <!--First panel Header-->
+                            <div class="box-header with-border">                                                    
+                                <h3 class="box-title"> Makina Üreticisi Tanımlama  İşlemleri </h3>
+                                
+                                <!--Panel 1 collapse button-->
+                                <div class="box-tools pull-right">
+                                    <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                                </div><!--/. button div-->
+                            </div><!--/. panel 1 header div-->
+                            <!--Panel 1 contents-->
+                            <div id='tab_image_loader' class="box box-body" style="border-top:0px;">
+                                <div class="alert alert-info alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4><i class="icon fa fa-info"></i> Sistemde kullanılacak makina üreticileri eklenebilir, güncellenebilir, aktif veya pasif işlemleri yapılabilir...</h4>
+                                </div>  
+                                <!--Makina ekleme formu -->
+                                <form id='macProducersForm' method="get" class="form-horizontal">     
+                                    <div id="machineInsertBlock" class="box box-primary" style="padding-top: 20px;">                                       
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Üretici</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <input data-prompt-position="topLeft:70" class="form-control validate[required]" type="text" name="name" id="name" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Üretici İng.</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <input data-prompt-position="topLeft:70" class="form-control validate[required]" type="text" name="name_eng" id="name_eng" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Kısaltma Kodu</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <input data-prompt-position="topLeft:70" class="form-control validate[required]" type="text" name="abbreviation" id="abbreviation" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Kısaltma Kodu İng.</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <input data-prompt-position="topLeft:70" class="form-control validate[required]" type="text" name="abbreviation_eng" id="abbreviation_eng" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Hakkında</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <textarea data-prompt-position="topLeft:70" class="form-control " rows="3" name="about" id="about" placeholder="Hakkında..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Hakkında İng.</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <textarea data-prompt-position="topLeft:70" class="form-control " rows="3" name="about_eng"  id="about_eng" placeholder="Hakkında İng..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Açıklama</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <textarea data-prompt-position="topLeft:70" class="form-control " rows="3" name="description" id="description" placeholder="Açıklama ..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Açıklama İng.</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <textarea data-prompt-position="topLeft:70" class="form-control " rows="3" name="description_eng" id="description_eng" placeholder="Açıklama İng..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-10 col-sm-offset-2">
+                                                <button id="insertMachineCategory" class="btn btn-primary" type="submit" onclick="return insertMacProducersWrapper(event);"><i class="fa fa-save"></i>  Makina Üreticisi Kaydet </button>
+                                                <button id="resetForm" class="btn btn-flat" type="reset" onclick="resetMacProducersForm();" ><i class="fa fa-remove"></i> Reset </button>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </form>  
+                            </div><!-- /.box-body -->
+                        </div><!--/. primary box div-->
+                    </div><!--/. first panel single column div -->
+                    
+                    <!--Makina listeleme bölümü -->
+                    <div class="col-lg-12">
+                        <div id="loading-image-grid-container" class="box box-warning"> 
+                            <!--First panel Header-->
+                            <div class="box-header with-border">                                                    
+                                <h3 class="box-title"> Makina Üreticileri Listesi</h3>
+                                
+                                <!--Panel 1 collapse button-->
+                                <div class="box-tools pull-right">
+                                    <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                                </div><!--/. button div-->
+                            </div><!--/. panel 1 header div-->
+                            <!--Panel 1 contents-->
+                            <div class="box-body">    
+                                <div class="alert alert-warning alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4><i class="icon fa fa-info"></i> Makina / Teçhizat Üreticileri Listesi </h4>
+                                    Üreticileri  filtreleyebilir, güncelleme, silme veya aktif / pasif işlemleri gerçekleştirebilirisiniz...
+                                </div>
+                                <div id="machinesGridBlock" class="box-warning" style="padding-top: 20px;">
+                                    <table  id="tt_grid_dynamic" title="Makina Üreticileri " ></table>   
+                                </div> 
+                                
+                            </div><!-- /.box-body -->
+                        </div><!--/. primary box div--> 
+                    </div>  
+                </div><!-- / first panel row-->
+            </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b><?php echo $this->translate('Version') ?></b> 1.0
+            </div>
+            <strong><?php echo $this->translate('Copyright') ?> &copy; 2016 <a href="" onclick="event.preventDefault();"><?php echo $this->translate('OSTIM Technology A.Ş.') ?></a></strong> <?php echo $this->translate('All rights reserved.') ?>
+        </footer>
+
+        <!-- Control Sidebar -->      
+        <aside class="control-sidebar control-sidebar-dark">                
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
+                <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- Home tab content -->
+                <div class="tab-pane" id="control-sidebar-home-tab">
+                    <h3 class="control-sidebar-heading"><?php echo $this->translate('Recent Activities') ?></h3>
+                    <ul class='control-sidebar-menu'>
+                        <li>
+                            <a href='javascript::;'>
+                                <i class="menu-icon-zeyn fa fa-file-code-o bg-green"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading"><?php echo $this->translate('Logged into the system') ?></h4>
+                                    <p><!--Will be 23 on April 24th--></p>
+                                </div>
+                            </a>
+                        </li>
+                        <!--<li>
+                          <a href='javascript::;'>
+                            <i class="menu-icon-zeyn fa fa-user bg-yellow"></i>
+                            <div class="menu-info">
+                              <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+                              <p>New phone +1(800)555-1234</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href='javascript::;'>
+                            <i class="menu-icon-zeyn fa fa-envelope-o bg-light-blue"></i>
+                            <div class="menu-info">
+                              <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+                              <p>nora@example.com</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href='javascript::;'>
+                            <i class="menu-icon-zeyn fa fa-envelope-o bg-light-blue"></i>
+                            <div class="menu-info">
+                              <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+                              <p>Execution time 5 seconds</p>
+                            </div>
+                          </a>
+                        </li>-->
+                    </ul><!-- /.control-sidebar-menu -->
+
+                    <h3 class="control-sidebar-heading"><?php echo $this->translate('Task Progress') ?></h3> 
+                    <ul class='control-sidebar-menu'>
+                        <li>
+                            <a href='javascript::;'>               
+                                <h4 class="control-sidebar-subheading">
+                                    <?php echo $this->translate('Reviewed Companies') ?>
+                                    <span class="label label-danger pull-right">3%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 3%"></div>
+                                </div>                                    
+                            </a>
+                        </li> 
+                        <li>
+                            <a href='javascript::;'>               
+                                <h4 class="control-sidebar-subheading">
+                                    <?php echo $this->translate('Finished Reports') ?>
+                                    <span class="label label-success pull-right">0%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-success" style="width: 0%"></div>
+                                </div>                                    
+                            </a>
+                        </li> 
+                        <li>
+                            <a href='javascript::;'>               
+                                <h4 class="control-sidebar-subheading">
+                                    <?php echo $this->translate('Finished Eco Efficiency Reports') ?>
+                                    <span class="label label-waring pull-right">0%</span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-warning" style="width: 0%"></div>
+                                </div>                                    
+                            </a>
+                        </li> 
+                        <!--<li>
+                          <a href='javascript::;'>               
+                            <h4 class="control-sidebar-subheading">
+                              Back End Framework
+                              <span class="label label-primary pull-right">68%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                              <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                            </div>                                    
+                          </a>
+                        </li>-->             
+                    </ul><!-- /.control-sidebar-menu -->         
+
+                </div><!-- /.tab-pane -->
+                <!-- Stats tab content -->
+                <div class="tab-pane" id="control-sidebar-stats-tab"><?php echo $this->translate('Stat Tab Contents') ?></div><!-- /.tab-pane -->
+                <!-- Settings tab content -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">            
+                    <form method="post">
+                        <h3 class="control-sidebar-heading"><?php echo $this->translate('General Settings') ?></h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                <?php echo $this->translate('Task Progress') ?>
+                                <input type="checkbox" class="pull-right" checked />
+                            </label>
+                            <p>
+                                <?php echo $this->translate('Reports') ?>
+                            </p>
+                        </div><!-- /.form-group -->
+
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                <?php echo $this->translate('Company Editing Permission') ?>
+                                <input type="checkbox" class="pull-right" checked />
+                            </label>
+                            <p>
+                                <?php echo $this->translate('') ?>
+                            </p>
+                        </div><!-- /.form-group -->
+
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                <?php echo $this->translate('') ?>
+                                <input type="checkbox" class="pull-right" checked />
+                            </label>
+                            <p>
+                                <?php echo $this->translate('') ?>
+                            </p>
+                        </div><!-- /.form-group -->
+
+                        <h3 class="control-sidebar-heading"><?php echo $this->translate('Chat Settings') ?></h3>
+
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                <?php echo $this->translate('Show me as online') ?>
+                                <input type="checkbox" class="pull-right" checked />
+                            </label>                
+                        </div><!-- /.form-group -->
+
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                <?php echo $this->translate('Turn off notifications') ?>
+                                <input type="checkbox" class="pull-right" />
+                            </label>                
+                        </div><!-- /.form-group -->
+
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                <?php echo $this->translate('Delete chat history') ?>
+                                <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                            </label>                
+                        </div><!-- /.form-group -->
+                    </form>
+                </div><!-- /.tab-pane -->
+            </div>
+        </aside><!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class='control-sidebar-bg'></div>
+    </div><!-- ./wrapper -->
+    
+</body>

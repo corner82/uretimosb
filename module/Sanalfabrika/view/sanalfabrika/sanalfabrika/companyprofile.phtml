@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<input id="requestUriRegulated" type="hidden"  value="<?php echo $this->requestUriRegulated; ?>"></input>
+<input id="langCode" type="hidden"  value="<?php echo $this->langCode; ?>"></input>
+<input id="pk" type="hidden"  value="<?php echo $this->publicKey; ?>"></input>
+<input id="selectedCompanyNpk" type="hidden"  value="<?php echo $this->selectedCompanyNpk; ?>"></input>
+<input id="selectedCompanyShN" type="hidden"  value="<?php echo $this->selectedCompanyShN; ?>"></input>
+<input id="controller" type="hidden"  value="<?php echo $this->layout()->controller; ?>"></input>
+<input id="module" type="hidden"  value="<?php echo $this->layout()->module; ?>"></input>
+<?php // print_r($this->acl->getRoles()); ?>
+<?php // print_r($this->test_helper($this->acl)); ?>
+<?php // print_r($this->test_helper()); ?>
+
+<!--=== Style Switcher ===-->    
+<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+<div class="style-switcher animated fadeInRight">
+    <div class="style-swticher-header">
+        <div class="style-switcher-heading">Style Switcher</div>            
+        <div class="theme-close"><i class="icon-close"></i></div>
+    </div>
+
+    <div class="style-swticher-body">
+        <!-- Theme Colors -->
+        <div class="style-switcher-heading">Theme Colors</div>
+        <ul class="list-unstyled">
+            <li class="theme-default theme-active" data-style="default" data-header="light"></li>
+            <li class="theme-blue" data-style="blue" data-header="light"></li>
+            <li class="theme-orange" data-style="orange" data-header="light"></li>
+            <li class="theme-red" data-style="red" data-header="light"></li>
+            <li class="theme-light" data-style="light" data-header="light"></li>
+            <li class="theme-purple last" data-style="purple" data-header="light"></li>
+            <li class="theme-aqua" data-style="aqua" data-header="light"></li>
+            <li class="theme-brown" data-style="brown" data-header="light"></li>
+            <li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
+            <li class="theme-light-green" data-style="light-green" data-header="light"></li>
+            <li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+            <li class="theme-teal last" data-style="teal" data-header="light"></li>
+        </ul>
+
+        <!-- Theme Skins -->
+        <div class="style-switcher-heading">Theme Skins</div>
+        <div class="row no-col-space margin-bottom-20 skins-section">
+            <div class="col-xs-6">
+                <button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light</button>
+            </div>
+            <div class="col-xs-6">
+                <button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block skins-btn">Dark</button>
+            </div>
+        </div>            
+
+        <hr>
+
+        <!-- Layout Styles -->
+        <div class="style-switcher-heading">Layout Styles</div>
+        <div class="row no-col-space margin-bottom-20">
+            <div class="col-xs-6">
+                <a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>                
+            </div>
+            <div class="col-xs-6">
+                <a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block boxed-layout-btn">Boxed</a>                
+            </div>
+        </div>            
+
+        <hr>
+
+        <!-- Theme Type -->
+        <div class="style-switcher-heading">Theme Types and Versions</div>
+        <div class="row no-col-space margin-bottom-10">
+            <div class="col-xs-6">
+                <a href="Shop-UI/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI <small class="dp-block">Template</small></a>
+            </div>
+            <div class="col-xs-6">
+                <a href="One-Page/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">One Page <small class="dp-block">Template</small></a>
+            </div>
+        </div>           
+
+        <div class="row no-col-space">
+            <div class="col-xs-6">
+                <a href="Blog/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Blog <small class="dp-block">Template</small></a>
+            </div>
+            <div class="col-xs-6">
+                <a href="RTL/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">RTL <small class="dp-block">Version</small></a>
+            </div>
+        </div>           
+    </div>
+</div><!--/style-switcher-->
+<!--=== End Style Switcher ===-->    
+
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img src="<?php echo $this->basePath('onyuz/standard/assets/img/logo1-default.png') ?>" alt="Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul style="background: #ddd;
+                    padding: 10px;" class="loginbar pull-right">
+                    <li class="hoverSelector">
+                        <a><?php echo $this->translate('Languages') ?> </a>
+                        <i class="fa fa-globe"></i>
+                        <ul id='topLanguageBar' class="languages hoverSelectorBlock">                                    
+                        </ul>
+                    </li>
+                    <li class="topbar-devider"></li>   
+                    <li><a href="page_faq.html"><?php echo $this->translate('Help') ?></a></li>  
+                    <li class="topbar-devider"></li>   
+                    <li><a href="<?php echo $this->url('login', array('action' => 'logout')); ?>"><span id="loging_ph"></span></a></li>   
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse menu-xs navbar-responsive-collapse" >
+            <div class="container">
+                <ul class="nav navbar-nav " style="font-size: 10px;">
+                    <li class="page-scroll home">
+                        <a href="#body"><?php echo $this->translate('Home') ?></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about"><?php echo $this->translate('About Us') ?></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php echo $this->translate('Services') ?>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#body">
+                                    <?php echo $this->translate('OSTIM Services') ?></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#news"><?php echo $this->translate('News') ?></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact"><?php echo $this->translate('Contacts') ?></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php echo $this->translate('Submenus') ?>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll">
+                                <a href="#body"><?php echo $this->translate('Home') ?></a>
+                            </li>
+                            <li class="page-scroll">
+                                <a href="../index-2.html"><?php echo $this->translate('Main') ?></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+    <!--=== End Header ===-->
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <!--<div style='background: #FAF8F0;' class="container">--> 
+        <div style='background: #E0EDDF;' class="container">
+            <h1 id="header_company_name" class="pull-left"><i class="fa fa-user"></i><?php echo $this->translate('Company Name') ?></h1>
+            <ul class="pull-right breadcrumb">                        
+                <li>
+                    <a href="<?php echo $this->url('sanalfabrika', array('action' => 'index'));
+                            ?>">
+                           <?php echo $this->translate('Home') ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo $this->url('sanalfabrika', array('action' => 'clientspage'));
+                           ?>">
+                           <?php echo $this->translate('Clients Page') ?>
+                    </a>
+                </li>
+                <li class="active"><?php echo $this->translate('Company Profile') ?></li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Profile ===-->
+    <div class="container content profile" style='padding-top:0px;'>
+        <div class="row">            
+
+            <!--Left column-->
+            <div class="col-md-3 md-margin-bottom-40">
+                <img class="img-responsive profile-img margin-bottom-20" id="profileLogosrc"
+                     src="" alt="">
+
+                <ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1"></ul>
+                <?php
+//                if ($this->test_helper($this->firmaOwnerAllowance) == 'allowed') {
+//                    echo '<ul class="list-group sidebar-nav-v1 margin-bottom-40" id="sidebar-nav-1">
+//                </ul>';
+//                } else {
+//                    echo 'sorry';
+//                }
+//                
+                ?>
+
+
+                <div class="panel-heading-v2 overflow-h">
+                    <h2 class="heading-xs pull-left">
+                        <i class="fa fa-bar-chart-o"></i> 
+<?php echo $this->translate('Company info update period') ?>
+                    </h2>
+                    <!--<a href="#"><i class="fa fa-cog pull-right"></i></a>-->
+                </div>
+                <h3 class="heading-xs">
+<?php echo $this->translate('Company profil completion rate') ?>
+                    <span class="pull-right">92%</span>
+                </h3>
+                <div class="progress progress-u progress-xxs">
+                    <div style="width: 92%" aria-valuemax="100" 
+                         aria-valuemin="0" aria-valuenow="92" 
+                         role="progressbar" class="progress-bar progress-bar-u">
+                    </div>
+                </div>
+                <h3 class="heading-xs">
+<?php echo $this->translate('Machine data update period') ?>
+                    <span class="pull-right">85%</span>
+                </h3>
+                <div class="progress progress-u progress-xxs">
+                    <div style="width: 85%" aria-valuemax="100" 
+                         aria-valuemin="0" aria-valuenow="85" 
+                         role="progressbar" class="progress-bar progress-bar-blue">
+                    </div>
+                </div>
+                <h3 class="heading-xs"> <?php echo $this->translate('Company technologies update period') ?>
+                    <span class="pull-right">64%</span>
+                </h3>
+                <div class="progress progress-u progress-xxs margin-bottom-40">
+                    <div style="width: 64%" aria-valuemax="100" 
+                         aria-valuemin="0" aria-valuenow="64" 
+                         role="progressbar" class="progress-bar progress-bar-dark">
+                    </div>
+                </div>
+
+                <!-- Exchange Rates Script - EXCHANGERATEWIDGET.COM -->
+                <div style="width:auto; border:0px solid #55A516; text-align:left;">
+                    <div style="text-align:left;background-color:#717984;width:100%;
+                         border-bottom:0px;height:30px; font-size:12px;
+                         font-weight:bold;padding:5px 0px;">
+                        <span style="margin-left:2px;background-image:url(//www.exchangeratewidget.com/flag.png); 
+                              background-position: 0 -1232px; width:100%; height:15px; 
+                              background-repeat:no-repeat;padding-left:5px;">
+                            <a href="https://www.exchangeratewidget.com/" 
+                               style="color:#FFFFFF; text-decoration:none;padding-left:22px;">
+<?php echo $this->translate('Online exchange rates') ?>
+                            </a>
+                        </span>
+                    </div>
+                    <script type="text/javascript" 
+                            src="//www.exchangeratewidget.com/converter.php?l=en&f=TRY&t=EUR,USD,GBP,JPY,CHF,CAD,AUD,CNY,ZAR,RUB,BRL,HKD,&a=1&d=F0F0F0&n=FFFFFF&o=000000&v=5">
+                    </script>
+                </div>
+                <!-- End of Exchange Rates Script -->
+
+                <!--Notification-->
+                <div class="panel-heading-v2 overflow-h" style="margin-top: 20px">
+                    <h2 class="heading-xs pull-left"><i class="fa fa-bell-o"></i> 
+<?php echo $this->translate('Notification') ?></h2>
+                    <a href="#"><i class="fa fa-cog pull-right"></i></a>
+                </div>
+                <div class="margin-bottom-20">
+                    <ul class="list-unstyled mCustomScrollbar margin-bottom-20" 
+                        data-mcs-theme="minimal-dark">
+                        <li class="notification">
+                            <i class="icon-custom icon-sm rounded-x 
+                               icon-bg-red icon-line icon-envelope"></i>
+                            <div class="overflow-h">
+                                <span><strong>Muhsin Teber</strong> <?php echo $this->translate('Email') ?> <?php echo $this->translate('Sent') ?></span>
+                                <small>2 <?php echo $this->translate('Minutes') ?> <?php echo $this->translate('Before') ?></small>
+                            </div>    
+                        </li>
+                        <li class="notification">
+                            <img class="rounded-x" 
+                                 src="<?php echo $this->basePath('onyuz/standard/assets/img/women-icon.png') ?>" 
+                                 alt="">
+                            <div class="overflow-h">
+                                <span><strong>Sedat Çelikdoğan</strong> <?php echo $this->translate('Visited your project page') ?></span>
+                                <small><?php echo $this->translate('Today') ?> 18:25 </small>
+                            </div>    
+                        </li>
+                        <li class="notification">
+                            <i class="icon-custom icon-sm rounded-x icon-bg-yellow icon-line fa fa-bolt"></i>
+                            <div class="overflow-h">
+                                <span><strong>Adem Başarır</strong> <?php echo $this->translate('Reviewed your document') ?></span>
+                                <small><?php echo $this->translate('Yesterday') ?> 13:07</small>
+                            </div>    
+                        </li>
+                        <li class="notification">
+                            <img class="rounded-x" 
+                                 src="<?php echo $this->basePath('onyuz/standard/assets/img/men-icon.png') ?>" alt="">
+                            <div class="overflow-h">
+                                <span><strong>OSSA</strong> <?php echo $this->translate('Proposal document added') ?></span>
+                                <small>2 <?php echo $this->translate('Days') ?> <?php echo $this->translate('Before') ?> 12:09</small>
+                            </div>    
+                        </li>
+                        <li class="notification">
+                            <i class="icon-custom icon-sm rounded-x icon-bg-blue icon-line fa fa-comments"></i>
+                            <div class="overflow-h">
+                                <span><strong>Burhan Yetiş</strong> <?php echo $this->translate('Following your company') ?></span>
+                                <small>2 <?php echo $this->translate('Days') ?> <?php echo $this->translate('Before') ?>Önce 09:34</small>
+                            </div>    
+                        </li>
+                        <li class="notification">
+                            <img class="rounded-x" 
+                                 src="<?php echo $this->basePath('onyuz/standard/assets/img/women-icon.png') ?>" alt="">
+                            <div class="overflow-h">
+                                <span><strong>Orhan Aydın</strong> <?php echo $this->translate('Visited your projects page') ?></span>
+                                <small>3 <?php echo $this->translate('Days') ?> <?php echo $this->translate('Before') ?> 14:28</small>  
+                            </div>      
+                        </li>
+                    </ul>    
+                </div>                
+            </div>
+            <!-- left column end-->
+
+            <!-- right column -->
+            <div class="col-md-9" >
+
+                <!--Service Block v3-->
+                <div class="row margin-bottom-10 " style=''>
+                    <div class="col-md-6 sm-margin-bottom-20">
+                        <div class="service-block-v3 service-block-aviation" >
+                            <i class="icon-plane"></i>
+                            <span class="service-heading">
+<?php echo $this->translate('Projects in progress') ?>
+                            </span>
+                            <span class="counter">12</span>
+
+                            <div class="clearfix margin-bottom-10"></div>
+
+                            <div class="row margin-bottom-20">
+                                <div class="col-xs-6 service-in">
+                                    <small><?php echo $this->translate('Last Week') ?></small>
+                                    <h4 class="counter">2</h4>
+                                </div>
+                                <div class="col-xs-6 text-right service-in">
+                                    <small><?php echo $this->translate('Last Month') ?></small>
+                                    <h4 class="counter">5</h4>
+                                </div>
+                            </div>
+                            <div class="statistics">
+                                <h3 class="heading-xs"><?php echo $this->translate('Last month projects to overall project number') ?><span class="pull-right">41%</span></h3>
+                                <div class="progress progress-u progress-xxs">
+                                    <div style="width: 41%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="41" role="progressbar" class="progress-bar progress-bar-light">
+                                    </div>
+                                </div>
+                                <small>59% <?php echo $this->translate('less') ?> <strong><?php echo $this->translate('Project started in the last month') ?></strong></small>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="service-block-v3 service-block-renewable">
+                            <i class="icon-energy"></i>
+                            <span class="service-heading">
+<?php echo $this->translate('Total machine tools number') ?>
+                            </span>
+                            <span class="counter">12</span>
+
+                            <div class="clearfix margin-bottom-10"></div>
+
+                            <div class="row margin-bottom-20">
+                                <div class="col-xs-6 service-in">
+                                    <small><?php echo $this->translate('Added machine tools in last 6 months') ?></small>
+                                    <h4 class="counter">3</h4>
+                                </div>
+                                <div class="col-xs-6 text-right service-in">
+                                    <small><?php echo $this->translate('Added machine tools in last month') ?></small>
+                                    <h4 class="counter">1</h4>
+                                </div>
+                            </div>
+                            <div class="statistics">
+                                <h3 class="heading-xs"><?php echo $this->translate('Rate of added machine tools in last 6 months to overall machine tools') ?><span class="pull-right">40%</span></h3>
+                                <div class="progress progress-u progress-xxs">
+                                    <div style="width: 40%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-light">
+                                    </div>
+                                </div>
+                                <small>60% <?php echo $this->translate('Machine tools rate to 6 month before') ?> <strong><?php echo $this->translate('than last month') ?></strong></small>
+                            </div>            
+                        </div>
+                    </div>
+                </div><!--/end row-->
+                <!--End Service Block v3-->
+
+                <!-- about company block -->
+                <div class='row'>
+                    <div class="parallax-bg parallaxBg1">            
+                        <div class=" content parallax-about">
+                            <div class="title-box-v2">
+                                <h2><span id="firm_name_ph" class="color-green">
+
+                                    </span></h2>
+                                <p id="about_firm_ph">
+                                </p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="banner-info dark margin-bottom-10">
+                                        <i class="rounded-x icon-bell"></i>
+                                        <div class="overflow-h">
+                                            <h3 id="title_1_ph"></h3>  
+                                            <p id="verbal_1_ph">
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="banner-info dark margin-bottom-10">
+                                        <i class="rounded-x fa fa-magic"></i>
+                                        <div class="overflow-h">
+                                            <h3 id="title_2_ph"></h3>
+                                            <p id="verbal_2_ph">
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="banner-info dark margin-bottom-10">
+                                        <i class="rounded-x fa fa-thumbs-o-up"></i>
+                                        <div class="overflow-h">
+                                            <h3 id="title_3_ph"></h3>
+                                            <p id="verbal_3_ph">
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="margin-bottom-20"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/industry.png')/* $this->basePath('onyuz/standard/assets/img/mockup/1.png') */ ?>" alt="">
+                                </div>
+                            </div>    
+                        </div><!--/container--> 
+                    </div>  
+                </div>
+                <!-- about company block end -->
+
+
+                <!-- testemonials block-->
+                <div class="row" id="testimonials_ph">
+
+                </div>
+                <!-- testemonials block end-->
+
+                <!-- references block-->            
+                <div class="row" >
+                    <div class="col-md-12">                                    
+                        <!-- Left Inner -->
+                        <div class="left-inner">
+                            <div class="progression">
+                                <div class="headline-center ">
+                                    <h2><?php echo $this->translate('References') ?></h2>
+                                </div>
+                            </div>
+                            <div class=''>
+                                <ul class="list-inline our-clients" id="effect-2">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- references block end-->                        
+
+                <!-- Contacts block -->
+                <div class='row'>
+                    <div class="contacts content">
+                        <div class="title-box-v2">
+                            <h2> <span class="color-green"><?php echo $this->translate('Contact') ?></span> <?php echo $this->translate('Panel') ?></h2>
+                            <p><?php echo $this->translate('For more information, questions please contact us') ?></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+                                <script src="https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+                                <!-- leaflet map -->
+                                <div id="map" class="map">
+                                    <script type="text/javascript">
+                                var map = L.map('map').setView([41.83683, 19.33594], 4);
+                                map.fitWorld().zoomIn();
+
+                                map.on('resize', function (e) {
+                                    map.fitWorld({reset: true}).zoomIn();
+                                });
+                                mapLink =
+                                        '<a href="https://openstreetmap.org">OpenStreetMap</a>';
+                                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                                }).addTo(map);
+
+                                    </script>
+                                </div>
+                                <!-- leaflet map end -->
+                            </div>
+
+
+
+                            <div class="col-md-6 col-sm-6">
+
+                                <!-- Contacts -->
+                                <div class="headline" ><h2><?php echo $this->translate('Contact Information') ?></h2></div>  
+                                <ul id="addresses_div" class="list-unstyled who margin-bottom-30">
+                                    <li><a href="#"><i class="fa fa-home"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-fax"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-globe"></i></a></li>
+                                </ul>
+
+                                <div class="headline">
+                                    <h2><?php echo $this->translate('Social Media') ?></h2>
+                                </div>                                 
+
+                                <ul class="social-icons" id="social_media_ph">
+
+                                </ul>
+
+                                <!-- Business Hours -->
+<!--                                <div class="headline"><h2><?php echo $this->translate('Working Hours') ?></h2></div>
+                                <ul class="list-unstyled margin-bottom-30">
+                                    <li><strong><?php echo $this->translate('Week days Mon- Fri') ?>: </strong> 08:00 - 18:00</li>
+                                    <li><strong><?php echo $this->translate('Weekends Sat') ?>: </strong> 08:00 - 13:00</li>
+                                    <li><strong><?php echo $this->translate('Weekends Sun') ?>: </strong><?php echo $this->translate('Closed') ?></li>
+                                </ul>-->
+
+                                <!-- Business Hours -->
+                                <div class="headline"><h2><?php echo $this->translate('For more information please keep in touch ...') ?></h2></div>
+                                <p><?php echo $this->translate('Based on your order, working hours could be revised...') ?></p>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="input-group margin-bottom-10">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="name" placeholder="<?php echo $this->translate('name') ?>" class="form-control">
+                                        </div>    
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="input-group margin-bottom-20">
+                                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                            <input type="email" placeholder="<?php echo $this->translate('Email') ?>" class="form-control">
+                                        </div>    
+                                    </div>
+                                </div>    
+
+                                <textarea rows="5" class="form-control margin-bottom-20" placeholder="<?php echo $this->translate('Write details...') ?>"></textarea>
+                                <button class="btn-u btn-u-sm pull-right" type="button"><?php echo $this->translate('Ask your question') ?></button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!-- Contacts block end-->
+
+
+            </div>
+            <!--  right column end -->
+
+
+        </div>
+    </div><!--/container-->    
+    <!--=== End Profile ===-->
+
+    <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="index-2.html"><img id="logo-footer" class="footer-logo" 
+                                                    src="<?php echo $this->basePath('onyuz/standard/assets/img/logo2-default.png') ?>" 
+                                                    alt=""></a>
+                        <p><?php
+                            echo $this->translate('A virtual enterprise (VE) is a temporary alliance of '
+                                    . 'businesses that come together to share skills or core competencies and resources '
+                                    . 'in order to better respond to business opportunities, and whose cooperation is '
+                                    . 'supported by computer networks.')
+                            ?></p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2><?php echo $this->translate('Latest Posts') ?></h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="#"><?php echo $this->translate('Latest News about OSTIM VE') ?></a>
+                                    <small><?php echo $this->translate('February') ?> 8, 2016</small>
+                                </li>
+                                <li>
+                                    <a href="#"><?php echo $this->translate('OSTIM Clusters News') ?></a>
+                                    <small><?php echo $this->translate('January') ?> 23, 2016</small>
+                                </li>
+                                <li>
+                                    <a href="#"><?php echo $this->translate('New Project Calls') ?></a>
+                                    <small><?php echo $this->translate('December') ?> 15, 2016</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/col-md-3-->  
+                    <!-- End Latest --> 
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2><?php echo $this->translate('Useful Links') ?></h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="http://www.ostim.org.tr/"><?php echo $this->translate('Ostim Organized Industrial Zone') ?></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="http://www.sanayi.gov.tr/"><?php echo $this->translate('Turkish Ministry of SIT') ?></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="https://www.tubitak.gov.tr/"><?php echo $this->translate('TUBITAK') ?></a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="http://www.kosgeb.gov.tr/"><?php echo $this->translate('KOSGEB') ?></a><i class="fa fa-angle-right"></i></li>
+                            <!--<li><a href="#"><?php echo $this->translate('') ?></a><i class="fa fa-angle-right"></i></li>-->
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->                    
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2><?php echo $this->translate('Contact Us') ?></h2></div>                         
+                        <address class="md-margin-bottom-40">
+                            100. Yıl Bulvarı No: 101/A <br />
+                            OSTIM, Ankara <br />
+                            Turkey <br />
+                            <?php echo $this->translate('Phone') ?> :  +90 312 385 50 90 <br />
+                            <?php echo $this->translate('Fax') ?>:    +90 312 354 58 98 <br />
+<?php echo $this->translate('Email') ?>:  <a href="mailto:info@ostim.com.tr" class="">info@ostim.com.tr</a>
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div> 
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">                     
+                        <p>
+                            2016 &copy; <?php echo $this->translate('All Rights Reserved.') ?>
+                            <a href="#"><?php echo $this->translate('Privacy Policy') ?></a> | <a href="#"><?php echo $this->translate('Terms of Service') ?></a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/OstimOSB/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/+OST%C4%B0MOSB1967" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ostim-osb-2b94b847" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ostimosb/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/ostimosb" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div> 
+        </div><!--/copyright-->
+    </div>        
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->

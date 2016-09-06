@@ -1,0 +1,665 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SanalFabrika\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-23 22:17-0700\n"
+"PO-Revision-Date: 2015-12-23 13:08+0200\n"
+"Last-Translator: Bahram Lotfi Sadigh <bahram.lotfi@ostim.com.tr>\n"
+"Language-Team: OSTIM Teknoloji A.Ş. <info@ostim.com.tr>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/layout/sfdm.phtml:1
+msgid "Virtual Enterprise Project"
+msgstr "Виртуальные предприятия проекта"
+
+#: ../view/layout/sfdm.phtml:2
+msgid "Virtual Enterprise Control Panel"
+msgstr "Виртуальная панель управления"
+
+#: ../view/layout/sfdm.phtml:3
+msgid "OSTIM"
+msgstr "OSTIM"
+
+#: ../view/layout/sfdm.phtml:3
+msgid "OSTIM Technology A.Ş."
+msgstr "OSTIM Technology A.Ş."
+
+#: ../view/layout/sfdm.phtml:4
+#: ../view/layout/sfdm.phtml:11
+msgid "Virtual Enterprise"
+msgstr "Виртуальные предприятия"
+
+#: ../view/layout/sfdm.phtml:5
+msgid "Active"
+msgstr "Активно"
+
+#: ../view/layout/sfdm.phtml:6
+msgid "Main Navigation"
+msgstr "Главной панели навигации"
+
+#: ../view/layout/sfdm.phtml:7
+#: ../view/layout/sfdm.phtml:17
+msgid "Home"
+msgstr "Для дома"
+
+#: ../view/layout/layout.phtml:36
+msgid "Supervisor Dashboard"
+msgstr "руководитель панель"
+
+#: ../view/layout/sfdm.phtml:8
+msgid "Enterprises"
+msgstr "Предприятия"
+
+#: ../view/layout/sfdm.phtml:9
+msgid "Users"
+msgstr "Пользователи"
+
+#: ../view/layout/sfdm.phtml:10
+msgid "Organizations"
+msgstr "Организаций"
+
+#: ../view/layout/sfdm.phtml:12
+msgid "ECO-OSTIM"
+msgstr "ECO-OSTIM"
+
+#: ../view/layout/sfdm.phtml:13
+msgid "Definitions"
+msgstr "Определения"
+
+#: ../view/layout/sfdm.phtml:14
+msgid "Calendar"
+msgstr "Календарь"
+
+#: ../view/layout/sfdm.phtml:15
+msgid "Mail Box"
+msgstr "Входящие"
+
+#: ../view/layout/sfdm.phtml:16
+msgid "My Documents"
+msgstr "Мои документы"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Show all notifications"
+msgstr "Показать все уведомления"
+
+#: ../view/layout/sfdm.phtml:19
+msgid "New Messages"
+msgstr "Новые сообщения"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Show all messages"
+msgstr "Показать все сообщения"
+
+#: ../view/layout/sfdm.phtml:20
+msgid "Works To Do"
+msgstr "Работает сделать"
+
+#: ../view/layout/sfdm.phtml:20
+msgid "Show all tasks"
+msgstr "Показать все задачи"
+
+#: ../view/layout/sfdm.phtml:21
+msgid "Collaborating Companies"
+msgstr "Сотрудничество компаний"
+
+#: ../view/layout/sfdm.phtml:22
+msgid "Friends"
+msgstr "Друзья"
+
+#: ../view/layout/sfdm.phtml:23
+msgid "Followers"
+msgstr "Следящие элементы кулачков"
+
+#: ../view/layout/sfdm.phtml:24
+msgid "Profile"
+msgstr "Профиль"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Log in"
+msgstr "Войдите в систему"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Log out"
+msgstr "Выход"
+
+#: ../view/layout/sfdm.phtml:26
+msgid "Layout Options"
+msgstr "Параметры компоновки"
+
+#: ../view/layout/sfdm.phtml:27
+msgid "Fixed layout"
+msgstr "Фиксированный макет"
+
+#: ../view/layout/sfdm.phtml:28
+msgid "Activate the fixed layout. You can't use fixed and boxed layouts together"
+msgstr "Активировать фиксированный макет. Вы не можете использовать фиксированные и макетов в штучной упаковке вместе"
+
+#: ../view/layout/sfdm.phtml:29
+msgid "Boxed Layout"
+msgstr "Макет в штучной упаковке"
+
+#: ../view/layout/sfdm.phtml:30
+msgid "Activate the boxed layout"
+msgstr "Активировать макет в штучной упаковке"
+
+#: ../view/layout/sfdm.phtml:31
+msgid "Toggle Sidebar"
+msgstr "Переключение на боковой панели"
+
+#: ../view/layout/sfdm.phtml:32
+msgid "Toggle the left sidebar's state (open or collapse)"
+msgstr "Переключение левой боковой панели в состоянии (открытом или свернуть)"
+
+#: ../view/layout/sfdm.phtml:33
+msgid "Sidebar Expand on Hover"
+msgstr "Sidebar расширить наведите указатель мыши"
+
+#: ../view/layout/sfdm.phtml:34
+msgid "Let the sidebar mini expand on hover"
+msgstr "Позвольте боковой панели мини расширить наведите указатель мыши"
+
+#: ../view/layout/sfdm.phtml:35
+msgid "Toggle Right Sidebar Slide"
+msgstr "Переключения правой боковой панели слайда"
+
+#: ../view/layout/sfdm.phtml:36
+msgid "Toggle between slide over content and push content effects"
+msgstr "Переключение между слайд в отношении содержания и передачи содержимого воздействие"
+
+#: ../view/layout/sfdm.phtml:37
+msgid "Toggle Right Sidebar Skin"
+msgstr "Переключения правой боковой панели кожи"
+
+#: ../view/layout/sfdm.phtml:38
+msgid "Toggle between dark and light skins for the right sidebar"
+msgstr "Переключение между темными и светлыми скины для правой боковой панели"
+
+#: ../view/layout/sfdm.phtml:39
+msgid "Skins"
+msgstr "Скины"
+
+#: ../view/layout/sfdm.phtml:40
+msgid "Blue"
+msgstr "Синий"
+
+#: ../view/layout/sfdm.phtml:41
+msgid "Black"
+msgstr "Черный"
+
+#: ../view/layout/sfdm.phtml:42
+msgid "Purple"
+msgstr "Фиолетовый"
+
+#: ../view/layout/sfdm.phtml:43
+msgid "Green"
+msgstr "Зеленый"
+
+#: ../view/layout/sfdm.phtml:44
+msgid "Red"
+msgstr "Красный"
+
+#: ../view/layout/sfdm.phtml:45
+msgid "Yellow"
+msgstr "Желтый"
+
+#: ../view/layout/sfdm.phtml:46
+msgid "Blue Light"
+msgstr "Синяя лампа"
+
+#: ../view/layout/sfdm.phtml:47
+msgid "Black Light"
+msgstr "Индикатор черного цвета"
+
+#: ../view/layout/sfdm.phtml:48
+msgid "Purple Light"
+msgstr "Фиолетовый лампа"
+
+#: ../view/layout/sfdm.phtml:49
+msgid "Green Light"
+msgstr "Зеленый индикатор"
+
+#: ../view/layout/sfdm.phtml:50
+msgid "Red Light"
+msgstr "Красный индикатор"
+
+#: ../view/layout/sfdm.phtml:51
+msgid "Yellow Light"
+msgstr "Желтый индикатор"
+
+#: ../view/layout/sfdm.phtml:52
+msgid "Recent Activities"
+msgstr "Последние мероприятия"
+
+#: ../view/layout/sfdm.phtml:54
+msgid "Tasks Progress"
+msgstr "Задач прогресса"
+
+#: ../view/layout/sfdm.phtml:55
+msgid "General Settings"
+msgstr "Общие настройки"
+
+#: ../view/layout/sfdm.phtml:56
+msgid "Report panel usage"
+msgstr "Доклад использования панели"
+
+#: ../view/layout/sfdm.phtml:57
+msgid "Some information about this general settings option"
+msgstr "Некоторые сведения об этом общие настройки параметра"
+
+#: ../view/layout/sfdm.phtml:58
+msgid "Allow mail redirect"
+msgstr "Разрешить перенаправления электронной почты"
+
+#: ../view/layout/sfdm.phtml:59
+msgid "Other sets of options are available"
+msgstr "Другие наборы параметров доступны"
+
+#: ../view/layout/sfdm.phtml:60
+msgid "Expose author name in posts"
+msgstr "Подвергайте имя автора в должности"
+
+#: ../view/layout/sfdm.phtml:61
+msgid "Allow the user to show his name in blog posts"
+msgstr "Чтобы разрешить пользователю показать его имя в блоге"
+
+#: ../view/layout/sfdm.phtml:62
+msgid "Chat Settings"
+msgstr "Настройки чата"
+
+#: ../view/layout/sfdm.phtml:63
+msgid "Show me as online"
+msgstr "Покажите мне в Интернете"
+
+#: ../view/layout/sfdm.phtml:64
+msgid "Turn off notifications"
+msgstr "Отключить уведомления"
+
+#: ../view/layout/sfdm.phtml:65
+msgid "Delete chat history"
+msgstr "Удалить историю чата"
+
+#: ../view/layout/layout.phtml:66
+msgid "All rights reserved."
+msgstr "Все права защищены"
+
+#: ../view/layout/layout.phtml:66
+msgid "Copyright"
+msgstr "Авторское право"
+
+#: ../view/layout/layout.phtml:67
+msgid "Version"
+msgstr "Версии"
+
+#: ../view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to OSTIM Virtual Enterprise System"
+msgstr "Добро пожаловать на виртуальную OSTIM корпоративные системы"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Произошла ошибка"
+
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "Сообщение"
+
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+#: ../view/error/404.phtml:55
+msgid "Stack trace"
+msgstr "Трассировка стека"
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Предыдущие исключения"
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Не является исключением и имеющихся"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "A 404 произошла ошибка"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Запрошенный контроллер не смог направить просьбу о"
+
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr "Запрошенный контроллер не может быть отображен в существующий класс контроллера"
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "Запрошенный контроллер не был dispatchable"
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "Запрошенный URL не может быть подкреплен маршрутизации"
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Мы не можем определить в это время почему 404 был сгенерирован."
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "Контроллер"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "Постановляет %s"
+
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr "За исключением"
+
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Help"
+msgstr "Справка"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Languages"
+msgstr "Языки"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Learn more"
+msgstr "Узнайте больше"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Job"
+msgstr "Наша работа"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "VE Team"
+msgstr "В.П. Группа"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Overall Manufactuiring Area"
+msgstr "Производственные площади"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Machine Park Size"
+msgstr "Парковка машины размера"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Overall Enterprise Number"
+msgstr "Общее число предприятий"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Employees"
+msgstr "Сотрудники"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Marketing and Consulting"
+msgstr "Маркетинговые и консалтинговые"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Organization"
+msgstr "Наша Организация"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Imports"
+msgstr "Импорт"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Exports"
+msgstr "Экспорт"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Employees"
+msgstr "Наши сотрудники"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Services"
+msgstr "Наши услуги"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Portfolio"
+msgstr "Наше портфолио"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Load More"
+msgstr "Загрузить дополнительные"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Clients"
+msgstr "Наши клиенты"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Order"
+msgstr "С тем"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Request for Quote"
+msgstr "Запрос предложения"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Contact us"
+msgstr "Свяжитесь с нами"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Name"
+msgstr "Имя"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Email"
+msgstr "Почте"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Send Message"
+msgstr "Отправить сообщение"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Negotiation"
+msgstr "Переговоров"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Auction"
+msgstr "Аукциона"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Auctioning"
+msgstr "С аукциона"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Latest News"
+msgstr "Последние новости"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Integrating the Capabilities and Capacities of more than 5,000 Companies with 60,000 Employees"
+msgstr "Интеграция возможностей и потенциала более чем 5000 компаний с 60000 сотрудников"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Opening OSTIM manufacturing capabilities to the customers from all over the world"
+msgstr "Открытие OSTIM производственные возможности для клиентов со всего мира"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Company Registration"
+msgstr "Регистрация компании"
+
+
+
+
+
+
+msgid "Company"
+msgstr "Компания"
+
+msgid "Virtual Enterprise Company Registration"
+msgstr "Виртуальные предприятия для регистрации компании"
+
+msgid "General Information"
+msgstr "Общие сведения"
+
+msgid "Communication"
+msgstr "Коммуникации"
+
+msgid "Financial"
+msgstr "Финансовые"
+
+msgid "Personel"
+msgstr "Неуполномоченного персонала"
+
+msgid "Logo"
+msgstr "Логотип"
+
+msgid "Tax Number"
+msgstr "Номер налогоплательщика"
+
+msgid "Tax Office"
+msgstr "Налоговое управление"
+
+msgid "Social Security Number"
+msgstr "Номер социального страхования"
+
+msgid "Foundation Date"
+msgstr "Правовые основы деятельности"
+
+msgid "Web Address"
+msgstr "Веб-адрес"
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Building Type"
+msgstr "Здание типа"
+
+msgid "Building Name"
+msgstr "Название здания"
+
+msgid "Country"
+msgstr "Страны"
+
+msgid "State"
+msgstr "Государство"
+
+msgid "Province"
+msgstr "Провинция"
+
+msgid "City"
+msgstr "Город"
+
+msgid "District"
+msgstr "Округ"
+
+msgid "Village"
+msgstr "Деревня"
+
+msgid "Street"
+msgstr "Улицы"
+
+msgid "Alley"
+msgstr "Аллея"
+
+msgid "Number"
+msgstr "Номер"
+
+msgid "Postal Code"
+msgstr "Почтовый код"
+
+msgid "Telephone"
+msgstr "Телефон"
+
+msgid "Fax"
+msgstr "Факс"
+
+msgid "Update"
+msgstr "Обновление"
+
+msgid "Add New Address"
+msgstr "Добавить новый адрес"
+
+msgid "Update Company Information"
+msgstr "Обновить информацию о компании"
+
+msgid "List of Companies"
+msgstr "Список компаний"
+
+msgid "List of Machine Tools"
+msgstr "Список инструментов машины"
+
+msgid "New Submission"
+msgstr "Новое представление"
+
+msgid "Manufacturing Machine Tools"
+msgstr "Производство станков"
+
+msgid "Quality Control Equipment"
+msgstr "Контроль качества оборудования"
+
+msgid "Others"
+msgstr "Другие"
+
+msgid "Manufacturing Operation Type"
+msgstr "Производство Тип Операции"
+
+msgid "Machine Tool Type"
+msgstr "Машины тип инструмента"
+
+msgid "Add New Machine Tool"
+msgstr "Добавить новый станок"
+
+msgid "Measuremnt Process Type"
+msgstr "Измерение тип процесса"
+
+msgid "Quality Control Tool Type"
+msgstr "Инструмент контроля качества типа"
+
+msgid "Add New Q.C. Device"
+msgstr "Добавить новый устройством контроля качества"
+
+msgid "Update Machine Tool Information"
+msgstr "Обновление машины инструмент Информация"
+
+msgid "Add New Device"
+msgstr "Добавление нового устройства"
+
+msgid "Software Information"
+msgstr "Информация о программном обеспечении"
+
+msgid "List of Software"
+msgstr "Список программного обеспечения"
+
+msgid "Update Information"
+msgstr "Обновление информации"
+
+msgid "Update software information"
+msgstr "Обновление программного обеспечения информация"
+
+msgid "Add New Software"
+msgstr "Добавить новое программное обеспечение"
+
+
+msgid "Select a country ... "
+msgstr "Выберите страну ... "
+
+msgid "Select a province ... "
+msgstr "Выберите федерации ... "
+
+msgid "Select a district ... "
+msgstr "Выберите экономический регион ... "
+
+msgid "Select a village ... "
+msgstr "Выберите город ... "
+
+msgid "Search..."
+msgstr "Поиск..."

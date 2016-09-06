@@ -1,0 +1,13 @@
+[
+    {"name":"Main Motor Power","value":"100 KW","group":"Machine Motors Properties"},
+    {"name":"Cooling Pomp Motor","value":"5 KW","group":"Machine Motors Properties"},
+    {"name":"Controller Cooler Motor","value":"1 KW","group":"Machine Motors Properties"},
+    {"name":"Table Rotators","value":"25 KW","group":"Machine Motors Properties"},
+    {"name":"Maximum working space Size (x direction)","value":"2500 mm","group":"Machine Working Space"},
+    {"name":"Maximum working space Size (y direction)","value":"1800 mm","group":"Machine Working Space"},
+    {"name":"Maximum working space Size (z direction)","value":"900 mm","group":"Machine Working Space"},
+    {"name":"Maximum working space Size (a direction)","value":"&#177; 90 &#176","group":"Machine Working Space"},
+    {"name":"Maximum working space Size (b direction)","value":"&#177; 90 &#176","group":"Machine Working Space"},
+    {"name":"Maximum working space Size (c direction)","value":"&#177; 45 &#176","group":"Machine Working Space"},
+    {"name":"Best Machine Accuracy","value":"&#177; 0.001 &#181m","group":"Machine Accuracy"}
+]

@@ -1,0 +1,202 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("https://zeynel.sanalfabrika.com/css/industry/flaticon/flaticon.eot");
+	src: url("https://zeynel.sanalfabrika.com/css/industry/flaticon/flaticon.eot#iefix") format("embedded-opentype"),
+	url(https://zeynel.sanalfabrika.com/css/industry/flaticon/flaticon.woff) format("woff"),
+	url(https://zeynel.sanalfabrika.com/css/industry/flaticon/flaticon.ttf) format("truetype"),
+	url(https://zeynel.sanalfabrika.com/css/industry/flaticon/flaticon.svg) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        //font-size: 28px;
+font-style: normal;
+/*margin-left: 20px;*/  
+}
+
+.flaticon-margin-right{
+    margin-right: 20px;  
+}
+
+.flaticon-atom25:before {
+	content: "\e000";
+}
+.flaticon-battery151:before {
+	content: "\e001";
+}
+.flaticon-battery152:before {
+	content: "\e002";
+}
+.flaticon-battery153:before {
+	content: "\e003";
+}
+.flaticon-bulb13:before {
+	content: "\e004";
+}
+.flaticon-bulb14:before {
+	content: "\e005";
+}
+.flaticon-businessman234:before {
+	content: "\e006";
+}
+.flaticon-cargo-ship:before {
+	content: "\e007";
+}
+.flaticon-crane18:before {
+	content: "\e008";
+}
+.flaticon-crane19:before {
+	content: "\e009";
+}
+.flaticon-crane20:before {
+	content: "\e00a";
+}
+.flaticon-electric58:before {
+	content: "\e00b";
+}
+.flaticon-factory17:before {
+	content: "\e00c";
+}
+.flaticon-fire42:before {
+	content: "\e00d";
+}
+.flaticon-gas-pump1:before {
+	content: "\e00e";
+}
+.flaticon-gas17:before {
+	content: "\e00f";
+}
+.flaticon-gasoline4:before {
+	content: "\e010";
+}
+.flaticon-helmet6:before {
+	content: "\e011";
+}
+.flaticon-house157:before {
+	content: "\e012";
+}
+.flaticon-light-bulb:before {
+	content: "\e013";
+}
+.flaticon-light89:before {
+	content: "\e014";
+}
+.flaticon-mine1:before {
+	content: "\e015";
+}
+.flaticon-mine2:before {
+	content: "\e016";
+}
+.flaticon-nuclear7:before {
+	content: "\e017";
+}
+.flaticon-oil12:before {
+	content: "\e018";
+}
+.flaticon-oil13:before {
+	content: "\e019";
+}
+.flaticon-oil14:before {
+	content: "\e01a";
+}
+.flaticon-oil15:before {
+	content: "\e01b";
+}
+.flaticon-oil16:before {
+	content: "\e01c";
+}
+.flaticon-pick5:before {
+	content: "\e01d";
+}
+.flaticon-pipe5:before {
+	content: "\e01e";
+}
+.flaticon-pipe6:before {
+	content: "\e01f";
+}
+.flaticon-pipe7:before {
+	content: "\e020";
+}
+.flaticon-plug37:before {
+	content: "\e021";
+}
+.flaticon-plug38:before {
+	content: "\e022";
+}
+.flaticon-plug39:before {
+	content: "\e023";
+}
+.flaticon-pollution:before {
+	content: "\e024";
+}
+.flaticon-pressure6:before {
+	content: "\e025";
+}
+.flaticon-pumpjack:before {
+	content: "\e026";
+}
+.flaticon-refresh65:before {
+	content: "\e027";
+}
+.flaticon-rubbish3:before {
+	content: "\e028";
+}
+.flaticon-saw17:before {
+	content: "\e029";
+}
+.flaticon-ship15:before {
+	content: "\e02a";
+}
+.flaticon-socket:before {
+	content: "\e02b";
+}
+.flaticon-socket1:before {
+	content: "\e02c";
+}
+.flaticon-solar-panel:before {
+	content: "\e02d";
+}
+.flaticon-sun92:before {
+	content: "\e02e";
+}
+.flaticon-tank-wagon:before {
+	content: "\e02f";
+}
+.flaticon-toxic10:before {
+	content: "\e030";
+}
+.flaticon-train34:before {
+	content: "\e031";
+}
+.flaticon-transmission-tower:before {
+	content: "\e032";
+}
+.flaticon-truck61:before {
+	content: "\e033";
+}
+.flaticon-truck62:before {
+	content: "\e034";
+}
+.flaticon-truck63:before {
+	content: "\e035";
+}
+.flaticon-water61:before {
+	content: "\e036";
+}
+.flaticon-water63:before {
+	content: "\e037";
+}
+.flaticon-wheelbarrow6:before {
+	content: "\e038";
+}
+.flaticon-wind32:before {
+	content: "\e039";
+}
+.flaticon-worker20:before {
+	content: "\e03a";
+}
+.flaticon-world97:before {
+	content: "\e03b";
+}

@@ -1,0 +1,666 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SanalFabrika\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-23 22:17-0700\n"
+"PO-Revision-Date: 2015-12-23 13:08+0200\n"
+"Last-Translator: Bahram Lotfi Sadigh <bahram.lotfi@ostim.com.tr>\n"
+"Language-Team: OSTIM Teknoloji A.Ş. <info@ostim.com.tr>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../view/layout/sfdm.phtml:1
+msgid "Virtual Enterprise Project"
+msgstr "المشاريع الظاهرية"
+
+#: ../view/layout/sfdm.phtml:2
+msgid "Virtual Enterprise Control Panel"
+msgstr "لوحة تحكم حاسوبى للمؤسسات"
+
+#: ../view/layout/sfdm.phtml:3
+msgid "OSTIM"
+msgstr "اوستیم"
+
+#: ../view/layout/sfdm.phtml:3
+msgid "OSTIM Technology A.Ş."
+msgstr "OSTIM Technology A.Ş."
+
+#: ../view/layout/sfdm.phtml:4
+#: ../view/layout/sfdm.phtml:11
+msgid "Virtual Enterprise"
+msgstr "المشروع الافتراضى"
+
+#: ../view/layout/sfdm.phtml:5
+msgid "Active"
+msgstr "نشط"
+
+#: ../view/layout/sfdm.phtml:6
+msgid "Main Navigation"
+msgstr "الملاحة الرئيسية"
+
+
+#: ../view/layout/layout.phtml:36
+msgid "Home"
+msgstr "الرئيسية"
+
+#: ../view/layout/layout.phtml:36
+msgid "Supervisor Dashboard"
+msgstr "المشرف لوح القيادة"
+
+#: ../view/layout/sfdm.phtml:8
+msgid "Enterprises"
+msgstr "الشركات"
+
+#: ../view/layout/sfdm.phtml:9
+msgid "Users"
+msgstr "المستخدمون"
+
+#: ../view/layout/sfdm.phtml:10
+msgid "Organizations"
+msgstr "المنظمات"
+
+#: ../view/layout/sfdm.phtml:12
+msgid "ECO-OSTIM"
+msgstr "ECO-OSTIM"
+
+#: ../view/layout/sfdm.phtml:13
+msgid "Definitions"
+msgstr "التعاريف"
+
+#: ../view/layout/sfdm.phtml:14
+msgid "Calendar"
+msgstr "التقويم"
+
+#: ../view/layout/sfdm.phtml:15
+msgid "Mail Box"
+msgstr "صندوق البريد"
+
+#: ../view/layout/sfdm.phtml:16
+msgid "My Documents"
+msgstr "المستندات"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Notifications"
+msgstr "اشعارات مزايا برامج الاصلية"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Show all notifications"
+msgstr "اظهار كافة الاشعارات"
+
+#: ../view/layout/sfdm.phtml:19
+msgid "New Messages"
+msgstr "رسائل جديدة"
+
+#: ../view/layout/sfdm.phtml:18
+msgid "Show all messages"
+msgstr "اظهار كافة الرسائل"
+
+#: ../view/layout/sfdm.phtml:20
+msgid "Works To Do"
+msgstr "لا يعمل"
+
+#: ../view/layout/sfdm.phtml:20
+msgid "Show all tasks"
+msgstr "اظهار كافة المهام"
+
+#: ../view/layout/sfdm.phtml:21
+msgid "Collaborating Companies"
+msgstr "وتتعاون الشركات"
+
+#: ../view/layout/sfdm.phtml:22
+msgid "Friends"
+msgstr "الاصدقاء"
+
+#: ../view/layout/sfdm.phtml:23
+msgid "Followers"
+msgstr "اتباع"
+
+#: ../view/layout/sfdm.phtml:24
+msgid "Profile"
+msgstr "ملف تعريف"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Log in"
+msgstr "تسجيل الدخول"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Log out"
+msgstr "تسجيل الخروج"
+
+#: ../view/layout/sfdm.phtml:26
+msgid "Layout Options"
+msgstr "خيارات المظاهر"
+
+#: ../view/layout/sfdm.phtml:27
+msgid "Fixed layout"
+msgstr "تصميم ثابت"
+
+#: ../view/layout/sfdm.phtml:28
+msgid "Activate the fixed layout. You can't use fixed and boxed layouts together"
+msgstr "تفعيل تخطيط محدد. لا يمكنك استخدام معالج التخطيطات الثابتة معا"
+
+#: ../view/layout/sfdm.phtml:29
+msgid "Boxed Layout"
+msgstr "تصميم العبوة الفردية"
+
+#: ../view/layout/sfdm.phtml:30
+msgid "Activate the boxed layout"
+msgstr "تفعيل تخطيط المعباة"
+
+#: ../view/layout/sfdm.phtml:31
+msgid "Toggle Sidebar"
+msgstr "للتبديل بين تشغيل الشريط الجانبى"
+
+#: ../view/layout/sfdm.phtml:32
+msgid "Toggle the left sidebar's state (open or collapse)"
+msgstr "للتبديل بين تشغيل الشريط الجانبى الايسر (الدولة او انهيارها)"
+
+#: ../view/layout/sfdm.phtml:33
+msgid "Sidebar Expand on Hover"
+msgstr "الشريط الجانبى التوسع تحلق"
+
+#: ../view/layout/sfdm.phtml:34
+msgid "Let the sidebar mini expand on hover"
+msgstr "واود ان توسع الشريط الجانبى الصغير تحلق"
+
+#: ../view/layout/sfdm.phtml:35
+msgid "Toggle Right Sidebar Slide"
+msgstr "للتبديل بين تشغيل الشريط الجانبى الايمن الشريحة"
+
+#: ../view/layout/sfdm.phtml:36
+msgid "Toggle between slide over content and push content effects"
+msgstr "للتبديل بين انخفاض محتوى ودفع اثار المحتوى"
+
+#: ../view/layout/sfdm.phtml:37
+msgid "Toggle Right Sidebar Skin"
+msgstr "للتبديل بين تشغيل الشريط الجانبى الايمن الجلد"
+
+#: ../view/layout/sfdm.phtml:38
+msgid "Toggle between dark and light skins for the right sidebar"
+msgstr "التبديل بين الالوان جلود حق الشريط الجانبى"
+
+#: ../view/layout/sfdm.phtml:39
+msgid "Skins"
+msgstr "الجلود"
+
+#: ../view/layout/sfdm.phtml:40
+msgid "Blue"
+msgstr "ازرق"
+
+#: ../view/layout/sfdm.phtml:41
+msgid "Black"
+msgstr "بلاك"
+
+#: ../view/layout/sfdm.phtml:42
+msgid "Purple"
+msgstr "الارجوانى"
+
+#: ../view/layout/sfdm.phtml:43
+msgid "Green"
+msgstr "اخضر"
+
+#: ../view/layout/sfdm.phtml:44
+msgid "Red"
+msgstr "الاحمر"
+
+#: ../view/layout/sfdm.phtml:45
+msgid "Yellow"
+msgstr "اصفر"
+
+#: ../view/layout/sfdm.phtml:46
+msgid "Blue Light"
+msgstr "ضوء ازرق"
+
+#: ../view/layout/sfdm.phtml:47
+msgid "Black Light"
+msgstr "بلاك لايت"
+
+#: ../view/layout/sfdm.phtml:48
+msgid "Purple Light"
+msgstr "ارجوانى فاتح"
+
+#: ../view/layout/sfdm.phtml:49
+msgid "Green Light"
+msgstr "الضوء الاخضر"
+
+#: ../view/layout/sfdm.phtml:50
+msgid "Red Light"
+msgstr "الضوء الاحمر"
+
+#: ../view/layout/sfdm.phtml:51
+msgid "Yellow Light"
+msgstr "ضوء اصفر"
+
+#: ../view/layout/sfdm.phtml:52
+msgid "Recent Activities"
+msgstr "الانشطة الحديثة"
+
+#: ../view/layout/sfdm.phtml:54
+msgid "Tasks Progress"
+msgstr "مهام التقدم"
+
+#: ../view/layout/sfdm.phtml:55
+msgid "General Settings"
+msgstr "الاعدادات العامة"
+
+#: ../view/layout/sfdm.phtml:56
+msgid "Report panel usage"
+msgstr "تقرير الفريق الاستخدام"
+
+#: ../view/layout/sfdm.phtml:57
+msgid "Some information about this general settings option"
+msgstr "بعض المعلومات عن هذا الخيار الاعدادات العامة"
+
+#: ../view/layout/sfdm.phtml:58
+msgid "Allow mail redirect"
+msgstr "السماح باعادة توجيه البريد الالكترونى"
+
+#: ../view/layout/sfdm.phtml:59
+msgid "Other sets of options are available"
+msgstr "مجموعات اخرى من الخيارات المتاحة"
+
+#: ../view/layout/sfdm.phtml:60
+msgid "Expose author name in posts"
+msgstr "يعرض اسم الكاتب فى الوظائف"
+
+#: ../view/layout/sfdm.phtml:61
+msgid "Allow the user to show his name in blog posts"
+msgstr "السماح للمستخدم اظهار اسمه فى المدونة"
+
+#: ../view/layout/sfdm.phtml:62
+msgid "Chat Settings"
+msgstr "اعدادات الدردشة"
+
+#: ../view/layout/sfdm.phtml:63
+msgid "Show me as online"
+msgstr "اظهرنى كغائب عبر الانترنت"
+
+#: ../view/layout/sfdm.phtml:64
+msgid "Turn off notifications"
+msgstr "ايقاف تشغيل الاعلامات"
+
+#: ../view/layout/sfdm.phtml:65
+msgid "Delete chat history"
+msgstr "حذف محفوظات الدردشة"
+
+#: ../view/layout/layout.phtml:50
+msgid "All rights reserved."
+msgstr "جميع الحقوق محفوظة لـ "
+
+#: ../view/layout/layout.phtml:66
+msgid "Copyright"
+msgstr "حقوق النشر"
+
+#: ../view/layout/layout.phtml:67
+msgid "Version"
+msgstr "الاصدار"
+
+
+#: ../view/application/index/index.phtml:2
+#, php-format
+msgid "Welcome to %sOSTIM Virtual Enterprise System%s"
+msgstr "أهلا بك في  %sOSTIM نظام حاسوبى للمؤسسات%s"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "حدث خطا"
+
+#: ../view/error/index.phtml:19
+#: ../view/error/index.phtml:43
+#: ../view/error/404.phtml:55
+msgid "Stack trace"
+msgstr "تتبع الحدث"
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "الاستثناءات السابقة"
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "لم يحدث استثناءات"
+
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "حدث خطأ 404"
+
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "لم تستطع وحدة التحكم معالجة الطلب"
+
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr "لم يستطع ZF2 من مطابقة وحدة التحكم المطلوبة بالمصنفات الموجودة"
+
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "لم يتم مطابقة وحدة التحكم المطلوبة"
+
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "عنوان URL المطلوب لا يمكن ان تقابلها التوجيه"
+
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "لا يمكننا تحديد هذه المرة لماذا تم انشاء 404"
+
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr "المراقب المالى"
+
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "يقرر %s"
+
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr "استثناء"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Help"
+msgstr "المساعدة"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Frequently Asked Questions"
+msgstr "الاسئلة المتداولة"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Languages"
+msgstr "اللغات"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Learn more"
+msgstr "تعرف على المزيد"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Job"
+msgstr "عملنا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "VE Team"
+msgstr "VE فريق"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Overall Manufacturing Area"
+msgstr "مساحت منطقة الصناعة ككل"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Machine Park Size"
+msgstr "حجم الجهاز بارك"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Overall Enterprise Number"
+msgstr "اجمالى عدد المشاريع"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Employees"
+msgstr "الموظفين"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Marketing and Consulting"
+msgstr "والتسويق والاستشارة"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Organization"
+msgstr "منظمتنا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Imports"
+msgstr "الواردات"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Exports"
+msgstr "الصادرات"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Employees"
+msgstr "موظفونا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Portfolio"
+msgstr "مجموعة منتجاتنا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Load More"
+msgstr "حمولة اكبر"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Our Clients"
+msgstr "عملاءنا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Order"
+msgstr "الامر"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Request for Quote"
+msgstr "طلب الاسعار"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Contact us"
+msgstr "الاتصال بنا"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Name"
+msgstr "الاسم"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Email"
+msgstr "البريد الالكترونى"
+
+#: ../view/error/index.phtml:15
+#: ../view/error/index.phtml:39
+msgid "Message"
+msgstr "رسالة"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Send Message"
+msgstr "ارسال رسالة"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Negotiation"
+msgstr "التفاوض"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Auction"
+msgstr "المزاد"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Auctioning"
+msgstr "بيع بالمزاد العلني"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Latest News"
+msgstr "احدث الاخبار"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Integrating the Capabilities and Capacities of more than 5,000 Companies with 60,000 Employees"
+msgstr "دمج امكانات وقدرات اكثر من 5,000 شركة يعمل فيها 60 الف شخص"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Opening OSTIM manufacturing capabilities to the customers from all over the world"
+msgstr "فتح قدرات تصنيع OSTIM الزبائن من جميع انحاء العالم"
+
+#: ../view/layout/sfdm.phtml:25
+msgid "Company Registration"
+msgstr "التسجيل الشركة"
+
+
+
+
+
+
+msgid "Company"
+msgstr "الشركة"
+
+msgid "Virtual Enterprise Company Registration"
+msgstr "المشروع الافتراضى لتسجيل الشركة"
+
+msgid "General Information"
+msgstr "معلومات عامة"
+
+msgid "Communication"
+msgstr "الاتصالات"
+
+msgid "Financial"
+msgstr "المالية"
+
+msgid "Personel"
+msgstr "اكفاء"
+
+msgid "Logo"
+msgstr "شعار"
+
+msgid "Tax Number"
+msgstr "ورقم ضريبة القيمة المضافة"
+
+msgid "Tax Office"
+msgstr "مكتب الضرائب"
+
+msgid "Social Security Number"
+msgstr "رقم الضمان الاجتماعى"
+
+msgid "Foundation Date"
+msgstr "تاريخ المؤسسة"
+
+msgid "Web Address"
+msgstr "عنوان الويب"
+
+msgid "Submit"
+msgstr "تقديم"
+
+msgid "Cancel"
+msgstr "الغاء"
+
+msgid "Building Type"
+msgstr "نوع المبنى"
+
+msgid "Building Name"
+msgstr "اسم المبنى"
+
+msgid "Country"
+msgstr "البلد"
+
+msgid "State"
+msgstr "الدولة"
+
+msgid "Province"
+msgstr "المقاطعة"
+
+msgid "City"
+msgstr "المدينة"
+
+msgid "District"
+msgstr "حى"
+
+msgid "Village"
+msgstr "القرية"
+
+msgid "Street"
+msgstr "الشارع"
+
+msgid "Alley"
+msgstr "بالحارة"
+
+msgid "Number"
+msgstr "عدد"
+
+msgid "Postal Code"
+msgstr "الرمز البريدى"
+
+msgid "Telephone"
+msgstr "الهاتف"
+
+msgid "Fax"
+msgstr "فاكس"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Add New Address"
+msgstr "اضافة عنوان جديد"
+
+msgid "Update Company Information"
+msgstr "تحديث بيانات الشركة"
+
+msgid "List of Companies"
+msgstr "قائمة الشركات"
+
+msgid "List of Machine Tools"
+msgstr "قائمة الالات"
+
+msgid "New Submission"
+msgstr "عرض جديد"
+
+msgid "Manufacturing Machine Tools"
+msgstr "تصنيع الالات"
+
+msgid "Quality Control Equipment"
+msgstr "معدات مراقبة الجودة"
+
+msgid "Others"
+msgstr "اخرون"
+
+msgid "Manufacturing Operation Type"
+msgstr "عملية التصنيع النوع"
+
+msgid "Machine Tool Type"
+msgstr "المخارط النوع"
+
+msgid "Add New Machine Tool"
+msgstr "اضافة جهاز جديد الاداة"
+
+msgid "Measurement Process Type"
+msgstr "وعملية القياس النوع"
+
+msgid "Quality Control Tool Type"
+msgstr "مراقبة الجودة نوع الاداة"
+
+msgid "Add New Q.C. Device"
+msgstr "اضافة جهاز جديد لمراقبة الجودة"
+
+msgid "Update Machine Tool Information"
+msgstr "تحديث معلومات المخارط"
+
+msgid "Add New Device"
+msgstr "اضافة جهاز جديد"
+
+msgid "Software Information"
+msgstr "معلومات حول البرنامج"
+
+msgid "List of Software"
+msgstr "قائمة البرامج"
+
+msgid "Update Information"
+msgstr "تحديث المعلومات"
+
+msgid "Update software information"
+msgstr "تحديث معلومات حول البرنامج"
+
+msgid "Add New Software"
+msgstr "اضافة برامج جديدة"
+
+msgid "Select a country ... "
+msgstr " ... اختيار بلد"
+
+msgid "Select a province ... "
+msgstr " ... حدد المقاطعة"
+
+msgid "Select a district ... "
+msgstr " ... اختر منطقة"
+
+msgid "Select a village ... "
+msgstr " ... حدد احدى القرى"
+
+msgid "Search..."
+msgstr "...البحث"

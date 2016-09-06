@@ -1,0 +1,103 @@
+/*Profile
+------------------------------------*/
+.profile .list-group i {
+	min-width: 20px;
+	margin-right: 5px;
+	text-align: center;
+}
+
+.profile .heading-sm-v2 {
+	font-size: 16px;
+}
+
+.profile .profile-body {
+	padding: 20px;
+	background: #f7f7f7;
+}
+
+/*Scrollbar*/
+.mCustomScrollbar {
+	height: 320px; 
+}
+
+/*Panel Title Box*/
+.profile .panel-profile {
+	border: none;
+	margin-bottom: 0;
+	box-shadow: none;
+}
+.profile .panel-profile.no-bg {
+	background: inherit;
+}
+
+.profile .panel-heading {
+	color: #585f69;
+	background: #fff;
+	padding: 7px 15px;
+	border-bottom: solid 3px #f7f7f7;
+}
+
+.profile .panel-heading-v2.overflow-h i.pull-right,
+.profile .panel-heading.overflow-h i.pull-right {
+	top: 7px;
+	position: relative;
+}
+
+.profile .panel-heading-v2.overflow-h i.pull-right,
+.profile .panel-heading.overflow-h a i {
+	color: #777;
+}
+
+.profile .panel-heading-v2.overflow-h i.pull-right,
+.profile .panel-heading.overflow-h a:hover i {
+	color: #555;
+}
+
+.profile .panel-title {
+	font-size: 16px;
+}
+
+/*Notification*/
+.profile .notification {
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 15px 15px 0 0;
+	border-top: 1px solid #eee;
+}
+
+.profile .notification:first-child {
+	border-top: none;
+}
+
+.profile .notification img,
+.profile .notification i {
+	float: left;
+	margin-right: 10px;
+}
+
+.profile .notification img {
+	width: 35px;
+	height: 35px;
+}
+
+.profile .notification span {
+	color: #777;
+	display: block;
+}
+
+.profile .notification small {
+	color: #999;
+	font-size: 11px;
+}
+
+.profile .notification h4 {
+	margin: 0 0 3px;
+	font-size: 14px;
+}
+
+.profile .notification p {
+	color: #777;
+	font-size: 12px;
+}
+
+

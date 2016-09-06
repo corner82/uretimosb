@@ -1,0 +1,329 @@
+{
+    "token": {
+        "#": "#",
+        "Successful Submission":
+                "",
+        "Sure":
+                "",
+        "Progressing":
+                "",
+        "test":
+                "",
+        "Property Search":
+                "",
+        "Have a nice day!":
+                "",
+        "Do you confirm new role submission?":
+                "",
+        "Go":
+                "",
+        "Cancel":
+                "",
+        "Passive sub-role submission is prohibited!":
+                "",
+        "Unsuccessful Submission":
+                "",
+        "Error log registered":
+                "",
+        "This name is already registered in System.":
+                "",
+        "Try another name please!":
+                "",
+        "Are you sure to delete the role?":
+                "",
+        "Removed...":
+                "",
+        "Please check the role you want to delete!":
+                "",
+        "Unsuccessful remove operation!":
+                "",
+        "Successful name change":
+                "",
+        "Unsuccessful name change":
+                "",
+        "Are you sure to change the name?":
+                "",
+        "New name can't be empty":
+                "",
+        "Please enter a valid name":
+                "",
+        "Activation changed successfully":
+                "",
+        "Are you sure to change the activation?":
+                "",
+        "Activation change failed!":
+                "",
+        "This name is already registered in System.":
+                "",
+        "Please fill user information forms first":
+                "",
+        "General information submission failed":
+                "",
+        "This username has already been registered in the system":
+                "",
+        "This email address has already been registered in the system":
+                "",
+        "General information submitted successfully":
+                "",
+        "Please fill user general and address information forms first":
+                "",
+        "Please fill user general information form first":
+                "",
+        "Reset":
+                "",
+        "Cancel":
+                "",
+        "Are you sure to erase all form fields?":
+                "",
+        "Reset operation failed...":
+                "",
+        "Form fields cleared":
+                "",
+        "OK":
+                "",
+        "Ok":
+                "",
+        "System is unable to find required information":
+                "",
+        "Please select a communication type from list...":
+                "",
+        "Please select an address type from list...":
+                "",
+        "Please select a country from list...":
+                "",
+        "Please select a city from list...":
+                "",
+        "Form Reset":
+                "",
+        "Select a Communication Type":
+                "",
+        "Please select your prefered language from list...":
+                "",
+        "Submission Process":
+                "",
+        "Warning":
+                "",
+        "Please select a district from list...":
+                "",
+        "Register and Continue to Address Information":
+                "",
+        "Register and Continue to Communication Information":
+                "",
+        "Register and Continue to Company Information":
+                "",
+        "Update and Continue to Address Information":
+                "",
+        "Update and Continue to Communication Information":
+                "",
+        "Update and Continue to Company Information":
+                "",
+        "Address information submitted sucessfully":
+                "",
+        "Please select company ownership situation from list...":
+                "",
+        "Contact information submitted successfully":
+                "",
+        "Manufacturer":
+                "",
+        "Machine Model":
+                "",
+        "Machine Name":
+                "",
+        "Machine Type":
+                "",
+        "Category":
+                "",
+        "Note! Machine tool properties are missing":
+                "",
+        "Note! Machine tool properties are missing. Please fill required property information from edit section":
+                "",
+        "Select a machine tool":
+                "",
+        "Please select a machine tool from machine tools list":
+                "",
+        "Select machine and continue":
+                "",
+        "Please first select a machine tool from machine tools list":
+                "",
+        "Select a machine tool to view machine information details":
+                "",
+        "Machine Manufacturer":
+                "",
+        "General Machine Information":
+                "",
+        "This machine properties are missing":
+                "",
+        "If you are interested to compelete machine information click edit button below":
+                "",
+        "Edit":
+                "",
+        "No data is available for this machine tool":
+                "",
+        "Required information for this machine are missing":
+                "",
+        "This machine is already registered in your company inventory. There is no need to add it again.":
+                "",
+        "Field":
+                "",
+        "Machine Name":
+                "",
+        "Machine Model":
+                "",
+        "Machine Type":
+                "",
+        "Mandatory field":
+                "",
+        "Property":
+                "",
+        "select":
+                "",
+        "Unit":
+                "",
+        "unit":
+                "",
+        "Select Options":
+                "",
+        "Add element":
+                "",
+        "Close":
+                "",
+        "option 1":
+                "",
+        "option 2":
+                "",
+        "Machine property":
+                "",
+        "Save Properties":
+                "",
+        "View XML":
+                "",
+        "Find a property":
+                "",
+        "Find a unit":
+                "",
+        "Select property unit":
+                "",
+        "Define a machine property":
+                "",
+        "Select machine property":
+                "",
+        "Select a machine property":
+                "",
+        "Properties":
+                "",
+        "Select a unit":
+                "",
+        "Please select a property":
+                "",
+        "On":
+                "",
+        "Off":
+                "",
+        "Edit Names":
+                "",
+        "Edit XML":
+                "",
+        "Allow Select":
+                "",
+        "Clear All":
+                "",
+        "Developer Mode":
+                "",
+        "Label":
+                "",
+        "Value":
+                "",
+        "Remove Element":
+                "",
+        "Save":
+                "",
+        "Please select related manufacturing category from list...":
+                "",
+        " properties":
+                "",
+        "You are going to delete ":
+                "",
+        " from your inventory list. ":
+                "",
+        "Are you sure?":
+                "",
+        "Delete":
+                "",
+        "Not selected":
+                "",
+        "Selected Machine Type":
+                "",
+        "User - Company user information added":
+                "",
+        "Engineer":
+                "",
+        "CEO":
+                "",
+        "Chief Eng.":
+                "",
+        "Total number of employees":
+                "",
+        "Foundation Date":
+                "",
+        "Engineers":
+                "",
+        "Adiminstrative staff":
+                "",
+        "Foreign trade staff":
+                "",
+        "Sales staff":
+                "",
+        "Technicians":
+                "",
+        "Workers":
+                "",
+        "Product Detail":
+                "",
+        "Product Properties":
+                "",
+        "All":
+                "",
+        "Machines List":
+                "",
+        "Manufacturer":
+                "",
+        "Name":
+                "",
+        "Number":
+                "",
+        "Year":
+                "",
+        "Series":
+                "",
+        "Machine Details":
+                "",
+        "Company Profile":
+                "",
+        "Performance Meters":
+                "",
+        "Company Products":
+                "",
+        "Company Members":
+                "",
+        "Company Projects":
+                "",
+        "Comments":
+                "",
+        "Company History":
+                "",
+        "Product Details":
+                "",
+        "Title":
+                "",
+        "Log in":
+                "",
+        "Log out":
+                ""
+
+    },
+    "regex": [
+        ["Budget", "Bütçe"],
+        ["^Something at start of text", ""],
+        ["This will be case insensitive", "i", ""]
+    ]
+}

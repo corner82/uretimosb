@@ -1,0 +1,239 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle(' Sanal Fabrika ' . $this->translate('Denetim Masası'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Bootstrap 3.3.4 -->
+        <!-- page layout main css library -->
+        <link rel="stylesheet" type="text/css"  href="<?php echo $this->basePath('css/bootstrap.min.css') ?>" /> 
+
+        <!-- Easyui implementation -->
+        <!-- Icon elements css documents -->
+        <!-- Easyui elements css documents -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/jquery-easyui-1.3.3/themes/icon.css') ?>" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/jquery-easyui-1.3.3/themes/bootstrap/easyui.css') ?>" rel="stylesheet" type="text/css" />
+
+        <!-- FontAwesome 4.3.0 -->
+        <!-- This library affect icons, animations  and letters style in the page. -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/font-awesome-4.4.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
+
+        <!-- Ionicons 2.0.0 -->
+        <!-- Ion Icon elements css documents -->
+        <!--<link href="<?php echo $this->basePath('plugins/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />-->
+
+        <!-- Theme style -->
+        <!-- AdminLTE Skins. Choose a skin from the css/skins 
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('dist/css/AdminLTE.css') ?>" />        
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('dist/css/skins/_all-skins.min.css') ?>" />
+
+        <!-- iCheck -->
+        <!-- checkbox css -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/iCheck/flat/blue.css') ?>" />
+
+        <!-- Morris chart -->
+        <!-- To display diagrams and graphs -->
+        <!--<link rel="stylesheet" type="text/css"  href="plugins/morris/morris.css"/>-->
+
+        <!-- jvectormap -->
+        <!-- vectorized map (Blue map in the page) -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/jvectormap/jquery-jvectormap-1.2.2.css') ?>" />
+
+        <!-- Date Picker -->
+        <!-- Date picker css -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/datepicker/datepicker3.css') ?>" />
+
+        <!-- Daterange picker -->
+        <!-- Date range css -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/daterangepicker/daterangepicker-bs3.css') ?>" />
+
+        <!-- bootstrap wysihtml5 - text editor -->
+        <!-- text editor css -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') ?>"/>
+
+        <!-- bootstrap-modal-nakupanda ekleniyor-->
+        <!-- modal css docs -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/bootstrap-modal-nakupanda/bootstrap-dialog.min.css') ?>"/>
+
+        <!-- Alpaca-->
+        <!-- dynamic forms css -->
+        <!--<link type="text/css" href="//code.cloudcms.com/alpaca/1.5.14/bootstrap/alpaca.min.css"/>-->
+        <!--<link type="text/css" href="../../plugins/alpaca/css/alpaca.min.css" rel="stylesheet"/>-->
+        <link rel="stylesheet" type="text/css"  href="<?php echo $this->basePath('plugins/alpaca/css/alpaca.min.css') ?>"/>
+
+        <!-- kevinchappell form builder plugin ekleniyor -->
+        <!-- Form builder js docs -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/bootstrap-form-builder-kevinchappell/form-builder.css') ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/bootstrap-form-builder-kevinchappell/form-render.css') ?>"/>
+
+        <!-- machine-tree css-->
+        <!-- customized tree by zeynel css docs -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/zeynel/machine-tree/tree.css') ?>"/>
+
+        <!-- validation engine css -->
+        <!-- form filed validation engine css-->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->basePath('plugins/validationEngine/validationEngine.jquery.css') ?>"/>
+
+    </head>
+
+
+    <body class="skin-blue sidebar-mini">
+
+
+        <?php echo $this->content; ?>
+        <?php echo $this->inlineScript() ?>
+
+
+
+        <!-- jQuery 2.1.4 -->
+        <!-- Main js docs to render the page --> 
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jQuery/jQuery-2.1.4.min.js') ?>"></script>
+
+        <!-- jQuery UI 1.11.2 -->
+        <!-- jquery-ui is used for pagination in this page --> 
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jQueryUI/jquery-ui-1.11.2.min.js') ?>" ></script>
+
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <script>
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+
+        <!-- easyui implementation -->
+        <!-- Easyui and multilanguage Easyui js docs -->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jquery-easyui-1.3.3/jquery.easyui.min.js') ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jquery-easyui-1.3.3/locale/easyui-lang-tr.js') ?>"></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jquery-easyui-1.3.3/src/datagrid-filter.js') ?>"></script>
+
+        <!-- Bootstrap 3.3.2 JS -->        
+        <!-- Main bootstrap js docs to render the page --> 
+        <script type="text/javascript" src="<?php echo $this->basePath('js/bootstrap.min.js') ?>" ></script>    
+
+        
+        <!-- jvectormap -->
+        <!-- Vectorized Map js document -->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') ?>" ></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/jvectormap/jquery-jvectormap-world-mill-en.js') ?>" ></script>
+
+        <!-- daterangepicker -->
+        <!-- date range picker js document -->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>-->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/daterangepicker/moment.min.js') ?>" ></script>
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/daterangepicker/daterangepicker.js') ?>" ></script>
+        
+        <!-- datepicker -->
+        <!-- date picker js document -->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/datepicker/bootstrap-datepicker.js') ?>" ></script>
+        
+        <!-- Bootstrap WYSIHTML5 -->
+        <!-- text editor js document -->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') ?>"></script>
+        
+        <!-- Slimscroll -->
+        <!-- scrolling js document -->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/slimScroll/jquery.slimscroll.min.js') ?>" ></script>
+        
+        <!-- FastClick -->
+        <!-- easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers.  -->
+        <script type="text/javascript" src='<?php echo $this->basePath('plugins/fastclick/fastclick.min.js') ?>'></script>
+        
+        <!-- Zeynel plugins -->
+        <!-- customized plugin js document-->
+        <script type="text/javascript" src='<?php echo $this->basePath('plugins/zeynel/exPlugs.js') ?>'></script>
+        
+        <!-- Bahram plugins -->
+        <!-- customized plugin js document for machine tree -->
+        <script type="text/javascript" src='<?php echo $this->basePath('plugins/bahram/exPlugs.js') ?>'></script>
+
+        <!-- AdminLTE App -->
+        <!-- app js -->
+        <script type="text/javascript" src="<?php echo $this->basePath('dist/js/app.js') ?>" ></script>    
+
+        <!-- AdminLTE for demo purposes -->
+        <script src="<?php echo $this->basePath('dist/js/demo.js') ?>" type="text/javascript"></script>
+
+        <!-- highcharts modülü -->
+        <!-- Chart boxes on page header js document -->
+        <!--<script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>-->
+        <script src="<?php echo $this->basePath('plugins/highcharts/highcharts.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/highcharts/highcharts-3d.js') ?>"></script>
+        <script src="<?php echo $this->basePath('plugins/highcharts/funnel.js') ?>"></script>    
+        <!-- 2. You can add print and export feature by adding this line -->  
+        <!--<script src="http://code.highcharts.com/modules/exporting.js"></script>-->
+        <!-- Export Client-Side module (for export) dependencies -->
+        <script src="<?php echo $this->basePath('plugins/highcharts/modules/exporting.js') ?>"></script>
+        <!--<script src="<?php echo $this->basePath('plugins/highcharts/modules/canvas-tools.js') ?>"></script>-->
+        <script src="<?php echo $this->basePath('plugins/highcharts/modules/export-csv.js') ?>"></script>
+        <!--<script type="application/javascript" src="<?php echo $this->basePath('plugins/highcharts/modules/jspdf.min.js') ?>"></script>-->
+        <!--<script src="<?php echo $this->basePath('plugins/highcharts/modules/highcharts-export-clientside.js') ?>"></script>-->
+
+        <!-- Select2 -->
+        <!-- Fancy drop down Input fields js document -->
+        <!--<script src="<?php echo $this->basePath('plugins/select2/select2.full.js') ?>" type="text/javascript"></script>-->
+
+        <!-- bootstrap-modal-nakupanda ekleniyor-->
+        <!-- Bootstrap modals js document -->
+        <script src="<?php echo $this->basePath('plugins/bootstrap-modal-nakupanda/bootstrap-dialog.min.js') ?>" type="text/javascript"></script>
+
+        <!-- ddslick select plugin ekleniyor-->
+        <!-- ddslick fancy drop down js documents -->
+        <script src="<?php echo $this->basePath('plugins/bootstrap-select-ddslick/js/ddslick.min.js') ?>" type="text/javascript"></script>
+
+        <!-- Form validation js -->
+        <!-- validation engine js documents -->
+        <script src="<?php echo $this->basePath('plugins/validationEngine/jquery.validationEngine-' . $this->layout()->test . '.js'); ?>" type="text/javascript"></script>
+        <!--<script src="<?php echo $this->basePath('plugins/validationEngine/jquery.validationEngine-en.js'); ?>" type="text/javascript"></script>-->
+        <script src="<?php echo $this->basePath('plugins/validationEngine/jquery.validationEngine.js') ?>" type="text/javascript"></script>
+
+        <!-- multulanguage js -->
+        <!-- multilanguage jquery support js document -->
+        <script src="<?php echo $this->basePath('plugins/jquery-lang-js-master/js.cookie.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo $this->basePath('plugins/jquery-lang-js-master/jquery-lang.js') ?>" type="text/javascript"></script>
+        <!--<script src="js/langpack/nonDynamic.js" charset="utf-8" type="text/javascript"></script>-->
+
+        <!-- alpaca -->        
+        <!-- dynamic alpaca forms css -->
+        <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>-->     
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/alpaca/js/handlebars.min.js') ?>"></script>
+        <!--<script type="text/javascript" src="../../plugins/alpaca/js/Handlebars.min.js"></script>-->
+        <script type="text/javascript" src="<?php echo $this->basePath('plugins/alpaca/js/alpaca.min.js') ?>"></script>
+        <!--<script type="text/javascript" src="../../plugins/alpaca/js/Alpaca.min.js"></script>-->
+        <!--<script type="text/javascript" src="../../plugins/alpaca/js/Alpaca-downloaded.js"></script>-->
+
+        <!-- kevinchappell form builder plugin ekleniyor-->
+        <!-- kevin chappell form builder js documents -->
+        <script src="<?php echo $this->basePath('plugins/bootstrap-form-builder-kevinchappell/form-builder.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo $this->basePath('plugins/bootstrap-form-builder-kevinchappell/form-render.js') ?>" type="text/javascript"></script>
+
+        <!-- jquuery-ui touch punch ekleniyor-->
+        <!-- jquery- ui touch punch plugins for form building -->
+        <script src="<?php echo $this->basePath('plugins/jquery-ui-touch/jquery.ui.touch-punch.js') ?>" type="text/javascript"></script>
+
+        <!-- sayfa içine yazılan js'ler ekleniyor-->
+        <!-- Special js document for this page -->
+        <script src="<?php echo $this->basePath('jsinline/sanalFabrika_cmt.js') ?>" type="text/javascript"></script>
+
+        <!-- leftMenuFunction Js-->
+        <!-- left menu function js -->
+        <script src="<?php echo $this->basePath('jsinline/leftMenuFunction.js') ?>" type="text/javascript"></script>
+
+        <script>
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+
+
+    </body>
+</html>
+
+
+
+
+
