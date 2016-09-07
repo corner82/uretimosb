@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -102,7 +102,7 @@ $("#roles-loading-image").loadImager('appendImage');
  * @since 31/08/2016
  */
 var ajaxConsultantRoles = $('#roles-loading-image').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillClusterRolesDdlist_sysAclRoles' ,
                     pk : $("#pk").val() 
             }
@@ -132,7 +132,7 @@ ajaxConsultantRoles.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -156,7 +156,7 @@ ajaxConsultantRoles.ajaxCallWidget('call');
  * @since 31/08/2016
  */
 var ajaxClusters = $(window).ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillOsbClustersDdlist_sysOsbClusters' ,
                     pk : $("#pk").val() ,
                     language_code : $('#langCode').val(),
@@ -187,7 +187,7 @@ ajaxClusters.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -276,7 +276,7 @@ window.deleteClusterEmpUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysOsbPerson' ,
                     id : id,
@@ -357,7 +357,7 @@ window.insertClusterEmp = function () {
      var role_id = ddDataClusterRole.selectedData.value; 
       
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsertUrgePerson_infoUsers' ,
                          pk : $("#pk").val(),
@@ -535,7 +535,7 @@ window.updateClusterEmpDialog = function (id, row) {
             $("#loading-image-cluster-popup").loadImager('appendImage');
             
             var ajaxClustersRolePopup = $("#loading-image-role-popup").ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillClusterRolesDdlist_sysAclRoles' ,
                                 pk : $("#pk").val(),
                                 language_code : $('#langCode').val()
@@ -563,7 +563,7 @@ window.updateClusterEmpDialog = function (id, row) {
                                 onSelected: function(selectedData){
                                     if(selectedData.selectedData.value>0) {
                                         /*$('#tt_tree_menu').tree({
-                                            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                         });*/
                                  }
                              }   
@@ -584,7 +584,7 @@ window.updateClusterEmpDialog = function (id, row) {
             ajaxClustersRolePopup.ajaxCallWidget('call');
             
             var ajaxClustersPopup = $("#loading-image-cluster-popup").ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillOsbClustersDdlist_sysOsbClusters' ,
                                 pk : $("#pk").val(),
                                 language_code : $('#langCode').val()
@@ -612,7 +612,7 @@ window.updateClusterEmpDialog = function (id, row) {
                                 onSelected: function(selectedData){
                                     if(selectedData.selectedData.value>0) {
                                         /*$('#tt_tree_menu').tree({
-                                            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                         });*/
                                  }
                              }   
@@ -692,7 +692,7 @@ window.updateClusterEmp = function (id) {
      var role_id = ddDataClusterRole.selectedData.value;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysOsbClusters' ,
                          pk : $("#pk").val(),
@@ -782,7 +782,7 @@ window.activeClusterEmp = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysOsbPerson' ,
                          id : id,

@@ -26,8 +26,8 @@ $(document).ready(function () {
     
     
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: verbal_service_url,
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val(),
@@ -74,8 +74,8 @@ $(document).ready(function () {
         }
     });
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: user_desc_service_url,
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val(),
@@ -119,8 +119,8 @@ $(document).ready(function () {
     });
     
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: ref_service_url,
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val(),
@@ -158,8 +158,8 @@ $(document).ready(function () {
     });
     
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: soc_med_service_url,
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val(),
@@ -193,8 +193,8 @@ $(document).ready(function () {
      */
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: address_info_service_url,
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val(),

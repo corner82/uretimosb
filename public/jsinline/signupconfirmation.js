@@ -63,7 +63,7 @@ window.insertPassword = function () {
      
 
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'setPersonPassword_infoUsers' ,
                          key : $("#key").val(),

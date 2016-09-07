@@ -65,7 +65,7 @@ $(document).ready(function () {
         
         
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillConsultantOperationsToolsDropDown_sysOperationTypesTools' ,
                     language_code : 'tr',
                     main_group : 0,
@@ -125,7 +125,7 @@ $(document).ready(function () {
      * @since 10/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkFillConsultantOperationsDropDown_sysOperationTypes' ,
                 language_code : 'tr',
                 main_group : 2,
@@ -168,7 +168,7 @@ $(document).ready(function () {
      * @since 09/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetConsWaitingForConfirm_blActivationReport' ,
                 pk : $("#pk").val()}, 
         type: 'GET',
@@ -223,7 +223,7 @@ $(document).ready(function () {
         var row = rows[getRowIndex(target)];
         //console.log(row);
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkGetConsConfirmationProcessDetails_sysOsbConsultants' ,
                     pk : $("#pk").val(),
                     profile_id : row.id}, 
@@ -285,7 +285,7 @@ $(document).ready(function () {
                 //$('.nav-tabs a[href="#tab_1-1"]').tab('show');  
                 //alert('test');
             },  
-            url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             queryParams : { url:'pkGetConsPendingFirmProfile_sysOsbConsultants' ,
                             pk : $('#pk').val()}, 
             //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
@@ -338,7 +338,7 @@ $(document).ready(function () {
      * @since 11/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetConsultantUpDashBoardCount_blActivationReport' ,
                 pk : $("#pk").val()},
         type: 'GET',
@@ -365,7 +365,7 @@ $(document).ready(function () {
      * @since 10/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetConsultantOperation_blActivationReport' ,
                 pk : $("#pk").val()},
         type: 'GET',

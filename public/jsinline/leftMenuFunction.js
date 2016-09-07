@@ -6,8 +6,8 @@
 //       alert($("#pk").val());
 //      console.log('publicKey is ' + $("#pk").val());
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
             data: {
                 parent: 0,
                 pk: $("#pk").val(),

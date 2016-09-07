@@ -9,7 +9,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -150,7 +150,7 @@ window.insertMenuTypeActionDialog = function (id, row) {
             $("#mach-prod-box-popup-insert").loadImager('appendImage');
             
             var ajaxACLResourcesPopup = $(window).ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'pkFillMenuTypeList_sysMenuTypes' ,
                             pk : $("#pk").val() 
                     }
@@ -177,7 +177,7 @@ window.insertMenuTypeActionDialog = function (id, row) {
                             onSelected: function(selectedData){
                                 if(selectedData.selectedData.value>0) {
                                     /*$('#tt_tree_menu').tree({
-                                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                     });*/
                              }
                          }   
@@ -241,7 +241,7 @@ window.insertActionMenuType = function (id) {
      var menu_types_id = ddData.selectedData.value;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkInsert_sysAclMenuTypesActions' ,
                          action_id : id,
@@ -339,7 +339,7 @@ window.updateMenuTypeActionDialog = function (id, row) {
             $("#mach-prod-box-popup").loadImager('appendImage');
             
             var ajaxACLResourcesPopup = $(window).ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'pkFillMenuTypeList_sysMenuTypes' ,
                             pk : $("#pk").val() 
                     }
@@ -366,7 +366,7 @@ window.updateMenuTypeActionDialog = function (id, row) {
                             onSelected: function(selectedData){
                                 if(selectedData.selectedData.value>0) {
                                     /*$('#tt_tree_menu').tree({
-                                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                     });*/
                              }
                          }   
@@ -439,7 +439,7 @@ window.updateActionMenuType = function (id, action_id) {
      var action_id = action_id;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysAclMenuTypesActions' ,
                          action_id : action_id,

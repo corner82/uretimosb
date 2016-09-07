@@ -24,7 +24,7 @@ $(document).ready(function () {
         onDblClickRow: function (index, row) {
 
         },
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
         queryParams: {
             url: 'pkFillAllCompanyMachineLists_infoFirmMachineTool',

@@ -51,7 +51,7 @@ var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
 * 01/08/2016
 */
 $('#tt_tree_menu2').tree({  
-   url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillConsultantRolesTree_sysAssignDefinitionRoles&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+   url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillConsultantRolesTree_sysAssignDefinitionRoles&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
    method: 'get',
    animate: true,
    checkbox: false,
@@ -144,7 +144,7 @@ window.attachAssignTypeRole = function (role_id, tag, tagBuilder) {
     var assign_definition_id = tag.attr('data-assign_definition_id');
 
     var aj = $(window).ajaxCall({
-         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
          data : {
              url:'pkInsert_sysAssignDefinitionRoles' ,
              role_id : role_id,
@@ -225,7 +225,7 @@ window.deleteAssignTypeRole = function(id, tag, tagBuilder) {
     var assign_definition_id = tag.attr('data-assign_definition_id');
 
     var ajPopUpDelete = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkDelete_sysAssignDefinitionRoles' ,
                          id : id,
@@ -292,7 +292,7 @@ window.getAssignTypeRole = function(node, treeObj, tagBuilder) {
 
     if(tagBuilder.tagCabin('findSpecificTags', nodeID, 'data-role_id')) {
         var ajaxMacProp = $('#test-cabin').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data : {
                         url:'pkFillAssignDefinitionOfRoles_sysAssignDefinitionRoles' ,
                         language_code : $('#langCode').val(),
@@ -370,7 +370,7 @@ window.getAssignTypeRoleNotAssigned = function(node, treeObj, tagBuilder) {
 
     if(tagBuilder.tagCabin('findSpecificTags', nodeID, 'data-role_id')) {
         var ajaxMacPropNot = $('#test-cabin-not').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data : {
                         url:'pkFillNotInAssignDefinitionOfRoles_sysAssignDefinitionRoles' ,
                         language_code : $('#langCode').val(),

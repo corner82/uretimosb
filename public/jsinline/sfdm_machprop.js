@@ -58,7 +58,7 @@ var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
 * 25/04/2016
 */
 $('#tt_tree_menu2').tree({  
-   url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+   url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
    method: 'get',
    animate: true,
    checkbox: true,
@@ -174,7 +174,7 @@ BootstrapDialog.show({
 
 
        $('#tt_tree_menu_popup_clone').tree({  
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsNotInProperty_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&property_id='+nodeID,
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsNotInProperty_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&property_id='+nodeID,
             method: 'get',
             animate: true,
             checkbox: true,
@@ -291,7 +291,7 @@ window.cloneMachProp = function (nodeID, nodeName) {
      var jsonUnitGroupID = JSON.stringify(objUnitGroupID);
 
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysMachineToolPropertyDefinition' ,
                          language_code : language_code,
@@ -374,7 +374,7 @@ window.getMachineProp = function(node, treeObj, tagBuilder) {
 
     if(tagBuilder.tagCabin('findSpecificTags', nodeID, 'data-machine_grup_id')) {
         var ajaxMacProp = $(window).ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data : {
                         url:'pkFillMachineGroupPropertyDefinitions_sysMachineToolPropertyDefinition' ,
                         language_code : $('#langCode').val(),
@@ -498,7 +498,7 @@ window.deleteMachPropUltimately = function(id, element, machine_group_id) {
    $('#mach-prop-box').loadImager('appendImage');
 
 var ajDeleteAll = $(window).ajaxCall({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data : {
                 url:'pkDeletePropertyMachineGroup_sysMachineToolPropertyDefinition' ,
                 property_id : id,
@@ -558,7 +558,7 @@ window.deleteMachProp = function(id, machine_grup_id, element) {
     loader.loadImager('appendImage');
     //var ajPopUpDelete = $(window).ajaxCall({
     var ajPopUpDelete = $("#loading-image-crud-popup").ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkDeletePropertyMachineGroup_sysMachineToolPropertyDefinition' ,
                          property_id : id,
@@ -782,7 +782,7 @@ window.insertMachPropDialog = function (nodeID, nodeName) {
          });
 
         var ajPopUpMachProp = $('#test-cabin-popup').ajaxCallWidget({
-                         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                          data : {
                              url:'pkFillMachineGroupPropertyDefinitions_sysMachineToolPropertyDefinition' ,
                              language_code : $('#langCode').val(),
@@ -809,7 +809,7 @@ window.insertMachPropDialog = function (nodeID, nodeName) {
 
 
         var ajPopUpMachPropNot = $("#loading-image-crud-popup").ajaxCallWidget({
-                         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                          data : {
                              url:'pkFillMachineGroupNotInPropertyDefinitions_sysMachineToolPropertyDefinition' ,
                              language_code : $('#langCode').val(),
@@ -835,7 +835,7 @@ window.insertMachPropDialog = function (nodeID, nodeName) {
         ajPopUpMachPropNot.ajaxCallWidget('call');
 
         $('#tt_tree_menu_popup').tree({
-             url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+             url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
              method: 'get',
              animate: true,
              checkbox: false,
@@ -891,7 +891,7 @@ window.addMachProp = function (property_id, machine_grup_id, tag) {
     loader.loadImager('appendImage');
 
     var aj = $(window).ajaxCall({
-         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
          data : {
              url:'pkTransferPropertyMachineGroup_sysMachineToolPropertyDefinition' ,
              property_id : property_id,
@@ -979,7 +979,7 @@ window.insertMachProp = function (nodeID, nodeName) {
      var jsonMachineGroupID = JSON.stringify(objmachineGroupID);
 
      var aj = $(window).ajaxCall({
-         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
          data : {
              url:'pkInsert_sysMachineToolPropertyDefinition' ,
              language_code : language_code,

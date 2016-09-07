@@ -6,7 +6,7 @@ $(document).ready(function () {
      * @since 23/12/2015
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',              
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',              
         data: {
             //pk : '3441df0babc2a2dda551d7cd39fb235bc4e09cd1e4556bf261bb49188f548348',
             url : 'fillComboBox_syslanguage',                          

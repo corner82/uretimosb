@@ -25,7 +25,7 @@ $(document).ready(function () {
      * Page consultant for box-header
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkGetFirmVerbalConsultant_infoFirmVerbal',
             language_code: $("#langCode").val(),
@@ -66,7 +66,7 @@ $(document).ready(function () {
      * Sex types
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillSexTypes_sysSpecificDefinitions',
             language_code: $("#langCode").val(),
@@ -105,7 +105,7 @@ $(document).ready(function () {
      * Countries
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscountrys',
             language_code: $("#langCode").val(),
@@ -140,7 +140,7 @@ $(document).ready(function () {
      * Universities
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkFillUniversityDdList_sysUniversities',
             language_code: $("#langCode").val(),
@@ -210,7 +210,7 @@ $(document).ready(function () {
 //            loadCertGrid(row.id);
 
         },
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -303,7 +303,7 @@ $(document).ready(function () {
         //console.log(domElement);
 
         var aj = $(window).ajaxCall({
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {
                 url: 'pkUpdateMakeActiveOrPassive_sysAclPrivilege',
                 id: id,
@@ -395,7 +395,7 @@ $(document).ready(function () {
         var id = id;
         var index = index;
         var ajDeleteAll = $(window).ajaxCall({
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {
                 url: 'pkcpkDeletedAct_infoFirmWorkingPersonnel',
                 id: id,
@@ -616,7 +616,7 @@ $(document).ready(function () {
                  * Sex types
                  */
                 $.ajax({
-                    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: {
                         url: 'fillSexTypes_sysSpecificDefinitions',
                         language_code: $("#langCode").val(),
@@ -673,7 +673,7 @@ $(document).ready(function () {
         loader.loadImager('appendImage');
 
         var aj = $(window).ajaxCall({
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {
                 pk: $("#pk").val(),
                 cpk: $("#cpk").val(),
@@ -822,8 +822,8 @@ function send_personel_general_info() {
                  */
 
                 $.ajax({
-                    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+                    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
                     data: {
                         pk: $("#pk").val(),
                         cpk: $("#cpk").val(),
@@ -903,8 +903,8 @@ function add_new_personnel_grad() {
      */
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             pk: $("#pk").val(),
             cpk: $("#cpk").val(),
@@ -985,7 +985,7 @@ function loadDiplomaGrid(id) {
         onDblClickRow: function (index, row) {
 
         },
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -1072,7 +1072,7 @@ function deletePersonnelDiplomaDialog(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-        proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkcpkDeletedAct_infoFirmWorkingPersonnelEducation',
             id: id,
@@ -1223,7 +1223,7 @@ function updatePersonnelDiplomaDialog(id, row) {
              * Countries
              */
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'fillComboBox_syscountrys',
                     language_code: $("#langCode").val(),
@@ -1281,7 +1281,7 @@ function updatePersonnelDiplomaDialog(id, row) {
              * Universities
              */
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkFillUniversityDdList_sysUniversities',
                     language_code: $("#langCode").val(),
@@ -1357,7 +1357,7 @@ function updatePersonnelDiploma() {
     }
 
     var aj = $(window).ajaxCall({
-        proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             pk: $("#pk").val(),
             cpk: $("#cpk").val(),
@@ -1432,7 +1432,7 @@ function addPersonnelDiploma() {
     }
 
     var aj = $(window).ajaxCall({
-        proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             pk: $("#pk").val(),
             cpk: $("#cpk").val(),

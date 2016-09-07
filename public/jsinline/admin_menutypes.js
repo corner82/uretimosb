@@ -10,7 +10,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
     queryParams: {
             pk: $('#pk').val(),
@@ -178,7 +178,7 @@ window.deleteMenuTypeUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysMenuTypes' ,
                     id : id,
@@ -350,7 +350,7 @@ window.updateMenuType = function (id) {
      
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysMenuTypes' ,
                          language_code : $('#langCode').val(),
@@ -418,7 +418,7 @@ window.insertMenuType = function (nodeID, nodeName) {
      var description_eng = $('#description_eng').val();
 
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysMenuTypes' ,
                          name : name,
@@ -522,7 +522,7 @@ window.activePassiveMenuType = function (id, domElement) {
     
      
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysMenuTypes' ,
                          id : id,

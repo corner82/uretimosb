@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -88,7 +88,7 @@ $("#loading-image-osb").loadImager('appendImage');
  * @since 25/08/2016
  */
 var ajaxOsb = $(window).ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillOsbDdlist_sysOsb' ,
                     pk : $("#pk").val(),
                     language_code: $('#langCode').val(),
@@ -119,7 +119,7 @@ ajaxOsb.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -209,7 +209,7 @@ window.deleteClusterUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysOsbClusters' ,
                     id : id,
@@ -363,7 +363,7 @@ window.updateClusterDialog = function (id, row) {
             $("#loading-image-osb-popup").loadImager('appendImage');
             
             var ajaxClustersPopup = $("#loading-image-osb-popup").ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillOsbDdlist_sysOsb' ,
                                 pk : $("#pk").val(),
                                 language_code : $('#langCode').val()
@@ -391,7 +391,7 @@ window.updateClusterDialog = function (id, row) {
                                 onSelected: function(selectedData){
                                     if(selectedData.selectedData.value>0) {
                                         /*$('#tt_tree_menu').tree({
-                                            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                         });*/
                                  }
                              }   
@@ -455,7 +455,7 @@ window.updateCluster = function (id) {
      var osb_id = ddData.selectedData.value;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysOsbClusters' ,
                          id : id,
@@ -535,7 +535,7 @@ window.insertCluster = function () {
       
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysOsbClusters' ,
                          name : name,
@@ -641,7 +641,7 @@ window.activeCluster = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysOsbClusters' ,
                          id : id,

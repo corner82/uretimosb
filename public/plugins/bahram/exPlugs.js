@@ -105,7 +105,7 @@
          * @returns {null}
          */
         options: {
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             pk: $("#pk").val(),
             ajaxParams: null,
             machineID: null,
@@ -144,7 +144,7 @@
             self = this;
 
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: self.options.url,
                     pk: $("#pk").val(),
@@ -278,8 +278,8 @@
                 $("#pagination_content").empty();
 
                 $.ajax({
-                    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-                    //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+                    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+                    //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
                     data: {url: window.list_service_url,
                         pk: $('#pk').val(),
                         language_code: $("#langCode").val(),

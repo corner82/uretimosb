@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -105,7 +105,7 @@ $("#mach-prod-box").loadImager('appendImage');
  * @since 14/07/2016
  */
 var ajaxACLResources = $(window).ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillResourcesDdList_sysAclResources' ,
                     pk : $("#pk").val() 
             }
@@ -138,7 +138,7 @@ ajaxACLResources.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -207,7 +207,7 @@ window.resetACLRolesForm = function () {
 * 14/07/2016
 */
 $('#tt_tree_menu2').tree({  
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillRolesTree_sysAclRoles&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillRolesTree_sysAclRoles&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
     method: 'get',
     animate: true,
     checkbox: false,
@@ -262,7 +262,7 @@ window.deleteACLRoleUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysAclRoles' ,
                     id : id,
@@ -417,7 +417,7 @@ window.updateACLRoleDialog = function (id, row) {
             $("#mach-prod-box-popup").loadImager('appendImage');
             var ddData;
             var ajaxACLResourcesPopup = $(window).ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillResourcesDdList_sysAclResources' ,
                                 pk : $("#pk").val() 
                         }
@@ -533,7 +533,7 @@ window.updateACLRole = function (id) {
      console.log(jsonResourcesID);
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysAclRoles' ,
                          id : id,
@@ -611,7 +611,7 @@ window.insertACLRole = function () {
      //console.log(jsonResourcesID);
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysAclRoles' ,
                          name : name,
@@ -726,7 +726,7 @@ window.activePassiveACLRole = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysAclRoles' ,
                          id : id,

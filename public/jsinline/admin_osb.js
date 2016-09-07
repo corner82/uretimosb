@@ -22,7 +22,7 @@ $.extend($.fn.tree.methods,{
  * @since 14/07/2016
  */
 $('#tt_grid_dynamic').datagrid({  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -109,7 +109,7 @@ $("#load-imager-boroughs").loadImager('appendImage');*/
  * @since 23/08/2016
  */
 var ajaxCountries = $(window).ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'fillComboBox_syscountrys' ,
                     pk : $("#pk").val(),
                     language_code : $('#langCode').val(),
@@ -186,7 +186,7 @@ window.fillCities = function() {
         $('#load-imager-cities').loadImager('appendImage');
         //alert(country);
         var ajaxCities = $('#load-imager-cities').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'fillComboBox_syscity' ,
                             pk : $("#pk").val(),
                             language_code: $("#langCode").val(),
@@ -279,7 +279,7 @@ window.fillBoroughs = function() {
         var city_id = ddData.selectedData.value;
 
         var ajaxCities = $('#load-imager-boroughs').ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'fillComboBox_sysborough' ,
                                 pk : $("#pk").val(),
                                 language_code: $("#langCode").val(),
@@ -354,7 +354,7 @@ window.fillCitiesPopup = function(row) {
         $('#load-imager-cities-popup').loadImager('appendImage');
         //alert(country);
         var ajaxCities = $('#load-imager-cities-popup').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'fillComboBox_syscity' ,
                             pk : $("#pk").val(),
                             language_code: $("#langCode").val(),
@@ -453,7 +453,7 @@ window.fillBoroughsPopup = function(row) {
         var city_id = ddData.selectedData.value;
 
         var ajaxCities = $('#load-imager-boroughs-popup').ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'fillComboBox_sysborough' ,
                                 pk : $("#pk").val(),
                                 language_code: $("#langCode").val(),
@@ -590,7 +590,7 @@ window.deleteOsbUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysOsb' ,
                     id : id,
@@ -697,7 +697,7 @@ window.insertOsb = function () {
      }
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysOsb' ,
                          pk : $("#pk").val(),
@@ -901,7 +901,7 @@ window.updateOsbDialog = function (id, row) {
             $("#load-imager-countries-popup").loadImager('appendImage');
             
             var ajaxCountriesPopup = $('#load-imager-countries-popup').ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'fillComboBox_syscountrys' ,
                                 pk : $("#pk").val(),
                                 language_code : $('#langCode').val(),
@@ -1045,7 +1045,7 @@ window.updateOsb = function (id) {
      
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                         url:'pkUpdate_sysOsb' ,
                         pk : $("#pk").val(),
@@ -1130,7 +1130,7 @@ window.activePassiveOsb = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysOsb' ,
                          id : id,

@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -115,7 +115,7 @@ resRolesLoadImage.loadImager('appendImage');
  * @since 01/08/2016
  */
 $('#tt_tree_services').tree({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '',
     method: 'get',
     animate: true,
     checkbox: false,
@@ -145,7 +145,7 @@ $('#tt_tree_services').tree({
 * 05/08/2016
 */
 $('#tt_tree_menu2').tree({  
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillResourceGroups_sysAclResources&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillResourceGroups_sysAclResources&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
     method: 'get',
     animate: true,
     checkbox: false,
@@ -167,7 +167,7 @@ $('#tt_tree_menu2').tree({
         } else {
             nonAttachedTreeLoadImage.loadImager('appendImage');
             $('#tt_tree_services').tree({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&role_id='+node.id+'&resource_id='+node.resource_id,
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&role_id='+node.id+'&resource_id='+node.resource_id,
             });
         }
     },
@@ -190,7 +190,7 @@ $("#tables-box").loadImager('appendImage');
  * @since 01/08/2016
  */
 var ajaxACLRoles = $('#dropdownAssignments').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillAssignDefinitionRolesDdList_sysAssignDefinitionRoles' ,
                     pk : $("#pk").val() 
             }
@@ -220,7 +220,7 @@ ajaxACLRoles.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_services').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&role_id='+selectedData.selectedData.value,
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&role_id='+selectedData.selectedData.value,
                     });*/
                 }
             }   
@@ -245,7 +245,7 @@ ajaxACLRoles.ajaxCallWidget('call');
  * @since 01/08/2016
  */
 var ajaxTables = $('#dropdownTables').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillInfoTablesDdList_pgClass' ,
                     pk : $("#pk").val() 
             }
@@ -275,7 +275,7 @@ ajaxTables.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -373,7 +373,7 @@ window.deleteOperationUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysOperationTypesRrp' ,
                     id : id,
@@ -473,7 +473,7 @@ window.insertOperation = function () {
     var rrp_restservice_id = selectedTreeItem.attributes.rrp_restservice_id;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysOperationTypesRrp' ,
                          operation_name : operation_name,
@@ -688,7 +688,7 @@ window.updateOperationDialog = function (id, row) {
              * rest services tree
              */
             $('#tt_tree_services_popup').tree({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '',
                 method: 'get',
                 animate: true,
                 checkbox: false,
@@ -730,7 +730,7 @@ window.updateOperationDialog = function (id, row) {
              * resource /roles tree
              */
             $('#tt_tree_menu2_popup').tree({  
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillResourceGroups_sysAclResources&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillResourceGroups_sysAclResources&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
                 method: 'get',
                 animate: true,
                 checkbox: false,
@@ -766,7 +766,7 @@ window.updateOperationDialog = function (id, row) {
                     } else {
                         $("#nonAttachedTreePopup").loadImager('appendImage');
                         $('#tt_tree_services_popup').tree({
-                            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&role_id='+node.id+'&resource_id='+node.resource_id,
+                            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillRestServicesOfPrivilegesTree_sysAclRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&role_id='+node.id+'&resource_id='+node.resource_id,
                         });
                     }
                 },
@@ -779,7 +779,7 @@ window.updateOperationDialog = function (id, row) {
              * @type @call;$@call;ajaxCallWidget
              */
             var ajaxRolesPopup = $("#dropdownAssignmentsPopup").ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillAssignDefinitionRolesDdList_sysAssignDefinitionRoles' ,
                                 pk : $("#pk").val() 
                         }
@@ -830,7 +830,7 @@ window.updateOperationDialog = function (id, row) {
              * @type @call;$@call;ajaxCallWidget|@call;$@call;ajaxCallWidget|@call;$@call;ajaxCallWidget
              */
             var ajaxTablesPopup = $("#tables-box-popup").ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillInfoTablesDdList_pgClass' ,
                                 pk : $("#pk").val() 
                         }
@@ -857,7 +857,7 @@ window.updateOperationDialog = function (id, row) {
                                 onSelected: function(selectedData){
                                     if(selectedData.selectedData.value>0) {
                                         /*$('#tt_tree_menu').tree({
-                                            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                         });*/
                                  }
                              }   
@@ -969,7 +969,7 @@ window.updateOperation = function (id) {
     var role_id = selectedResRolesTreeItem.id;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysOperationTypesRrp' ,
                          pk : $("#pk").val(),
@@ -1053,7 +1053,7 @@ window.activePassiveOperation = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysOperationTypesRrp' ,
                          id : id,

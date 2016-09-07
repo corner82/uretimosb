@@ -444,7 +444,7 @@
                      * @since 26/02/2016
                      */
                     $('#tt_tree_machine_prop').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillMachineToolFullProperties_sysMachineToolProperties&pk=' + $('#pk').val() + '',
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillMachineToolFullProperties_sysMachineToolProperties&pk=' + $('#pk').val() + '',
                         queryParams: {url: 'pkFillMachineToolFullProperties_sysMachineToolProperties',
                             pk: $('#pk').val(),
                         },
@@ -555,7 +555,7 @@
                      * @since 29/02/2016
                      */
                     $('#tt_tree_machine_unit_prop').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $('#pk').val() + '',
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $('#pk').val() + '',
                         queryParams: {url: 'pkFillMachineToolFullProperties_sysMachineToolProperties',
                             pk: $('#pk').val(),
                         },

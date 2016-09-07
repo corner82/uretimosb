@@ -30,7 +30,7 @@ $(document).ready(function () {
      */
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkGetFirmVerbalConsultant_infoFirmVerbal',
             language_code: $("#langCode").val(),

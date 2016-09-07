@@ -22,7 +22,7 @@ $.extend($.fn.tree.methods,{
  * @since 22/08/2016
  */
 $('#tt_grid_dynamic').datagrid({
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
     queryParams: {
             pk: $('#pk').val(),
@@ -92,7 +92,7 @@ $("#loading-image-clusters").loadImager('appendImage');
  * @since 25/08/2016
  */
 var ajaxOsb = $('#loading-image-osb').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillOsbDdlist_sysOsb' ,
                     pk : $("#pk").val() 
             }
@@ -125,7 +125,7 @@ ajaxOsb.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -149,7 +149,7 @@ ajaxOsb.ajaxCallWidget('call');
  * @since 25/08/2016
  */
 var ajaxClusters = $('#loading-image-clusters').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillOsbClustersDdlist_sysOsbClusters' ,
                     pk : $("#pk").val() ,
                     language_code : $('#langCode').val(),
@@ -185,7 +185,7 @@ ajaxClusters.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -282,7 +282,7 @@ window.deleteCmpUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysMachineTools' ,
                     id : id,
@@ -438,7 +438,7 @@ BootstrapDialog.show({
         $("#loading-image-clusters-popup").loadImager('appendImage');
         
         var ajaxOsbPopup = $('#loading-image-osb-popup').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'pkFillOsbDdlist_sysOsb' ,
                             pk : $("#pk").val() 
                     }
@@ -487,7 +487,7 @@ BootstrapDialog.show({
         ajaxOsbPopup.ajaxCallWidget('call');
         
         var ajaxClustersPopup = $('#loading-image-clusters-popup').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'pkFillOsbClustersDdlist_sysOsbClusters' ,
                             pk : $("#pk").val() 
                     }
@@ -595,7 +595,7 @@ window.updateCmp = function (id) {
      }
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateConsAct_infoFirmProfile' ,
                          pk : $("#pk").val(),
@@ -678,7 +678,7 @@ window.insertCmp = function (nodeID, nodeName) {
      }
 
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsertConsAct_infoFirmProfile' ,
                          pk : $("#pk").val(),
@@ -783,7 +783,7 @@ window.activePassiveCompany = function (id, domElement) {
     var id = id;
      
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_infoFirmProfile' ,
                          id : id,

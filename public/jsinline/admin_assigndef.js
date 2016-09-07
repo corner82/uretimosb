@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -149,7 +149,7 @@ window.deleteAssignmentTypeUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysAssignDefinition' ,
                     id : id,
@@ -198,7 +198,7 @@ window.deleteAssignmentTypeUltimately = function(id, index) {
   */
  window.deleteAssignmentTypeUltimatelyBruteForce = function(id, index) {
      var ajDeleteAllWithRelatedData = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDeleteAct_sysAssignDefinition' ,
                     id : id,
@@ -342,7 +342,7 @@ window.updateAssignmnenType = function (id) {
      loader.loadImager('appendImage');
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysAssignDefinition' ,
                          id : id,
@@ -403,7 +403,7 @@ window.insertAssignmentType = function () {
      var description = $('#description').val();
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysAssignDefinition' ,
                          name : name,
@@ -505,7 +505,7 @@ window.activePassiveAssignmentType = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysAssignDefinition' ,
                          id : id,

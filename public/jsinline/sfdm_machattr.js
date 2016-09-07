@@ -40,7 +40,7 @@ $(document).ready(function () {
     */
 
    $('#tt_tree_menu').tree({
-       url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillMachineToolDefinitionsAttributes_sysMachineToolDefinitionAttribute&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+       url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillMachineToolDefinitionsAttributes_sysMachineToolDefinitionAttribute&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
        method: 'get',
        animate: true,
        checkbox: true,
@@ -154,7 +154,7 @@ $(document).ready(function () {
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkDelete_sysMachineToolDefinitionAttribute' ,
                             id : nodeID,
@@ -238,7 +238,7 @@ $(document).ready(function () {
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkUpdateMakeActiveOrPassive_sysMachineToolDefinitionAttribute' ,
                             id : nodeID,
@@ -356,7 +356,7 @@ $(document).ready(function () {
        loader.loadImager('appendImage');
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url : 'pkUpdateMakeActiveOrPassive_sysMachineToolDefinitionAttribute' ,
                             id : nodeID,
@@ -489,7 +489,7 @@ $(document).ready(function () {
         //console.log(ddData);
         
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkInsert_sysMachineToolDefinitionAttribute' ,
                             language_code : language_code,
@@ -600,7 +600,7 @@ $(document).ready(function () {
         id = selectedTreeItem.id;
         
         var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkUpdate_sysMachineToolDefinitionAttribute' ,
                             language_code : language_code,

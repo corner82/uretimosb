@@ -155,7 +155,7 @@ $(document).ready(function () {
      * Customer specific project requirements
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkFillCustomerCriterionDdList_sysCustomerCriterion',
             language_code: $("#langCode").val(),
@@ -266,7 +266,7 @@ $('#showPassword').change(function () {
  * Address types
  */
 $.ajax({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     data: {
         url: 'fillAddressTypes_sysSpecificDefinitions',
         language_code: $("#langCode").val(),
@@ -304,7 +304,7 @@ $.ajax({
  * List of countries combobox ajax
  */
 $.ajax({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     data: {
         url: 'fillComboBox_syscountrys',
         language_code: $("#langCode").val(),
@@ -373,7 +373,7 @@ function userCityDropDownUpdate() {
     }
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscity',
             country_id: selectedCountryId,
@@ -432,7 +432,7 @@ function districtDropDownUpdate() {
     }
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_sysborough',
             country_id: selectedCountryId,
@@ -475,7 +475,7 @@ function districtDropDownUpdate() {
  * List of System languages combobox ajax
  */
 $.ajax({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     data: {
         url: 'fillComboBox_syslanguage',
         language_code: $("#langCode").val(),
@@ -508,7 +508,7 @@ $.ajax({
 });
 
 $.ajax({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     data: {
         url: 'fillOwnershipType_sysSpecificDefinitions',
         language_code: $("#langCode").val(),
@@ -546,7 +546,7 @@ $.ajax({
  * @Since: 2016.2.12
  */
 $.ajax({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     data: {
         url: 'fillComboBox_syslanguage',
         language_code: $("#langCode").val()
@@ -575,7 +575,7 @@ $.ajax({
  * List of communication types combobox ajax
  */
 $.ajax({
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     data: {
         url: 'fillCommunicationsTypes_sysSpecificDefinitions',
         language_code: $("#langCode").val(),
@@ -721,8 +721,8 @@ function submitUserGeneralInfoForm() {
         if ($("#pk").val().length) {
 //            console.log('update' + $("#pk").val());
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
                 data: {
                     url: 'pkUpdate_infoUsers',
                     language_code: $("#langCode").val(),
@@ -844,8 +844,8 @@ function submitUserGeneralInfoForm() {
 
 //            console.log('insert ' + $("#pk").val());
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
                 data: {
                     url: 'tempInsert_infoUsers',
                     language_code: $("#langCode").val(),
@@ -968,8 +968,8 @@ function submitUserAddressInfoForm() {
             if ($('#userAddressInfoForm').validationEngine('validate')) {
                 if (selectedCountryId === "91") {
                     $.ajax({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
                         data: {
                             url: 'pkInsert_infoUsersAddresses',
                             pk: $("#pk").val(),
@@ -1030,8 +1030,8 @@ function submitUserAddressInfoForm() {
                 } else {
                     console.log('selectedCountryId is ' + selectedCountryId);
                     $.ajax({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
                         data: {
                             url: 'pkInsert_infoUsersAddresses',
                             pk: $("#pk").val(),
@@ -1142,8 +1142,8 @@ function submitUserContactNumber() {
         if ($('#userCommunicationInfoForm').validationEngine('validate')) {
 
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-////                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+////                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
                 data: {
                     url: 'pkInsert_infoUsersCommunications',
                     pk: pk,
@@ -1356,8 +1356,8 @@ function companyInfoSubmission() {
 //        $('#tabsContentsSection').loadImager('appendImage');
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-            //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+            //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
             data: {url: 'pkInsert_infoFirmProfile',
                 pk: pk,
                 language_code: $("#langCode").val(),
@@ -1857,7 +1857,7 @@ function taskProgressPerTabs() {
 /*
  * 
     $('#table_address_modal').bootstrapTable({
-        url: "https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=9***************",
+        url: "https://proxy.uretimosb.com/SlimProxyBoot.php?url=9***************",
         method: 'GET',
         locale: "'" + ($('#langCode').val() + '-' + $('#langCode').val().toUpperCase()) + "'",
         toggle: "table",
@@ -1905,7 +1905,7 @@ function taskProgressPerTabs() {
  * 
  
 $('#table_contacts_modal').bootstrapTable({
-    url: "https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=**************",
+    url: "https://proxy.uretimosb.com/SlimProxyBoot.php?url=**************",
     method: 'GET',
     locale: "'" + ($('#langCode').val() + '-' + $('#langCode').val().toUpperCase()) + "'",
     toggle: "table",
@@ -2113,7 +2113,7 @@ function list_found_users() {
         onshown: function () {
 
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkFillUsersListNpk_infoUsers',
                     language_code: $("#langCode").val(),

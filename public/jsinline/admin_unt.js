@@ -40,7 +40,7 @@ $(document).ready(function () {
     */
 
    $('#tt_tree_menu').tree({
-       url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+       url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
        method: 'get',
        animate: true,
        checkbox: true,
@@ -141,7 +141,7 @@ $(document).ready(function () {
      * @since 04/04/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetUnitSystems_sysUnitSystems' ,
                 language_code : 'tr',
                 main_group : 2,
@@ -161,7 +161,7 @@ $(document).ready(function () {
                     onSelected: function(selectedData){
                         if(selectedData.selectedData.value>0) {
                             /*$('#tt_tree_menu').tree({
-                                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                             });*/
                         }
                     }   
@@ -230,7 +230,7 @@ $(document).ready(function () {
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkDelete_sysUnits' ,
                             id : nodeID,
@@ -313,7 +313,7 @@ $(document).ready(function () {
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkUpdateMakeActiveOrPassive_sysUnits' ,
                             id : nodeID,
@@ -433,7 +433,7 @@ $(document).ready(function () {
        loader.loadImager('appendImage');
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url : 'pkUpdateMakeActiveOrPassive_sysUnits' ,
                             id : nodeID,
@@ -704,7 +704,7 @@ $(document).ready(function () {
             $("#unitFormInsert").validationEngine();
             
             var aj = $(window).ajaxCallWidget({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkGetUnitSystems_sysUnitSystems' ,
                             language_code : 'tr',
@@ -777,7 +777,7 @@ $(document).ready(function () {
         parent = nodeID;
         
         var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkInsert_sysUnits' ,
                             language_code : language_code,
@@ -898,7 +898,7 @@ $(document).ready(function () {
         //console.log(ddData);
         
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkInsert_sysUnits' ,
                             language_code : language_code,
@@ -1038,7 +1038,7 @@ $(document).ready(function () {
         }
         
         var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkUpdate_sysUnits' ,
                             language_code : language_code,

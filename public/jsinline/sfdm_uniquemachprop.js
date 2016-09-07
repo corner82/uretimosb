@@ -40,7 +40,7 @@ var treeMachine = $('.tree2').machineTree();
             
             $('#tt_tree_menu2').tree({  
                 checkbox : false,  
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillMachineGroupProperties_sysMachineToolPropertyDefinition&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+'&machine_grup_id='+machineGroupID+'&machine_id='+machineID,
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillMachineGroupProperties_sysMachineToolPropertyDefinition&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+'&machine_grup_id='+machineGroupID+'&machine_id='+machineID,
             });
             
             $('#machID').val(machineID);
@@ -57,7 +57,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
     queryParams: {
             pk: $('#pk').val(),
@@ -173,7 +173,7 @@ $("#mach-prod-box").loadImager('appendImage');
 * 25/04/2016
 */
 $('#tt_tree_menu2').tree({  
-    //url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+    //url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
     method: 'get',
     animate: true,
     checkbox: true,
@@ -278,7 +278,7 @@ BootstrapDialog.show({
         $('#property_value_popup_update').val(row.property_value);
          
         var ajaxMacPropUpdateUnitsPopup = $(window).ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'pkFillPropertyUnits_sysMachineToolProperties' ,
                             language_code : 'tr',
                             pk : $("#pk").val(),
@@ -307,7 +307,7 @@ BootstrapDialog.show({
                             onSelected: function(selectedData){
                                 if(selectedData.selectedData.value>0) {
                                     /*$('#tt_tree_menu').tree({
-                                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                     });*/
                              }
                          }   
@@ -380,7 +380,7 @@ window.updateMachProp = function (property_id, row) {
      var property_id = property_id;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysMachineToolProperties' ,
                          language_code : $('#langCode').val(),
@@ -520,7 +520,7 @@ window.updateMachProp = function (property_id, row) {
             * @since 21/06/2016
             */
            var ajaxMacunits = $(window).ajaxCallWidget({
-               proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+               proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                        data: { url:'pkFillPropertyUnits_sysMachineToolProperties' ,
                                language_code : 'tr',
                                pk : $("#pk").val(),
@@ -552,7 +552,7 @@ window.updateMachProp = function (property_id, row) {
                        onSelected: function(selectedData){
                            if(selectedData.selectedData.value>0) {
                                /*$('#tt_tree_menu').tree({
-                                   url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                   url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                });*/
                            }
                        }   
@@ -624,7 +624,7 @@ window.updateMachProp = function (property_id, row) {
         var property_id = propertyID;
 
         var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                         data : {
                             url:'pkInsert_sysMachineToolProperties' ,
                             language_code : language_code,
@@ -804,7 +804,7 @@ window.deleteIndMachPropUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDeletePropertyMachine_sysMachineToolProperties' ,
                     property_id : id,
@@ -985,7 +985,7 @@ BootstrapDialog.show({
         //alert($("input[name=machine_tool_group_id]:hidden").val());
         $('#machFormPopup').validationEngine();
         $('#tt_tree_menu2_popup').tree({  
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
             method: 'get',
             animate: true,
             checkbox: false,
@@ -1034,7 +1034,7 @@ BootstrapDialog.show({
         });
          
         var ajaxMacProducersPopup = $(window).ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data: { url:'pkFillManufacturerList_sysManufacturer' ,
                             language_code : 'tr',
                             pk : $("#pk").val() 
@@ -1062,7 +1062,7 @@ BootstrapDialog.show({
                             onSelected: function(selectedData){
                                 if(selectedData.selectedData.value>0) {
                                     /*$('#tt_tree_menu').tree({
-                                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                     });*/
                              }
                          }   
@@ -1139,7 +1139,7 @@ window.updateMach = function (id) {
      var machine_code = $('#machine_code_popup').val();
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysMachineTools' ,
                          language_code : $('#langCode').val(),
@@ -1225,7 +1225,7 @@ window.activePassiveMachine = function (id, domElement) {
     
      
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysMachineTools' ,
                          id : id,
@@ -1318,7 +1318,7 @@ window.deleteMachUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysMachineTools' ,
                     id : id,

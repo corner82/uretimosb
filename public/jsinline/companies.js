@@ -6,8 +6,8 @@
 $(document).ready(function () {
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscountrys',
             language_code: $("#langCode").val()
@@ -71,8 +71,8 @@ $("select#country1").on('change', function () {
     $("#city1").empty();
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscity',
             country_id: selectedCountry1Id,
@@ -115,8 +115,8 @@ $("select#country2").on('change', function () {
     $("#city2").empty();
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscity',
             country_id: selectedCountry2Id,
@@ -158,8 +158,8 @@ $("select#city1").on('change', function () {
     $("#district1").empty();
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_sysborough',
             country_id: selectedCountry1Id,
@@ -204,8 +204,8 @@ $("select#city2").on('change', function () {
     $("#district2").empty();
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_sysborough',
             country_id: selectedCountry2Id,
@@ -251,8 +251,8 @@ $("#district1").on('change', function () {
     $("#village1").empty();
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_sysvillage',
             country_id: selectedCountry1Id,
@@ -298,8 +298,8 @@ $("#district2").on('change', function () {
     $("#village2").empty();
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_sysvillage',
             country_id: selectedCountry2Id,

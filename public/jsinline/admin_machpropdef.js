@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
     queryParams: {
             pk: $('#pk').val(),
@@ -149,7 +149,7 @@ window.resetMachinePropForm = function () {
 * 23/06/2016
 */
 $('#tt_tree_menu2').tree({  
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
     method: 'get',
     animate: true,
     checkbox: false,
@@ -273,7 +273,7 @@ window.deleteMachPropUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysMachineToolPropertyDefinition' ,
                     id : id,
@@ -400,7 +400,7 @@ BootstrapDialog.show({
      onshown : function () {         
         $('#machPropFormPopup').validationEngine();
         $('#tt_tree_menu2_popup').tree({  
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
             method: 'get',
             animate: true,
             checkbox: false,
@@ -472,7 +472,7 @@ window.updateMach = function (id) {
      var unit_grup_id = selectedTreeItem.id;
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysMachineToolPropertyDefinition' ,
                          language_code : $('#langCode').val(),
@@ -543,7 +543,7 @@ window.insertMachProp = function () {
      var jsonUnitGroupID = JSON.stringify(objunitGroupID);
 
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysMachineToolPropertyDefinition' ,
                          property_name : $('#property_name').val(),
@@ -650,7 +650,7 @@ window.activePassiveMachine = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysMachineToolPropertyDefinition' ,
                          id : id,

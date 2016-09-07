@@ -27,7 +27,7 @@ $(document).ready(function () {
      * Fill form fields
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkFillFirmFullVerbal_infoFirmProfile',
             language_code: $("#langCode").val(),
@@ -145,7 +145,7 @@ $(document).ready(function () {
      */
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkcpkGetFirmVerbalConsultant_infoFirmVerbal',
             language_code: $("#langCode").val(),
@@ -197,7 +197,7 @@ $(document).ready(function () {
      * Get countries list for address 
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscountrys',
             language_code: $("#langCode").val(),
@@ -256,7 +256,7 @@ function send_general_info() {
 //  console.log('update');
 //  update url is used to update data
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkcpkUpdate_infoFirmVerbal',
                     pk: $("#pk").val(),
@@ -306,7 +306,7 @@ function send_general_info() {
 //  insert url is used to insert data
 
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkcpkInsert_infoFirmVerbal',
                     pk: $("#pk").val(),
@@ -362,7 +362,7 @@ function reset_verbal_info() {
     wcm.warningComplexMessage({
         onConfirm: function () {
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkcpkDeletedAct_infoFirmVerbal',
                     id: window.verbal_id,

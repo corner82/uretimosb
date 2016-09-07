@@ -25,7 +25,7 @@ $.extend($.fn.tree.methods,{
  * @since 22/08/2016
  */
 $('#tt_grid_dynamic').datagrid({
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
     queryParams: {
             pk: $('#pk').val(),
@@ -121,7 +121,7 @@ var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
 * 25/04/2016
 */
 $('#tt_tree_menu2').tree({  
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
     method: 'get',
     animate: true,
     checkbox: false,
@@ -153,7 +153,7 @@ $('#tt_tree_menu2').tree({
  * @since 18/08/2016
  */
 $('#tt_grid_dynamic_machines').datagrid({  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -210,7 +210,7 @@ window.fillMachinesDatagrid = function(id) {
     
     var id = id;
     $('#tt_grid_dynamic_machines').datagrid({  
-        url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         queryParams: {
             pk: $('#pk').val(),
             url : 'pkGetMachineToolsGrid_sysMachineTools',
@@ -264,7 +264,7 @@ window.deleteMachUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDeleteConsAct_infoFirmMachineTool' ,
                     id : id,
@@ -334,7 +334,7 @@ BootstrapDialog.show({
      type: BootstrapDialog.TYPE_PRIMARY,
      onshown : function () {
          $('#tt_grid_mach_properties').datagrid({
-           url:'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+           url:'https://proxy.uretimosb.com/SlimProxyBoot.php',
             queryParams: {
                     pk: $('#pk').val(),
                     machine_tool_id: id,
@@ -486,7 +486,7 @@ BootstrapDialog.show({
         * @since 19/08/2016
         */
        var ajaxConsProducersPopup = $(window).ajaxCallWidget({
-           proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+           proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                    data: { url:'pkFillConsultantAllowFirmListDds_infoFirmProfile' ,
                            pk : $("#pk").val() 
                    }
@@ -516,7 +516,7 @@ BootstrapDialog.show({
                    onSelected: function(selectedData){
                        if(selectedData.selectedData.value>0) {
                            /*$('#tt_tree_menu').tree({
-                               url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                               url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                            });*/
                        }
                    }   
@@ -585,7 +585,7 @@ window.insertMach = function (id) {
      var total = $('#totalPopup').val();
 
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsertCons_infoFirmMachineTool' ,
                          pk : $("#pk").val(),
@@ -806,7 +806,7 @@ window.updateMach = function (id) {
      var total = $('#updateTotalPopup').val();
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateCons_infoFirmMachineTool' ,
                          language_code : $('#langCode').val(),
@@ -891,7 +891,7 @@ window.activePassiveMachine = function (id, domElement) {
     
      
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_infoFirmMachineTool' ,
                          id : id,

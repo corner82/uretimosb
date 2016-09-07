@@ -172,7 +172,7 @@
             pk: null,
             page: null,
             service: null,
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             errorInfo: null,
             errorUrl: null
         },
@@ -442,7 +442,7 @@
          * @returns {null}
          */
         options: {
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             url: null,
             pk: null,
             ajaxParams: null,
@@ -828,7 +828,7 @@
          * @returns {null}
          */
         options: {
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             url: 'pkFillUsersFirmMachineProperties_infoFirmMachineTool',
             pk: $("#pk").val(),
             ajaxParams: null,
@@ -868,7 +868,7 @@
         _getServiceForAlpacaForm : function() {
             self = this;
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     /*
                      * Get selected machine tool information from system service name comes here
@@ -945,7 +945,7 @@
             errorCode: null,
             page: null,
             service: null,
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             errorInfo: null,
             errorUrl: null,
             type : 'GET',
@@ -1014,7 +1014,7 @@
             errorCode: null,
             page: null,
             service: null,
-            proxy: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             errorInfo: null,
             errorUrl: null,
             type : 'GET',

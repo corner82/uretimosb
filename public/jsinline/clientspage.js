@@ -24,8 +24,8 @@ $(document).ready(function () {
     $("#pagination_content").empty();
     //    $("#pagination_content").html("Page " + num); // or some ajax content loading...
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {
             url: list_service_url,
             pk: $('#pk').val(),

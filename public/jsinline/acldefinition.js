@@ -75,7 +75,7 @@ $(document).ready(function () {
      */
 
     $('#tt_tree_roles').tree({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillComboBoxFullRoles_sysAclRoles&pk=' + $("#pk").val(),
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillComboBoxFullRoles_sysAclRoles&pk=' + $("#pk").val(),
         method: 'get',
         animate: true,
         checkbox: true,
@@ -435,7 +435,7 @@ function roleActivationChangeFunction() {
 function roleNameChangeConfirmation() {
     response = 'confirm';
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             id: editNode.id,
             url: 'pkUpdate_sysAclRoles',
@@ -524,7 +524,7 @@ function newRoleSubmissionConfirmation() {
 
     response = 'confirm';
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkInsert_sysAclRoles',
             icon_class: null,
@@ -605,7 +605,7 @@ function deleteRoleConfirmation() {
         for (i = 0; i < checkedNodes.length; i++) {
             $.ajax({
                 //url : '../slimProxyEkoOstim/SlimProxyBoot.php', 
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkDelete_sysAclRoles',
                     id: checkedNodes[i].id,
@@ -669,7 +669,7 @@ function deleteRoleRejection() {
 
 function roleActivationChangeConfirmation() {
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkUpdateChild_sysAclRoles',
             id: actChangeNode.id,

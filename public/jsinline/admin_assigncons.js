@@ -51,7 +51,7 @@ var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
 * 10/08/2016
 */
 $('#tt_tree_menu2').tree({  
-   url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillResourceGroups_sysAclResources&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+   url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillResourceGroups_sysAclResources&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
    method: 'get',
    animate: true,
    checkbox: false,
@@ -147,7 +147,7 @@ window.assignRolePrivilege = function (property_id, tag, tagBuilder) {
     var resource_id = tag.attr('data-resource_id');
 
     var aj = $(window).ajaxCall({
-         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
          data : {
              url:'pkTransferRolesPrivilege_sysAclRrp' ,
              role_id : role_id,
@@ -232,7 +232,7 @@ window.deleteRolePrivilege = function(id, tag, tagBuilder) {
     var resource_id = tag.attr('data-resource_id');
 
     var ajPopUpDelete = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkDelete_sysAclRrp' ,
                          id : id,
@@ -317,7 +317,7 @@ window.getRolePrivileges = function(node, treeObj, tagBuilder) {
 
     if(tagBuilder.tagCabin('findSpecificTags', nodeID, 'data-role_id')) {
         var ajaxMacProp = $('#test-cabin').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data : {
                         url:'pkFillPrivilegesOfRoles_sysAclPrivilege' ,
                         language_code : $('#langCode').val(),
@@ -398,7 +398,7 @@ window.getRolePrivilegesNotAssigned = function(node, treeObj, tagBuilder) {
 
     if(tagBuilder.tagCabin('findSpecificTags', nodeID, 'data-role_id')) {
         var ajaxMacPropNot = $('#test-cabin-not').ajaxCallWidget({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data : {
                         url:'pkFillNotInPrivilegesOfRoles_sysAclPrivilege' ,
                         language_code : $('#langCode').val(),
@@ -577,7 +577,7 @@ window.insertMachPropDialog = function (nodeID, nodeName) {
         $("#machPropFormInsertPopup").validationEngine();
 
         var ajPopUpMachProp = $('#test-cabin-popup').ajaxCallWidget({
-                         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                          data : {
                              url:'pkFillMachineGroupPropertyDefinitions_sysMachineToolPropertyDefinition' ,
                              language_code : $('#langCode').val(),
@@ -619,7 +619,7 @@ window.insertMachPropDialog = function (nodeID, nodeName) {
 
 
         var ajPopUpMachPropNot = $("#loading-image-crud-popup").ajaxCallWidget({
-                         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                          data : {
                              url:'pkFillMachineGroupNotInPropertyDefinitions_sysMachineToolPropertyDefinition' ,
                              language_code : $('#langCode').val(),
@@ -663,7 +663,7 @@ window.insertMachPropDialog = function (nodeID, nodeName) {
         ajPopUpMachPropNot.ajaxCallWidget('call');
 
         $('#tt_tree_menu_popup').tree({
-             url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+             url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillUnitsTree_sysUnits&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
              method: 'get',
              animate: true,
              checkbox: false,
@@ -719,7 +719,7 @@ window.addRolePrivilege = function (property_id, role_id, tag) {
     loader.loadImager('appendImage');
 
     var aj = $(window).ajaxCall({
-         proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+         proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
          data : {
              url:'pkTransferPropertyMachineGroup_sysMachineToolPropertyDefinition' ,
              property_id : property_id,

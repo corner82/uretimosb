@@ -17,8 +17,8 @@ $(document).ready(function () {
     $('#loging_ph').append(loging_value);
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {
             url: 'pkFillFirmMachineGroupsCounts_infoFirmMachineTool',
             language_code: $("#langCode").val(),
@@ -80,8 +80,8 @@ $(document).ready(function () {
     });
     
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: 'fillCompanyInfoEmployeesGuest_infoFirmProfile',
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val()
@@ -125,7 +125,7 @@ function gotLink(clicked) {
     $('#tab_header').append($('#' + clicked.id).attr('group_name'));
     $('#machines_table').bootstrapTable("destroy");
     $('#machines_table').bootstrapTable({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         queryParams: {
             url: 'pkFillUsersFirmMachinesNpk_infoFirmMachineTool',
             language_code: $("#langCode").val(),
@@ -270,8 +270,8 @@ $('#machines_table').on('click-row.bs.table', function (e, row, $element) {
             $('#machine_details_DIV').append(appending);
 
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-                //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+                //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
                 data: {
                     url: 'pkGetMachineProperities_sysMachineTools',
                     language_code: $("#langCode").val(),
@@ -385,8 +385,8 @@ $('#machines_table').on('click-row.bs.table', function (e, row, $element) {
         $('#machine_details_DIV').append(appending);
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-            //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+            //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
             data: {
                 url: 'pkGetMachineProperities_sysMachineTools',
                 language_code: $("#langCode").val(),

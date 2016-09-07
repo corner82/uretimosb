@@ -40,7 +40,7 @@ $(document).ready(function () {
     */
 
    $('#tt_tree_menu').tree({
-       url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillProductionTypesTree_sysProductionTypes&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+       url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillProductionTypesTree_sysProductionTypes&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
        method: 'get',
        animate: true,
        checkbox: true,
@@ -153,7 +153,7 @@ $(document).ready(function () {
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkDelete_sysProductionTypes' ,
                             id : nodeID,
@@ -232,7 +232,7 @@ $(document).ready(function () {
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkUpdateMakeActiveOrPassive_sysProductionTypes' ,
                             id : nodeID,
@@ -343,7 +343,7 @@ $(document).ready(function () {
        loader.loadImager('appendImage');
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url : 'pkUpdateMakeActiveOrPassive_sysProductionTypes' ,
                             id : nodeID,
@@ -460,7 +460,7 @@ $(document).ready(function () {
         language_code = $('#langCode').val();
         
        var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkInsert_sysProductionTypes' ,
                             language_code : language_code,
@@ -559,7 +559,7 @@ $(document).ready(function () {
         id = selectedTreeItem.id;
         
         var aj = $(window).ajaxCall({
-                        proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data : {
                             url:'pkUpdate_sysProductionTypes' ,
                             language_code : language_code,

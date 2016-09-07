@@ -25,7 +25,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -100,7 +100,7 @@ $("#loading-image-roles").loadImager('appendImage');
  * @since 26/07/2016
  */
 var ajaxACLResources = $('#mach-prod-box').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillModulesDdList_sysAclModules' ,
                     pk : $("#pk").val() 
             }
@@ -130,7 +130,7 @@ ajaxACLResources.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -155,7 +155,7 @@ ajaxACLResources.ajaxCallWidget('call');
  * @since 11/08/2016
  */
 var ajaxACLResources = $('#loading-image-roles').ajaxCallWidget({
-    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: { url:'pkFillRolesDdlist_sysAclRoles' ,
                     pk : $("#pk").val() 
             }
@@ -188,7 +188,7 @@ ajaxACLResources.ajaxCallWidget ({
             onSelected: function(selectedData){
                 if(selectedData.selectedData.value>0) {
                     /*$('#tt_tree_menu').tree({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                     });*/
                 }
             }   
@@ -281,7 +281,7 @@ window.deleteActionUltimatelyDialog= function(id, index){
   */
  window.deleteActionUltimatelyWithRelatedData = function (id, index) {
       var ajDeleteAllWithRelatedData = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDeleteAct_sysAclActions' ,
                     id : id,
@@ -326,7 +326,7 @@ window.deleteActionUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysAclActions' ,
                     id : id,
@@ -503,7 +503,7 @@ window.updateActionDialog = function (id, row) {
             
             
             var ajaxACLResourcesPopup = $('#mach-prod-box-popup').ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillModulesDdList_sysAclModules' ,
                                 pk : $("#pk").val() 
                         }
@@ -530,7 +530,7 @@ window.updateActionDialog = function (id, row) {
                                 onSelected: function(selectedData){
                                     if(selectedData.selectedData.value>0) {
                                         /*$('#tt_tree_menu').tree({
-                                            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
+                                            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val(),
                                         });*/
                                  }
                              }   
@@ -553,7 +553,7 @@ window.updateActionDialog = function (id, row) {
             ajaxACLResourcesPopup.ajaxCallWidget('call');
             
             var ajaxRolesPopup = $('#loading-image-role-popup').ajaxCallWidget({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: { url:'pkFillRolesDdlist_sysAclRoles' ,
                                 pk : $("#pk").val() 
                         }
@@ -659,7 +659,7 @@ window.updateActionWrapper = function (e, id) {
 
 window.updateActionAct = function (id,role_ids, module_id) {
     var ajUpdateACT = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateAct_sysAclActions' ,
                          id : id,
@@ -731,7 +731,7 @@ window.updateAction = function (id) {
      var role_ids = JSON.stringify(rolesID);
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysAclActions' ,
                          id : id,
@@ -824,7 +824,7 @@ window.insertAction = function () {
      var role_ids = JSON.stringify(rolesID);
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysAclActions' ,
                          name : name,
@@ -926,7 +926,7 @@ window.activePassiveAction = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysAclActions' ,
                          id : id,

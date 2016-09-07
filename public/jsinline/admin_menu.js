@@ -38,7 +38,7 @@ $(document).ready(function () {
 */
 
 $('#tt_tree_menu').tree({
-//url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val()+'&menu_types_id='+menu_types_id,
+//url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+selectedData.selectedData.value+'&language_code='+$("#langCode").val()+'&menu_types_id='+menu_types_id,
 method: 'get',
 animate: true,
 checkbox: true,
@@ -117,7 +117,7 @@ onAfterEdit: function (node) {
      * @since 19/07/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkFillMenuTypeList_sysMenuTypes' ,
                 language_code : 'tr',
                 pk : $("#pk").val()}, 
@@ -144,7 +144,7 @@ onAfterEdit: function (node) {
                             if(ddDataMenuTypes.selectedData.value>0) {
                                
                                 $('#tt_tree_menu').tree({ 
-                                    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+target.value+'&language_code='+$("#langCode").val()+'&menu_types_id='+menu_types_id,
+                                    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+target.value+'&language_code='+$("#langCode").val()+'&menu_types_id='+menu_types_id,
                                 });
                             } else {
                                 BootstrapDialog.show({
@@ -180,7 +180,7 @@ onAfterEdit: function (node) {
      * @since 28/03/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkFillComboBoxRoles_sysAclRoles' ,
                 language_code : 'tr',
                 main_group : 2,
@@ -206,7 +206,7 @@ onAfterEdit: function (node) {
                             menu_types_id = ddDataMenuTypes.selectedData.value;
                             if(ddDataMenuTypes.selectedData.value>0) {
                                 $('#tt_tree_menu').tree({ 
-                                    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+target.value+'&language_code='+$("#langCode").val()+'&menu_types_id='+menu_types_id,
+                                    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillForAdminTree_leftnavigation&pk=' + $("#pk").val()+ '&role_id='+target.value+'&language_code='+$("#langCode").val()+'&menu_types_id='+menu_types_id,
                                 });
                             } else {
                                 BootstrapDialog.show({
@@ -302,7 +302,7 @@ onAfterEdit: function (node) {
        loader.loadImager('appendImage');
        selectedTreeItem = $('#tt_tree_menu').tree('find', nodeID);
        $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkDelete_leftnavigation' ,
                 id : nodeID,
                 pk : $("#pk").val()}, 
@@ -417,7 +417,7 @@ onAfterEdit: function (node) {
        menu_types_id = ddDataMenuTypes.selectedData.value;
        
        $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkUpdateMakeActiveOrPassive_leftnavigation' ,
                 id : nodeID,
                 pk : $("#pk").val()}, 
@@ -573,7 +573,7 @@ onAfterEdit: function (node) {
        menu_types_id = ddDataMenuTypes.selectedData.value;
        
        $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkUpdateMakeActiveOrPassive_leftnavigation' ,
                 id : nodeID,
                 pk : $("#pk").val()}, 
@@ -822,7 +822,7 @@ onAfterEdit: function (node) {
         //console.log(ddData);
         parent = nodeID;
        $.ajax({
-           url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+           url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
            data: { url:'pkInsert_leftnavigation' ,
                    language_code : language_code,
                    icon_class : icon_class,
@@ -949,7 +949,7 @@ onAfterEdit: function (node) {
         //console.log(ddData);
         
        $.ajax({
-           url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+           url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
            data: { url:'pkInsert_leftnavigation' ,
                    language_code : language_code,
                    icon_class : icon_class,
@@ -1086,7 +1086,7 @@ onAfterEdit: function (node) {
         id = selectedTreeItem.id;
         
        $.ajax({
-           url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+           url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
            data: { url:'pkUpdate_leftnavigation' ,
                    language_code : language_code,
                    icon_class : icon_class,

@@ -25,7 +25,7 @@ $(document).ready(function () {
      * Page consultant for box-header
      */
 //    $.ajax({
-//        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+//        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
 //        data: {
 //            url: '',
 //            language_code: $("#langCode").val(),
@@ -82,7 +82,7 @@ $(document).ready(function () {
         onDblClickRow: function (index, row) {
 
         },
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
         queryParams: {
             url: 'pkFillSingularFirmAddress_infoFirmAddress',
@@ -166,7 +166,7 @@ $(document).ready(function () {
      * Get Building types service
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillBuildingType_sysSpecificDefinitions',
             language_code: $("#langCode").val(),
@@ -204,7 +204,7 @@ $(document).ready(function () {
      * Get countries list for address 
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscountrys',
             language_code: $("#langCode").val(),
@@ -280,7 +280,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {
                 url: 'fillComboBox_syscity',
                 country_id: window.sel_count_id,
@@ -338,7 +338,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {
                 url: 'fillComboBox_sysborough',
                 country_id: window.sel_count_id,
@@ -382,8 +382,8 @@ $(document).ready(function () {
      * Company's registrered but not approved social media links
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
         data: {url: "pkFillSingularFirmSocialMedia_infoFirmSocialmedia",
             language_code: $("#langCode").val(),
             npk: $('#selectedCompanyNpk').val(),
@@ -467,7 +467,7 @@ $(document).ready(function () {
      * ddslick drop down
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkFillSocicalMediaDdList_sysSocialMedia',
             language_code: $("#langCode").val(),
@@ -703,8 +703,8 @@ function checkContent(element) {
          */
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
             data: {
                 url: 'pkInsert_infoFirmSocialmedia',
                 pk: $("#pk").val(),
@@ -813,8 +813,8 @@ function remove_social(element) {
 //    console.log($('#element.id'));
     console.log(soc_id_val);
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             url: 'pkDeletedAct_infoFirmSocialmedia',
             pk: $("#pk").val(),
@@ -855,8 +855,8 @@ function editrow(target) {
 function deleterow(target) {
     wcm.warningComplexMessage({onConfirm: function (event, data) {
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-                //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',         
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+                //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',         
                 data: {
                     url: '',
                     pk: $("#pk").val(),
@@ -895,8 +895,8 @@ function saverow(target) {
 //    console.log($('#reg_address_table').datagrid('getRowIndex'));
 
 //    $.ajax({
-//        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',         
+//        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',         
 //        data: {
 //            url: 'pkcpkUpdate_infoFirmAddress',
 //            pk: $("#pk").val(),
@@ -937,8 +937,8 @@ function submitNewAddress() {
 
     if (!$('#new_address_form').validationEngine()) {
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-            //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',         
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+            //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',         
             data: {
                 url: 'pkInsert_infoFirmAddress',
                 pk: $("#pk").val(),

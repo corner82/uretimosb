@@ -16,8 +16,8 @@ $(document).ready(function () {
 //
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-            //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',            
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+            //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',            
             data: {
                 url: 'pkFillFirmMachineGroupsCounts_infoFirmMachineTool',
                 language_code: $("#langCode").val(),
@@ -59,8 +59,8 @@ $(document).ready(function () {
 //console.log($('#controller').val());
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             parent: 0,
             pk: $("#pk").val(),
@@ -185,8 +185,8 @@ function getSubmenu(clicked) {
     }
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
-//        url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+//        url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
         data: {
             parent: clicked.id,
             pk: $("#pk").val(),

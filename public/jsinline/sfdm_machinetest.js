@@ -18,7 +18,7 @@ $(document).ready(function () {
          }*/
 
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {url: 'pkFillConsultantOperationsToolsDropDown_sysOperationTypesTools',
                 language_code: 'tr',
                 main_group: 0,
@@ -143,7 +143,7 @@ $(document).ready(function () {
      * @since 09/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {url: 'pkGetConsWaitingForConfirm_blActivationReport',
             pk: $("#pk").val()},
         type: 'GET',
@@ -170,7 +170,7 @@ $(document).ready(function () {
      * @since 11/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {url: 'pkGetConsultantUpDashBoardCount_blActivationReport',
             pk: $("#pk").val()},
         type: 'GET',
@@ -196,7 +196,7 @@ $(document).ready(function () {
      * @since 10/02/2016
      */
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {url: 'pkGetConsultantOperation_blActivationReport',
             pk: $("#pk").val()},
         type: 'GET',

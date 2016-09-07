@@ -26,7 +26,7 @@ $('#tt_grid_dynamic_privileges').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -100,7 +100,7 @@ var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
 * 11/08/2016
 */
 $('#tt_tree_menu2').tree({  
-    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillActionResourceGroups_sysAclActionRrp&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillActionResourceGroups_sysAclActionRrp&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
     method: 'get',
     animate: true,
     checkbox: false,
@@ -136,7 +136,7 @@ window.fillPrivilegeDatagrid = function(id, resource_id) {
     
     var id = id;
     $('#tt_grid_dynamic_privileges').datagrid({  
-        url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -241,7 +241,7 @@ window.privilegeServiceAttachDialog = function (id, row) {
             attachedTagsLoadImage.loadImager('appendImage');
             
             var ajPopUpMachProp = $('#test-cabin-popup').ajaxCallWidget({
-                    proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                     data : {
                         url:'pkFillActionRestServicesOfPrivileges_sysAclActionRrpRestservices' ,
                         language_code : $('#langCode').val(),
@@ -277,7 +277,7 @@ window.privilegeServiceAttachDialog = function (id, row) {
             ajPopUpMachProp.ajaxCallWidget('call');
             
             $('#tt_tree_services_popup').tree({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pkFillNotInActionRestServicesOfPrivilegesTree_sysAclActionRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&rrp_id='+id,
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillNotInActionRestServicesOfPrivilegesTree_sysAclActionRrpRestservices&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+ '&rrp_id='+id,
                 method: 'get',
                 animate: true,
                 checkbox: false,
@@ -341,7 +341,7 @@ window.deleteServicePrivilege = function(id, element) {
     loader.loadImager('appendImage');
     //var ajPopUpDelete = $(window).ajaxCall({
     var ajPopUpDelete = $("#loading-image-crud-popup").ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkDelete_sysAclActionRrpRestservices' ,
                          id : id,
@@ -413,7 +413,7 @@ window.attachServiceToPrivilege = function(rrp_id, restservices_id, services_gro
     loader.loadImager('appendImage');
     
     var ajServiceAttach = $(window).ajaxCall({
-            proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data : {
                 url:'pkInsert_sysAclActionRrpRestservices' ,
                 language_code : $('#langCode').val(),

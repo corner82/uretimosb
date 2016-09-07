@@ -9,7 +9,7 @@ $('#tt_grid_dynamic').datagrid({
     onDblClickRow : function (index, row) {
         
     },  
-    url : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
     queryParams: {
             pk: $('#pk').val(),
             subject: 'datagrid',
@@ -121,7 +121,7 @@ window.deleteServiceGroupUltimatelyDialog= function(id, index){
   */
  window.deleteServiceGroupUltimatelyBruteForce = function(id, index) {
      var ajDeleteAllWithRelatedData = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDeleteAct_sysServicesGroups' ,
                     id : id,
@@ -164,7 +164,7 @@ window.deleteServiceGroupUltimately = function(id, index) {
     var id = id;
     var index = index;
     var ajDeleteAll = $(window).ajaxCall({
-                proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data : {
                     url:'pkDelete_sysServicesGroups' ,
                     id : id,
@@ -319,7 +319,7 @@ window.updateServiceGroup = function (id) {
      loader.loadImager('appendImage');
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdate_sysServicesGroups' ,
                          id : id,
@@ -380,7 +380,7 @@ window.insertServiceGroup = function () {
      var description = $('#description').val();
      
      var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',   
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',   
                      data : {
                          url:'pkInsert_sysServicesGroups' ,
                          name : name,
@@ -480,7 +480,7 @@ window.activePassiveServiceGroup = function (id, domElement) {
     //console.log(domElement);
 
     var aj = $(window).ajaxCall({
-                     proxy : 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                     proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                      data : {
                          url:'pkUpdateMakeActiveOrPassive_sysServicesGroups' ,
                          id : id,

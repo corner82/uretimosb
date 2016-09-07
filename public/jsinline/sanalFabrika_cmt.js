@@ -20,7 +20,7 @@ $(document).ready(function () {
      */
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syslanguage',
             language_code: $("#langCode").val()
@@ -76,7 +76,7 @@ $(document).ready(function () {
     $('#machineTypeCategoriesType').loadImager('appendImage');
 
     $('#mTCTree').tree({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php?'
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?'
                 + 'url='
                 + 'pkFillJustMachineToolGroups_sysMachineToolGroups'
                 + '&pk='
@@ -136,7 +136,7 @@ $(document).ready(function () {
             $('#selectedMTHeader').append(node.attr('text'));
 
             $.ajax({
-                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                 data: {
                     url: 'pkFillUsersFirmMachines_infoFirmMachineTool',
                     pk: $("#pk").val(),
@@ -277,7 +277,7 @@ $(document).ready(function () {
         onLoadSuccess: function () {
             $('#companyMachinesGridBox').loadImager('removeLoadImage');
         },
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         queryParams: {url: 'pkFillUsersFirmMachines_infoFirmMachineTool',
             pk: $('#pk').val(),
             language_code: $("#langCode").val()
@@ -357,7 +357,7 @@ $(document).ready(function () {
         $('#selectedMTInformationBox').loadImager();
         $('#selectedMTInformationBox').loadImager('appendImage');
         $.ajax({
-            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
             data: {
                 url: 'pkFillUsersFirmMachineProperties_infoFirmMachineTool',
                 pk: $("#pk").val(),
@@ -525,7 +525,7 @@ function addMTtoCompany() {
     $("#selectedMTInformation").empty();
     $("#addMTtoCompany").addClass('hidden');
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkInsert_infoFirmMachineTool',
             pk: $("#pk").val(),
@@ -619,7 +619,7 @@ function deleterow(target) {
                 cssClass: 'btn-warning btn-sm',
                 action: function (dialogItself) {
                     $.ajax({
-                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
                         data: {
                             url: 'pkDeletedAct_infoFirmMachineTool',
                             language_code: $("#langCode").val(),

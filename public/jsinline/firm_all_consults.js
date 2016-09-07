@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkcpkGetAllFirmCons_sysOsbConsultants',
             language_code: $("#langCode").val(),

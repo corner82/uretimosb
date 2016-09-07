@@ -8,7 +8,7 @@ $(document).ready(function () {
         //url: '../slim_2/index.php/columnflows_json_test',
         //url: 'http://10.18.2.179/ostim_anket_slim/tezgah.php/getMachineryBySector',
         //url: 'https://slim.localhost.com/tezgah.php/getMachineryBySector',
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetConsWaitingForConfirm_blActivationReport' ,
                 pk : $("#pk").val()}, 
         type: 'GET',
@@ -38,7 +38,7 @@ $(document).ready(function () {
         //url: '../slim_2/index.php/columnflows_json_test',
         //url: 'http://10.18.2.179/ostim_anket_slim/tezgah.php/getMachineryBySector',
         //url: 'https://slim.localhost.com/tezgah.php/getMachineryBySector',
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetConsultantUpDashBoardCount_blActivationReport' ,
                 pk : $("#pk").val()}, 
         type: 'GET',
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     // grafik machinery by resource (#container_machinerByResource)
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: { url:'pkGetConsultantOperation_blActivationReport' ,
                 pk : $("#pk").val()}, 
         type: 'GET',

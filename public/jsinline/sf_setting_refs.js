@@ -63,7 +63,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
         data: {
             url: 'pkFillCompanyLists_infoFirmProfile',
             language_code: $("#langCode").val(),
