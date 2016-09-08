@@ -908,6 +908,16 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/module/Admin/view/admin/admin/consultants.phtml</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/module/Admin/view/admin/admin/clusteremp.phtml</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/module/Sanalfabrika/view/sanalfabrika/sanalfabrika/signupconfirmation.phtml</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/plugins/zeynel/exPlugs.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/vendor/services/src/authentication/FactoryServiceAuthKeyControler.php</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/plugins/zeynel/tag-cabin/tag-cabin.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/jsinline/admin_clusteremp.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/jsinline/admin_consultants.js</file>
+            <file>file:/C:/xampp/htdocs/sanalFabrika/public/jsinline/signupconfirmation.js</file>
+        </group>
     </open-files>
 </project-private>
