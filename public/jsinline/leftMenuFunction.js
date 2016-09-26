@@ -18,7 +18,7 @@
 //                menu_types_id:
             },
             method: "GET",
-            async: false,
+            //async: false,
             dataType: "json",
             success: function (data) {
                 /*

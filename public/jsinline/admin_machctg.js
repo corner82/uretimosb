@@ -27,7 +27,17 @@ $(document).ready(function () {
         defaultLang: 'en'
     });
     lang.change($('#ln').val());
-    
+   
+    /*
+     * 
+     * @type @call;$@call;loadImager
+     * @Since 2016.01.16
+     * @Author Mustafa Zeynel Dagli
+     * @Purpose this variable is to create loader image for roles tree 
+     * this imager goes to #loading-image div in html.
+     * imager will be removed on roles tree onLoadSuccess method.
+     */
+    var loader = $("#loading-image").loadImager();
     
     
     /*
@@ -128,16 +138,7 @@ $(document).ready(function () {
     
 
 
-    /*
-     * 
-     * @type @call;$@call;loadImager
-     * @Since 2016.01.16
-     * @Author Mustafa Zeynel Dagli
-     * @Purpose this variable is to create loader image for roles tree 
-     * this imager goes to #loading-image div in html.
-     * imager will be removed on roles tree onLoadSuccess method.
-     */
-    var loader = $("#loading-image").loadImager();
+ 
 
    
    

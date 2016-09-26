@@ -839,7 +839,7 @@ function send_personel_general_info() {
                         sex_id: window.sel_sex_type
                     },
                     method: "GET",
-                    async: false,
+                    //async: false,
                     dataType: "json",
                     success: function (data) {
                         console.log(data);
@@ -918,7 +918,7 @@ function add_new_personnel_grad() {
             graduation_date: $('#grad_date_ph').val()
         },
         method: "GET",
-        async: false,
+        //async: false,
         dataType: "json",
         success: function (data) {
 

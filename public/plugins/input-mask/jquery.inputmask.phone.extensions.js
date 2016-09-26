@@ -35,7 +35,7 @@ When using this extension make sure you specify the correct url to get the masks
                 var maskList = [];
                 $.ajax({
                     url: opts.url,
-                    async: false,
+                    //async: false,
                     dataType: 'json',
                     success: function (response) {
                         maskList = response;
