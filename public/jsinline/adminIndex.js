@@ -343,7 +343,7 @@ $(document).ready(function () {
              */                            
             },
         method: "GET",
-        //async: false,
+        async: false,
         dataType: "json",
         success: function (data) {
             

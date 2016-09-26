@@ -497,7 +497,7 @@ function _init() {
                                      */
                         },
                         method: "GET",
-                        //async: false,
+                        async: false,
                         dataType: "json",
                         success: function (data2) {
 

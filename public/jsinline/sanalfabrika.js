@@ -12,7 +12,7 @@ $(document).ready(function () {
             url : 'fillComboBox_syslanguage',                          
             },
         method: "GET",
-        //async: false,
+        async: false,
         dataType: "json",
         success: function (data) {
             var data = data;
