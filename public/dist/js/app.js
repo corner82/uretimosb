@@ -18,6 +18,11 @@ if (typeof jQuery === "undefined") {
     throw new Error("AdminLTE requires jQuery");
 }
 
+$(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+});
+
 /* AdminLTE
  *
  * @type Object
