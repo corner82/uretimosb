@@ -129,7 +129,7 @@ return array(
         'Cluster' => array(
             'index' => 'layout/cluster.phtml',
             'cmpinsert' => 'layout/cmpinsert.phtml',
-            'machinsert' => 'layout/machinsert.phtml',
+            'machinsert' => 'layout/machinsert2.phtml',
                         ),
         'Error' => array(
             'index' => 'layout/401layout.phtml',
