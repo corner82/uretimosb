@@ -128,7 +128,7 @@ return array(
                         ),
         'Cluster' => array(
             'index' => 'layout/cluster.phtml',
-            'cmpinsert' => 'layout/cmpinsert.phtml',
+            'cmpinsert' => 'layout/cmpinsert2.phtml',
             'machinsert' => 'layout/machinsert2.phtml',
                         ),
         'Error' => array(
