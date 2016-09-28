@@ -4571,4 +4571,5 @@ if it's not present, don't show loader */
 	height: 100%;
 	z-index: 9999;
 	background: url(../img/loader-128x/Preloader_3.gif) center no-repeat #fff;
+        /*background: url(../img/loader-128x/test1.gif) center no-repeat #222d32;*/
 }
