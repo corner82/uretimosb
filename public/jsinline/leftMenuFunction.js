@@ -1,6 +1,6 @@
 
 (function ($) {
-
+    
     $.fn.leftMenuFunction = function (data) {
 
 //       alert($("#pk").val());
@@ -46,7 +46,7 @@
                         var target_link = currentPath.replace(current_action,data[i].url);
                         
                         var appending_html = "<li id='menu_" +
-                                data[i].id + "'><a href='https://" +
+                                data[i].id + "'><a class='test' href='https://" +
                                 target_link + "'><i class='fa " +
                                 data[i].icon_class + "'></i><span>" +
                                 data[i].menu_name + "</span></a></li>";
@@ -61,7 +61,7 @@
                         var target_link = currentPath.replace(current_action,data[i].url);
 
                         var appending_html = "<li class='treeview' id='menu_" +
-                                data[i].id + "'><a href='https://" +
+                                data[i].id + "'><a class='test' href='https://" +
                                 target_link + "'><i class='fa " +
                                 data[i].icon_class + "'></i><span>" +
                                 data[i].menu_name +
@@ -121,7 +121,7 @@
 //                    console.log(event);
                         //alert(event.target);
                         //alert(this);
-                        $.AdminLTE.dynamicTree(this);
+                        //$.AdminLTE.dynamicTree(this);
                     });
 
                     // bir sonraki ekleme için append boşaltılır...

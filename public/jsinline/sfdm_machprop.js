@@ -439,7 +439,7 @@ window.getMachineProp = function(node, treeObj, tagBuilder) {
     
 
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
 
 //Validation forms binded...
 jQuery("#unitForm").validationEngine();

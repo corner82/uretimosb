@@ -338,5 +338,5 @@ $(document).ready(function () {
 
 
     // Left menuyu oluşturmak için çağırılan fonksiyon...
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
 });

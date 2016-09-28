@@ -156,7 +156,7 @@ window.fillPrivilegeDatagrid = function(id, resource_id) {
       
 
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
 
 
 /**

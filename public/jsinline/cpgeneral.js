@@ -15,7 +15,7 @@ $(document).ready(function () {
      * Left menuyu oluÅŸturmak iÃ§in Ã§aÄŸÄ±rÄ±lan fonksiyon...
      */
 
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
     $('#general_firm_form').validationEngine({promptPosition: "topLeft:100%,0"});
 //Datemask dd/mm/yyyy
     $("#found_date").inputmask("yyyy/mm/dd", {"placeholder": "yyyy/mm/dd"});

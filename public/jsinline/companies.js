@@ -47,7 +47,7 @@ $(document).ready(function () {
     });
 
     // Left menuyu oluşturmak için çağırılan fonksiyon...
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
     
     /* 
      * ara yüzde kullanılan maskeler ve select 2 drop down fonksiyonları

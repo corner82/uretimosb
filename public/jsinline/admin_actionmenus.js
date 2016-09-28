@@ -95,7 +95,7 @@ var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
                                            actionButtonLabel : 'İşleme devam et'});
                                             
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
 
 
 /**

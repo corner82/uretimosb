@@ -14,7 +14,7 @@ $(document).ready(function () {
     /*
      * Left menuyu olusturmak icin Ã§aÄŸÄ±rÄ±lan fonksiyon...
      */
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
 
     window.sel_sex_type;
     window.sel_sex_type_edit;

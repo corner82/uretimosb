@@ -226,7 +226,7 @@ $('#tt_tree_menu2').tree({
       
 
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
 
     
 /**

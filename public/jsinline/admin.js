@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
- 
+
     
 /**
  * Sand-Signika theme for Highcharts JS
@@ -462,5 +462,6 @@ Highcharts.setOptions(Highcharts.theme);
 
 
     // Left menuyu oluşturmak için çağırılan fonksiyon...
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
+    
 });

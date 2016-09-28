@@ -462,5 +462,5 @@ Highcharts.setOptions(Highcharts.theme);
 
 
     // Left menuyu oluşturmak için çağırılan fonksiyon...
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
 });

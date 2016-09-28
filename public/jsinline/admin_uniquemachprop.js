@@ -768,7 +768,7 @@ window.getAllMachinesToDatagrid = function(node, treeObj) {
     
 
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
    
 /**
  * wrapper class for pop up and delete indiviqual machine property

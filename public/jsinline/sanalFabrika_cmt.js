@@ -48,7 +48,7 @@ $(document).ready(function () {
      * Left menuyu oluÅŸturmak iÃ§in Ã§aÄŸÄ±rÄ±lan fonksiyon...
      */
 
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
 
     /*
      * Variables

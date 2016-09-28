@@ -18,6 +18,15 @@ if (typeof jQuery === "undefined") {
     throw new Error("AdminLTE requires jQuery");
 }
 
+window.leftMenuWidget = $('#leftside-menu').leftMenu();
+window.leftMenuWidget.leftMenu('setBaseMenu');
+
+/**
+ * page loading image fade out
+ * @param {type} param
+ * @author Mustafa Zeynel Dağlı
+ * @since 28/09/2016
+ */
 $(window).load(function() {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");;

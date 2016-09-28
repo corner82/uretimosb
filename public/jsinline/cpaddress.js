@@ -14,7 +14,7 @@ $(document).ready(function () {
     /*
      * Left menuyu olusturmak icin Ã§aÄŸÄ±rÄ±lan fonksiyon...
      */
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
 
     window.sel_count_id;
     window.sel_comp_count_id;

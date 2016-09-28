@@ -425,6 +425,6 @@ window.getAssignTypeRoleNotAssigned = function(node, treeObj, tagBuilder) {
 }
 
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
    
 });

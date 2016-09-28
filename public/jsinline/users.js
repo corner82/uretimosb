@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // Left menuyu oluşturmak için çağırılan fonksiyon...
-    $.fn.leftMenuFunction();  
+    //$.fn.leftMenuFunction();  
     
     $(".select2").select2();
     //Datemask dd/mm/yyyy

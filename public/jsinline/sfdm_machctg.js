@@ -121,7 +121,7 @@ $(document).ready(function () {
      **/
     "use strict";
     // Left menuyu oluşturmak için çağırılan fonksiyon...
-    $.fn.leftMenuFunction();
+    //$.fn.leftMenuFunction();
 
     //Validation forms binded...
     jQuery("#machineCategoryForm").validationEngine();

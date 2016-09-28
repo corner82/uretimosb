@@ -241,7 +241,7 @@ window.resetClusterEmpForm = function () {
 }
                                             
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
   
 /**
  * wrapper class for pop up and delete cluster employee ultimately

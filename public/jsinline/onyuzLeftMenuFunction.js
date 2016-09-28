@@ -70,7 +70,7 @@ $(document).ready(function () {
             a: $("#controller").val()
         },
         method: "GET",
-        async: false,
+        //async: false,
         dataType: "json",
         success: function (data) {
             /*
@@ -141,13 +141,12 @@ $(document).ready(function () {
                     /*
                      * Click fonksiyonu yeni append edilen şıkka eklenir
                      */
-
-//                        $(newappend).on("click", function (event) {
+                   $(newappend).on("click", function (event) {
 //                    console.log(event);
                     //alert(event.target);
                     //alert(this);
-//                            $.AdminLTE.dynamicTree(this);
-//                        });
+                           $.AdminLTE.dynamicTree(this);
+                       });
                     // bir sonraki ekleme için append boşaltılır...
                     newappend = null;
                 }
@@ -195,7 +194,7 @@ function getSubmenu(clicked) {
             menu_types_id: 3
         },
         method: "GET",
-        async: false,
+        //async: false,
         dataType: "json",
         success: function (data) {
 //            console.log(data);

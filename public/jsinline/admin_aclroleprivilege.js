@@ -455,7 +455,7 @@ window.getRolePrivilegesNotAssigned = function(node, treeObj, tagBuilder) {
 }
 
 // Left menuyu oluşturmak için çağırılan fonksiyon...
-$.fn.leftMenuFunction();
+//$.fn.leftMenuFunction();
  
 /**
  * wrapper class for pop up and delete privilege from 
