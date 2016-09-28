@@ -1070,6 +1070,292 @@
         },
        
     });
+    
+    /**
+     * left menu widget for admin pages
+     * @author Mustafa Zeynel Dağlı
+     * @since 26/09/2016
+     */
+    $.widget("sanalfabrika.leftMenu", {
+        
+        /**
+         * Default options.
+         * @returns {null}
+         */
+        options: {
+        },
+        /**
+         * private constructor method for jquery widget
+         * @returns {null}
+         */
+        _create: function () {
+            
+            /**
+             * list item <li> tag click event binding
+             */
+            this._on(this.element, {
+                'click > li.treeview': function(event, self) {
+                    var target = $(event.target);
+                    var menuElement = target.closest( "li" );
+                    if ( menuElement.is( "li" ) ) {
+                        this.setSubMenu(menuElement);
+                    }
+                    event.preventDefault();   
+                    this._trigger('onMenuItemClicked',event, { 
+                        element : menuElement,
+                    } ); 
+                }
+            });
+        },
+        
+        /**
+         * private function to append new sub menu items
+         * @param {type} element
+         * @param {type} data
+         * @returns {undefined}
+         * @author Mustafa Zeynel Dağlı
+         * @since 28/09/2016
+         */
+        _setSubMenuLoop : function(element,data) {
+            var self = this;
+            var id = element.attr('id');
+            /**
+             * first create new sub menu html element
+             */
+            element.append("<ul class='treeview-menu' id='sub_"+id+"'></ul>");
+            var appending_html = '';
+            /**
+             * prepare new menu items
+             */
+            $.each( data, function( index, value ){
+                if (value.collapse === 0) {   
+                    appending_html+= "<li id='" +
+                            value.id + "'><a href='" +value.url + "'><i class='fa " +
+                            value.icon_class + "'></i><span>" +
+                            value.menu_name + "</span></a></li>";  
+
+                } else {
+                    appending_html+= "<li class='treeview' id='" +
+                            value.id + "'><a href='#' ><i class='fa " +
+                            value.icon_class + "'></i><span>" +
+                            value.menu_name +
+                            "</span><i class='fa fa-angle-left pull-right'></i></a></li>";
+                }   
+            });
+            /**
+             * append new menu item
+             * @type @exp;element@call;find@call;first
+             */
+            var subUl = element.find('ul').first();
+            subUl.append(appending_html);
+            /**
+             * close all open menu items first
+             */
+            element.parents('ul').first().find('li.active').find('ul.menu-open').slideUp('normal');
+            /**
+             * change all menu items class to closed
+             */
+            element.parents('ul').first().find('li.active').removeClass('active');
+            /**
+             * opens new clicked menu item
+             */
+            subUl.slideDown('normal', function () {
+                // opens selected item
+                subUl.addClass('menu-open');
+                element.addClass('active');
+                $.AdminLTE.layout.fix();
+            });
+            appending_html = '';
+        },
+        
+        /**
+         * private method get sub menu items by ajax request
+         * @param {type} element
+         * @returns {undefined}
+         * @author Mustafa Zeynel Dağlı
+         * @since 28/09/2016
+         */
+        _getSubMenuAjax : function (element) {
+            var id = element.attr('id');
+            /**
+             * find clicked item's <a> tag 'href' attribute
+             * @type @exp;element@call;find@call;first@call;attr
+             */
+            var linkUrl = element.find('a').first().attr('href');
+            /**
+             * if <a> tag attribute is not a link call ajax request
+             */
+            if( linkUrl == '#') {
+                var sm  = $(window).successMessage();
+                var dm  = $(window).dangerMessage();
+                var wm  = $(window).warningMessage();
+                var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
+                                                           actionButtonLabel : 'İşleme devam et'}); 
+                var self = this;
+                
+                var ajaxSubMenu = $(this).ajaxCallWidget({
+                    proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+                            data: { url:'pkGetLeftMenu_leftnavigation' ,
+                                    parent: id,
+                                    pk: $("#pk").val(),
+                                    language_code: $("#langCode").val(),
+                                    m: $("#module").val(),
+                                    a: $("#controller").val()
+                            }
+                   })
+                ajaxSubMenu.ajaxCallWidget ({
+                     onError : function (event, textStatus,errorThrown) {
+                         dm.dangerMessage({
+                            onShown : function() { 
+                            }
+                         });
+                         dm.dangerMessage('show', 'Menü Ögesi Bulunamamıştır...',
+                                                  'Menü ögesi  bulunamamıştır...');
+                     },
+                     onSuccess : function (event, data) {
+                         var data = $.parseJSON(data);
+                         self._setSubMenuLoop(element, data);
+                     },
+                     onErrorDataNull : function (event, data) {
+                         dm.dangerMessage({
+                            onShown : function() {
+                            }
+                         });
+                         dm.dangerMessage('show', 'Menü Ögesi Bulunamamıştır...',
+                                                  'Menü ögesi  bulunamamıştır...');
+                     },
+                }) 
+                ajaxSubMenu.ajaxCallWidget('call');
+            } else {
+                /**
+                 * replace page due to clicked item  <a> tag link
+                 */
+                window.location.replace(linkUrl);
+            }
+            
+        },
+        
+         /**
+         * set sub menu items
+         * @returns {undefined}
+         * @since 27/09/2016
+         */
+        setSubMenu : function(element) {
+            /**
+             * if menu item loaded before
+             */
+            if(element.has( "ul" ).length > 0) {
+                if(!element.hasClass('active')) {
+                    /**
+                    * close all open menu items first
+                    */
+                    element.parents('ul').first().find('li.active').find('ul.menu-open').slideUp('normal');
+                    /**
+                    * change all menu items class to closed
+                    */
+                    element.parents('ul').first().find('li.active').removeClass('active');
+                    
+                    var subUl = element.find('ul').first();
+                    /**
+                    * opens new clicked menu item
+                    */
+                    subUl.slideDown('normal', function () {
+                        // opens selected item
+                        subUl.addClass('menu-open');
+                        subUl.parents('ul').first().find('li.active').removeClass('active');
+                        element.addClass('active');
+                        $.AdminLTE.layout.fix();
+                    });
+                } else if(element.hasClass('active')) {
+                    /**
+                     * if clicked item opened before close then
+                     */
+                    element.find('ul').first().slideUp('normal');
+                    element.removeClass('active');
+                }
+            } else {
+                /**
+                 * if menu item not loaded before then call sub menu from server
+                 */
+                this._getSubMenuAjax(element);
+            }
+        },
+        
+        /**
+         * set parent menu items
+         * @returns {undefined}
+         * @since 26/09/2016
+         */
+        setBaseMenu : function() {
+            var sm  = $(window).successMessage();
+            var dm  = $(window).dangerMessage();
+            var wm  = $(window).warningMessage();
+            var wcm = $(window).warningComplexMessage({ denyButtonLabel : 'Vazgeç' ,
+                                                       actionButtonLabel : 'İşleme devam et'}); 
+            var self = this;
+            
+            var ajaxACLResources = $(this).ajaxCallWidget({
+                proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+                        data: { url:'pkGetLeftMenu_leftnavigation' ,
+                                parent: 0,
+                                pk: $("#pk").val(),
+                                language_code: $("#langCode").val(),
+                                m: $("#module").val(),
+                                a: $("#controller").val()
+                        }
+               })
+            ajaxACLResources.ajaxCallWidget ({
+                 onError : function (event, textStatus,errorThrown) {
+                     dm.dangerMessage('resetOnShown');
+                     dm.dangerMessage('show', 'Menü Ögesi Bulunamamıştır...',
+                                              'Menü ögesi  bulunamamıştır...');
+                 },
+                 onSuccess : function (event, data) {
+                     var data = $.parseJSON(data);
+                     self._setBaseMenuLoop(data);   
+                 },
+                 onErrorDataNull : function (event, data) {
+                     dm.dangerMessage('resetOnShown');
+                     dm.dangerMessage('show', 'Menü Ögesi Bulunamamıştır...',
+                                              'Menü ögesi  bulunamamıştır...');
+                 },
+            }) 
+            ajaxACLResources.ajaxCallWidget('call');
+        },
+        
+        /**
+         * get base menu items and append items to page
+         * @param {type} data
+         * @returns {undefined}
+         * @author Mustafa Zeynel Dağlı
+         * @since 27/09/2016
+         */
+        _setBaseMenuLoop : function(data) {
+            var self = this;
+            var appending_html;
+            $.each( data, function( index, value ){
+                if (value.collapse === 0) {   
+                    appending_html+= "<li id='" +
+                            value.id + "'><a href='" +value.url + "'><i class='fa " +
+                            value.icon_class + "'></i><span>" +
+                            value.menu_name + "</span></a></li>";  
+                } else {
+                    appending_html+= "<li class='treeview' id='" +
+                            value.id + "'><a href='#' ><i class='fa " +
+                            value.icon_class + "'></i><span>" +
+                            value.menu_name +
+                            "</span><i class='fa fa-angle-left pull-right'></i></a></li>";
+                }
+            });
+            self.element.append(appending_html);
+            appending_html = null;
+        },
+        
+        _init : function() {
+        },
+    });
+    
+    
 
 }(jQuery));
 
