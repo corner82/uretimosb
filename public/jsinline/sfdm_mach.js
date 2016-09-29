@@ -258,11 +258,11 @@ $('#tt_tree_menu2').tree({
          var s = node.text;
          var id = node.id;
          var parent = $(this).tree('getParent', node.target);
-         if(node.state == 'open') {
+         /*if(node.state == 'open') {
              s += '&nbsp;\n\
                  <i class="fa fa-level-down" title="Kategoriye makina özelliği ekle" onclick="insertMachPropDialog('+id+', \''+node.text+'\')"></i>';
              return s;
-         }
+         }*/
          return s;
      }
 });
