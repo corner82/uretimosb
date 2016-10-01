@@ -69,7 +69,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </button>
 
             <a class="navbar-brand" href="#intro">
-                <span>Ostim</span> <span>S</span>anal Fabrika
+                <span>Uretim</span> <span>O</span>SB
                 <!-- <img src="assets/img/logo1.png" alt="Logo"> -->
             </a>
 
@@ -106,11 +106,27 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <li class="page-scroll">
                         <a href="#about"><?php echo $this->translate('About Us') ?></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#services"><?php echo $this->translate('Services') ?></a>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);"><?php echo $this->translate('Services') ?></a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#projectManagement">Proje Yönetimi</a></li>
+                            <li class="page-scroll"><a href="#matchUp">Akıllı Eşleştirme</a></li>
+                            <li class="page-scroll"><a href="#bargain">İhale Yönetimi</a></li>
+                            <li class="page-scroll"><a href="#news">News</a></li>
+                            <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+                            <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        </ul>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#ostimServices"><?php echo $this->translate('OSTIM Services') ?></a>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);"><?php echo $this->translate('OSTIM Services') ?></a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#projectManagement">Makina Alım-Satım</a></li>
+                            <li class="page-scroll"><a href="#matchUp">Akıllı Eşleştirme</a></li>
+                            <li class="page-scroll"><a href="#bargain">İhale Yönetimi</a></li>
+                            <li class="page-scroll"><a href="#news">News</a></li>
+                            <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+                            <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        </ul>
                     </li>                    
 <!--                    <li class="page-scroll">
                         <a href="#sfTeam"><?php echo $this->translate('VE Team') ?></a>
@@ -124,7 +140,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <li class="page-scroll">
                         <a href="#contact"><?php echo $this->translate('Contact Us') ?></a>
                     </li>
-                    <!--                    <li class="dropdown">
+                                        <li class="dropdown">
                                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                                 Submenu
                                             </a>
@@ -136,7 +152,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                                 <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                                                 <li class="page-scroll"><a href="#contact">Contact</a></li>
                                             </ul>
-                                        </li>-->
+                                        </li>
                     <!--                    <li class="page-scroll">
                                             <a href="../index-2.html">Main</a>
                                         </li>-->
@@ -158,7 +174,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
                     <!-- MAIN IMAGE -->
                     <!--<img src="<?php echo $this->basePath('onyuz/One-Page/assets/img/sliders/revolution/bg1.jpg') ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">-->
-                    <img src="<?php echo $this->basePath('onyuz/One-Page/assets/img/sliders/revolution/ostimbg1.jpg') ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                    <img src="<?php echo $this->basePath('onyuz/One-Page/assets/img/sliders/revolution/industry1.jpg') ?>" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
                     <!-- LAYERS -->
                     <div class="tp-caption rs-caption-1 sft start"
@@ -210,39 +226,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="tp-dottedoverlay twoxtwo"></div>
         </div>
     </div>
-</section>
-<!-- End Intro Section -->
-
-<!--  About Section -->
-<section id="about" class="about-section section-first">
-    <!--<div class="block-v1">
-        <div class="container">
-            <div class="row content-boxes-v3">
-                <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
-                    <div class="content-boxes-in-v3">
-                        <h2 class="heading-sm">Creative Desgin</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                    </div>
-                </div>
-                <div class="col-md-4 md-margin-bottom-30">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
-                    <div class="content-boxes-in-v3">
-                        <h2 class="heading-sm">Web Development</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
-                    <div class="content-boxes-in-v3">
-                        <h2 class="heading-sm">Online Marketing</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
     <!-- Colorful Service Blocks -->
     <section class="container-fluid">
         <div class="row no-gutter equal-height-columns margin-bottom-10">
@@ -270,63 +253,30 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div>        
     </section>
     <!-- End Colorful Service Blocks -->
+</section>
+<!-- End Intro Section -->
 
-
+<!--  About us Section -->
+<section id="about" class="about-section section-first">
     <div class="about-image bg-grey">
-        <div class="container">
+        <div class="container content-sm">
             <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\standard\assets\img\sfClients\OSTIM_Teknoloji\Logos\OSTIM_Teknoloji_Logo_small.png') ?>" alt="">  
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
             </div>
             <div class="title-v1">
                 <h1><?php echo $this->translate('OSTIM VIRTUAL ENTERPRISE OFFICE') ?></h1>
                 <p><strong><?php echo $this->translate('OSTIM Technology A.Ş.') ?></strong> <?php echo $this->translate('supports OSTIM VE system. OSTIM VE office is placed in OSTIM Organized Industrial Zone in Ankara. The office is responsible for development and management of VE tools, programs and applications.') ?> <br>
                 </p>
-            </div>                
-        </div>
-    </div>
-
-    <!-- ostim vision and mission-->
-    <div class="container content-lg">
-        <div class="title-v1">
-            <h2><?php echo $this->translate('VE System Mission') ?> </h2>
-            <p><strong><?php echo $this->translate('VE System Mission') ?></strong> 
-                <?php echo $this->translate('is to redirect customer needs and requirements nimbly to the appropriate partners. Besides it also helps SMEs to enhance their capacity usage by discovering customer orders and get new projects.  To do so system provides following features to the customers and solution partners:') ?>
-            </p>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 content-boxes-v3 margin-bottom-40">
-                <div class="clearfix margin-bottom-30">
-                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-trophy"></i>
-                    <div class="content-boxes-in-v3">
-                        <h2 class="heading-sm"><?php echo $this->translate('Profile Pages') ?></h2>
-                        <p><?php echo $this->translate('OSTIM VE provides profile pages for registered users and companies to describe their capabilities in details and introduce themselves to the visiting cutomers and potential partners.') ?></p>
-                    </div>
-                </div>
-                <div class="clearfix margin-bottom-30">
-                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-diamond"></i>
-                    <div class="content-boxes-in-v3">
-                        <h2 class="heading-sm"><?php echo $this->translate('Smart Macthcing') ?></h2>
-                        <p><?php echo $this->translate('Provided matching algorithms check registered system data and customer requirements and propose the most appropriate available resources.') ?></p>
-                    </div>
-                </div>
-                <div class="clearfix margin-bottom-30">
-                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-directions"></i>
-                    <div class="content-boxes-in-v3">
-                        <h2 class="heading-sm"><?php echo $this->translate('Objective Negotiation Platform') ?></h2>
-                        <p><?php echo $this->translate("Different types of negotiation management processes added to VE system. According to customer preferences one of these negotiation processes are selected. The whole negotiation process is managed automatically by system without human interference. Based on incoming bids from partners and customer winner bidders are chosen and introduced by system negotiation manager.") ?></p>
-                    </div>
-                </div>
             </div>
-
-            <div class="col-md-6">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/DSC_0414.jpg') ?>" alt="">
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
             </div>
         </div>
     </div>
-    <!-- ostim vision and mission end-->
+</section>
+<!--  About us Section -->
 
-    <!-- Header integrator  -->
+ <!-- paralallax 1 -->
     <div class="parallax-quote parallaxBg">
         <div class="container">
             <div class="parallax-quote-in"> 
@@ -335,9 +285,143 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </div>
         </div>
     </div>
-    <!-- End of header integrator -->
+    <!-- paralallax 1 -->
 
-    <!-- Testimonials -->
+<!--  Project Management Section -->
+<section id="projectManagement" class="projectManagement-section">
+    <div class="about-image bg-grey">
+        <div class="container content-sm">
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+            </div>
+            <div class="title-v1">
+                <h1>Proje Yönetimi</h1>
+                <p><strong>Dünyanın her yerinden üreticiler sizin için üretim yaparken projenizi on-line yönetin?</strong> Üretim faaliyetlerinizi yeni üretim bantlarınızı Uretim OSB ile yönetin <br>
+                </p>
+            </div>
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!--  Project Management Section -->
+
+<!-- paralallax 2 -->
+<div class="container content-sm">
+    <div class="parallax-counter parallaxBg" id="parallax-counter-ostim">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">500000</span> <span id="counter_unit">m<sup>2</sup></span>
+                        <h4 class="yellow-text"><?php echo $this->translate('Overall Manufacturing Area') ?> </h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">5200</span>
+                        <h4 class="yellow-text"><?php echo $this->translate('Overall Enterprise Number') ?>  </h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">60000</span>
+                        <h4 class="yellow-text"><?php echo $this->translate('Employees') ?>      </h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">2100</span> 
+                        <h4 class="yellow-text"><?php echo $this->translate('Machine Park Size') ?>    </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- paralallax 2 -->
+
+<!--  Akıllı Eşleştirme Section -->
+<section id="matchUp" class="matchUp-section">
+    <div class="about-image bg-grey">
+        <div class="container">
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+            </div>
+            <div class="title-v1">
+                <h1>Akıllı Eşleştirme</h1>
+                <p><strong>Kayıtlı makinalar sizler için hangi ürünü en düşük maliyetle nasıl üretirler?</strong> <?php echo $this->translate('supports OSTIM VE system. OSTIM VE office is placed in OSTIM Organized Industrial Zone in Ankara. The office is responsible for development and management of VE tools, programs and applications.') ?> <br>
+                </p>
+            </div>
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
+            </div>
+        </div>
+    </div>   
+</section>
+<!--  Akıllı Eşleştirme Section -->
+
+<!--  İhale Yönetimi Section -->
+<section id="bargain" class="bargain-section">
+    <div class="about-image bg-grey">
+        <div class="container content-sm">
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+            </div>
+            <div class="title-v1">
+                <h1>İhale Yönetimi</h1>
+                <p><strong>Ürünleriniz için on-line ihale açın?</strong> İhalelerinizi ister manual olarak yönetin, ister yapay zeka sizin belirlediğiniz kriterlere göre en uygun teklifleri belirlesin. <br>
+                </p>
+            </div>
+            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
+            </div>
+        </div>
+    </div> 
+</section>
+<!--  İhale Yönetimi Section -->
+
+<!-- Projects Section -->
+<section id="services">
+    <div class="container content-sm">
+
+    <div class="title-v1">
+        <h2><?php echo $this->translate('OSTIM Technology Projects') ?></h2>
+        <p><?php echo $this->translate('OSTIM Technology R&D Center, collaborates researches and projects with the aim of developing high value added, high tech products under university and industry collaboration framework.') ?></p>
+    </div>
+
+    <ul class="list-unstyled row portfolio-box-v1">
+        <li class="col-sm-4">
+            <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tren.jpg') ?>" alt="">
+            <div class="portfolio-box-v1-in">
+                <h3><?php echo $this->translate('Indigenous Wind Turbine Project') ?></h3>
+                <p><?php echo $this->translate('Renewable Energy Cluster Project') ?></p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
+            </div>
+        </li>
+        <li class="col-sm-4">
+            <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tank.png') ?>" alt="">
+            <div class="portfolio-box-v1-in">
+                <h3><?php echo $this->translate('Indigenous Main Battle Tank Motor Project: TM-1150') ?></h3>
+                <p><?php echo $this->translate('Defense Cluster Project') ?></p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
+            </div>
+        </li>
+        <li class="col-sm-4">
+            <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/turbine.jpg') ?>" alt="">
+            <div class="portfolio-box-v1-in">
+                <h3><?php echo $this->translate('Indigenous Subway Train Project') ?></h3>
+                <p><?php echo $this->translate('Railed Systems Cluster Project') ?></p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
+            </div>
+        </li>
+    </ul>
+</section>
+<!-- Projects Section -->
+
+<!-- Testimonials -->
     <div class="what-people-say">
         <div class="container content-lg">
             <div class="title-v1">
@@ -398,325 +482,89 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     </div>
     <!-- End Testimonials -->
 
-    <div class="parallax-counter parallaxBg" id="parallax-counter-ostim">
-        <div class="container">
+
+<!-- News Section -->
+<section id="news" class="news-section">
+    <!--<div class="container content-lg">
+        <div class="title-v1">
+            <h2><?php echo $this->translate('Latest News') ?>Latest News</h2>
+            <p>We do <strong>things</strong> differently company providing key digital services. <br>
+                Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
+        </div>
+
+        <div class="row news-v1">
+            <div class="col-md-4 md-margin-bottom-40">
+                <div class="news-v1-in">
+                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/contents/img1.jpg') ?>" alt="">
+                    <h3><a href="#">Focused on helping our clients to build a successful business</a></h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    <ul class="list-inline news-v1-info">
+                        <li><span>By</span> <a href="#">Kathy Reyes</a></li>
+                        <li>|</li>
+                        <li><i class="fa fa-clock-o"></i> July 02, 2014</li>
+                        <li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 14</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 md-margin-bottom-40">
+                <div class="news-v1-in">
+                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/contents/img4.jpg') ?>" alt="">
+                    <h3><a href="#">We build your website to realise your vision and best product</a></h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    <ul class="list-inline news-v1-info">
+                        <li><span>By</span> <a href="#">John Clarck</a></li>
+                        <li>|</li>
+                        <li><i class="fa fa-clock-o"></i> July 02, 2014</li>
+                        <li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 07</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-v1-in">
+                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/contents/img3.jpg') ?>" alt="">
+                    <h3><a href="#">Focused on helping our clients to build a successful business</a></h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                    <ul class="list-inline news-v1-info">
+                        <li><span>By</span> <a href="#">Tina Kruiger</a></li>
+                        <li>|</li>
+                        <li><i class="fa fa-clock-o"></i> July 02, 2014</li>
+                        <li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 22</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="parallax-twitter parallaxBg">
+        <div class="container parallax-twitter-in">
+            <div class="margin-bottom-30">
+                <i class="icon-custom rounded-x icon-bg-blue fa fa-twitter"></i>
+            </div>
+
             <div class="row">
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">500000</span> <span id="counter_unit">m<sup>2</sup></span>
-                        <h4 class="yellow-text"><?php echo $this->translate('Overall Manufacturing Area') ?> </h4>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">5200</span>
-                        <h4 class="yellow-text"><?php echo $this->translate('Overall Enterprise Number') ?>  </h4>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">60000</span>
-                        <h4 class="yellow-text"><?php echo $this->translate('Employees') ?>      </h4>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">2100</span> 
-                        <h4 class="yellow-text"><?php echo $this->translate('Machine Park Size') ?>    </h4>
-                    </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="list-unstyled owl-twitter-v1">
+                        <li class="item">
+                            <p>Unify has reached 10000 plus sales and we just want to thank you to our all customers for being part of the Unify Template success <a href="http://bit.ly/1c0UN3Y">http://bit.ly/1c0UN3Y</a><p>
+                                <span>3 min ago via <a href="https://twitter.com/htmlstream">@htmlstream</a></span>
+                        </li>
+                        <li class="item">
+                            <p><a href="#">@htmlstream</a> jQuery lightGallery - Lightweight jQuery lightbox gallery for displaying image and video gallery <a href="#">http://sachinchoolur.github.io/lightGallery</a> <a href="#">#javascript</a></p>
+                            <span>10 min ago Retweeted by <a href="https://twitter.com/htmlstream">@twbootstrap</a></span>
+                        </li>
+                        <li class="item">
+                            <p>New 100% Free Stock Photos. Every. Single. Day. Everything you need for your creative projects. <a href="#">http://publicdomainarchive.com</a></p>
+                            <span>30 min ago via <a href="https://twitter.com/htmlstream">@wrapbootstrap</a></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<!-- End News Section -->
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container content-lg">
-            <div class="title-v1">
-                <h2><?php echo $this->translate('VE Services') ?><!--Our Services--></h2>
-                <p><?php echo $this->translate("VE system services are provided under three main categories:") ?> 
-                    <strong><?php echo $this->translate('Resource Discovery') ?></strong>, 
-                    <strong><?php echo $this->translate('Project Management') ?></strong> <?php echo $this->translate('and') ?> 
-                    <strong><?php echo $this->translate('Resource Definition') ?></strong></p>
-            </div>
-
-            <div class="row service-box-v1">
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-lightbulb-o"></i>
-                        <h2 class="heading-md"><?php echo $this->translate('Resource Discovery') ?></h2>
-                        <p><?php echo $this->translate('You may find your required human, information and physical (machinery, raw material and etc.) here') ?></p>
-                        <ul class="list-unstyled">
-                            <li style="font-size: 11px">
-                                <a href="<?php echo $this->url('sanalfabrika', array('action' => 'clientspage')); ?>">
-                                    <?php echo $this->translate('VE Companies') ?>                                    
-                                </a>
-                            </li>
-                            <li style="font-size: 11px;">
-                                <a href="<?php echo $this->url('sanalfabrika', array('action' => 'sfmachines')); ?>">
-                                    <?php echo $this->translate('VE Machine Park') ?>                                    
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('VE Raw Materials') ?>
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('VE Waste') ?>
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('VE Human Resources') ?>
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('VE Products') ?>
-<!--                                    <span style="font-size: 9px" class="label label-danger pull-right">
-                                    <?php echo $this->translate('Members Only') ?>
-                                    </span>-->
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-present"></i>
-                        <h2 class="heading-sm"><?php echo $this->translate('Project Management') ?></h2>
-                        <p><?php echo $this->translate('To manage existing projects or submit a new order you may use this section') ?></p>
-                        <ul class="list-unstyled">
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('Negotiation Management System') ?>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('Submit new Order') ?>
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('Manage Your Project') ?>
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('View Project Pool') ?>
-                                    <span style="font-size: 8px" class="label label-danger pull-right">
-                                        <?php echo $this->translate('Members Only') ?>
-                                    </span>
-                                </a>
-                            </li>                        
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="service-block service-block-default">
-                        <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-rocket"></i>
-                        <h2 class="heading-sm"><?php echo $this->translate('Resource Definition') ?></h2>
-                        <p><?php echo $this->translate('You may define your available different resources here') ?></p>
-                        <ul class="list-unstyled">
-                            <!--                            <li style="font-size: 12px">
-                                                            <a href="<?php echo $this->url('sanalfabrika', array('action' => 'registration')); ?>">
-                            <?php echo $this->translate('Add Company') ?>
-                                                            </a>
-                                                        </li>-->
-                            <li style="font-size: 11px">
-                                <a href="<?php echo $this->url('sanalfabrika', array('action' => 'registration')); ?>">
-                                    <?php echo $this->translate('Add User') ?>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('Add Machine Tool') ?>
-                                </a>
-                            </li>
-                            <li style="font-size: 12px">
-                                <a href="">
-                                    <?php echo $this->translate('Add Product') ?>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('Add Raw Material') ?>
-                                </a>
-                            </li>
-                            <li style="font-size: 11px">
-                                <a href="">
-                                    <?php echo $this->translate('Add Waste') ?>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="title-v1">
-            <h2><?php echo $this->translate('OSTIM Technology Projects') ?></h2>
-            <p><?php echo $this->translate('OSTIM Technology R&D Center, collaborates researches and projects with the aim of developing high value added, high tech products under university and industry collaboration framework.') ?></p>
-        </div>
-
-        <ul class="list-unstyled row portfolio-box-v1">
-            <li class="col-sm-4">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tren.jpg') ?>" alt="">
-                <div class="portfolio-box-v1-in">
-                    <h3><?php echo $this->translate('Indigenous Wind Turbine Project') ?></h3>
-                    <p><?php echo $this->translate('Renewable Energy Cluster Project') ?></p>
-                    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tank.png') ?>" alt="">
-                <div class="portfolio-box-v1-in">
-                    <h3><?php echo $this->translate('Indigenous Main Battle Tank Motor Project: TM-1150') ?></h3>
-                    <p><?php echo $this->translate('Defense Cluster Project') ?></p>
-                    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
-                </div>
-            </li>
-            <li class="col-sm-4">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/turbine.jpg') ?>" alt="">
-                <div class="portfolio-box-v1-in">
-                    <h3><?php echo $this->translate('Indigenous Subway Train Project') ?></h3>
-                    <p><?php echo $this->translate('Railed Systems Cluster Project') ?></p>
-                    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <!-- End Services Section -->
-
-    <!--OSTIM Services Section -->
-    <section id="ostimServices">
-        <div class="container content-lg">
-            <div class="title-v1">
-                <h2><?php echo $this->translate('OSTIM Services') ?></h2>
-                <p><?php echo $this->translate('OSTIM Organized Industrial Zone management provides various servises.') ?> <br>
-                    <?php echo $this->translate('Some of these services are mentioned below') ?></p>
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-4 content-boxes-v6 md-margin-bottom-50">
-                    <i class="rounded-x   glyph-icon  flaticon-house157"></i>
-                    <h1 class="title-v3-md text-uppercase margin-bottom-10"><?php echo $this->translate('Infrastrcuture Services') ?></h1>
-                    <p><?php echo $this->translate('') ?></p>
-
-                    <div class="test">
-                        <!--<div class=" col-md-4 col-sm-6 glyph-icon flaticon-battery151"></div>-->
-                        <div class="service-block service-block-default">
-                            <ul class="list-unstyled text-left no-padding" >     
-                                <li><i class=" icon-lg  rounded-x  icon-line glyph-icon  flaticon-transmission-tower margin-right-10"></i><a  href="http://ostim.com.tr/List/ListItem/4250?lid=413" class="js-newTab" data-popup="width=200,height=200"  ><?php echo $this->translate('Electric Management and Maitenance') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  icon-line glyph-icon  flaticon-rubbish3 margin-right-10"></i><a  href="http://ostim.com.tr/List/ListItem/4253?lid=413" class="js-newTab" data-popup="width=200,height=200"  ><?php echo $this->translate('Environemnt and Security') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  icon-line glyph-icon  flaticon-pipe5 margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/322097?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Gas Management and Maintenance') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  icon-line glyph-icon  flaticon-crane19 margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/4255?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate("Office and Work Permit") ?></a></li>  
-                                <li><i class=" icon-lg  rounded-x  icon-line glyph-icon  flaticon-truck63 margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/4251?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Town Planning and Infrastructure') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  fa fa-database margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/4258?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('IT and Computing Center') ?></a></li>
-                            </ul>  
-                        </div>  
-                    </div>
-
-                </div>
-                <div class="col-md-4 content-boxes-v6 md-margin-bottom-50">
-                    <i class="rounded-x  fa fa-users"></i>
-                    <h2 class="title-v3-md text-uppercase margin-bottom-10"><?php echo $this->translate('Customer Services') ?> / <?php echo $this->translate('Financial Services') ?></h2>
-                    <p><?php echo $this->translate('') ?></p>
-
-                    <div class="test">   
-                        <div class="service-block service-block-default">           
-                            <ul class="list-unstyled text-left no-padding" >     
-                                <li><i class=" icon-lg  rounded-x  fa fa-comments-o  margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/4257?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Customer Relationship') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  icon-line glyph-icon  flaticon-helmet6 margin-right-10"></i><a href='http://www.ostimistihdam.com/tr/default' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('OSTIM Employment Office') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  fa fa-briefcase margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/4252?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Fair and Organizations') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x fa fa-bar-chart-o margin-right-10"></i><a href='http://ostim.com.tr/List/ListItem/4261?lid=413' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Financial and Administrative Affairs') ?></a></li>  
-                            </ul> 
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4 content-boxes-v6">
-                    <i class="rounded-x  icon-camera"></i>
-                    <h2 class="title-v3-md text-uppercase margin-bottom-10"><?php echo $this->translate('Press and Public Relations') ?></h2>
-                    <p><?php echo $this->translate('') ?></p>
-
-                    <div class="test">
-                        <div class="service-block service-block-default">
-                            <ul class="list-unstyled text-left no-padding" >     
-                                <li><i class=" icon-lg  rounded-x  fa fa-camera  margin-right-10"></i><a href='http://ostim.com.tr/WebContent/WebContent/3309' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Organizational Photo Gallery') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  fa fa-edit margin-right-10"></i><a href='http://ostim.com.tr/WebContent/WebContent/3316' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Papers and Journals') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x  fa fa-video-camera margin-right-10"></i><a href='http://ostim.com.tr/WebContent/WebContent/3311' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Videos') ?></a></li>
-                                <li><i class=" icon-lg  rounded-x fa fa-file-archive-o margin-right-10"></i><a href='http://ostim.com.tr/WebContent/WebContent/3321' class="js-newTab" data-popup="width=200,height=200"><?php echo $this->translate('Documents') ?></a></li>  
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-
-        <!--        <ul class="list-unstyled row portfolio-box-v1">
-                    <li class="col-sm-4">
-                        <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/mockup/img1.jpg') ?>" alt="">
-                        <div class="portfolio-box-v1-in">
-                            <h3>Collective Package</h3>
-                            <p>Web Design, Mock-up</p>
-                            <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
-                        </div>
-                    </li>
-                    <li class="col-sm-4">
-                        <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/mockup/img2.jpg') ?>" alt="">
-                        <div class="portfolio-box-v1-in">
-                            <h3>Ahola Company</h3>
-                            <p>Brand Design, UI</p>
-                            <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
-                        </div>
-                    </li>
-                    <li class="col-sm-4">
-                        <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/mockup/img4.jpg') ?>" alt="">
-                        <div class="portfolio-box-v1-in">
-                            <h3>Allan Project</h3>
-                            <p>Web Development, HTML5</p>
-                            <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
-                        </div>
-                    </li>
-                </ul>        -->
-    </section>
-    <!-- End OSTIM Services Section -->
-
-    <!-- header integrator  -->
-    <!--    <div class="parallax-quote parallaxBg">
-            <div class="container">
-                <div class="parallax-quote-in"> 
-                    <p><?php echo $this->translate('Integrating the Capabilities and Capacities of more than 5,000 Companies with 60,000 Employees') ?>50 bin çalışanı ve 20 bin tezgahı <span class="color-green">olan bir fabrikanın</span> kabiliyetlerini. <br> Tek bir havuzda topladık.</p>
-                    <small>- <?php echo $this->translate('OSTIM') ?>  -</small>
-                </div>
-            </div>
-        </div>-->
-    <!-- header integrator  end-->
-
-    <!-- our team  -->
+<!-- our team section  -->
 <!--    <section id='sfTeam'>
     <div class="team-v1 bg-grey content-lg">
             <div class="container">
@@ -782,93 +630,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             </div>
         </div>
     </section>-->
-    <!-- our team  end-->
-
-</section>
-<!--  About Section -->
-
-
-
-<!-- News Section -->
-<!--<section id="news" class="news-section">
-    <div class="container content-lg">
-        <div class="title-v1">
-            <h2><?php echo $this->translate('Latest News') ?>Latest News</h2>
-            <p>We do <strong>things</strong> differently company providing key digital services. <br>
-                Focused on helping our clients to build a <strong>successful</strong> business on web and mobile.</p>
-        </div>
-
-        <div class="row news-v1">
-            <div class="col-md-4 md-margin-bottom-40">
-                <div class="news-v1-in">
-                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/contents/img1.jpg') ?>" alt="">
-                    <h3><a href="#">Focused on helping our clients to build a successful business</a></h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                    <ul class="list-inline news-v1-info">
-                        <li><span>By</span> <a href="#">Kathy Reyes</a></li>
-                        <li>|</li>
-                        <li><i class="fa fa-clock-o"></i> July 02, 2014</li>
-                        <li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 14</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 md-margin-bottom-40">
-                <div class="news-v1-in">
-                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/contents/img4.jpg') ?>" alt="">
-                    <h3><a href="#">We build your website to realise your vision and best product</a></h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                    <ul class="list-inline news-v1-info">
-                        <li><span>By</span> <a href="#">John Clarck</a></li>
-                        <li>|</li>
-                        <li><i class="fa fa-clock-o"></i> July 02, 2014</li>
-                        <li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 07</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="news-v1-in">
-                    <img class="img-responsive" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/contents/img3.jpg') ?>" alt="">
-                    <h3><a href="#">Focused on helping our clients to build a successful business</a></h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                    <ul class="list-inline news-v1-info">
-                        <li><span>By</span> <a href="#">Tina Kruiger</a></li>
-                        <li>|</li>
-                        <li><i class="fa fa-clock-o"></i> July 02, 2014</li>
-                        <li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 22</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="parallax-twitter parallaxBg">
-        <div class="container parallax-twitter-in">
-            <div class="margin-bottom-30">
-                <i class="icon-custom rounded-x icon-bg-blue fa fa-twitter"></i>
-            </div>
-
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <ul class="list-unstyled owl-twitter-v1">
-                        <li class="item">
-                            <p>Unify has reached 10000 plus sales and we just want to thank you to our all customers for being part of the Unify Template success <a href="http://bit.ly/1c0UN3Y">http://bit.ly/1c0UN3Y</a><p>
-                                <span>3 min ago via <a href="https://twitter.com/htmlstream">@htmlstream</a></span>
-                        </li>
-                        <li class="item">
-                            <p><a href="#">@htmlstream</a> jQuery lightGallery - Lightweight jQuery lightbox gallery for displaying image and video gallery <a href="#">http://sachinchoolur.github.io/lightGallery</a> <a href="#">#javascript</a></p>
-                            <span>10 min ago Retweeted by <a href="https://twitter.com/htmlstream">@twbootstrap</a></span>
-                        </li>
-                        <li class="item">
-                            <p>New 100% Free Stock Photos. Every. Single. Day. Everything you need for your creative projects. <a href="#">http://publicdomainarchive.com</a></p>
-                            <span>30 min ago via <a href="https://twitter.com/htmlstream">@wrapbootstrap</a></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
-<!-- End News Section -->
+<!-- our team  section-->
 
 <!-- Portfolio Section -->
 <!--<section id="portfolio" class="about-section">
