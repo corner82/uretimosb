@@ -209,21 +209,35 @@
                                 </div>    
                                 <form id='machineForm' method="get" class="form-horizontal">     
                                    <div id="machineInsertBlock" class="box box-primary" style="padding-top: 20px;">  
-                                       <div class="form-group">
-                                           <label class="col-sm-2 control-label">Makina/Teçhizat</label>
+                                       <div id="mach-cat-box" class="form-group box">
+                                           <label class="col-sm-2 control-label">Makina Kategorileri</label>
                                            <div class="col-sm-10 " >
                                                <div class="input-group">
                                                    <div class="input-group-addon">
                                                        <i class="fa fa-code-fork"></i>
                                                    </div>
                                                    <div class="inner test-tree" style='overflow:hidden;'>    
-                                                       <div id="loading-image" class='scrollbar-inner'>
-                                                           <div class="tree2"></div>
-                                                       </div>
+                                                       <div class="inner test-tree" style='overflow:auto;'>    
+                                                            <div id="loading-image" class='scrollbar-inner'>
+                                                            <ul id="tt_tree_menu_mach_cat" class="easyui-tree" ></ul> 
+                                                            </div>
+                                                        </div>
                                                    </div>                                                       
                                                </div>
                                            </div>
                                        </div>
+                                       <div  class="form-group" >
+                                            <label class="col-sm-2 control-label">Kategoriye Bağlı Makina / Teçhizat </label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">    
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-hand-o-right"></i>
+                                                    </div>
+                                                    <!--<input data-prompt-position="topLeft:70" class="form-control validate[required]" type="text" name="name_tr" id="name_tr" />-->
+                                                    <table  id="tt_grid_dynamic_machines" title="Kategoriye Bağlı Makinalar " ></table> 
+                                                </div>
+                                            </div>
+                                        </div>
                                        <div class="form-group scrollTree">
                                            <label class="col-sm-2 control-label">Seçili Makina Özellikleri</label>
                                            <div class="col-sm-10 " >

@@ -19,8 +19,13 @@ $.extend($.fn.tree.methods,{
         }
 });  
     
-    
-var treeMachine = $('.tree2').machineTree();
+/**
+ * machine tree widget
+ * @deprecated text
+ * @author Mustafa Zeynel Dağlı
+ * @since 03/10/2016
+ */   
+/*var treeMachine = $('.tree2').machineTree();
     treeMachine.machineTree('option', 'url', 'pkFillMachineToolGroups_sysMachineToolGroups');
     treeMachine.machineTree('option', 'pk', $("#pk").val());
     treeMachine.machineTree('option', 'baseNodeCollapsedIcon', 'fa-hand-o-right');
@@ -46,7 +51,101 @@ var treeMachine = $('.tree2').machineTree();
             $('#machID').val(machineID);
             $('#machName').val(node.text());
         }
-    });
+    });*/
+ 
+    
+ /*
+* 
+* @type @call;$@call;loadImager
+* @Since 03/10/2016
+* @Author Mustafa Zeynel Dagli
+* @Purpose this variable is to create loader image for machine 
+* categories easyui tree. Loading image will be removed when tree filled data.
+*/
+$("#mach-cat-box").loadImager();
+$("#mach-cat-box").loadImager('appendImage');
+    
+/*
+* 
+* machine category tree
+* @author Mustafa Zeynel Dağlı
+* @since 03/10/2016
+*/
+$('#tt_tree_menu_mach_cat').tree({  
+   url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillJustMachineToolGroupsBootstrap_sysMachineToolGroups&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val(),
+   method: 'get',
+   animate: true,
+   checkbox: false,
+   cascadeCheck: false,
+   lines: true,
+   onLoadSuccess: function (node, data) {
+        $("#mach-cat-box").loadImager('removeLoadImage');
+   },
+   onClick: function (node) {
+        selectedRoot = $(this).tree('getRoot', node.target);
+        selectedItem = $(this).tree('getData', node.target);
+    },
+   formatter: function (node) {
+        var s = node.text;
+        var id = node.id;
+        var parent = $(this).tree('getParent', node.target);
+        if(node.state == 'open') {
+            s += '&nbsp;\n\
+                <i class="fa fa-level-down" title="Kategoriye makina özelliği ekle" onclick="fillMachDueCategory('+id+')"></i>';
+            return s;
+        }
+        return s;
+    }
+});
+
+
+/**
+ * Machine datagrid is being filled doe to machine categories easyui tree
+ * @since 16/05/2016
+ */
+$('#tt_grid_dynamic_machines').datagrid({
+    onDblClickRow : function (index, row) {
+        
+    },  
+    //url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    //url: 'http://proxy.localhost.com/SlimProxyBoot.php?url=getCompaniesInfo_company',
+    queryParams: {
+            pk: $('#pk').val(),
+            subject: 'datagrid',
+            url : 'pkGetMachineTools_sysMachineTools',
+            /*machine_groups_id : null,
+            filterRules:null*/
+    },
+    width : '100%',
+    singleSelect:true,
+    pagination : true,
+    collapsible:true,
+    method:'get',
+    idField:'id',
+    //toolbar:'#tb5',
+    //fit:true,
+    //fitColumns : true,
+    remoteFilter: true,
+    remoteSort:true,
+    multiSort:false,
+    columns:
+        [[
+            {field:'id',title:'ID'},
+            {field:'group_name',title:'Mak. Kategorisi', width:100},
+            {field:'manufacturer_name',title:'Üretici', width:150},
+            {field:'machine_tool_name',title:'Makina',sortable:true,width:300},
+            {field:'machine_tool_name_eng',title:'İng. Makina',sortable:true, width:300},
+            {field:'action',title:'Action',width:80,align:'center',
+            formatter:function(value,row,index){
+                var u = '&nbsp;\n\
+                <i class="fa fa-level-down" title="Kategoriye makina özelliği ekle" onclick="fillMachineProp('+row.id+', '+row.attributes.machine_tool_grup_id+');"></i>';
+                return u;
+            }
+            },
+
+        ]]   
+});
+$('#tt_grid_dynamic_machines').datagrid('enableFilter');
    
 
 /**
@@ -207,6 +306,48 @@ $('#tt_tree_menu2').tree({
          return s;
      }
 });
+
+/**
+ * get machine properties due to selected machine and fill easyui tree with 
+ * machine properties
+ * @param {type} machID
+ * @param {type} machCatID
+ * @returns {undefined}
+ * @author Mustafa Zeynel Dağlı
+ * @since 03/10/2016
+ * 
+ */
+window.fillMachineProp = function (machID, machCatID) {
+    $('#tt_tree_menu2').tree({  
+        checkbox : false,  
+        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillMachineGroupProperties_sysMachineToolPropertyDefinition&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+'&machine_grup_id='+machCatID+'&machine_id='+machID,
+    });
+    return false;
+}
+
+
+/**
+ * fill machine datagrid due to selected machine category
+ * @param {type} machCatID
+ * @returns {undefined}
+ * @author Mustafa Zeynel Dağlı
+ * @since 03/10/2016
+ */
+window.fillMachDueCategory = function(machCatID) {
+    $('#tt_grid_dynamic_machines').datagrid({ 
+    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    queryParams: {
+            pk: $('#pk').val(),
+            subject: 'datagrid',
+            url : 'pkGetMachineTools_sysMachineTools',
+            machine_tool_grup_id : machCatID,
+            /*machine_groups_id : null,
+            filterRules:null*/
+    },
+      
+});
+$('#tt_grid_dynamic_machines').datagrid('enableFilter');
+}
 
 /**
  * wrapper for indivigual machine property update process
@@ -874,7 +1015,7 @@ BootstrapDialog.show({
                                                  <input type="hidden" id="machine_tool_group_id_popup" name="machine_tool_group_id_popup"  />\n\
                                                  <div class="hr-line-dashed"></div>\n\
                                                      <div class="form-group" style="padding-top: 10px;" >\n\
-                                                         <label class="col-sm-2 control-label">Birim Sistemi</label>\n\
+                                                         <label class="col-sm-2 control-label">Makina Kategorisi</label>\n\
                                                          <div class="col-sm-10">\n\
                                                              <div class="input-group">\n\
                                                                  <div class="input-group-addon">\n\
