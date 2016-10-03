@@ -1871,7 +1871,8 @@
   padding: 100px 0;
   position: relative;
   text-align: center;
-  background: url(../img/team/faces.jpg) 50% 0 repeat fixed;
+  //background: url(../img/team/faces.jpg) 50% 0 repeat fixed;
+  background: url(../img/stockImages/zerspahnung-1580200_1920.jpg) 50% 0 repeat fixed;
 }
 
 .parallax-quote:after {
