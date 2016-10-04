@@ -91,7 +91,7 @@ $('#tt_tree_menu_mach_cat').tree({
         var parent = $(this).tree('getParent', node.target);
         if(node.state == 'open') {
             s += '&nbsp;\n\
-                <i class="fa fa-level-down" title="Kategoriye makina özelliği ekle" onclick="fillMachDueCategory('+id+')"></i>';
+                <i class="fa fa-level-down" title="Kategoriye makina özelliği ekle" onclick="fillMachDueCategory(event,'+id+')"></i>';
             return s;
         }
         return s;
@@ -132,13 +132,13 @@ $('#tt_grid_dynamic_machines').datagrid({
         [[
             {field:'id',title:'ID'},
             {field:'group_name',title:'Mak. Kategorisi', width:100},
-            {field:'manufacturer_name',title:'Üretici', width:150},
-            {field:'machine_tool_name',title:'Makina',sortable:true,width:300},
-            {field:'machine_tool_name_eng',title:'İng. Makina',sortable:true, width:300},
+            {field:'manufacturer_name',title:'Üretici', sortable:true,width:150},
+            {field:'machine_tool_name',title:'Makina',sortable:true,width:200},
+            {field:'machine_tool_name_eng',title:'İng. Makina',sortable:true, width:200},
             {field:'action',title:'Action',width:80,align:'center',
             formatter:function(value,row,index){
                 var u = '&nbsp;\n\
-                <i class="fa fa-level-down" title="Kategoriye makina özelliği ekle" onclick="fillMachineProp('+row.id+', '+row.attributes.machine_tool_grup_id+');"></i>';
+                <i class="fa fa-level-down mach" title="Kategoriye makina özelliği ekle" onclick="fillMachineProp(event, '+row.id+', '+row.attributes.machine_tool_grup_id+');"></i>';
                 return u;
             }
             },
@@ -264,6 +264,14 @@ $("#mach-prod-box").loadImager('appendImage');
  */
 //$('#machineForm').validationEngine();
 
+
+/**
+ * load imager for machine properties due to machines for easyui tree
+ * @author Mustafa Zeynel Dağlı
+ * @since 04/10/2016
+ */
+$("#loading-image-prop-tree").loadImager();
+$("#loading-image-prop-tree").loadImager('appendImage');
   
 /*
 * 
@@ -317,14 +325,46 @@ $('#tt_tree_menu2').tree({
  * @since 03/10/2016
  * 
  */
-window.fillMachineProp = function (machID, machCatID) {
+window.fillMachineProp = function (event, machID, machCatID) {
+    var target = $( event.target )
+    //console.log(target);
+    $("#loading-image-prop-tree").loadImager();
+    $("#loading-image-prop-tree").loadImager('appendImage');
+    
     $('#tt_tree_menu2').tree({  
         checkbox : false,  
         url: 'https://proxy.uretimosb.com/SlimProxyBoot.php?url=pkFillMachineGroupProperties_sysMachineToolPropertyDefinition&pk=' + $("#pk").val()+ '&language_code='+$("#langCode").val()+'&machine_grup_id='+machCatID+'&machine_id='+machID,
+        onLoadSuccess : function(node,data) {
+        if(data != '') {
+            $("#loading-image-prop-tree").loadImager('removeLoadImage');
+            $('html, body').stop().animate({
+                'scrollTop': $('.scrollTree').offset().top
+            }, 900, 'swing');
+        } else {
+            //console.log(target.attr('class'));
+            if(target.is('i') && !target.hasClass('mach')) {
+                /*wm.warningMessage('resetOnShown');
+                wm.warningMessage('show', 'Makina Özelliği Bulunamamıştır', 'Makina özelliği bulunamamıştır!');*/
+            }
+        } 
+    },
+    onLoadError : function() {
+        dm.dangerMessage('resetOnShown');
+        dm.dangerMessage('show', 'Makina Özelliği Bulma İşlemi Başarısız...', 
+                                 'Makina özelliği bulma işlemi başarısız, sistem yöneticisi ile temasa geçiniz... ');
+    }
     });
+    
     return false;
 }
 
+/**
+ * load imager for machines due to machine categories data grid
+ * @author Mustafa Zeynel Dağlı
+ * @since 04/10/2016
+ */
+$("#loading-image-mach-grid").loadImager();
+$("#loading-image-mach-grid").loadImager('appendImage');
 
 /**
  * fill machine datagrid due to selected machine category
@@ -333,20 +373,56 @@ window.fillMachineProp = function (machID, machCatID) {
  * @author Mustafa Zeynel Dağlı
  * @since 03/10/2016
  */
-window.fillMachDueCategory = function(machCatID) {
+window.fillMachDueCategory = function(event, machCatID) {
+    var target = $( event.target )
+    $("#loading-image-mach-grid").loadImager();
+    $("#loading-image-mach-grid").loadImager('appendImage');
+    var globalData;
+    /*$('#tt_grid_dynamic_machines').datagrid('removeFilterRule');
+    $('#tt_grid_dynamic_machines').datagrid('disableFilter'); */  
     $('#tt_grid_dynamic_machines').datagrid({ 
-    url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-    queryParams: {
-            pk: $('#pk').val(),
-            subject: 'datagrid',
-            url : 'pkGetMachineTools_sysMachineTools',
-            machine_tool_grup_id : machCatID,
-            /*machine_groups_id : null,
-            filterRules:null*/
-    },
-      
-});
-$('#tt_grid_dynamic_machines').datagrid('enableFilter');
+        url : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        queryParams: {
+                pk: $('#pk').val(),
+                subject: 'datagrid',
+                url : 'pkGetMachineTools_sysMachineTools',
+                machine_tool_grup_id : machCatID,
+                //machine_groups_id : null,
+                //filterRules: []
+        },
+        onLoadSuccess : function(data) {
+            globalData = data;
+            if(data.total != 0) {
+                $("#loading-image-mach-grid").loadImager('removeLoadImage');
+                
+                $("#loading-image-prop-tree").loadImager();
+                $("#loading-image-prop-tree").loadImager('appendImage');
+                
+                $('#tt_tree_menu2').tree('loadData', '');
+                $('html, body').stop().animate({
+                        'scrollTop': $('.scrollMachGrid').offset().top
+                   }, 900, 'swing');
+            } else {
+                console.log(target);
+                /*if(target.is('i')) {
+                    wm.warningMessage('resetOnShown');
+                    wm.warningMessage('show', 'Makina Kaydı Bulunamamıştır', 'Bu kategoride makina kaydı bulunamamıştır!');
+                }*/
+                
+                $("#loading-image-prop-tree").loadImager();
+                $("#loading-image-prop-tree").loadImager('appendImage');
+                $('#tt_tree_menu2').tree('loadData', '');
+            } 
+            //target = null;
+        },
+        onLoadError : function() {
+            dm.dangerMessage('resetOnShown');
+            dm.dangerMessage('show', 'Kategoriye Bağlı Makina Bulma İşlemi Başarısız...', 
+                                     'Kategoriye bağlı makina bulma işlemi başarısız, sistem yöneticisi ile temasa geçiniz... ');
+        }
+
+    });
+    $('#tt_grid_dynamic_machines').datagrid('enableFilter');
 }
 
 /**
@@ -495,7 +571,7 @@ window.updateMachPropWrapper = function (e, id, row) {
                                 property_value :  row.property_value });
         } else {
             wm.warningMessage('resetOnShown');
-            wm.warningMessage('show', 'Birim Seçiniz', 'Lütfen birim seçiniz!')
+            wm.warningMessage('show', 'Birim Seçiniz', 'Lütfen birim seçiniz!');
         }
         return false;
  
