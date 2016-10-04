@@ -82,6 +82,16 @@
         },
         appendImage: function () {
             var self = this;
+            /**
+             * irf loading image appended control test
+             * @author Mustafa Zeynel Dağlı
+             * @since 04/10/2016
+             * @todo test did always fire true so to be tested deeply before use
+             */
+            /*if(self.element.children().first().find('>div.fa-spin')) {
+                console.log('loading image bulundu');
+            }*/
+            self.element.find(self.options.overlayKey).remove();
             if(typeof self.element.find(self.options.overlayKey) != 'undefined') {
                 self.element.append(self.options.overlay);
             }
