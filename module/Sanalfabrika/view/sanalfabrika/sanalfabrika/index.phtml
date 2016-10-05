@@ -109,28 +109,28 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <li class="dropdown">
                         <a href="javascript:void(0);"><?php echo $this->translate('Services') ?></a>
                         <ul class="dropdown-menu">
-                            <li class="page-scroll"><a href="#portfolio"><?php echo $this->translate('About Us')?></a></li>
-                            <li class="page-scroll"><a href="#projectManagement"><?php echo $this->translate('Project Management')?></a></li>
-                            <li class="page-scroll"><a href="#matchUp"><?php echo $this->translate('Intelligent Matching')?></a></li>
-                            <li class="page-scroll"><a href="#bargain"><?php echo $this->translate('Negotiation Management')?></a></li>
-                            <li class="page-scroll"><a href="#news"><?php echo $this->translate('News')?></a></li>
-                            <li class="page-scroll"><a href="#contact"><?php echo $this->translate('Contacts')?></a></li>
+                            <li class="page-scroll"><a href="#portfolio"><?php echo $this->translate('About Us') ?></a></li>
+                            <li class="page-scroll"><a href="#projectManagement"><?php echo $this->translate('Project Management') ?></a></li>
+                            <li class="page-scroll"><a href="#matchUp"><?php echo $this->translate('Intelligent Matching') ?></a></li>
+                            <li class="page-scroll"><a href="#bargain"><?php echo $this->translate('Negotiation Management') ?></a></li>
+                            <li class="page-scroll"><a href="#news"><?php echo $this->translate('News') ?></a></li>
+                            <li class="page-scroll"><a href="#contact"><?php echo $this->translate('Contacts') ?></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:void(0);"><?php echo $this->translate('OSB IMALAT Services') ?></a>
                         <ul class="dropdown-menu">
-                            <li class="page-scroll"><a href="#projectManagement">Makina Alım-Satım</a></li>
-                            <li class="page-scroll"><a href="#matchUp">Akıllı Eşleştirme</a></li>
-                            <li class="page-scroll"><a href="#bargain">İhale Yönetimi</a></li>
+                            <li class="page-scroll"><a href="#projectManagement">Makina AlÄ±m-SatÄ±m</a></li>
+                            <li class="page-scroll"><a href="#matchUp">AkÄ±llÄ± EÅŸleÅŸtirme</a></li>
+                            <li class="page-scroll"><a href="#bargain">Ä°hale YÃ¶netimi</a></li>
                             <li class="page-scroll"><a href="#news">News</a></li>
                             <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                             <li class="page-scroll"><a href="#contact">Contact</a></li>
                         </ul>
                     </li>                    
-<!--                    <li class="page-scroll">
-                        <a href="#sfTeam"><?php echo $this->translate('VE Team') ?></a>
-                    </li>-->
+                    <!--                    <li class="page-scroll">
+                                            <a href="#sfTeam"><?php echo $this->translate('VE Team') ?></a>
+                                        </li>-->
                     <!--                    <li class="page-scroll">
                                             <a href="#news">Haberler</a>
                                         </li>-->
@@ -140,19 +140,19 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <li class="page-scroll">
                         <a href="#contact"><?php echo $this->translate('Contact Us') ?></a>
                     </li>
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                                Submenu
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="page-scroll"><a href="#body">Home</a></li>
-                                                <li class="page-scroll"><a href="#about">About Us</a></li>
-                                                <li class="page-scroll"><a href="#services">Services</a></li>
-                                                <li class="page-scroll"><a href="#news">News</a></li>
-                                                <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                                                <li class="page-scroll"><a href="#contact">Contact</a></li>
-                                            </ul>
-                                        </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            Submenu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="page-scroll"><a href="#body">Home</a></li>
+                            <li class="page-scroll"><a href="#about">About Us</a></li>
+                            <li class="page-scroll"><a href="#services">Services</a></li>
+                            <li class="page-scroll"><a href="#news">News</a></li>
+                            <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+                            <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
                     <!--                    <li class="page-scroll">
                                             <a href="../index-2.html">Main</a>
                                         </li>-->
@@ -232,6 +232,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="col-sm-4">
                 <div class="service-block service-block-purple no-margin-bottom content equal-height-column" style="height: 239px;">
                     <i class="icon-custom icon-md rounded icon-color-light icon-line icon-badge"></i>
+                    <!--<i><span style="margin-bottom: 20px"><img src="<?php echo $this->basePath('onyuz\One-page\assets/img/icons/isbirligi.png') ?>" style="width: 50px"></span></i>-->
                     <h2 class="heading-md font-light"><?php echo $this->translate('New Consortiums') ?></h2>
                     <p class="no-margin-bottom font-light"><?php echo $this->translate('You may find your appropriate partners for your project or you may contribute to the new offered projects and extend your business.') ?></p>
                 </div>
@@ -256,229 +257,233 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 </section>
 <!-- End Intro Section -->
 
-<!--  About us Section -->
+<!--  OSB Office -->
 <section id="about" class="about-section section-first">
-    <div class="about-image bg-grey">
+    <div class="bg-image-v2 parallaxBg1" style="background-position: 50% 26px;">
+    <!--<div class="about-image bg-grey">-->
         <div class="container content-sm">
             <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\icons\office_icon.png') ?>" alt="">  
             </div>
             <div class="title-v1">
                 <h1><?php echo $this->translate('OSB IMALAT OFFICE') ?></h1>
                 <p><strong><?php echo $this->translate('OSB IMALAT') ?></strong> <?php echo $this->translate('supports OSB IMALAT system. OSB IMALAT office is placed in Ankara. The office is responsible for development and management of OSB IMALAT tools, programs and applications.') ?> <br>
                 </p>
             </div>
-            <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
-            </div>
+            <!--<div class="img-center">-->
+                <!--<img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">-->
+            <!--</div>-->
         </div>
+    <!--</div>-->
     </div>
 </section>
-<!--  About us Section -->
+<!--  OSB Office -->
 
- <!-- paralallax 1 -->
-    <div class="parallax-quote parallaxBg">
-        <div class="container">
-            <div class="parallax-quote-in"> 
-                <p><?php echo $this->translate('OSB IMALAT integrates the capabiltities of different companies under one unique virtual company.') ?></p>
-                <small>- <?php echo $this->translate('OSB IMALAT') ?>  -</small>
-            </div>
+<!-- paralallax 1 -->
+<div class="parallax-quote parallaxBg">
+    <div class="container">
+        <div class="parallax-quote-in"> 
+            <p><?php echo $this->translate('OSB IMALAT integrates the capabiltities of different companies under one unique virtual company.') ?></p>
+            <small>- <?php echo $this->translate('OSB IMALAT') ?>  -</small>
         </div>
     </div>
-    <!-- paralallax 1 -->
+</div>
+<!-- paralallax 1 -->
 
 <!--  Project Management Section -->
 <section id="projectManagement" class="projectManagement-section">
     <div class="about-image bg-grey">
         <div class="container content-sm">
             <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\icons\project_management.png') ?>" alt="">  
             </div>
             <div class="title-v1">
-                <h1><?php echo $this->translate('Project Management')?></h1>
-                <p><strong><?php echo $this->translate('Dünyanın her yerinden üreticiler sizin için üretim yaparken projenizi on-line yönetin?</strong> Üretim faaliyetlerinizi yeni üretim bantlarınızı Uretim OSB ile yönetin')?> <br>
-                </p>
-            </div>
-            <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
+                <h1><?php echo $this->translate('Projects Management') ?></h1>
+                <p><strong><?php echo $this->translate('In order to produce your product with required quality and much reasonable prices submit your project online in OSB Imalat system.') ?> <br>
+                        </p>
+                        </div>
+                        <div class="img-center">
+                            <img class="img-responsive" style="width:100%" src="<?php echo $this->basePath('onyuz\One-page\assets/img/index_page_images/project_management_2.png') ?>"  alt="">
+                        </div>
             </div>
         </div>
-    </div>
-    
+
 </section>
 <!--  Project Management Section -->
 
 <!-- paralallax 2 -->
-    <div class="parallax-counter parallaxBg" id="parallax-counter-ostim">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">500000</span> <span id="counter_unit">m<sup>2</sup></span>
-                        <h4 class="yellow-text"><?php echo $this->translate('Overall Manufacturing Area') ?> </h4>
-                    </div>
+<!--<div class="parallax-counter parallaxBg" id="parallax-counter-ostim">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <div class="counters">
+                    <span class="counter">500000</span> <span id="counter_unit">m<sup>2</sup></span>
+                    <h4 class="yellow-text"><?php echo $this->translate('Overall Manufacturing Area') ?> </h4>
                 </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">5200</span>
-                        <h4 class="yellow-text"><?php echo $this->translate('Overall Enterprise Number') ?>  </h4>
-                    </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="counters">
+                    <span class="counter">5200</span>
+                    <h4 class="yellow-text"><?php echo $this->translate('Overall Enterprise Number') ?>  </h4>
                 </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="counters">
-                        <span class="counter">60000</span>
-                        <h4 class="yellow-text"><?php echo $this->translate('Employees') ?>      </h4>
-                    </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <div class="counters">
+                    <span class="counter">60000</span>
+                    <h4 class="yellow-text"><?php echo $this->translate('Employees') ?>      </h4>
                 </div>
-                <div class="col-sm-3 col-xs-6">  
-                    <div class="counters">
-                        <span class="counter">2100</span> 
-                        <h4 class="yellow-text"><?php echo $this->translate('Machine Park Size') ?>    </h4>
-                    </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">  
+                <div class="counters">
+                    <span class="counter">2100</span> 
+                    <h4 class="yellow-text"><?php echo $this->translate('Machine Park Size') ?>    </h4>
                 </div>
             </div>
         </div>
     </div>
+</div>-->
 <!-- paralallax 2 -->
 
-<!--  Akıllı Eşleştirme Section -->
+<!--  Intelligent Matching Section -->
 <section id="matchUp" class="matchUp-section">
-    <div class="about-image bg-grey">
+    <!--<div class="about-image bg-grey">-->
+    <div class="bg-image-ai_matching parallaxBg1" style="background-position: 50% 26px;">
         <div class="container">
             <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\icons\isbirligi_2.png') ?>" alt="">  
             </div>
             <div class="title-v1">
-                <h1>Akıllı Eşleştirme</h1>
-                <p><strong>Kayıtlı makinalar sizler için hangi ürünü en düşük maliyetle nasıl üretirler?</strong> <?php echo $this->translate('supports OSB IMALAT system. OSB IMALAT office is placed in Ankara. The office is responsible for development and management of VE tools, programs and applications.') ?> <br>
+                <h1><?php echo $this->translate('Intelligent Matching')?></h1>
+                <p><strong><?php echo $this->translate('OSB Imalat System matches appropriate manufacturers to the submitted orders automatically. ') ?> <br>
                 </p>
             </div>
-            <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
-            </div>
+<!--            <div class="img-center">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/index_page_images/ai_matching.png') ?>" alt="">
+            </div>-->
         </div>
-    </div>   
+    <!--</div>-->
+    </div>    
 </section>
-<!--  Akıllı Eşleştirme Section -->
+<!--  Intelligent Matching Section -->
 
-<!--  İhale Yönetimi Section -->
+<!--  Auction Management Section -->
 <section id="bargain" class="bargain-section">
     <div class="about-image bg-grey">
         <div class="container content-sm">
             <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\logo\high_res_logo_250_152.png') ?>" alt="">  
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-Page\assets\img\icons\auction_icon.png') ?>" alt=""> 
             </div>
             <div class="title-v1">
-                <h1>İhale Yönetimi</h1>
-                <p><strong>Ürünleriniz için on-line ihale açın?</strong> İhalelerinizi ister manual olarak yönetin, ister yapay zeka sizin belirlediğiniz kriterlere göre en uygun teklifleri belirlesin. <br>
+                <h1><?php echo $this->translate('Auction Management')?></h1>
+                <p><?php echo $this->translate('Different types of auctioning methods including automatic intelligent auction management method are embedded in OSB Imalat system.')?><br>
                 </p>
             </div>
             <div class="img-center">
-                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/mockup/mockup.png') ?>" alt="">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz\One-page\assets/img/index_page_images/auction_ai.png') ?>" alt="">
             </div>
         </div>
     </div> 
 </section>
-<!--  İhale Yönetimi Section -->
+<!--  Auction Management Section -->
 
 <!-- Projects Section -->
 <section id="services">
     <div class="container content-sm">
 
-    <div class="title-v1">
-        <h2><?php echo $this->translate('OSB IMALAT Projects') ?></h2>
-        <p><?php echo $this->translate('OSB IMALAT R&D Center, collaborates researches and projects with the aim of developing high value added, high tech products under university and industry collaboration framework.') ?></p>
-    </div>
+        <div class="title-v1">
+            <h2><?php echo $this->translate('OSB IMALAT Projects') ?></h2>
+            <p><?php echo $this->translate('OSB IMALAT R&D Center, collaborates researches and projects with the aim of developing high value added, high tech products under university and industry collaboration framework.') ?></p>
+        </div>
 
-    <ul class="list-unstyled row portfolio-box-v1">
-        <li class="col-sm-4">
-            <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tren.jpg') ?>" alt="">
-            <div class="portfolio-box-v1-in">
-                <h3><?php echo $this->translate('Indigenous Wind Turbine Project') ?></h3>
-                <p><?php echo $this->translate('Renewable Energy Cluster Project') ?></p>
-                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
-            </div>
-        </li>
-        <li class="col-sm-4">
-            <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tank.png') ?>" alt="">
-            <div class="portfolio-box-v1-in">
-                <h3><?php echo $this->translate('Indigenous Main Battle Tank Motor Project: TM-1150') ?></h3>
-                <p><?php echo $this->translate('Defense Cluster Project') ?></p>
-                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
-            </div>
-        </li>
-        <li class="col-sm-4">
-            <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/turbine.jpg') ?>" alt="">
-            <div class="portfolio-box-v1-in">
-                <h3><?php echo $this->translate('Indigenous Subway Train Project') ?></h3>
-                <p><?php echo $this->translate('Railed Systems Cluster Project') ?></p>
-                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
-            </div>
-        </li>
-    </ul>
+        <ul class="list-unstyled row portfolio-box-v1">
+            <li class="col-sm-4">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tren.jpg') ?>" alt="">
+                <div class="portfolio-box-v1-in">
+                    <h3><?php echo $this->translate('Indigenous Wind Turbine Project') ?></h3>
+                    <p><?php echo $this->translate('Renewable Energy Cluster Project') ?></p>
+                    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
+                </div>
+            </li>
+            <li class="col-sm-4">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/tank.png') ?>" alt="">
+                <div class="portfolio-box-v1-in">
+                    <h3><?php echo $this->translate('Indigenous Main Battle Tank Motor Project: TM-1150') ?></h3>
+                    <p><?php echo $this->translate('Defense Cluster Project') ?></p>
+                    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
+                </div>
+            </li>
+            <li class="col-sm-4">
+                <img class="img-responsive" src="<?php echo $this->basePath('onyuz/standard/assets/img/sfSystem/turbine.jpg') ?>" alt="">
+                <div class="portfolio-box-v1-in">
+                    <h3><?php echo $this->translate('Indigenous Subway Train Project') ?></h3>
+                    <p><?php echo $this->translate('Railed Systems Cluster Project') ?></p>
+                    <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" target="_blank" href="http://www.ostimteknoloji.com/"><?php echo $this->translate('Read More') ?></a>
+                </div>
+            </li>
+        </ul>
 </section>
 <!-- Projects Section -->
 
 <!-- Testimonials -->
-    <div class="what-people-say">
-        <div class="container content-lg">
-            <div class="title-v1">
-                <h2><?php echo $this->translate('OSB IMALAT TARGETS') ?></h2>
-                <p><strong><?php echo $this->translate('OSB IMALAT') ?> </strong> <?php echo $this->translate("aims to open SMEs design, engineering and manufactuirng capacity to the world by redirect customer orders instantly to the related suitable companies, enhance the collaboration between multiple SMEs and improve SME's productivity by loading their idle capacity with appropriate tasks and projects.") ?></p>
-            </div>
+<div class="what-people-say">
+    <div class="container content-lg">
+        <div class="title-v1">
+            <h2><?php echo $this->translate('OSB IMALAT TARGETS') ?></h2>
+            <p><strong><?php echo $this->translate('OSB IMALAT') ?> </strong> <?php echo $this->translate("aims to open SMEs design, engineering and manufactuirng capacity to the world by redirect customer orders instantly to the related suitable companies, enhance the collaboration between multiple SMEs and improve SME's productivity by loading their idle capacity with appropriate tasks and projects.") ?></p>
+        </div>
 
-            <!-- Testimonials Wrap -->
-            <div class="testimonials-v6 testimonials-wrap">
-                <div class="row margin-bottom-50">
-                    <div class="col-md-6 md-margin-bottom-50">
-                        <div class="testimonials-info rounded-bottom">
-                            <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/orhanaydin.jpg') ?>" class="rounded-x">
-                            <div class="testimonials-desc">
-                                <p><?php echo $this->translate("OSB IMALAT") ?></p>
-                                <strong>Orhan AYDIN</strong>
-                                <span><?php echo $this->translate('Chairman of the OSB IMALAT Management Executive Board') ?></span>
-                            </div>
+        <!-- Testimonials Wrap -->
+        <div class="testimonials-v6 testimonials-wrap">
+            <div class="row margin-bottom-50">
+                <div class="col-md-6 md-margin-bottom-50">
+                    <div class="testimonials-info rounded-bottom">
+                        <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/----.jpg') ?>" class="rounded-x">
+                        <div class="testimonials-desc">
+                            <p><?php echo $this->translate("OSB IMALAT") ?></p>
+                            <strong>Name</strong>
+                            <span><?php echo $this->translate('Position') ?></span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="testimonials-info rounded-bottom">
-                            <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/sedatcelikdogan.jpg') ?>" class="rounded-x">
-                            <div class="testimonials-desc">
-                                <p><?php echo $this->translate("OSB IMALAT") ?></p>
-                                <strong>Doç. Dr. Sedat ÇELİKDOĞAN</strong>
-                                <span><?php echo $this->translate('Chairman of OSB IMALAT Executive Board') ?></span>
-                            </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonials-info rounded-bottom">
+                        <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/----.jpg') ?>" class="rounded-x">
+                        <div class="testimonials-desc">
+                            <p><?php echo $this->translate("OSB IMALAT") ?></p>
+                            <strong>Name</strong>
+                            <span><?php echo $this->translate('Position') ?></span>
                         </div>
                     </div>
-                </div><!--/end row-->
+                </div>
+            </div><!--/end row-->
 
-                <div class="row margin-bottom-20">
-                    <div class="col-md-6 md-margin-bottom-50">
-                        <div class="testimonials-info rounded-bottom">
-                            <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/ziyaburhanettinguvenc.jpg') ?>" class="rounded-x">
-                            <div class="testimonials-desc">
-                                <p><?php echo $this->translate("OSB IMALAT") ?></p>
-                                <strong>Prof.Dr.Ziya Burhanettin Güvenç</strong>
-                                <span>Ostim Teknik Üniversitesi Rektörü</span>
-                            </div>
+            <div class="row margin-bottom-20">
+                <div class="col-md-6 md-margin-bottom-50">
+                    <div class="testimonials-info rounded-bottom">
+                        <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/----.jpg') ?>" class="rounded-x">
+                        <div class="testimonials-desc">
+                            <p><?php echo $this->translate("OSB IMALAT") ?></p>
+                            <strong>Name</strong>
+                            <span><?php echo $this->translate('Position') ?></span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="testimonials-info rounded-bottom">
-                            <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/ademarici.jpg') ?>" class="rounded-x">
-                            <div class="testimonials-desc">
-                                <p><?php echo $this->translate("OSB IMALAT") ?></p>
-                                <strong>Adem ARICI</strong>
-                                <span><?php echo $this->translate('Manager of OSB IMALAT Management') ?></span>
-                            </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonials-info rounded-bottom">
+                        <img alt="" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/testimonials/----.jpg') ?>" class="rounded-x">
+                        <div class="testimonials-desc">
+                            <p><?php echo $this->translate("OSB IMALAT") ?></p>
+                            <strong>Name</strong>
+                            <span><?php echo $this->translate('Position') ?></span>
                         </div>
                     </div>
-                </div><!--/end row-->
-            </div>
-            <!-- End Testimonials Wrap -->
-        </div><!--/end container-->
-    </div>
-    <!-- End Testimonials -->
+                </div>
+            </div><!--/end row-->
+        </div>
+        <!-- End Testimonials Wrap -->
+    </div><!--/end container-->
+</div>
+<!-- End Testimonials -->
 
 
 <!-- News Section -->
@@ -582,8 +587,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             </ul>
                         </div>
                         <h3>Bahram Lotfi Sadigh</h3>
-                        <h4>/ <?php echo $this->translate('Mechanical Engineer')?></h4>
-                        <p><?php echo $this->translate('Finished his PhD research on virtual enterprise issue and started to coordinate activities to develop VE commercial software.')?></p>
+                        <h4>/ <?php echo $this->translate('Mechanical Engineer') ?></h4>
+                        <p><?php echo $this->translate('Finished his PhD research on virtual enterprise issue and started to coordinate activities to develop VE commercial software.') ?></p>
                     </li>
                     <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
                         <div class="team-img">
@@ -594,9 +599,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
                             </ul>
                         </div>
-                        <h3>Mustafa Zeynel Dağlı</h3>
-                        <h4>/ <?php echo $this->translate('Code Developer')?></h4>
-                        <p><?php echo $this->translate('Code developer')?></p>
+                        <h3>Mustafa Zeynel DaÄŸlÄ±</h3>
+                        <h4>/ <?php echo $this->translate('Code Developer') ?></h4>
+                        <p><?php echo $this->translate('Code developer') ?></p>
                     </li>                    
                     <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
                         <div class="team-img">
@@ -608,8 +613,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             </ul>
                         </div>
                         <h3>Okan Ciran</h3>
-                        <h4>/ <?php echo $this->translate('Database Specialist')?></h4>
-                        <p><?php echo $this->translate('Database Specialist')?></p>
+                        <h4>/ <?php echo $this->translate('Database Specialist') ?></h4>
+                        <p><?php echo $this->translate('Database Specialist') ?></p>
                     </li>                    
                     <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
                         <div class="team-img">
@@ -620,9 +625,9 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
                             </ul>
                         </div>
-                        <h3>Durali Çiçek</h3>
-                        <h4>/ <?php echo $this->translate('Software Enginner')?></h4>
-                        <p><?php echo $this->translate('Social Media Specialist')?></p>
+                        <h3>Durali Ã‡iÃ§ek</h3>
+                        <h4>/ <?php echo $this->translate('Software Enginner') ?></h4>
+                        <p><?php echo $this->translate('Social Media Specialist') ?></p>
                     </li>
                 </ul>
             </div>
@@ -829,7 +834,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <img class="rounded-x img-bordered" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/team/kayhanolanca.jpg') ?>" alt="">
                             <div class="testimonials-v3-title">
                                 <p>Dr.Kayhan Olanca</p>
-                                <span>Ostim Organize Sanayi Bölge Müdürlüğü Koordinatör</span>
+                                <span>Ostim Organize Sanayi BÃ¶lge MÃ¼dÃ¼rlÃ¼ÄŸÃ¼ KoordinatÃ¶r</span>
                             </div>
                             <p>I just wanted to tell you how much I like to use Unify - <strong>it's so sleek and elegant!</strong> <br>
                                 The customisation options you implemented are countless, and I feel sorry I can't use them all. Good job, and keep going!<p>
@@ -837,16 +842,16 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <li class="item">
                             <img class="rounded-x img-bordered" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/team/gulnazkaraosmanoglu.jpg') ?>" alt="">
                             <div class="testimonials-v3-title">
-                                <p>Gülnaz Karaosmanoğlu</p>
-                                <span>Ostim Vakfı, Genel Sekreter</span>
+                                <p>GÃ¼lnaz KaraosmanoÄŸlu</p>
+                                <span>Ostim VakfÄ±, Genel Sekreter</span>
                             </div>
                             <p>Keep up the great work. Your template is by far the best on the market in terms of features, quality and value or money.</p>
                         </li>
                         <li class="item">
                             <img class="rounded-x img-bordered" src="<?php echo $this->basePath('onyuz/One-Page/assets/img/team/borayasa.jpg') ?>" alt="">
                             <div class="testimonials-v3-title">
-                                <p>Bora Yaşa</p>
-                                <span>OSTİM Medical Küme Koordinatörü </span>
+                                <p>Bora YaÅŸa</p>
+                                <span>OSTÄ°M Medical KÃ¼me KoordinatÃ¶rÃ¼ </span>
                             </div>
                             <p>So far I really like the theme. I am looking forward to exploring more of your themes. Thank you!</p>
                         </li>
@@ -871,12 +876,11 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         <div class="row contacts-in">
             <div class="col-md-6 md-margin-bottom-40">
                 <ul class="list-unstyled">
-                    <li><i class="fa fa-home"></i> Ostim Organize Sanayi Bölge Müdürlüğü 
-                        100. Yıl Bulvarı No: 101/A, 06370, Ostim / Ankara-TÜRKİYE</li>
-                    <li><i class="fa fa-phone"></i> +90 312 385 50 90 </li>
-                    <li><i class="fa fa-fax"></i> +90 312 354 58 98</li>  
-                    <li><i class="fa fa-envelope"></i> <a href="info_example.html">sanalfabrika@ostim.com.tr</a></li>
-                    <li><i class="fa fa-globe"></i> <a href="http://htmlstream.com/">www.ostim.com.tr</a></li>
+                    <li><i class="fa fa-home"></i> </li>
+                    <li><i class="fa fa-phone"></i>  </li>
+                    <li><i class="fa fa-fax"></i> </li>  
+                    <li><i class="fa fa-envelope"></i> <a href="info_example.html">OSBImalat@OSBImalat.com.tr</a></li>
+                    <li><i class="fa fa-globe"></i> <a href="http://htmlstream.com/">www.OSBImalat.com.tr</a></li>
                 </ul>
             </div>
 
@@ -923,14 +927,14 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     </div>
 
     <div class="copyright-section">
-        <p><?php echo $this->translate('Copyright') ?> &copy; OSB IMALAT 2016<!--2015 &copy; All Rights Reserved. Unify Theme by--> <a target="_blank" href="https://twitter.com/ostimosb"><?php echo $this->translate('OSB IMALAT') ?></a></p>
+        <p><?php echo $this->translate('Copyright') ?> &copy; OSB IMALAT 2016<!--2015 &copy; All Rights Reserved. Unify Theme by--> <a target="_blank" href="https://twitter.com/OSBImalat"><?php echo $this->translate('OSB IMALAT') ?></a></p>
         <ul class="social-icons">
-            <li><a href="https://www.facebook.com/OstimOSB/" data-original-title="Facebook" class="social_facebook rounded-x js-sociaLinks js-sociaLinks"></a></li>
-            <li><a href="https://twitter.com/ostimosb" data-original-title="Twitter" class="social_twitter rounded-x js-sociaLinks"></a></li>
-            <li><a href="https://plus.google.com/+OST%C4%B0MOSB1967" data-original-title="Goole Plus" class="social_googleplus rounded-x js-sociaLinks"></a></li>
-            <li><a href="https://www.instagram.com/ostimosb/" data-original-title="Instagram" class="social_instagram rounded-x js-sociaLinks"></a></li>
-            <li><a href="https://www.linkedin.com/in/ostim-osb-2b94b847" data-original-title="Linkedin" class="social_linkedin rounded-x js-sociaLinks"></a></li>
-            <!--<li><a href="https://www.instagram.com/ostimosb/" data-original-title="Instagram" class="social_instagram rounded-x"></a></li>-->
+            <li><a href="https://www.facebook.com/OSBImalat/" data-original-title="Facebook" class="social_facebook rounded-x js-sociaLinks js-sociaLinks"></a></li>
+            <li><a href="https://twitter.com/OSBImalat" data-original-title="Twitter" class="social_twitter rounded-x js-sociaLinks"></a></li>
+            <li><a href="https://plus.google.com/+OSBImalat" data-original-title="Goole Plus" class="social_googleplus rounded-x js-sociaLinks"></a></li>
+            <li><a href="https://www.instagram.com/OSBImalat/" data-original-title="Instagram" class="social_instagram rounded-x js-sociaLinks"></a></li>
+            <li><a href="https://www.linkedin.com/in/OSBImalat" data-original-title="Linkedin" class="social_linkedin rounded-x js-sociaLinks"></a></li>
+            <!--<li><a href="https://www.instagram.com/OSBImalat/" data-original-title="Instagram" class="social_instagram rounded-x"></a></li>-->
 
         </ul>
         <span class="page-scroll"><a href="#intro"><i class="fa fa-angle-double-up back-to-top"></i></a></span>

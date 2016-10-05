@@ -1,0 +1,29 @@
+Fonts used in this design;
+
+Font: Helsinki, 
+Author: Vic Fieger, 
+Url: http://www.fontsquirrel.com/fonts/helsinki;
+
+Font: Roboto, 
+Author: Christian Robertson, 
+Url: http://www.fontsquirrel.com/fonts/roboto;
+
+Font: Archivo Black, 
+Author: Omnibus Type, 
+Url: http://www.fontsquirrel.com/fonts/archivo-black;
+
+Font: Archivo Narrow, 
+Author: Omnibus Type, 
+Url: http://www.fontsquirrel.com/fonts/archivo-narrow;
+
+Font: Grand Hotel, 
+Author: Astigmatic, 
+Url: http://www.fontsquirrel.com/fonts/grand-hotel;
+
+Font: Kreon, 
+Author: Julie Petretta, 
+Url: http://www.fontsquirrel.com/fonts/kreon;
+
+Font: Ostrich Sans Inline, 
+Author: Tyler Finck, 
+Url: http://www.fontsquirrel.com/fonts/ostrich-sans-inline;

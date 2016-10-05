@@ -1828,6 +1828,26 @@
   background: rgba(0,0,0,0.5);
 }
 
+/*Image Backgrounds v1-1
+------------------------------------*/
+.bg-image-v1 {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  position: relative;
+  background: url(../img/bg/11.jpg) repeat fixed; 
+}
+
+.bg-image-v1:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  content: " ";
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+}
+
 /*Image Backgrounds v2
 ------------------------------------*/
 .bg-image-v2 {
