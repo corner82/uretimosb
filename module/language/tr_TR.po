@@ -15,6 +15,12 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "X-Poedit-SearchPath-0: ..\n"
 
+msgid "OSTIM"
+msgstr "OSB"
+
+msgid "OSTIM Technology A.Ş."
+msgstr "OSB Imalat"
+
 #: ../view/layout/sfdm.phtml:1
 msgid "Virtual Enterprise Project"
 msgstr "Sanal Fabrika Projesi"

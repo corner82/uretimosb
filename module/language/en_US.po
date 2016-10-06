@@ -25,10 +25,10 @@ msgid "Follow Development"
 msgstr "" 
 
 msgid "OSTIM"
-msgstr ""
+msgstr "OSB"
 
 msgid "OSTIM Technology A.Ş."
-msgstr ""
+msgstr "OSB Imalat"
 
 msgid "Virtual Enterprise"
 msgstr ""
@@ -229,7 +229,7 @@ msgid "All rights reserved."
 msgstr ""
 
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 msgid "Version"
 msgstr ""
