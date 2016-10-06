@@ -48,7 +48,7 @@ return array(
             'sanalfabrika' => array(
                 'type' => 'segment',
                 'options' => array(
-                    'route' => '[/:lang]/ostim/sanalfabrika[/:action][/:id][/:selectedCompanyShN][/:selectedCompanyNpk]', 
+                    'route' => '[/:lang]/imalat/OSB[/:action][/:id][/:selectedCompanyShN][/:selectedCompanyNpk]', 
                     'constraints' => array(
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id' => '[0-9]+',
