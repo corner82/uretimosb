@@ -48,13 +48,13 @@ and open the template in the editor.
 }
 
 
-/*Image Backgrounds v1-1
+/*Image Backgrounds ai
 ------------------------------------*/
 .bg-image-ai_matching {
   width: 100%;
   height: auto;
   padding: 50px 0;
-  position: relative;
+  /*position: relative;*/
   background: url(../../../../onyuz/One-Page/assets/img/index_page_images/agreement_algorithm_1.png) repeat  fixed; 
 }
 
