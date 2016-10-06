@@ -1304,8 +1304,8 @@ msgstr "Değişik ihale süreçleri hazırlanıp müşterinin istekleri ve talep
 msgid "New Technologies Implementation"
 msgstr "Yeni Teknolojilerin Uygulanması"
 
-msgid "OSB Imalat OFFICE"
-msgstr "OSB İmalat OFİSİ"
+msgid "OSB IMALAT OFFICE"
+msgstr "OSB İMALAT OFİSİ"
 
 msgid "OSB Imalat System Mission"
 msgstr "OSB İMALAT SİSTEMİ MİSYONU"
@@ -1337,6 +1337,10 @@ msgstr "SME'lerin bulunan tasarım, mühendislik ve üretim kapasitesini dünyay
 
 msgid "OSB Imalat"
 msgstr "OSB İmalat"
+
+
+msgid "OSB Imalat "
+msgstr "OSB İmalat "
 
 msgid "OSB IMALAT TARGETS"
 msgstr "OSB İMALAT HEDEFLERİ"
@@ -1419,6 +1423,10 @@ msgstr "Yenilenebilir Enerjiler Kümesi"
 msgid "OSB Imalat Projects"
 msgstr "OSB İmalat Projeleri"
 
+msgid " Project"
+msgstr " Projesi"
+
+
 msgid "Members Only"
 msgstr "Üyelik Gerekir"
 
@@ -1428,7 +1436,7 @@ msgstr "Sanal Fabrika hizmetleri üç genel kategori altında sunulmaktadır:"
 msgid "Resource Discovery"
 msgstr "Üretim Gücümüz"
 
-msgid "Project Management"
+msgid "Our Projects"
 msgstr "Projelerimiz"
 
 msgid "Resource Definition"
@@ -1508,6 +1516,42 @@ msgstr "Sanal Fabrika Makine Listesi"
 
 msgid "Reset all verbal information"
 msgstr "Bütün Sözel Verileri Temizle"
+
+msgid "Project Management"
+msgstr "Proje Yönetimi"
+
+msgid "Intelligent Matching"
+msgstr "Akıllı Eşleştirme"
+
+msgid "Auction Management"
+msgstr "İhale Yönetimi"
+
+msgid "OSB Imalat Project"
+msgstr "OSB İmalat Projesi"
+
+msgid "Opening SMEs manufacturing capabilities to the customers from all over the world"
+msgstr "KOBİ'lerin imalat yeteneklerini dünyadaki bütün müşterilere açmak"
+
+msgid "Office"
+msgstr "Ofis"
+
+msgid "In order to produce your product with required quality and much reasonable prices submit your project online in OSB Imalat system."
+msgstr "Ürünüzü beklediğiniz kalitede uygun fiyatlar ile ürettirmek istiyorsanız OSB İmalat sisteminde proje kaydını oluşturunuz."
+
+msgid "Different types of auctioning methods including automatic intelligent auction management method are embedded in OSB Imalat system."
+msgstr "Farklı ihale yönetim metotları OSB İmalat sisteminde mevcuttur. OSB İmalat sistemine otomatik ve tarafsız ihale yönetim sistemi eklenmiştir."
+
+msgid "aims to open SMEs design, engineering and manufactuirng capacity to the world by redirect customer orders instantly to the related suitable companies, enhance the collaboration between multiple SMEs and improve SME's productivity by loading their idle capacity with appropriate tasks and projects."
+msgstr "bir işbirliği altyapısını geliştirerek, KOBİ'lerin tasarım, mühendislik ve üretim kabiliyetlerini dünyada potansiyel müşterilere yönlendirerek değerlendirmeyi hedeflemektedir. "
+
+msgid "OSB Imalat System matches appropriate manufacturers to the submitted orders automatically. "
+msgstr "OSB İmalat sistemi müşterinin başvurduğu proje özelliklerine en uygun KOBİ'leri otomatik bir biçimde firma havuzundan belirleyip müşteriye sunmaktadır."
+
+msgid "OSB IMALAT integrates the capabilities of different companies under one unique virtual company."
+msgstr "OSB İmalat firmaların farklı yeteneklerini tek bir sanal çatı altında toplayarak yüksek katma değerli ve yüksek teknoloji içeren ürünlerin üretimine imkan sağlamaktadır."
+
+msgid "supports OSB IMALAT system. OSB IMALAT office is placed in Ankara. The office is responsible for development and management of OSB IMALAT tools, programs and applications. "
+msgstr "OSB İmalat sistemini desteklemektedir. OSB İmalat ofisi Ankarada yer almaktadır. Ofis OSB İmalat sisteminin araçları, yazılımları ve uygulamalarının geliştirilmesi ve yönetiminden sorumludur."
 
 msgid ""
 msgstr ""
