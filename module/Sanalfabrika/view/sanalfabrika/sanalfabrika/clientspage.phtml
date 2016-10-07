@@ -87,7 +87,7 @@
     <div class="header">
         <div class="container">
             <!-- Logo -->
-            <a class="logo" href="index-2.html">
+            <a class="logo" href="index.phtml">
                 <img src="<?php echo $this->basePath('onyuz/One-Page/assets/img/logo/header_logo.png') ?>" alt="Logo">
             </a>
             <!-- End Logo -->
@@ -129,7 +129,7 @@
                         <a href="#about"><?php echo $this->translate('About Us') ?></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#servıces"><?php echo $this->translate('Servıces') ?></a>
+                        <a href="#service"><?php echo $this->translate('Servıces') ?></a>
                     </li>                    
                     <li class="page-scroll">
                         <a href="#news"><?php echo $this->translate('News') ?></a>
@@ -137,7 +137,7 @@
                     <li class="page-scroll">
                         <a href="#contact"><?php echo $this->translate('Contacts') ?></a>
                     </li>
-                    <li class="dropdown">
+<!--                    <li class="dropdown">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                             <?php echo $this->translate('Submenus') ?>
                         </a>
@@ -149,7 +149,7 @@
                                 <a href="../index-2.html"><?php echo $this->translate('Main') ?></a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                 </ul>
             </div><!--/end container-->
         </div><!--/navbar-collapse-->
@@ -178,7 +178,7 @@
     <div class="container content">		
         <div class="row">
             <div class="col-md-9">
-                <div id="come_here" class="headline"><h2><?php echo $this->translate('Virtual Enterprise Clinets') ?></h2></div>
+                <div id="come_here" class="headline"><h2><?php echo $this->translate('OSB Imalat Clinets') ?></h2></div>
 
                 <!-- Start Clients Block-->
                 <div id="pagination_content">
@@ -199,8 +199,8 @@
             <div class="col-md-3">
                 <!-- Our Services -->
                 <div class="who margin-bottom-30">
-                    <div class="headline"><h2><?php echo $this->translate('Our Services') ?></h2></div>
-                    <p><?php echo $this->translate('Virtual enterprise is the collaboration platform for SMEs to enhance their market share and improve their competebility in highly turbulent strcit global market conditions. In order to reach these targets following services are provided by OSB Imalat system:') ?></p>
+                    <div id='service' class="headline"><h2><?php echo $this->translate('Our Services') ?></h2></div>
+                    <p><?php echo $this->translate('OSB Imalat is the collaboration platform for SMEs to enhance their market share and improve their competebility in highly turbulent strcit global market conditions. In order to reach these targets following services are provided by OSB Imalat system:') ?></p>
                     <ul class="list-unstyled">
                         <li><a href="#"><i class="fa fa-arrow-circle-right"></i><?php echo $this->translate('Increase Companies transparency by providing company profile pages and present company inventory and their capabilities. Completing these pages companies would be able to describe their activities in details and this helps customers to discover their target partners.') ?></a></li>
                         <li><a href="#"><i class="fa fa-arrow-circle-right"></i><?php echo $this->translate('Providing professional user profile pages to increase the chance of finding required technical, and professional staff in the system to support design, analyses, simulation, engineering and other technic issues in projects') ?></a></li>
@@ -211,14 +211,14 @@
 
 
                 <!-- About Us -->
-                <div class="headline"><h2><?php echo $this->translate('About Us') ?></h2></div>
+                <div id= 'about' class="headline"><h2><?php echo $this->translate('About Us') ?></h2></div>
                 <div class="margin-bottom-30">
                     <!--<p><?php echo $this->translate("OSTIM Technology founded on 2004 to improve university-industry collaboration program under TUBITAK's industry-university co-research and development program. Since 2007 company status chnaged to Anonymous Company (Anonym Şirket). This company has more than 25 stack holders including Organizations, universities, researchers, academia and businessmen.") ?></p>-->
                 </div>
 
                 <!-- Contact Us -->
                 <div class="who margin-bottom-30">
-                    <div class="headline"><h2><?php echo $this->translate('Contact Us') ?></h2></div>
+                    <div id='contact' class="headline"><h2><?php echo $this->translate('Contact Us') ?></h2></div>
                     <p><?php echo $this->translate('You may contact us through given address below:') ?></p>
                     <ul class="list-unstyled">
                         <li><a href="#"><i class="fa fa-home"></i><?php echo $this->translate('') ?><br/>
@@ -242,8 +242,8 @@
                 <div class="row">
                     <!-- About -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index-2.html"><img id="logo-footer" class="footer-logo" 
-                                                    src="<?php echo $this->basePath('onyuz/standard/assets/img/logo2-default.png') ?>" 
+                        <a href="index.phtml"><img id="logo-footer" class="footer-logo" 
+                                                    src="<?php echo $this->basePath('onyuz/One-Page/assets/img/logo/footer_logo.png') ?>" 
                                                     alt=""></a>
                         <p><?php echo $this->translate('OSB Imalat is a temporary alliance of businesses that come together to share skills or core competencies and resources in order to better respond to business opportunities, and whose cooperation is supported by computer networks.')?></p>
                     </div><!--/col-md-3-->
@@ -259,10 +259,6 @@
                                     <small><?php echo $this->translate('February') ?> 8, 2016</small>
                                 </li>
                                 <li>
-                                    <a href="#"><?php echo $this->translate('OSB Imalat Clusters News') ?></a>
-                                    <small><?php echo $this->translate('January') ?> 23, 2016</small>
-                                </li>
-                                <li>
                                     <a href="#"><?php echo $this->translate('New Project Calls') ?></a>
                                     <small><?php echo $this->translate('December') ?> 15, 2016</small>
                                 </li>
@@ -275,7 +271,7 @@
                     <div class="col-md-3 md-margin-bottom-40">
                         <div class="headline"><h2><?php echo $this->translate('Useful Links') ?></h2></div>
                         <ul class="list-unstyled link-list">
-                            <!--<li><a href="http://www.ostim.org.tr/"><?php echo $this->translate('Ostim Organized Industrial Zone') ?></a><i class="fa fa-angle-right"></i></li>-->
+                            <!--<!--<li><a href="http://www.ostim.org.tr/"><?php echo $this->translate('Ostim Organized Industrial Zone') ?></a><i class="fa fa-angle-right"></i></li>-->-->
                             <li><a href="http://www.sanayi.gov.tr/"><?php echo $this->translate('Turkish Ministry of SIT') ?></a><i class="fa fa-angle-right"></i></li>
                             <li><a href="https://www.tubitak.gov.tr/"><?php echo $this->translate('TUBITAK') ?></a><i class="fa fa-angle-right"></i></li>
                             <li><a href="http://www.kosgeb.gov.tr/"><?php echo $this->translate('KOSGEB') ?></a><i class="fa fa-angle-right"></i></li>
@@ -325,7 +321,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://plus.google.com/+OST%C4%B0MOSB1967" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                <a href="https://plus.google.com/osbimalat" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
                                     <i class="fa fa-google-plus"></i>
                                 </a>
                             </li>

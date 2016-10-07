@@ -88,8 +88,8 @@
     <div class="header">
         <div class="container">
             <!-- Logo -->
-            <a class="logo" href="index-2.html">
-                <img src="<?php echo $this->basePath('onyuz/standard/assets/img/logo1-default.png') ?>" alt="Logo">
+            <a class="logo" href="index.phtml">
+                <img src="<?php echo $this->basePath('onyuz/One-Page/assets/img/logo/header_logo.png') ?>" alt="Logo">
             </a>
             <!-- End Logo -->
 
@@ -129,23 +129,16 @@
                     <li class="page-scroll">
                         <a href="#about"><?php echo $this->translate('About Us') ?></a>
                     </li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            <?php echo $this->translate('Services') ?>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="page-scroll"><a href="#body">
-                                    <?php echo $this->translate('OSTIM Services') ?></a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li class="page-scroll">
+                        <a href="#service"><?php echo $this->translate('Servıces') ?></a>
+                    </li>                    
                     <li class="page-scroll">
                         <a href="#news"><?php echo $this->translate('News') ?></a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact"><?php echo $this->translate('Contacts') ?></a>
                     </li>
-                    <li class="dropdown">
+<!--                    <li class="dropdown">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                             <?php echo $this->translate('Submenus') ?>
                         </a>
@@ -157,7 +150,7 @@
                                 <a href="../index-2.html"><?php echo $this->translate('Main') ?></a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                 </ul>
             </div><!--/end container-->
         </div><!--/navbar-collapse-->
@@ -350,39 +343,6 @@
                         <p>You may have access to company machine park from this section. By clicking over your desired machine tool you may see more detailed information if it is already in the system.</p>
                     </div>
                     
-                    <div class="row tab-v3">
-                    <div class="col-sm-3">
-                        <ul class="nav nav-pills nav-stacked"> 
-                            <li class=""><a href="#home-2" data-toggle="tab" aria-expanded="false"><i class="fa fa-home"></i> Home</a></li>
-                            <li class=""><a href="#profile-2" data-toggle="tab" aria-expanded="false"><i class="fa fa-cloud"></i> Profile</a></li>
-                            <li class=""><a href="#messages-2" data-toggle="tab" aria-expanded="false"><i class="fa fa-comments"></i> Messages</a></li>
-                            <li class="active"><a href="#settings-2" data-toggle="tab" aria-expanded="true"><i class="fa fa-gear"></i> Settings</a></li>                        
-                        </ul>                    
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="tab-content">
-                            <div class="tab-pane fade" id="home-2">
-                                <h4>Heading Sample 1</h4>
-                                <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum <strong>ivamus imperdiet</strong> condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc.</p> 
-                                <p>Pellentesque <strong>fermentum vivamus</strong> imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac felis consectetur id. Donec eget orci metusvivamus imperdiet.</p>                        
-                            </div>
-                            <div class="tab-pane fade" id="profile-2">
-                                <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img22.jpg">                         
-                                <h4>Heading Sample 2</h4>
-                                <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
-                            </div>
-                            <div class="tab-pane fade" id="messages-2">
-                                <h4>Heading Sample 3</h4>
-                                <p><img alt="" class="pull-right rgt-img-margin img-width-200" src="assets/img/main/img13.jpg"> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
-                            </div>
-                            <div class="tab-pane fade in active" id="settings-2">
-                                <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img10.jpg">                         
-                                <h4>Heading Sample 4</h4>
-                                <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
-                            </div>
-                        </div>                                    
-                    </div>
-                </div>
 
                     <div class="container col-md-12" id='table_place_holder' style='visibility:hidden; display:none; padding:0px'>
                         <!-- Left Inner -->
@@ -505,11 +465,11 @@
             <div class="row">
                 <!-- About -->
                 <div class="col-md-3 md-margin-bottom-40">
-                    <a href="index-2.html"><img id="logo-footer" class="footer-logo" 
-                                                src="<?php echo $this->basePath('onyuz/standard/assets/img/logo2-default.png') ?>" 
+                    <a href="index.phtml"><img id="logo-footer" class="footer-logo" 
+                                                src="<?php echo $this->basePath('onyuz/One-Page/assets/img/logo/footer_logo.png') ?>" 
                                                 alt=""></a>
                     <p><?php
-                        echo $this->translate('A virtual enterprise (VE) is a temporary alliance of '
+                        echo $this->translate('OSB Imalat is a temporary alliance of '
                                 . 'businesses that come together to share skills or core competencies and resources '
                                 . 'in order to better respond to business opportunities, and whose cooperation is '
                                 . 'supported by computer networks.')
@@ -523,12 +483,8 @@
                         <div class="headline"><h2><?php echo $this->translate('Latest Posts') ?></h2></div>
                         <ul class="list-unstyled latest-list">
                             <li>
-                                <a href="#"><?php echo $this->translate('Latest News about OSTIM VE') ?></a>
+                                <a href="#"><?php echo $this->translate('Latest News about OSB Imalat') ?></a>
                                 <small><?php echo $this->translate('February') ?> 8, 2016</small>
-                            </li>
-                            <li>
-                                <a href="#"><?php echo $this->translate('OSTIM Clusters News') ?></a>
-                                <small><?php echo $this->translate('January') ?> 23, 2016</small>
                             </li>
                             <li>
                                 <a href="#"><?php echo $this->translate('New Project Calls') ?></a>
@@ -543,7 +499,7 @@
                 <div class="col-md-3 md-margin-bottom-40">
                     <div class="headline"><h2><?php echo $this->translate('Useful Links') ?></h2></div>
                     <ul class="list-unstyled link-list">
-                        <li><a href="http://www.ostim.org.tr/"><?php echo $this->translate('Ostim Organized Industrial Zone') ?></a><i class="fa fa-angle-right"></i></li>
+<!--                        <!--<li><a href="http://www.ostim.org.tr/"><?php echo $this->translate('Ostim Organized Industrial Zone') ?></a><i class="fa fa-angle-right"></i></li>-->-->
                         <li><a href="http://www.sanayi.gov.tr/"><?php echo $this->translate('Turkish Ministry of SIT') ?></a><i class="fa fa-angle-right"></i></li>
                         <li><a href="https://www.tubitak.gov.tr/"><?php echo $this->translate('TUBITAK') ?></a><i class="fa fa-angle-right"></i></li>
                         <li><a href="http://www.kosgeb.gov.tr/"><?php echo $this->translate('KOSGEB') ?></a><i class="fa fa-angle-right"></i></li>
@@ -556,12 +512,12 @@
                 <div class="col-md-3 map-img md-margin-bottom-40">
                     <div class="headline"><h2><?php echo $this->translate('Contact Us') ?></h2></div>                         
                     <address class="md-margin-bottom-40">
-                        100. Yıl Bulvarı No: 101/A <br />
-                        OSTIM, Ankara <br />
+                         <br />
+                        Ankara <br />
                         Turkey <br />
-                        <?php echo $this->translate('Phone') ?> :  +90 312 385 50 90 <br />
-                        <?php echo $this->translate('Fax') ?>:    +90 312 354 58 98 <br />
-                        <?php echo $this->translate('Email') ?>: <a href="mailto:info@ostim.com.tr" class="">info@ostim.com.tr</a>
+                        <?php echo $this->translate('Phone') ?> :   <br />
+                        <?php echo $this->translate('Fax') ?>:  <br />
+                        <?php echo $this->translate('Email') ?>: <a href="mailto:info@osbimalat.com.tr" class="">info@osbimalat.com.tr</a>
                     </address>
                 </div><!--/col-md-3-->
                 <!-- End Address -->
@@ -583,7 +539,7 @@
                 <div class="col-md-6">
                     <ul class="footer-socials list-inline">
                         <li>
-                            <a href="https://www.facebook.com/OstimOSB/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                            <a href="https://www.facebook.com/osbimalat/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
@@ -593,22 +549,22 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://plus.google.com/+OST%C4%B0MOSB1967" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                            <a href="https://plus.google.com/+osbimalat" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
                                 <i class="fa fa-google-plus"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/ostim-osb-2b94b847" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                            <a href="https://www.linkedin.com/in/osbimalat" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/ostimosb/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                            <a href="https://www.instagram.com/osbimalat/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/ostimosb" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                            <a href="https://twitter.com/osbimalat" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>

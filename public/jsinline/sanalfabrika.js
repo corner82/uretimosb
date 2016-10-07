@@ -19,7 +19,7 @@ $(document).ready(function () {
             
             $.fn.multiLanguageBarSetter.defaults.requestUriTranslated = $("#requestUriRegulated").val();
             $.fn.multiLanguageBarSetter.defaults.langCode = $("#langCode").val();
-            $.fn.multiLanguageBarSetter.defaults.basePath = 'ostim/sanalfabrika';
+            $.fn.multiLanguageBarSetter.defaults.basePath = 'imalat/OSB';
             $.fn.multiLanguageBarSetter.defaults.baseLanguage = 'tr';
             $(".languages").multiLanguageBarSetter(data); 
             
