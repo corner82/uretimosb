@@ -15,41 +15,76 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-msgid "Virtual Enterprise Project"
-msgstr ""
 
-msgid "Virtual Enterprise Control Panel"
-msgstr ""
-
-msgid "Follow Development"
-msgstr "" 
-
-msgid "OSTIM"
-msgstr "OSB"
-
-msgid "OSTIM Technology A.Ş."
+-------------------------------------------------------------
+Main 
+-------------------------------------------------------------
+msgid "main-1"
 msgstr "OSB Imalat"
 
-msgid "Virtual Enterprise"
-msgstr ""
+msgid "main-2"
+msgstr "OSB Imalat Project"
 
-msgid "Active"
-msgstr ""
+msgid "main-3"
+msgstr "OSB Imalat Control Panel"
 
-msgid "Main Navigation"
-msgstr ""
+msgid "main-4"
+msgstr "Organizations"
 
-msgid "Home"
-msgstr ""
+msgid "main-5"
+msgstr "Enterprises"
 
-msgid "Supervisor Dashboard"
-msgstr ""
 
-msgid "Enterprises"
-msgstr ""
 
-msgid "Users"
-msgstr ""
+
+-------------------------------------------------------------
+System 
+-------------------------------------------------------------
+
+msgid "System-1"
+msgstr "Active"
+
+msgid "System-2"
+msgstr "Passive"
+
+msgid "System-3"
+msgstr "Main Navigation"
+
+msgid "System-4"
+msgstr "Home"
+
+msgid "System-5"
+msgstr "Users"
+
+msgid "System-6"
+msgstr "Supervisor Dashboard"
+
+msgid "System-7"
+msgstr "Services"
+
+msgid "System-8"
+msgstr "Contacts"
+
+msgid "System-8"
+msgstr "Calendar"
+
+msgid "System-8"
+msgstr "Calendar"
+
+msgid "System-8"
+msgstr "Calendar"
+
+msgid "System-8"
+msgstr "Definitions"
+
+
+
+
+
+
+
+
+
 
 msgid "Organizations"
 msgstr ""
