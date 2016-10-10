@@ -23,8 +23,7 @@ return array(
        'Definitions' => 'layout/definitions.phtml',
        'Supervisor' => 'layout/supervisor.phtml',
        'Signup' => 'layout/signup.phtml',
-       'Cluster' => 'layout/cluster.phtml',
-        
+       'Cluster' => 'layout/cluster.phtml'        
    ),
     'action_layouts' => array(
         'SFDM' => array(
