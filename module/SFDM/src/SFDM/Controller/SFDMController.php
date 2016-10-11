@@ -256,7 +256,7 @@
       * @author Mustafa Zeynel Dağlı
       * @since 18/08/2016
       */
-     public function machinsertAction()
+     public function machinsAction()
      {
          $langCode = $this->getServiceLocator()
                             ->get('serviceTranslator');
@@ -279,7 +279,7 @@
       * @author Mustafa Zeynel Dağlı
       * @since 22/08/2016
       */
-     public function cmpinsertAction()
+     public function cmpinsAction()
      {
          $langCode = $this->getServiceLocator()
                             ->get('serviceTranslator');

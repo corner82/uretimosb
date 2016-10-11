@@ -40,8 +40,8 @@ return array(
             'machctg' => 'layout/machctg.phtml',
             'machprop' => 'layout/machprop.phtml',
             'mach' => 'layout/mach.phtml',
-            'machinsert' => 'layout/machinsert.phtml',
-            'cmpinsert' => 'layout/cmpinsert.phtml',
+            'machins' => 'layout/machinsert.phtml',
+            'cmpins' => 'layout/cmpinsert.phtml',
                         ),
         'Companies' => array(
             'companyregistration' => 'layout/companyregistrationLayout.phtml',
