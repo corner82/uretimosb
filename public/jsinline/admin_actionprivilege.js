@@ -63,8 +63,9 @@ $('#tt_tree_menu2').tree({
    onClick: function (node) {
         selectedRoot = $(this).tree('getRoot', node.target);
         selectedItem = $(this).tree('getData', node.target);
+        return false;
     },
-   onSelect : function(node) {
+   onDblClick : function(node) {
        var self = $(this);
        var tagBuilderNot;
        var tagBuilder = $('#test-cabin').tagCabin({
@@ -314,7 +315,6 @@ window.getRolePrivileges = function(node, treeObj, tagBuilder) {
     var resourceNode = $('#tt_tree_menu2').tree('getParent', node.target);
     var resource_id = resourceNode.id;
     //console.log(resourceNode);
-
     if(tagBuilder.tagCabin('findSpecificTags', nodeID, 'data-role_id')) {
         var ajaxMacProp = $('#test-cabin').ajaxCallWidget({
             proxy : 'https://proxy.uretimosb.com/SlimProxyBoot.php',
