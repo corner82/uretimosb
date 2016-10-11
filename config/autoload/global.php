@@ -128,8 +128,8 @@ return array(
                         ),
         'Cluster' => array(
             'index' => 'layout/cluster.phtml',
-            'cmpinsert' => 'layout/cmpinsert2.phtml',
-            'machinsert' => 'layout/machinsert2.phtml',
+            'cmpins' => 'layout/cmpinsert2.phtml',
+            'machins' => 'layout/machinsert2.phtml',
                         ),
         'Error' => array(
             'index' => 'layout/401layout.phtml',
