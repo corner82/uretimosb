@@ -35,7 +35,7 @@
      * @author Mustafa Zeynel Dağlı
      * @since 26/08/2016
      */
-    setTimeout(function(){
+    /*setTimeout(function(){
         
         var $textAndPic = $('<div></div>');
         $textAndPic.append('<img src="https://zeynel.uretimosb.com/dist/img/ostim_logo_en.png" />');
@@ -48,7 +48,7 @@
             message: $textAndPic,
             closable : false, 
         });
-      }, 1320000);
+      }, 1320000);*/        
 
     /**
      * load imager widget for loading operations
