@@ -18,7 +18,8 @@ return array(
         'Supervisor',
         'Definitions',
         'Signup',
-        'Cluster'
+        'Cluster',
+        'Uretimosb'
     ),
     
     // These are various options for the listeners attached to the ModuleManager

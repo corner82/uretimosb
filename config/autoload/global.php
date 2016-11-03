@@ -23,7 +23,8 @@ return array(
        'Definitions' => 'layout/definitions.phtml',
        'Supervisor' => 'layout/supervisor.phtml',
        'Signup' => 'layout/signup.phtml',
-       'Cluster' => 'layout/cluster.phtml'        
+       'Cluster' => 'layout/cluster.phtml',
+       'Uretimosb' => 'layout/uretimosb.phtml'
    ),
     'action_layouts' => array(
         'SFDM' => array(
@@ -91,6 +92,9 @@ return array(
             'uprofset' => 'layout/uprofsetLayout.phtml',
             'projpool' => 'layout/projpoolLayout.phtml',
             'signupconfirmation' => 'layout/signupconfirmationLayout.phtml'
+        ),
+        'Uretimosb' => array(
+            'index' => 'layout/uretimosb.phtml'
         ),
         'Admin' => array( 'index' => 'layout/admin.phtml',
                           'menu' => 'layout/menu.phtml',
@@ -195,138 +199,4 @@ return array(
         ),
 
     ),
-    /*'ACL_pages' => array(
-        'guest' => array(
-                         'action' => array('sanalfabrika' => array ('index',
-                                                                    'registration',
-                                                                    'login',
-                                                                    'userprofile',
-                                                                    'userprofilepersonal',
-                                                                    'userprofileusers',
-                                                                    'userprofileprojects',
-                                                                    'userprofilecomments',
-                                                                    'userprofilehistory',
-                                                                    'userprofilesettings',
-                                                                    'companyprofile',
-                                                                    'companyperformancemetersprofile',
-                                                                    'companyproductsprofile',
-                                                                    'companycommentsprofile',
-                                                                    'companymembersprofile',
-                                                                    'companyhistoryprofile',
-                                                                    'companyprojectsprofile', 
-                                                                    'companyprofilesettings',
-                                                                    'companymtprofile',
-                                                                    'clientspage',
-                                                                    'sfmachines',
-                                                                    'cprofileset',
-                                                                    'cpgeneralset',
-                                                                    'cpaddressset',
-                                                                    'cpprodset',
-                                                                    'cpmp',
-                                                                    'cpmemberset',
-                                                                    'cpreference', 
-                                                                    'cmt',
-                                                                    'projreg',
-                                                                    'uprofset',
-                                                                    'projpool',
-                                                                    'signupconfirmation'
-                                                                    ),
-                                     'login' => array('index'),)
-                   ),
-        'consultant' => array(
-                         'parent' => 'guest',
-                         'action' => array('sfdm' => array ('index',
-                                                            'profile',
-                                                            'confirm',
-                                                            'machinetest',
-                                                            'acldefinition',
-                                                            'imageupload'),
-                                     'admin' => array('index'),
-                                     'login' => array('index','logout'),
-                                     'sanalfabrika' => array ('index',
-                                                              'registration',
-                                                              'login',
-                                                              'cmt',
-                                                              'prodsercat',
-                                                              'cprofileset',
-                                                              'cpgeneralset',
-                                                              'cpaddressset',
-                                                              'cpprodset',
-                                                              'cpmp',
-                                                              'cpmemberset',
-                                                              'cpreference',
-                                                              'projreg',
-                                                              'uprofset',
-                                                              'projpool',
-                                                              'signupconfirmation'
-                                                              )),
-                   ),
-        'supervisor' => array(
-                         'parent' => 'consultant',
-                         'action' => array('sfdm' => array ('index'))
-                   ),
-        'admin' => array(
-                         'parent' => 'supervisor',
-                         'action' => array('admin' => array ('index',
-                                                            'menu',
-                                                            'machctg',
-                                                            'machprop',
-                                                            'mach',
-                                                            'unt',
-                                                            'prodtypes',
-                                                            'machattr',
-                                                            'uniquemachprop',
-                                                            'machpropdef',
-                                                            'aclresources',
-                                                            'aclroles',
-                                                            'aclprivileges',
-                                                            'aclroleprivilege',
-                                                            'aclprivilegeservices',         
-                                                            'menutypes',
-                                                            'modules',
-                                                            'actions',
-                                                            'actionmenus',
-                                                            'services',
-                                                            'servicegroups',
-                                                            'assigndef',
-                                                            'assignrole',
-                                                            'operationdef',
-                                                            'consultants',
-                                                            'assigncons',
-                                                            'actionprivilegeservice',
-                                                            'actionprivilege'),
-                                           )
-                   ),
-        
-        'new user' => array(
-                         'parent' => 'guest',
-                         'action' => array('sanalfabrika' => array ('cmt' , 
-                                                                    'prodsercat',
-                                                                    'cprofileset',
-                                                                    'cpgeneralset',
-                                                                    'cpaddressset',
-                                                                    'cpprodset',
-                                                                    'cpmp',
-                                                                    'cpmemberset',
-                                                                    'cpreference',
-                                                                    'projreg',
-                                                                    'uprofset',
-                                                                    'projpool'
-                                                                    ))
-                   ),
-        
-        'firm user' => array(
-                         'parent' => 'new user',
-                         //'action' => array('sanalfabrika' => array ('index'))
-                   ),
-        'company apprentice' => array(
-                         'parent' => 'new user',
-                         //'action' => array('sanalfabrika' => array ('index'))
-                   ),
-        'firm owner' => array(
-                         'parent' => 'firm user',
-                         //'action' => array('sanalfabrika' => array ('index'))
-                   ),    
-        
-    )*/
 ); 
