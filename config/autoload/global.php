@@ -24,7 +24,7 @@ return array(
        'Supervisor' => 'layout/supervisor.phtml',
        'Signup' => 'layout/signup.phtml',
        'Cluster' => 'layout/cluster.phtml',
-       'Uretimosb' => 'layout/uretimosb.phtml'
+//       'Uretimosb' => 'layout/uretimosb.phtml'
    ),
     'action_layouts' => array(
         'SFDM' => array(
@@ -94,9 +94,9 @@ return array(
             'signupconfirmation' => 'layout/signupconfirmationLayout.phtml',
             'index' => 'layout/sanalfabrika.phtml'
         ),
-        'Uretimosb' => array(
-            'index' => 'layout/uretimosb.phtml'
-        ),
+//        'Uretimosb' => array(
+//            'index' => 'layout/uretimosb.phtml'
+//        ),
         'Admin' => array( 'index' => 'layout/admin.phtml',
                           'menu' => 'layout/menu.phtml',
                           'machctg' => 'layout/machctg2.phtml',

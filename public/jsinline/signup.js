@@ -1216,7 +1216,7 @@ function completeUserSubmissionProcess() {
                                 action: function () {
 //                                    $('#tabsContentsSection').loadImager('removeLoadImage');
                                     window.location.href =
-                                            "/ostim/sanalfabrika";
+                                            "/imalat/osb";
                                 }
                             }],
                         closable: false
