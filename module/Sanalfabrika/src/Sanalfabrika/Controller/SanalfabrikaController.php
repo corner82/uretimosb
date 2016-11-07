@@ -22,6 +22,7 @@ class SanalfabrikaController extends AbstractActionController {
         $requestUriRegulated = $this->getServiceLocator()
                 ->get('serviceTranslatorUrlRegulator');
 
+
         $view = new ViewModel(array(
             'requestUriRegulated' => $requestUriRegulated,
             'langCode' => $langCode,
@@ -35,6 +36,13 @@ class SanalfabrikaController extends AbstractActionController {
                 ->get('serviceTranslator');
         $requestUriRegulated = $this->getServiceLocator()
                 ->get('serviceTranslatorUrlRegulator');
+
+
+        $sessionManager = $this->getServiceLocator()
+                ->get('SessionManagerDefault');
+        $sessionID = $sessionManager->getId();
+
+//        print_r($sessionID);
         /*
           $tabActivationController = $this->success last insert Id from okan first insert call
          * then based on this id i have to update data
@@ -46,6 +54,7 @@ class SanalfabrikaController extends AbstractActionController {
         $view = new ViewModel(array(
             'requestUriRegulated' => $requestUriRegulated,
             'langCode' => $langCode,
+            'sessionId' => $sessionID
         ));
         return $view;
     }
@@ -71,18 +80,18 @@ class SanalfabrikaController extends AbstractActionController {
         $this->authenticate(null, $view);
         return $view;
     }
-    
+
     public function signupconfirmationAction() {
         $langCode = $this->getServiceLocator()
                 ->get('serviceTranslator');
         $requestUriRegulated = $this->getServiceLocator()
                 ->get('serviceTranslatorUrlRegulator');
 
-        $authKey = $this->params()->fromQuery('key',null);
+        $authKey = $this->params()->fromQuery('key', null);
         $authControl = $this->getServiceLocator()
-                            ->get('serviceAuthKeyControler');
-        
-        
+                ->get('serviceAuthKeyControler');
+
+
         /*
           $tabActivationController = $this->success last insert Id from okan first insert call
          * then based on this id i have to update data
@@ -531,8 +540,8 @@ class SanalfabrikaController extends AbstractActionController {
          * @since 12/07/2016
          * resource, role and privilege ACL class called
          */
-        /*$acl = $this->getServiceLocator()
-                ->get('serviceAclPrivilegeFinder');*/
+        /* $acl = $this->getServiceLocator()
+          ->get('serviceAclPrivilegeFinder'); */
 
         /**
          * @author Mustafa Zeynel Dağlı
@@ -554,6 +563,7 @@ class SanalfabrikaController extends AbstractActionController {
         );
 
 
+
         $view = new ViewModel(array(
             'requestUriRegulated' => $requestUriRegulated,
             'langCode' => $langCode,
@@ -565,7 +575,7 @@ class SanalfabrikaController extends AbstractActionController {
                  * @since 12/07/2016
                  * acl class test in view layer
                  */
-            //'acl' => $acl
+                //'acl' => $acl
         ));
         return $view;
     }
@@ -801,7 +811,7 @@ class SanalfabrikaController extends AbstractActionController {
         ));
         return $view;
     }
-    
+
     /**
      * if user logged in and still trying to hit login page,
      * system redirects to role main page
@@ -810,7 +820,7 @@ class SanalfabrikaController extends AbstractActionController {
      */
     private function ifLoggedinRedirect() {
         $authManager = $this->getServiceLocator()->get('authenticationManagerDefault');
-        if(!$authManager->getStorage()->isEmpty()) {  
+        if (!$authManager->getStorage()->isEmpty()) {
             $this->getServiceLocator()->get('serviceAuthenticatedRedirectManager');
         }
     }
@@ -913,7 +923,7 @@ class SanalfabrikaController extends AbstractActionController {
                     /**
                      * redirecting after success
                      */
-                    $this->getServiceLocator()->get('serviceAuthenticatedRedirectManager');  
+                    $this->getServiceLocator()->get('serviceAuthenticatedRedirectManager');
                 }
             } else {
                 $authManager->getStorage()->clear();

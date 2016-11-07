@@ -782,6 +782,7 @@ function submitUserGeneralInfoForm() {
                     username: $('#preferedUsername').val(),
                     password: $('#userPreferedPassword').val(),
                     auth_email: $('#useremail').val(),
+                    sessionId: $('#sessionId').val(),
                     preferred_language: selectedPreferedLanguageId,
                     profile_public: makePublicProfile
                 },
