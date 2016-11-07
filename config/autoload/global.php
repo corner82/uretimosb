@@ -91,7 +91,8 @@ return array(
             'projreg' => 'layout/projregLayout.phtml',
             'uprofset' => 'layout/uprofsetLayout.phtml',
             'projpool' => 'layout/projpoolLayout.phtml',
-            'signupconfirmation' => 'layout/signupconfirmationLayout.phtml'
+            'signupconfirmation' => 'layout/signupconfirmationLayout.phtml',
+            'index' => 'layout/sanalfabrika.phtml'
         ),
         'Uretimosb' => array(
             'index' => 'layout/uretimosb.phtml'
