@@ -30,7 +30,7 @@ class SanalfabrikaController extends AbstractActionController {
     }
 
     public function registrationAction() {
-
+       
         $langCode = $this->getServiceLocator()
                 ->get('serviceTranslator');
         $requestUriRegulated = $this->getServiceLocator()
@@ -42,10 +42,19 @@ class SanalfabrikaController extends AbstractActionController {
 
         // Do this inside your Controller before you return your ViewModel
         $this->layout()->setVariable('test', $langCode);
-
+        
+        
+        $authManager = $this->getServiceLocator()->get('authenticationManagerDefault');
+        $sessionArr = $authManager->getStorage()->read();
+        $sessionId = $sessionArr['id'];
+        
+        print_r($sessionArr);
+        print_r($sessionId);
+        
         $view = new ViewModel(array(
             'requestUriRegulated' => $requestUriRegulated,
             'langCode' => $langCode,
+            'sessionId' => $sessionId
         ));
         return $view;
     }
@@ -548,11 +557,11 @@ class SanalfabrikaController extends AbstractActionController {
          */
         $authManager = $this->getServiceLocator()->get('authenticationManagerDefault');
         $sessionArr = $authManager->getStorage()->read();
+        print_r($sessionArr['id']);
         $sessionArr['npk'] = $selectedCompanyNpk;
         $authManager->getStorage()->write(
                 $sessionArr
         );
-
 
         $view = new ViewModel(array(
             'requestUriRegulated' => $requestUriRegulated,
@@ -560,6 +569,8 @@ class SanalfabrikaController extends AbstractActionController {
             'selectedCompanyShN' => $selectedCompanyShN,
             'selectedCompanyNpk' => $selectedCompanyNpk,
             'publicKey' => $publicKey,
+            'sessionId' => $sessionId
+                
                 /**
                  * @author Mustafa Zeynel Dağlı
                  * @since 12/07/2016
