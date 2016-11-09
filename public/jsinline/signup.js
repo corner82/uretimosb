@@ -1,10 +1,9 @@
-$(document).ready(function () {
 
+$(document).ready(function () {
     /**
      * multilanguage plugin 
      * @type Lang
      */
-
     window.lang = new Lang();
     lang.dynamic($('#langCode').val(), '/plugins/jquery-lang-js-master/langpack/' + $('#langCode').val() + '.json');
     lang.init({
@@ -170,8 +169,7 @@ $('#showPassword').change(function () {
     if (isChecked) {
         $('#userPreferedPassword').attr('type', 'text');
         $('#repeatedUserPreferedPassword').attr('type', 'text');
-    }
-    else {
+    } else {
         $('#userPreferedPassword').attr('type', 'password');
         $('#repeatedUserPreferedPassword').attr('type', 'password');
     }
@@ -182,7 +180,7 @@ $('#showPassword').change(function () {
  */
 
 $.ajax({
-    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
     data: {
         url: 'fillAddressTypes_sysSpecificDefinitions',
         language_code: $("#langCode").val(),
@@ -221,7 +219,7 @@ $.ajax({
  */
 
 $.ajax({
-    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
     data: {
         url: 'fillComboBox_syscountrys',
         language_code: $("#langCode").val(),
@@ -241,8 +239,8 @@ $.ajax({
                 imagePosition: 'right',
                 onSelected: function (selectedData) {
                     if (selectedData.selectedData.value !== 0) {
-                        
-                        window.cityList = selectedData.selectedData.attributes.citylist;                        
+
+                        window.cityList = selectedData.selectedData.attributes.citylist;
                         window.boroughList = false;
                     }
                     selectedCountryId = selectedData.selectedData.value;
@@ -291,7 +289,7 @@ function userCityDropDownUpdate() {
     }
 
     $.ajax({
-        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_syscity',
             country_id: selectedCountryId,
@@ -351,7 +349,7 @@ function districtDropDownUpdate() {
     }
 
     $.ajax({
-        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
         data: {
             url: 'fillComboBox_sysborough',
             country_id: selectedCountryId,
@@ -395,7 +393,7 @@ function districtDropDownUpdate() {
  */
 
 $.ajax({
-    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
     data: {
         url: 'fillComboBox_syslanguage',
         language_code: $("#langCode").val(),
@@ -429,7 +427,7 @@ $.ajax({
 
 
 $.ajax({
-    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
     data: {
         url: 'fillOwnershipType_sysSpecificDefinitions',
         language_code: $("#langCode").val(),
@@ -468,7 +466,7 @@ $.ajax({
  */
 
 $.ajax({
-    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
     data: {
         url: 'fillComboBox_syslanguage',
         language_code: $("#langCode").val()
@@ -499,7 +497,7 @@ $.ajax({
  */
 
 $.ajax({
-    url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
+    url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
     data: {
         url: 'fillCommunicationsTypes_sysSpecificDefinitions',
         language_code: $("#langCode").val(),
@@ -649,21 +647,22 @@ function submitUserGeneralInfoForm() {
         if ($("#pktemp").val().length) {
 //            console.log('update' + $("#pktemp").val());
             $.ajax({
-                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
+                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
                 data: {
                     url: 'pktempUpdate_infoUsers',
                     language_code: $("#langCode").val(),
                     name: $("#userFirstName").val(),
                     surname: $('#userLastName').val(),
                     username: $('#preferedUsername').val(),
-                    password: $('#userPreferedPassword').val(),
+//                    password: $('#userPreferedPassword').val(),
                     auth_email: $('#useremail').val(),
                     preferred_language: selectedPreferedLanguageId,
                     profile_public: makePublicProfile,
                     operation_type_id: 2,
                     active: 0,
                     act_parent_id: 0,
+                    sessionId: $("#sessionId").val(),
                     pktemp: $("#pktemp").val()
                 },
                 method: "GET",
@@ -769,20 +768,19 @@ function submitUserGeneralInfoForm() {
             });
 
         } else {
-
 //            console.log('insert ' + $("#pktemp").val());
             $.ajax({
-                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
+                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
                 data: {
                     url: 'tempInsert_infoUsers',
                     language_code: $("#langCode").val(),
                     name: $("#userFirstName").val(),
                     surname: $('#userLastName').val(),
                     username: $('#preferedUsername').val(),
-                    password: $('#userPreferedPassword').val(),
+//                    password: $('#userPreferedPassword').val(),
                     auth_email: $('#useremail').val(),
-                    sessionId: $('#sessionId').val(),
+                    sessionId: $("#sessionId").val(),
                     preferred_language: selectedPreferedLanguageId,
                     profile_public: makePublicProfile
                 },
@@ -890,15 +888,14 @@ function submitUserGeneralInfoForm() {
  */
 function submitUserAddressInfoForm() {
 
-    console.log(selectedAddTypeId);
-
     if (selectedAddTypeId != '-1') {
         if (selectedCountryId != '-1') {
             if ($('#userAddressInfoForm').validationEngine('validate')) {
-                if (selectedCountryId === "91") {
+                if (selectedCountryId === 91) {
+                    console.log("Yessss");
                     $.ajax({
-                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
+                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
                         data: {
                             url: 'pktempInsert_infoUsersAddresses',
                             pktemp: $("#pktemp").val(),
@@ -957,10 +954,10 @@ function submitUserAddressInfoForm() {
                         }
                     });
                 } else {
-                    console.log('selectedCountryId is ' + selectedCountryId);
+                    console.log("Nooooo");
                     $.ajax({
-                        url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-//                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
+                        url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+//                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
                         data: {
                             url: 'pktempInsert_infoUsersAddresses',
                             pktemp: $("#pktemp").val(),
@@ -1073,8 +1070,8 @@ function submitUserContactNumber() {
         if ($('#userCommunicationInfoForm').validationEngine('validate')) {
 
             $.ajax({
-                url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-////                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
+                url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+////                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
                 data: {
                     url: 'pktempInsert_infoUsersCommunications',
                     pktemp: pktemp,
@@ -1152,7 +1149,7 @@ function submitUserInfoForm() {
             message: window.lang.translate('Congratulations! User information submitted sucessfully. \n\
             You will be directed to the system main page. \n\
             An email sent to your submitted email address.\n\
-            Please click on provided confirmation link to activate your account and login to the system.\n\
+            Please click on provided confirmation link to activate your account and set your password to log in to the system.\n\
             System consultant will call you soon to proceed registration confirmation procedure.\n\
             '),
             type: BootstrapDialog.TYPE_SUCCESS,
@@ -1216,7 +1213,7 @@ function completeUserSubmissionProcess() {
                                 action: function () {
 //                                    $('#tabsContentsSection').loadImager('removeLoadImage');
                                     window.location.href =
-                                            "/imalat/osb";
+                                            "/ostim/sanalfabrika";
                                 }
                             }],
                         closable: false
@@ -1289,8 +1286,8 @@ function companyInfoSubmission() {
 //        $('#tabsContentsSection').loadImager('appendImage');
 
         $.ajax({
-            url: 'https://proxy.uretimosb.com/SlimProxyBoot.php',
-            //                url: 'http://proxy.uretimosb.com:9990/SlimProxyBoot.php',
+            url: 'https://proxy.sanalfabrika.com/SlimProxyBoot.php',
+            //                url: 'http://proxy.sanalfabrika.com:9990/SlimProxyBoot.php',
             data: {url: 'pktempInsert_infoFirmProfile',
                 pktemp: pktemp,
                 language_code: $("#langCode").val(),
@@ -1795,72 +1792,89 @@ function taskProgressPerTabs() {
  * @author:Bahram
  * @Since:2016.1.2
  */
-if ($('#pktemp').val().length) {
-//    console.log($('#pktemp').val());
-    $('#table_address_modal').bootstrapTable({
-        url: "https://proxy.uretimosb.com/SlimProxyBoot.php?url=pktempFillGridSingular_infoUsersAddresses",
-        method: 'GET',
-        locale: "'" + ($('#langCode').val() + '-' + $('#langCode').val().toUpperCase()) + "'",
-        toggle: "table",
-        width: "500",
-        pagination: "true",
-        search: "true",
-        toolbar: "#toolbar", showColumns: true,
-        showRefresh: true,
-        showToggle: true,
-        queryParams: function (p) {
-            if (pktemp === null) {
-                return false;
-            } else {
+
+
+function find_registered_addresses() {
+    if ($('#pktemp').val().length) {
+        $('#table_address_modal').bootstrapTable({
+            url: "https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pktempFillGridSingular_infoUsersAddresses",
+            method: 'GET',
+            locale: "'" + ($('#langCode').val() + '-' + $('#langCode').val().toUpperCase()) + "'",
+            toggle: "table",
+            width: "600",
+            pagination: "true",
+            search: "true",
+            toolbar: "#toolbar",
+            showColumns: true,
+            showRefresh: true,
+            showToggle: false,
+            queryParams: function (p) {
+//                if (pktemp === null) {
+//                    return false;
+//                } else {
                 return {
                     language_code: $('#langCode').val(),
-                    pktemp: pktemp,
+                    pktemp: $('#pktemp').val(),
                     component_type: 'bootstrap'
-                };
+//                    };
+                }
             }
-        }
-        , columns:
-                [
-                    {checkbox: true},
-                    {field: 'address_type', sortable: true, width: 100},
-                    /*        
-                     editable: {
-                     type: 'select',
-                     source: [
-                     {value: 1, text: 'Active'},
-                     {value: 2, text: 'Blocked'},
-                     {value: 3, text: 'Deleted'}
-                     ],
-                     //'title': 'Herd Tag',
-                     'prepend': {none: "--------------"}
-                     }
-                     },
-                     
-                     update action will be done exactely like as sfdm-confirm page 
-                     In this place a new tab will be opened based on selected row information 
-                     with a filled form (like user addres form) and data could be changed and 
-                     updated accordingly. 
-                     
-                     Second option is using bootstrap-table editable format which is given
-                     as a sample here. reference for this option is on the link below:
-                     
-                     http://bootstrap-table.wenzhixin.net.cn/examples/
-                     and 
-                     https://github.com/wenzhixin/bootstrap-table/issues/986
-                     and
-                     http://jsfiddle.net/wenyi/e3nk137y/28/light/
-                     
-                     */
-                    {field: 'tr_country_name', sortable: true, width: 100},
-                    {field: 'tr_city_name', sortable: true, width: 100},
-                    {field: 'tr_borough_name', sortable: true, width: 100},
-                    {field: 'city_name', sortable: true, width: 100},
-                    {field: 'address1', sortable: true, width: 200},
-                    {field: 'address2', sortable: true, width: 200},
-                    {field: 'postal_code', sortable: true, width: 50},
-                    {field: 'description', width: 300}
-                ]
-    });
+            , columns:
+                    [
+//                        {checkbox: true},
+                        /*        
+                         editable: {
+                         type: 'select',
+                         source: [
+                         {value: 1, text: 'Active'},
+                         {value: 2, text: 'Blocked'},
+                         {value: 3, text: 'Deleted'}
+                         ],
+                         //'title': 'Herd Tag',
+                         'prepend': {none: "--------------"}
+                         }
+                         },
+                         
+                         update action will be done exactely like as sfdm-confirm page 
+                         In this place a new tab will be opened based on selected row information 
+                         with a filled form (like user addres form) and data could be changed and 
+                         updated accordingly. 
+                         
+                         Second option is using bootstrap-table editable format which is given
+                         as a sample here. reference for this option is on the link below:
+                         
+                         http://bootstrap-table.wenzhixin.net.cn/examples/
+                         and 
+                         https://github.com/wenzhixin/bootstrap-table/issues/986
+                         and
+                         http://jsfiddle.net/wenyi/e3nk137y/28/light/
+                         
+                         */
+//                    {field: 'id', sortable: true, width: 100},
+//                    {field: 'user_id', sortable: true, width: 100},
+                        {field: 'name', title: 'Name', sortable: true, width: 100},
+                        {field: 'surname', title: 'Surname', sortable: true, width: 100},
+//                    {field: 'language_name', sortable: true, width: 200},
+                        {field: 's_date', title: 'Sub. Date', sortable: true, width: 200},
+//                    {field: 'c_date', sortable: true, width: 50},
+//                    {field: 'address_type_id', width: 300},
+                        {field: 'address_type', title: 'Address Type', width: 300},
+                        {field: 'address1', title: 'Address Line 1', width: 300},
+                        {field: 'address2', title: 'Address Line 1', width: 300},
+                        {field: 'postal_code', title: 'Po. Box', width: 300},
+//                    {field: 'country_id', width: 300},
+                        {field: 'country_name', title: 'Country', width: 300},
+//                    {field: 'city_id', width: 300},
+                        {field: 'city_names', title: 'City', width: 300},
+//                    {field: 'borough_id', width: 300},
+                        {field: 'borough_name', title: 'District', width: 300},
+                        {field: 'city_name', title: 'City', width: 300},
+                        {field: 'description', title: 'Description', width: 300},
+//                        {field: 'profile_public', width: 300}
+                    ]
+        });
+        $('#table_address_modal').reload();
+    }
 }
 ;
 
@@ -1869,58 +1883,69 @@ if ($('#pktemp').val().length) {
  * @author: Bahram Lotfi
  * @Since: 2016.2.11
  */
-if ($('#pktemp').val().length) {
-    $('#table_contacts_modal').bootstrapTable({
-        onClickRow: function (row, $element) {
-            //        row: the record corresponding to the clicked row, 
+function find_registered_contacts() {
+    if ($('#pktemp').val().length) {
+        $('#table_contacts_modal').bootstrapTable({
+            onClickRow: function (row, $element) {
+                //        row: the record corresponding to the clicked row, 
 //                $element: the tr element.
-            //        console.log($("#pktemp").val());
-            //        console.log(pktemp);
-        },
-        onCheck: function (row, $element) {
-            //        row: the record corresponding to the clicked row,          
-            //        $element: the tr element.
-            //        console.log(row.id);
-        },
-        url: "https://proxy.uretimosb.com/SlimProxyBoot.php?url=pktempFillGridSingular_infoUsersCommunications",
-        method: 'GET',
-        locale: "'" + ($('#langCode').val() + '-' + $('#langCode').val().toUpperCase()) + "'",
-        toggle: "table",
-        width: "500",
-        pagination: "true",
-        search: "true",
-        toolbar: "#toolbar",
-        showColumns: true,
-        showRefresh: true,
-        showToggle: true,
-        queryParams: function (p) {
-            if (pktemp === null) {
-                return false;
-            } else {
+                //        console.log($("#pktemp").val());
+                //        console.log(pktemp);
+            },
+            onCheck: function (row, $element) {
+                //        row: the record corresponding to the clicked row,          
+                //        $element: the tr element.
+                //        console.log(row.id);
+            },
+            url: "https://proxy.sanalfabrika.com/SlimProxyBoot.php?url=pktempFillGridSingular_infoUsersCommunications",
+            method: 'GET',
+            locale: "'" + ($('#langCode').val() + '-' + $('#langCode').val().toUpperCase()) + "'",
+            toggle: "table",
+            width: "500",
+            pagination: "true",
+            search: "true",
+            toolbar: "#toolbar",
+            showColumns: true,
+            showRefresh: true,
+            showToggle: true,
+            queryParams: function (p) {                
                 return {
-                    language_code: $('#langCode').val(),
-                    pktemp: pktemp,
-                    component_type: 'bootstrap'
+                        language_code: $('#langCode').val(),
+                        pktemp: $('#pktemp').val(),
+                        component_type: 'bootstrap'
                 };
-            }
-        },
-        columns:
-                [
-                    {field: 'state', checkbox: true},
-                    {field: 'comminication_type', sortable: true, width: 100},
-                    {field: 'communications_no', sortable: true, width: 100},
-                    {field: 'profile_public', sortable: true, width: 100}
-                ]
-    });
-};
+            },
+            columns:
+                    [
+                        {field: 'id', title: 'Id', checkbox: true},
+                        {field: 'communications_type_id', title: 'communications_type_id', sortable: true, width: 100},
+                        {field: 'comminication_type', title: 'comminication_type', sortable: true, width: 100},
+                        {field: 'communications_no', title: 'communications_no', sortable: true, width: 100},
+                        {field: 'default_communication_id', title: 'default_communication_id', sortable: true, width: 100},
+                        {field: 'default_communication', title: 'default_communication', sortable: true, width: 100}
+                    ]
+        });
+        $('#table_contacts_modal').reload();
+    }
+}
+;
 
 function milliseconds()
 {
     var input_date = $('#companyFoundationDate').val();
     var entered_date = new Date(input_date);
-    window.date_value = entered_date.getTime();    
-    window.okan = Math.round(window.date_value/1000.0);    
+    window.date_value = entered_date.getTime();
+    window.okan = Math.round(window.date_value / 1000.0);
     console.log(window.date_value);
     console.log(okan);
-    
-};
+
+}
+;
+
+
+
+
+
+
+
+
