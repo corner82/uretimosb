@@ -478,7 +478,7 @@ $.ajax({
         if (data.length !== 0) {
             $.fn.multiLanguageBarSetter.defaults.requestUriTranslated = $("#requestUriRegulated").val();
             $.fn.multiLanguageBarSetter.defaults.langCode = $("#langCode").val();
-            $.fn.multiLanguageBarSetter.defaults.basePath = 'ostim/sanalfabrika';
+            $.fn.multiLanguageBarSetter.defaults.basePath = '/imalat/OSB';
             $.fn.multiLanguageBarSetter.defaults.baseLanguage = 'tr';
             $(".languages").multiLanguageBarSetter(data);
 
@@ -1213,7 +1213,7 @@ function completeUserSubmissionProcess() {
                                 action: function () {
 //                                    $('#tabsContentsSection').loadImager('removeLoadImage');
                                     window.location.href =
-                                            "/ostim/sanalfabrika";
+                                            "/imalat/OSB";
                                 }
                             }],
                         closable: false
@@ -1249,7 +1249,7 @@ function completeUserSubmissionProcess() {
                             action: function () {
 //                                $('#tabsContentsSection').loadImager('removeLoadImage');
                                 window.location.href =
-                                        "/ostim/sanalfabrika/registration#userAddressInfoForm";
+                                        "/imalat/OSB/registration#userAddressInfoForm";
                                 event.preventDefault();
                             }
                         }]
@@ -1268,7 +1268,7 @@ function completeUserSubmissionProcess() {
                         action: function () {
 //                            $('#tabsContentsSection').loadImager('removeLoadImage');
                             window.location.href =
-                                    "/ostim/sanalfabrika/registration#userGeneralInfoForm";
+                                    "/imalat/OSB/registration#userGeneralInfoForm";
                             event.preventDefault();
                         }
                     }]
@@ -1336,7 +1336,7 @@ function companyInfoSubmission() {
                     });
                     taskProgressPerTabs();
                     window.location.href =
-                            "/ostim/sanalfabrika";
+                            "/imalat/OSB";
                 } else if (data['errorInfo'] === '23505') {
                     BootstrapDialog.show({
                         title: window.lang.translate('Submission Process'),
