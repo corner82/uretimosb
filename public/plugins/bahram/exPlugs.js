@@ -294,7 +294,7 @@
 //                        console.log(data);
                         var i;
                         for (i = 0; i < 10; i++) {
-                            $('#selectedCompanyNpk').val(data.rows[i].pk);
+                            $('#selectedCompanyNpk').val(data.rows[i].npk);
                             var companyProfileLink = window.location.href.replace(/clientspage/, "companyprofile/" + $('#selectedCompanyNpk').val());
 
                             var appending_html =
