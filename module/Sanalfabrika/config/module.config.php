@@ -72,7 +72,7 @@ return array(
         'translation_file_patterns' => array(
             array(
                 'type' => 'gettext',
-                'base_dir' => __DIR__ . '/../../language',
+                'base_dir' => __DIR__ . '/../../language', 
                 'pattern' => '%s.mo',
             ),
         ),
@@ -82,8 +82,10 @@ return array(
           'admin' => __DIR__ . '/../view',
           ), */
         'template_map' => array(
-            'layout/layout' => __DIR__ . '/../view/layout/sanalfabrika.phtml',
-            'sanalfabrika/index/index' => __DIR__ . '/../view/sanalfabrika/sanalfabrika/index.phtml',
+            /*'layout/layout' => __DIR__ . '/../view/layout/sanalfabrika.phtml',
+            'sanalfabrika/index/index' => __DIR__ . '/../view/sanalfabrika/sanalfabrika/index.phtml',*/
+            'layout/layout' => __DIR__ . '/../view/layout/comics.phtml',
+            'sanalfabrika/index/index' => __DIR__ . '/../view/sanalfabrika/sanalfabrika/index_comics.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',

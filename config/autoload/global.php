@@ -17,7 +17,8 @@ return array(
        'Admin' => 'layout/admin.phtml',      
        'Login' => 'layout/login.phtml',
        'SFDM' => 'layout/sfdm.phtml',
-       'Sanalfabrika' => 'layout/sanalfabrika.phtml',
+       //'Sanalfabrika' => 'layout/sanalfabrika.phtml',
+       'Sanalfabrika' => 'layout/index_comics.phtml',
        'Companies' => 'layout/companies.phtml',
        'Error' => 'layout/error.phtml',
        'Definitions' => 'layout/definitions.phtml',
@@ -92,7 +93,8 @@ return array(
             'uprofset' => 'layout/uprofsetLayout.phtml',
             'projpool' => 'layout/projpoolLayout.phtml',
             'signupconfirmation' => 'layout/signupconfirmationLayout.phtml',
-            'index' => 'layout/sanalfabrika.phtml'
+            //'index' => 'layout/sanalfabrika.phtml'
+            'index' => 'layout/comics.phtml'
         ),
 //        'Uretimosb' => array(
 //            'index' => 'layout/uretimosb.phtml'
