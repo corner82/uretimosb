@@ -4456,6 +4456,12 @@ textarea {
       box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3); }
     .seo-score .seo-score-content .seo-score-form input.site {
       border-radius: 50px 0 0 50px; }
+     input.site_zeyn {
+      border-radius: 50px 50px 50px 50px; }
+    @media (max-width: 1024px) {
+        input.site_zeyn {
+          border-radius: 50px;
+          margin-bottom: 30px; } }
       @media (max-width: 1024px) {
         .seo-score .seo-score-content .seo-score-form input.site {
           border-radius: 50px;
