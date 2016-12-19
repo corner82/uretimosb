@@ -3093,7 +3093,8 @@ textarea {
       position: relative; } }
   .header .logo {
     margin-bottom: 0;
-    margin-right: 82px;
+    /*margin-right: 82px;*/
+    margin-right: 50px;
     float: left; }
     @media (max-width: 768px) {
       .header .logo {
